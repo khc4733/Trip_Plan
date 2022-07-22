@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.member">
+
+	<resultMap id="memResult" type="com.aws.member.vo.MemberVO">
+		<result property="id"		column="id"/>
+		<result property="pwd"		column="pwd"/>
+		<result property="name"		column="name"/>
+		<result property="email"	column="email"/>
+		<result property="nickname"	column="nickname"/>
+		<result property="address"	column="address"/>
+		<result property="tel"	column="tel"/>
+	</resultMap>
+
+	
+	<!-- 로그인 처리 WHERE	ID=#{id} AND PWD=#{pwd} -->
+	<select id="loginByID" parameterType="com.aws.member.vo.MemberVO" resultType="com.aws.member.vo.MemberVO">
+		<![CDATA[
+		SELECT	*
+		FROM	member
+		WHERE	m_id=#{m_id,jdbcType=VARCHAR}
+		]]>
+	</select>
+	
+	
+
+</mapper>
+
+
+
+
+
+
+
