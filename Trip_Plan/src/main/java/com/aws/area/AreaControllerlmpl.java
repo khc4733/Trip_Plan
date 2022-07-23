@@ -25,4 +25,13 @@ public class AreaControllerlmpl implements AreaController {
 		return mav;
 	}
 
+	@Override
+	@RequestMapping(value="/incheon", method=RequestMethod.GET)
+	public ModelAndView Incheon(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/area/incheon");
+		return mav;
+	}
+
 }

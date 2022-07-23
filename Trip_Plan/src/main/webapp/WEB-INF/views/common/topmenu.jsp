@@ -8,6 +8,14 @@
 // 일부 내용이 상단 메뉴바에 가려져서 안보일 수 있다.
 // <nav class="navbar navbar-inverse navbar-fixed-top">
 %>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 <nav class="navbar navbar-inverse navbar-sticky-top">
 	<div class="container-fluid">
@@ -26,7 +34,7 @@
 						<li><a
 							href="${contextPath}/area/seoul.do">서울</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=2">인천</a></li>
+							href="${contextPath}/area/incheon.do">인천</a></li>
 						<li><a
 							href="${pageContext.request.contextPath}/areaL?sigungu=3">대전</a></li>
 						<li><a
