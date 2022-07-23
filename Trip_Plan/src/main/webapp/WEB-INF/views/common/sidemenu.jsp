@@ -26,9 +26,9 @@
 						<li><a
 							href="${contextPath}/area/seoul.do">SEOUL</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=2">INCHEON</a></li>
+							href="${contextPath}/area/incheon.do">INCHEON</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=3">DAEJEON</a></li>
+							href="${contextPath}/area/daejeon.do">DAEJEON</a></li>
 						<li><a
 							href="${pageContext.request.contextPath}/areaL?sigungu=4">ULSAN</a></li>
 						<li><a

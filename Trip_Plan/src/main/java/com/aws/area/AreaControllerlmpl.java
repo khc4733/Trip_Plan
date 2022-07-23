@@ -34,4 +34,13 @@ public class AreaControllerlmpl implements AreaController {
 		return mav;
 	}
 
+	@Override
+	@RequestMapping(value="/daejeon", method=RequestMethod.GET)
+	public ModelAndView Daejeon(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/area/daejeon");
+		return mav;
+	}
+
 }

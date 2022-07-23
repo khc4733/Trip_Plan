@@ -36,7 +36,7 @@
 						<li><a
 							href="${contextPath}/area/incheon.do">인천</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=3">대전</a></li>
+							href="${contextPath}/area/daejeon.do">대전</a></li>
 						<li><a
 							href="${pageContext.request.contextPath}/areaL?sigungu=4">울산</a></li>
 						<li><a

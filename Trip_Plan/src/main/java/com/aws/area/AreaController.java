@@ -11,4 +11,6 @@ public interface AreaController {
 	public	ModelAndView Seoul(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Incheon(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
+	public	ModelAndView Daejeon(HttpServletRequest request, HttpServletResponse response) throws Exception;
 }
