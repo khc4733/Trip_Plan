@@ -20,12 +20,13 @@
 <nav class="navbar navbar-inverse navbar-sticky-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="${contextPath}">Trip_Planner</a>
+			<a class="navbar-brand" href="${contextPath}/home.do">Trip_Planner</a>
 		</div>
 		<!-- 실질적인 메뉴를 나열한다. -->
 		<!-- form-group이 있어야 삼선 버튼에 메뉴가 나타난다. -->
 		<!-- button에 있는 data-target에는 #을 붙여야 아이디와 연결이 된다. -->
 		<!-- <div class="form-group collapse navbar-collapse" id="myNavbar"> -->
+		
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown">
@@ -38,31 +39,36 @@
 						<li><a
 							href="${contextPath}/area/daejeon.do">대전</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=4">울산</a></li>
+							href="${contextPath}/area/">울산</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=5">부산</a></li>
+							href="${contextPath}/area/">부산</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=6">광주</a></li>
+							href="${contextPath}/area/">광주</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=7">제주도</a></li>
+							href="${contextPath}/area/">제주도</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=0">etc</a></li>
+							href="${contextPath}/area/">etc</a></li>
 					</ul>
 				</li>
 				<li class="nav-item">
 				    <a href="${contextPath}/board/review.do" >Review</a>
 				</li>
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li>
+			
+		
+			  <ul class="nav navbar-nav navbar-right">
+				  <li>
 					<a href="${contextPath}/member/loginForm.do">
 						<button type="submit" class="btn btn-link">
 							<span class="log-in"></span>Sign in
-						</button>
-
-				</li>
-			</ul>
-		</div>
+						</button></a>
+				  </li>
+				  <li class="nav-item">
+					<a href="${contextPath}/mypage/mypage.do">my page</a>
+				   </li>
+			   </ul>
+			
+		</div>	
 	</div>
 </nav>
 

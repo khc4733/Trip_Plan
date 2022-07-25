@@ -7,6 +7,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="${pageContext.request.contextPath}/resource/css/front.css" type="text/css" rel="stylesheet">
     <title>메인 화면</title>
 
 
@@ -37,54 +38,7 @@
     </script>
     
     <style>
-    .carousel-inner {
-            width: 100%;
-            height: 350px;
-            margin: auto;
-        }
-    .carousel {
-          border: 5px solid blue;
-          width: 100%;
-          position: relative;
-        }
-        .carousel-inner .item:nth-child(1) {
-          background: url('${contextPath}/resources/images/course1.png') no-repeat center center;
-          background-size: cover;
-          }
-        .carousel-inner .item:nth-child(2) {
-         background: url('${contextPath}/resources/images/course2.png') no-repeat center center;
-         background-size: cover;
-        }
-         .carousel-inner .item:nth-child(3) {
-         background: url('${contextPath}/resources/images/course3.png') no-repeat center center;
-         background-size: cover;
-        }
-
-        .carousel-indicators {
-          position: absolute;
-          width: 50%;
-          right: 0;
-          left: 35%;
-          cursor: pointer;
-          transform: translate(-50%,-50%);
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-          top: 25%;
-        }
-        .item > img {
-          position: absolute;
-          top: -40%;
-          width: inherit;
-          height: inherit;
-          object-fit: cover;
-        }
-        body {
-            margin-left:50px;
-            margin-right:50px;
-        }
-        
+    
     </style>
 </head>
 <body>

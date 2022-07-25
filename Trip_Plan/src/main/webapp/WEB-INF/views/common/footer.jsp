@@ -16,6 +16,7 @@ color: white;
 background-color: #333333;
 }
 </style>
+
 </head>
 <body>
  <div id="footer_container" class="container text-center">
