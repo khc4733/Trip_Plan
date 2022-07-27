@@ -46,11 +46,11 @@ public class AreaControllerlmpl implements AreaController {
 	}
 	
 	@Override
-	@RequestMapping(value="/ulsan", method=RequestMethod.GET)
-	public ModelAndView Ulsan(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	@RequestMapping(value="/daegu", method=RequestMethod.GET)
+	public ModelAndView Daegu(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("/area/ulsan");
+		mav.setViewName("/area/daegu");
 		return mav;
 	}
 	
@@ -81,13 +81,6 @@ public class AreaControllerlmpl implements AreaController {
 		return mav;
 	}
 	
-	@Override
-	@RequestMapping(value="/etc", method=RequestMethod.GET)
-	public ModelAndView Etc(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("/area/etc");
-		return mav;
-	}
+
 
 }

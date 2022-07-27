@@ -30,7 +30,7 @@
 						<li><a
 							href="${contextPath}/area/daejeon.do">DAEJEON</a></li>
 						<li><a
-							href="${contextPath}/area/ulsan.do">ULSAN</a></li>
+							href="${contextPath}/area/daegu.do">DAEGU</a></li>
 						<li><a
 							href="${contextPath}/area/busan.do">BUSAN</a></li>
 						<li><a

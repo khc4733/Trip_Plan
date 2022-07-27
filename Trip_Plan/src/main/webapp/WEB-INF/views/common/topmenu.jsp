@@ -39,15 +39,13 @@
 						<li><a
 							href="${contextPath}/area/daejeon.do">대전</a></li>
 						<li><a
-							href="${contextPath}/area/ulsan.do">울산</a></li>
+							href="${contextPath}/area/daegu.do">대구</a></li>
 						<li><a
 							href="${contextPath}/area/busan.do">부산</a></li>
 						<li><a
 							href="${contextPath}/area/gwangju.do">광주</a></li>
 						<li><a
 							href="${contextPath}/area/jeju.do">제주도</a></li>
-						<li><a
-							href="${contextPath}/area/etc.do">기타</a></li>
 					</ul>
 				</li>
 				<li class="nav-item">
