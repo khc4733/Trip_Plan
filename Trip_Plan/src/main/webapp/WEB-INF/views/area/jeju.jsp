@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>daejeon</title>
+<title>jeju</title>
 <style>
         body {
             margin-left:50px;

@@ -20,7 +20,7 @@
 <nav class="navbar navbar-inverse navbar-sticky-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="${contextPath}/home.do">Trip_Planner</a>
+			<a class="navbar-brand" href="${contextPath}/">Trip_Planner</a>
 		</div>
 		<!-- 실질적인 메뉴를 나열한다. -->
 		<!-- form-group이 있어야 삼선 버튼에 메뉴가 나타난다. -->
@@ -39,15 +39,15 @@
 						<li><a
 							href="${contextPath}/area/daejeon.do">대전</a></li>
 						<li><a
-							href="${contextPath}/area/">울산</a></li>
+							href="${contextPath}/area/ulsan.do">울산</a></li>
 						<li><a
-							href="${contextPath}/area/">부산</a></li>
+							href="${contextPath}/area/busan.do">부산</a></li>
 						<li><a
-							href="${contextPath}/area/">광주</a></li>
+							href="${contextPath}/area/gwangju.do">광주</a></li>
 						<li><a
-							href="${contextPath}/area/">제주도</a></li>
+							href="${contextPath}/area/jeju.do">제주도</a></li>
 						<li><a
-							href="${contextPath}/area/">etc</a></li>
+							href="${contextPath}/area/etc.do">기타</a></li>
 					</ul>
 				</li>
 				<li class="nav-item">

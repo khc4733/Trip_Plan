@@ -21,4 +21,6 @@ public interface AreaController {
 	public	ModelAndView Gwangju(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Jeju(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
+	public	ModelAndView Etc(HttpServletRequest request, HttpServletResponse response) throws Exception;
 }

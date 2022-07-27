@@ -30,13 +30,13 @@
 						<li><a
 							href="${contextPath}/area/daejeon.do">DAEJEON</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=4">ULSAN</a></li>
+							href="${contextPath}/area/ulsan.do">ULSAN</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=5">BUSAN</a></li>
+							href="${contextPath}/area/busan.do">BUSAN</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=6">GWANGJU</a></li>
+							href="${contextPath}/area/gwangju.do">GWANGJU</a></li>
 						<li><a
-							href="${pageContext.request.contextPath}/areaL?sigungu=7">JEJU</a></li>
+							href="${contextPath}/area/jeju.do">JEJU</a></li>
 		</ul>
 	</nav>
 </body>
