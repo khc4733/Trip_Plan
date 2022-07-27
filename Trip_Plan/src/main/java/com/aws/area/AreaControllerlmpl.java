@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class AreaControllerlmpl implements AreaController {
 
 
+
 	@Override
 	@RequestMapping(value="/seoul", method=RequestMethod.GET)
 	public ModelAndView Seoul(HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -42,5 +43,42 @@ public class AreaControllerlmpl implements AreaController {
 		mav.setViewName("/area/daejeon");
 		return mav;
 	}
+	
+	@Override
+	@RequestMapping(value="/ulsan", method=RequestMethod.GET)
+	public ModelAndView Ulsan(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/area/ulsan");
+		return mav;
+	}
+	
+	@Override
+	@RequestMapping(value="/busan", method=RequestMethod.GET)
+	public ModelAndView Busan(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/area/busan");
+		return mav;
+	}
+	
+	@Override
+	@RequestMapping(value="/gwanju", method=RequestMethod.GET)
+	public ModelAndView Gwangju(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/area/gwanju");
+		return mav;
+	}
+	
+	@Override
+	@RequestMapping(value="/jeju", method=RequestMethod.GET)
+	public ModelAndView Jeju(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/area/jeju");
+		return mav;
+	}
+	
 
 }

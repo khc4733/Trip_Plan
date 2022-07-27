@@ -13,4 +13,12 @@ public interface AreaController {
 	public	ModelAndView Incheon(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Daejeon(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
+	public	ModelAndView Ulsan(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
+	public	ModelAndView Busan(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
+	public	ModelAndView Gwangju(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
+	public	ModelAndView Jeju(HttpServletRequest request, HttpServletResponse response) throws Exception;
 }
