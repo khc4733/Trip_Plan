@@ -7,7 +7,8 @@
 <title>seoul</title>
 <style>
         body {
-            margin-left:100px;
+        text-align: center;
+            margin-left:200px;
             margin-right:50px;
         }
 </style>
