@@ -9,6 +9,10 @@
     <meta charset="UTF-8">
     <link href="${pageContext.request.contextPath}/resources/css/front.css" type="text/css" rel="stylesheet"> <!-- resources오타 수정 sk -->
     <title>메인 화면</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 
 	 <script type="text/javascript">
@@ -42,61 +46,63 @@
     </style>
 </head>
 <body>
-     <div>
-        <jsp:include page="./common/topmenu.jsp"/>
-    </div>
-    <div id="main_container">
-
-        <!--배경사진-->
+<!-- 메뉴바 -->
+<jsp:include page="./common/topmenu.jsp" flush="false"/>
+    
+    <!-- 배경사진 -->
+    <div class="main_container">
         <div id="main_img--seoul">
             <img src="${contextPath}/resources/images/nature.png" width="1600px;" height="500px;"> <!-- resources오타 수정 sk -->
         </div>
 
         <hr style=" width:100%; color:#bac8d9; margin-top: 40px">
-
-        <!--추천코스-->
-        <div id="main_bestcourse">
-            <p>BEST COURSE</p>
-          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!--Indicators-->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <!--Wrapper for sliders : 인디케이터가 가리키는 그림들-->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <div class="carousel-caption">
-                  <h3></h3>
-                  <p></p>
-              </div>
+	
+    <!-- 추천코스(슬라이드 부분) -->
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <h2>Best Course</h2>
+        	<!-- Indicators -->
+  			<ol class="carousel-indicators">
+    			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  			</ol>
+  			
+  	<!-- Wrapper for slides -->
+  	<div class="carousel-inner">
+    	<div class="item active">
+      		<img class="img-responsive center-block" src="${contextPath}/resources/images/course1.png" width="100%" height="350px">
+      		<!-- carousel에 설명을 달아준다. -->
+            <div class="carousel-caption">
+               	<h2>Best Course 1</h2>
             </div>
-            <div class="item">
-              <div class="carousel-caption">
-                <h3></h3>
-                <p></p>
-              </div>
+    	</div>
+    	<div class="item">
+      		<img class="img-responsive center-block" src="${contextPath}/resources/images/course2.png" width="100%" height="350px">
+    		<!-- carousel에 설명을 달아준다. -->
+            <div class="carousel-caption">
+               	<h2>Best Course 2</h2>
             </div>
-            <div class=" item">
-              <div class="carousel-caption">
-                <h3></h3>
-                <p></p>
-              </div>
+    	</div>
+    	<div class="item">
+      		<img class="img-responsive center-block" src="${contextPath}/resources/images/course3.png" width="100%" height="350px">
+    		<!-- carousel에 설명을 달아준다. -->
+            <div class="carousel-caption">
+               	<h2>Best Course 3</h2>
             </div>
-          </div>
-          <!--Left and Right Controls-->
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        </div>
-        
+    	</div>
+  	</div>
+  		
+  	<!-- 좌측, 우측으로 그림을 움직일 수 있도록 좌/우버튼을 설정한다. -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>>
+    </a>
+  		
+  	</div>
+  		
         <!-- 리뷰 인기글 시작 -->
 
         <hr style=" width:100%; color:#bac8d9; margin-top: 40px">
@@ -147,10 +153,10 @@
                 </div>
             </div>
         </div>
-
-    <!--푸터-->
-    <div>
-        <jsp:include page="./common/footer.jsp"/>
     </div>
+    
+<!--푸터-->
+<jsp:include page="./common/footer.jsp"/>
+
 </body>
 </html>
