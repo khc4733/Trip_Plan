@@ -9,10 +9,7 @@
     <meta charset="UTF-8">
     <link href="${pageContext.request.contextPath}/resources/css/front.css" type="text/css" rel="stylesheet"> <!-- resources오타 수정 sk -->
     <title>메인 화면</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 
 
 	 <script type="text/javascript">
@@ -42,7 +39,10 @@
     </script>
     
     <style>
-    
+    img {
+  max-width: 100%;
+  height: auto;
+}
     </style>
 </head>
 <body>
@@ -52,7 +52,7 @@
     <!-- 배경사진 -->
     <div class="main_container">
         <div id="main_img--seoul">
-            <img src="${contextPath}/resources/images/nature.png" width="1600px;" height="500px;"> <!-- resources오타 수정 sk -->
+            <img src="${contextPath}/resources/images/background.jpg" alt=""> <!-- resources오타 수정 sk -->
         </div>
 
         <hr style=" width:100%; color:#bac8d9; margin-top: 40px">
