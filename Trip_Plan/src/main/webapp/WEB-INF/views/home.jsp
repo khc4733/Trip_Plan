@@ -7,7 +7,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="${pageContext.request.contextPath}/resource/css/front.css" type="text/css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/resources/css/front.css" type="text/css" rel="stylesheet"> <!-- resources오타 수정 sk -->
     <title>메인 화면</title>
 
 
@@ -49,7 +49,7 @@
 
         <!--배경사진-->
         <div id="main_img--seoul">
-            <img src="${contextPath}/resourse/images/nature.png" width="1600px;" height="500px;">
+            <img src="${contextPath}/resources/images/nature.png" width="1600px;" height="500px;"> <!-- resources오타 수정 sk -->
         </div>
 
         <hr style=" width:100%; color:#bac8d9; margin-top: 40px">
