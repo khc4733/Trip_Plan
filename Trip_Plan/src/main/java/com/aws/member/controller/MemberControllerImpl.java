@@ -56,7 +56,7 @@ public class MemberControllerImpl implements MemberController {
 			HttpServletResponse response) throws Exception {
 		
 		ModelAndView mav = new ModelAndView();
-		System.out.println("MemberController 로그인 member.getPwd() ==> " + member.getM_pw());
+		System.out.println("MemberController 로그인 member.getPwd() ==> " + member.getPwd());
 		
 		// 로그인 한 정보를 가지고 데이터 베이스에 존재하는지 처리를 하고, 그 결과를 가져온다.
 		memberVO = memberService.login(member);
@@ -66,13 +66,13 @@ public class MemberControllerImpl implements MemberController {
 		// 로그인 정보가 데이터베이스에 존재하는지에 따라 처리를 다르게 한다.
 		if(memberVO != null) {	// 로그인 정보에 해당하는 자료가 존재한다면
 			
-			if(member.getM_pw().equals(memberVO.getM_pw())) {
+			if(member.getPwd().equals(memberVO.getPwd())) {
 				// 아이디와 비밀번호가 일치하면, 세션을 발급한다.
 				HttpSession session = request.getSession();
 				session.setAttribute("member", 	memberVO);
 				session.setAttribute("isLogOn",	true);
 				// mav.setViewName("redirect:/member/listMembers.do");
-				mav.setViewName("redirect:/home"); // 메인화면으로 이동
+				mav.setViewName("redirect:/"); // 메인화면으로 이동
 			} else {
 				rAttr.addAttribute("result", "PasswordFailed");
 				mav.setViewName("redirect:/member/loginForm.do");
@@ -91,7 +91,7 @@ public class MemberControllerImpl implements MemberController {
 	// 로그아웃 처리
 	//-----------------------------------------------------------------------------------------------------------
 	@Override
-	@RequestMapping(value = "/logout.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
 	public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		HttpSession session = request.getSession();
@@ -100,7 +100,7 @@ public class MemberControllerImpl implements MemberController {
 		
 		ModelAndView mav = new ModelAndView();
 		// mav.setViewName("redirect:/member/loginForm.do");
-		mav.setViewName("redirect:/main.do"); // 메인화면으로 이동
+		mav.setViewName("redirect:/"); // 메인화면으로 이동
 		return mav;
 	}
 

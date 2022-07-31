@@ -56,11 +56,23 @@
 		
 			  <ul class="nav navbar-nav navbar-right">
 				  <li>
-					<a href="${contextPath}/member/loginForm.do">
-						<button type="submit" class="btn btn-link">
-							<span class="log-in"></span>Sign in
-						</button></a>
-				  </li>
+				    <c:choose>
+						<c:when test="${isLogOn == true && member != null}">
+							<p class="navbar-text">
+								<b>${member.name}님</b>
+							</p>
+							<a href="${contextPath}/member/logout.do" class="btn btn-link"><span
+								class="log-out"></span> Sign out</a>
+						</c:when>
+						<c:otherwise>
+							<a href="${contextPath}/member/loginForm.do">
+								<button type="submit" class="btn btn-link">
+									<span class="log-in"></span>Sign in
+								</button>
+							</a>
+						</c:otherwise>
+					</c:choose>
+				</li>
 				  <li class="nav-item">
 					<a href="${contextPath}/mypage/mypage.do">my page</a>
 				   </li>

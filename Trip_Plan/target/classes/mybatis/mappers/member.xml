@@ -21,7 +21,7 @@
 		<![CDATA[
 		SELECT	*
 		FROM	member
-		WHERE	m_id=#{m_id,jdbcType=VARCHAR}
+		WHERE	id=#{id} 
 		]]>
 	</select>
 	
