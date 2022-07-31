@@ -24,19 +24,19 @@
 		<h4>Area</h4>
 		<ul class="nav nav-pills nav-stacked">
 						<li><a
-							href="${contextPath}/area/seoul.do">SEOUL</a></li>
+							href="${contextPath}/area/seoul">SEOUL</a></li>
 						<li><a
-							href="${contextPath}/area/incheon.do">INCHEON</a></li>
+							href="${contextPath}/area/incheon">INCHEON</a></li>
 						<li><a
-							href="${contextPath}/area/daejeon.do">DAEJEON</a></li>
+							href="${contextPath}/area/daejeon">DAEJEON</a></li>
 						<li><a
-							href="${contextPath}/area/daegu.do">DAEGU</a></li>
+							href="${contextPath}/area/daegu">DAEGU</a></li>
 						<li><a
-							href="${contextPath}/area/busan.do">BUSAN</a></li>
+							href="${contextPath}/area/busan">BUSAN</a></li>
 						<li><a
-							href="${contextPath}/area/gwangju.do">GWANGJU</a></li>
+							href="${contextPath}/area/gwangju">GWANGJU</a></li>
 						<li><a
-							href="${contextPath}/area/jeju.do">JEJU</a></li>
+							href="${contextPath}/area/jeju">JEJU</a></li>
 		</ul>
 	</nav>
 </body>

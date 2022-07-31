@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+<%  request.setCharacterEncoding("UTF-8"); %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,9 +53,11 @@
 		});
 		
 		// 마커가 표시될 위치입니다 
-		var markerPosition  = new kakao.maps.LatLng(33.452344169439975, 126.56878163224233); 
-		var markerPosition2  = new kakao.maps.LatLng(33.452739313807456, 126.5709308145358);
-		var markerPosition3  = new kakao.maps.LatLng(33.45178067090639, 126.5726886938753);
+		var markerPosition  = new kakao.maps.LatLng(37.581840913446065, 126.99162787647798); //창덕궁
+		var markerPosition2  = new kakao.maps.LatLng(37.58170870919596, 126.97906123732443); //국립민속박물관
+		var markerPosition3  = new kakao.maps.LatLng(37.578611720269464, 126.98008664070879); //국립현대미술관
+		var markerPosition4  = new kakao.maps.LatLng(37.57609047340471, 126.99420109470466); //종묘
+		var markerPosition5  = new kakao.maps.LatLng(37.57030172336719, 126.99990095364751); //광장시장
 		
 
 		// 마커를 생성합니다
@@ -66,10 +71,20 @@
 		    position: markerPosition3
 		});
 		
+		var marker4 = new kakao.maps.Marker({
+		    position: markerPosition3
+		});
+		
+		var marker5 = new kakao.maps.Marker({
+		    position: markerPosition3
+		});
+		
 		// 마커가 지도 위에 표시되도록 설정합니다
 		marker.setMap(map);
 		marker2.setMap(map);
 		marker3.setMap(map);
+		marker4.setMap(map);
+		marker5.setMap(map);
 
 		// 지도에 선을 표시합니다 
 		polyline.setMap(map);  

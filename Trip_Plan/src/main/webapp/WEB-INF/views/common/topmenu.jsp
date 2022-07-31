@@ -33,19 +33,19 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Area<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a
-							href="${contextPath}/area/seoul.do">서울</a></li>
+							href="${contextPath}/area/seoul">서울</a></li>
 						<li><a
-							href="${contextPath}/area/incheon.do">인천</a></li>
+							href="${contextPath}/area/incheon">인천</a></li>
 						<li><a
-							href="${contextPath}/area/daejeon.do">대전</a></li>
+							href="${contextPath}/area/daejeon">대전</a></li>
 						<li><a
-							href="${contextPath}/area/daegu.do">대구</a></li>
+							href="${contextPath}/area/daegu">대구</a></li>
 						<li><a
-							href="${contextPath}/area/busan.do">부산</a></li>
+							href="${contextPath}/area/busan">부산</a></li>
 						<li><a
-							href="${contextPath}/area/gwangju.do">광주</a></li>
+							href="${contextPath}/area/gwangju">광주</a></li>
 						<li><a
-							href="${contextPath}/area/jeju.do">제주도</a></li>
+							href="${contextPath}/area/jeju">제주도</a></li>
 					</ul>
 				</li>
 				<li class="nav-item">
