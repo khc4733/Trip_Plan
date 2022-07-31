@@ -26,18 +26,19 @@
         <jsp:include page="../../common/sidemenu.jsp"/>
     </div>
 <!-- 본문 내용 -->
+<!-- 조선의 왕들이 지극히 아끼던 공간 -->
 <div class="container text-center">
 	<div id="map" style="width:100%;height:500px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b2ca9aeab329e586b8575704eaf0afa"></script>
 	<script>
-		var container = document.getElementById('map');
+		var container = document.getElementById('map'); //지도를 표시할 div
 		var options = {
-			center: new kakao.maps.LatLng(37.57609047340471, 126.99420109470466),
-			level: 5
+			center: new kakao.maps.LatLng(37.57609047340471, 126.99420109470466), //지도 중심좌표
+			level: 5 //지도 확대레벨
 		};
 
-		var map = new kakao.maps.Map(container, options);
-		var linePath = [
+		var map = new kakao.maps.Map(container, options); //지도 생성
+		var linePath = [ //선을 구성하는 좌표 배열, 이 좌표들을 이어서 선을 표시
 		    new kakao.maps.LatLng(37.581840913446065, 126.99162787647798),
 		    new kakao.maps.LatLng(37.58170870919596, 126.97906123732443),
 		    new kakao.maps.LatLng(37.578611720269464, 126.98008664070879), 

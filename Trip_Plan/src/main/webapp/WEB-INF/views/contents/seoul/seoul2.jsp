@@ -7,7 +7,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
 <title>seoul2</title>
 <style>
         body {
@@ -57,6 +56,9 @@
 		    strokeStyle: 'solid' // 선의 스타일입니다
 		});
 		
+		// 지도에 선을 표시합니다 
+		polyline.setMap(map);
+		
 		// 마커가 표시될 위치입니다 
 		var markerPosition  = new kakao.maps.LatLng(37.55998497994647, 126.97527012170254); //숭례문
 		var markerPosition2  = new kakao.maps.LatLng(37.555866589749385, 126.97157069326938); //문화역 서울284
@@ -97,8 +99,6 @@
 		marker5.setMap(map);
 		marker6.setMap(map);
 
-		// 지도에 선을 표시합니다 
-		polyline.setMap(map);  
 	</script>
 </div>	
 	<!-- footer -->

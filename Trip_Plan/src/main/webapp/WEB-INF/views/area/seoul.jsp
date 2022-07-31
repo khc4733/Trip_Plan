@@ -32,7 +32,14 @@
             <img src="${contextPath}/resources/images/palace.jpg" width="25%" height="200px"> 
           </a>
         </div>
+        
+        <div id="main_img--seoul2">
+          <a href="${contextPath}/contents/seoul/seoul2">
+            <img src="${contextPath}/resources/images/seoulstation.jpg" width="25%" height="200px"> 
+          </a>
+        </div>
     </div>
+    
 
 <!-- footer -->
 	 <div>

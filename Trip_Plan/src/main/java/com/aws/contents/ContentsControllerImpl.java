@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/contents")
 public class ContentsControllerImpl implements ContentsController {
 
+
 	@Override
 	@RequestMapping(value="/seoul/seoul1", method=RequestMethod.GET)
 	public ModelAndView Seoul1(HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -20,5 +21,15 @@ public class ContentsControllerImpl implements ContentsController {
 		mav.setViewName("/contents/seoul/seoul1");
 		return mav;
 	}
+	
+	@Override
+	@RequestMapping(value="/seoul/seoul2", method=RequestMethod.GET)
+	public ModelAndView Seoul2(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/contents/seoul/seoul2");
+		return mav;
+	}
+	
 
 }
