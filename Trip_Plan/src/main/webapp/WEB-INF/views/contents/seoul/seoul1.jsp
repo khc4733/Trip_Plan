@@ -27,30 +27,35 @@
     </div>
 <!-- 본문 내용 -->
 <div class="container text-center">
-	<div id="map" style="width:500px;height:400px;"></div>
+	<div id="map" style="width:100%;height:500px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b2ca9aeab329e586b8575704eaf0afa"></script>
 	<script>
 		var container = document.getElementById('map');
 		var options = {
-			center: new kakao.maps.LatLng(33.452739313807456, 126.5709308145358),
-			level: 3
+			center: new kakao.maps.LatLng(37.57609047340471, 126.99420109470466),
+			level: 5
 		};
 
 		var map = new kakao.maps.Map(container, options);
 		var linePath = [
-		    new kakao.maps.LatLng(33.452344169439975, 126.56878163224233),
-		    new kakao.maps.LatLng(33.452739313807456, 126.5709308145358),
-		    new kakao.maps.LatLng(33.45178067090639, 126.5726886938753) 
+		    new kakao.maps.LatLng(37.581840913446065, 126.99162787647798),
+		    new kakao.maps.LatLng(37.58170870919596, 126.97906123732443),
+		    new kakao.maps.LatLng(37.578611720269464, 126.98008664070879), 
+		    new kakao.maps.LatLng(37.57609047340471, 126.99420109470466),
+		    new kakao.maps.LatLng(37.57030172336719, 126.99990095364751)
 		];
 
 		// 지도에 표시할 선을 생성합니다
 		var polyline = new kakao.maps.Polyline({
 		    path: linePath, // 선을 구성하는 좌표배열 입니다
 		    strokeWeight: 3, // 선의 두께 입니다
-		    strokeColor: '#e05b36', // 선의 색깔입니다
+		    strokeColor: '#e30e0e', // 선의 색깔입니다
 		    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 		    strokeStyle: 'solid' // 선의 스타일입니다
 		});
+		
+		// 지도에 선을 표시합니다 
+		polyline.setMap(map);  
 		
 		// 마커가 표시될 위치입니다 
 		var markerPosition  = new kakao.maps.LatLng(37.581840913446065, 126.99162787647798); //창덕궁
@@ -72,11 +77,11 @@
 		});
 		
 		var marker4 = new kakao.maps.Marker({
-		    position: markerPosition3
+		    position: markerPosition4
 		});
 		
 		var marker5 = new kakao.maps.Marker({
-		    position: markerPosition3
+		    position: markerPosition5
 		});
 		
 		// 마커가 지도 위에 표시되도록 설정합니다
@@ -86,8 +91,6 @@
 		marker4.setMap(map);
 		marker5.setMap(map);
 
-		// 지도에 선을 표시합니다 
-		polyline.setMap(map);  
 	</script>
 </div>	
 	<!-- footer -->

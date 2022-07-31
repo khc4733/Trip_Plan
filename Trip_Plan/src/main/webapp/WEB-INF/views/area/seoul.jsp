@@ -28,8 +28,9 @@
 <!-- 본문 내용 -->
 	<div class="main_container">
         <div id="main_img--seoul1">
-            <img src="${contextPath}/resources/images/palace.jpg" width="25%" height="200px" 
-            onclick="location.href='contents/seoul/seoul1'"> 
+          <a href="${contextPath}/contents/seoul/seoul1">
+            <img src="${contextPath}/resources/images/palace.jpg" width="25%" height="200px"> 
+          </a>
         </div>
     </div>
 

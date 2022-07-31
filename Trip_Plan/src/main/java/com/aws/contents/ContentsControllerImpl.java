@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller("contentsController")
-@RequestMapping("contents")
+@RequestMapping("/contents")
 public class ContentsControllerImpl implements ContentsController {
 
 	@Override
@@ -17,7 +17,7 @@ public class ContentsControllerImpl implements ContentsController {
 	public ModelAndView Seoul1(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("contents/seoul/seoul1");
+		mav.setViewName("/contents/seoul/seoul1");
 		return mav;
 	}
 
