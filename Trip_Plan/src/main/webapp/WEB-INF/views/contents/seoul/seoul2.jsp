@@ -28,13 +28,13 @@
 <!-- 본문 내용 -->
 <!-- 서울의 랜드마크를 만나다 -->
 <div class="container text-center">
-	<div id="map" style="width:500px;height:400px;"></div>
+	<div id="map" style="width:100%;height:500px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b2ca9aeab329e586b8575704eaf0afa"></script>
 	<script>
 		var container = document.getElementById('map'); //지도를 표시할 div
 		var options = {
-			center: new kakao.maps.LatLng(37.56027447745357, 126.98174395964473), //지도 중심좌표
-			level: 3 //지도의 확대 레벨
+			center: new kakao.maps.LatLng(37.55865258137133, 126.9812351799603), //지도 중심좌표
+			level: 5 //지도의 확대 레벨
 		};
 
 		var map = new kakao.maps.Map(container, options); //지도 생성
@@ -51,7 +51,7 @@
 		var polyline = new kakao.maps.Polyline({
 		    path: linePath, // 선을 구성하는 좌표배열 입니다
 		    strokeWeight: 3, // 선의 두께 입니다
-		    strokeColor: '#e05b36', // 선의 색깔입니다
+		    strokeColor: '#e30e0e', // 선의 색깔입니다
 		    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 		    strokeStyle: 'solid' // 선의 스타일입니다
 		});
