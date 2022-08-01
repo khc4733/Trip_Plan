@@ -8,16 +8,11 @@
 // 일부 내용이 상단 메뉴바에 가려져서 안보일 수 있다.
 // <nav class="navbar navbar-inverse navbar-fixed-top">
 %>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+ 	<style>		 
+	
+	 </style>
 
-<nav class="navbar navbar-inverse navbar-sticky-top">
+<nav class="navbar navbar-default navbar-sticky-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="${contextPath}/">Trip_Planner</a>
@@ -30,7 +25,8 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Area<span class="caret"></span></a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					Area<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a
 							href="${contextPath}/area/seoul.do">서울</a></li>
@@ -57,13 +53,12 @@
 			  <ul class="nav navbar-nav navbar-right">
 				  <li>
 					<a href="${contextPath}/member/loginForm.do">
-						<button type="submit" class="btn btn-link">
 							<span class="log-in"></span>Sign in
-						</button></a>
-				  </li>
-				  <li class="nav-item">
-					<a href="${contextPath}/mypage/mypage.do">my page</a>
-				   </li>
+						</a>
+				  </li>				
+				<li>
+					<a href="${contextPath}/mypage/mypage.do">My page</a>
+				 </li>
 			   </ul>
 			
 		</div>	

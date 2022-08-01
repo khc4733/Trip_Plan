@@ -19,6 +19,7 @@ background-color: #333333;
 
 </head>
 <body>
+<hr style=" width:100%; color:#bac8d9; margin-top: 40px">
  <div id="footer_container" class="container text-center">
         <div id="footer_content">
             <?xml version="1.0" ?>
