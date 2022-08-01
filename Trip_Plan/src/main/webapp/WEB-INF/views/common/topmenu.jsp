@@ -8,6 +8,7 @@
 // 일부 내용이 상단 메뉴바에 가려져서 안보일 수 있다.
 // <nav class="navbar navbar-inverse navbar-fixed-top">
 %>
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet"
@@ -20,6 +21,11 @@
 <nav class="navbar navbar-inverse navbar-sticky-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         	</button>
 			<a class="navbar-brand" href="${contextPath}/">Trip_Planner</a>
 		</div>
 		<!-- 실질적인 메뉴를 나열한다. -->
