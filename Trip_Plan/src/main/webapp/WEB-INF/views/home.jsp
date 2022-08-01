@@ -10,11 +10,6 @@
 	    <link href="${pageContext.request.contextPath}/resources/css/front.css" type="text/css" rel="stylesheet"> <!-- resources오타 수정 sk -->
 	    <title>메인 화면</title>
 	    
-	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	
 	
 		 <script type="text/javascript">
 			$(document).ready(function () {
