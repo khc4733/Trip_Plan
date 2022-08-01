@@ -39,11 +39,11 @@
 
 		var map = new kakao.maps.Map(container, options); //지도 생성
 		var linePath = [ //선을 구성하는 좌표 배열, 이 좌표들을 이어서 선을 표시
-		    new kakao.maps.LatLng(37.581840913446065, 126.99162787647798),
-		    new kakao.maps.LatLng(37.58170870919596, 126.97906123732443),
-		    new kakao.maps.LatLng(37.578611720269464, 126.98008664070879), 
-		    new kakao.maps.LatLng(37.57609047340471, 126.99420109470466),
-		    new kakao.maps.LatLng(37.57030172336719, 126.99990095364751)
+		    new kakao.maps.LatLng(37.581840913446065, 126.99162787647798), //창덕궁
+		    new kakao.maps.LatLng(37.58170870919596, 126.97906123732443), //국립민속박물관
+		    new kakao.maps.LatLng(37.578611720269464, 126.98008664070879), //국립현대미술관
+		    new kakao.maps.LatLng(37.57609047340471, 126.99420109470466), //종묘
+		    new kakao.maps.LatLng(37.57030172336719, 126.99990095364751) //광장시장
 		];
 
 		// 지도에 표시할 선을 생성합니다
