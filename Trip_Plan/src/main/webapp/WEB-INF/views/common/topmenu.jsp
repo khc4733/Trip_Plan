@@ -56,13 +56,15 @@
 		
 			  <ul class="nav navbar-nav navbar-right">
 				  <li>
-				    <c:choose>
+				     <c:choose>
 						<c:when test="${isLogOn == true && member != null}">
-							<p class="navbar-text">
-								<b>${member.name}님</b>
-							</p>
-							<a href="${contextPath}/member/logout.do" class="btn btn-link"><span
-								class="log-out"></span> Sign out</a>
+							<li class="dropdown"><a class="dropdown-toggle"
+								data-toggle="dropdown" href="#"><b>${member.name}님</b><span
+									class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="${contextPath}/mypage/mypage.do">mypage</a></li>
+									<li><a href="${contextPath}/member/logout">Sign out</a></li>
+								</ul></li>
 						</c:when>
 						<c:otherwise>
 							<a href="${contextPath}/member/loginForm.do">
@@ -73,11 +75,7 @@
 						</c:otherwise>
 					</c:choose>
 				</li>
-				  <li class="nav-item">
-					<a href="${contextPath}/mypage/mypage.do">my page</a>
-				   </li>
-			   </ul>
-			
+			  </ul>
 		</div>	
 	</div>
 </nav>

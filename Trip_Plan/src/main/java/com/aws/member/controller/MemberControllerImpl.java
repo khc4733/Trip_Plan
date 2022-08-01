@@ -51,7 +51,7 @@ public class MemberControllerImpl implements MemberController {
 	// 로그인 처리
 	//-----------------------------------------------------------------------------------------------------------
 	@Override
-	@RequestMapping(value="/login.do", method=RequestMethod.POST)
+	@RequestMapping(value="/login", method=RequestMethod.POST)
 	public ModelAndView login(@ModelAttribute("member") MemberVO member, RedirectAttributes rAttr, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		
@@ -75,13 +75,13 @@ public class MemberControllerImpl implements MemberController {
 				mav.setViewName("redirect:/"); // 메인화면으로 이동
 			} else {
 				rAttr.addAttribute("result", "PasswordFailed");
-				mav.setViewName("redirect:/member/loginForm.do");
+				mav.setViewName("redirect:/member/loginForm");
 			}
 			
 		} else {	// 로그인 정보에 해당하는 자료가 존재하지 않는다면
 			// 로그인 실패 메시지를 가지고 로그인 화면으로 이동한다.
 			rAttr.addAttribute("result", "loginFailed");
-			mav.setViewName("redirect:/member/loginForm.do"); 
+			mav.setViewName("redirect:/member/loginForm"); 
 		}
 
 		return mav;

@@ -38,7 +38,7 @@
         <jsp:include page="../common/topmenu.jsp"/>
     </div>
 <div class="container">
-	<form class="form-horizontal" method="post" action="${contextPath}/member/login.do">
+	<form class="form-horizontal" method="post" action="${contextPath}/member/login">
 		<div class="form-group">
 			<div class="col-sm-offset-4 col-sm-3">
 				<h2 align="center">로그인</h2>
