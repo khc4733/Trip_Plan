@@ -10,8 +10,7 @@
 <title>incheon</title>
 <style>
         body {
-            margin-left:50px;
-        text-align: center;
+        	text-align: center;
             margin-left:200px;
             margin-right:50px;
         }

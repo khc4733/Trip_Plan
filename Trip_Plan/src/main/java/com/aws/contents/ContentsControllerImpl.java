@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ContentsControllerImpl implements ContentsController {
 
 
+
 	@Override
 	@RequestMapping(value="/seoul/seoul1", method=RequestMethod.GET)
 	public ModelAndView Seoul1(HttpServletRequest request, HttpServletResponse response) throws Exception {
