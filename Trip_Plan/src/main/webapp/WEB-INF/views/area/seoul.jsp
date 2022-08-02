@@ -41,7 +41,7 @@
         
         <div id="main_img--seoul3">
           <a href="${contextPath}/contents/seoul/seoul3">
-            <img src="${contextPath}/resources/images/seoul3.jpg" width="25%" height="200px"> 
+            <img src="${contextPath}/resources/images/seoul3.jpeg" width="25%" height="200px"> 
           </a>
         </div>
     </div>

@@ -17,24 +17,35 @@ public interface ContentsController {
 	
 	public	ModelAndView Incheon2(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
+	public	ModelAndView Incheon3(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
 	public	ModelAndView Daejeon1(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Daejeon2(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
+	public	ModelAndView Daejeon3(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
 	public	ModelAndView Daegu1(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Daegu2(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
+	public	ModelAndView Daegu3(HttpServletRequest request, HttpServletResponse response) throws Exception;
 
 	public	ModelAndView Busan1(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Busan2(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
+	public	ModelAndView Busan3(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
 	public	ModelAndView Gwangju1(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Gwangju2(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
+	public	ModelAndView Gwangju3(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
 	public	ModelAndView Jeju1(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Jeju2(HttpServletRequest request, HttpServletResponse response) throws Exception;
-
+	
+	public	ModelAndView Jeju3(HttpServletRequest request, HttpServletResponse response) throws Exception;
 }
