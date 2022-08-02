@@ -17,6 +17,20 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+<!-- 탑메뉴 상단에 고정 -->	
+<style> 
+.container-fluid {
+    max-width: 2000px;
+    position: fixed;
+    width: 100%;
+    background-color: #FAFAFA;
+    opacity: 0.8;
+    font-size: 17px;
+    top: 0;
+    z-index: 1;
+} 
+</style>
 
 <nav class="navbar navbar-default navbar-sticky-top">
 	<div class="container-fluid">
@@ -26,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
          	</button>
-			<a class="navbar-brand" href="${contextPath}/">Trip_Planner</a>
+			<a class="navbar-brand" style="font-size:20px; font-weight: bold;" href="${contextPath}/">Trip_Planner</a>
 		</div>
 		<!-- 실질적인 메뉴를 나열한다. -->
 		<!-- form-group이 있어야 삼선 버튼에 메뉴가 나타난다. -->
@@ -57,6 +71,9 @@
 				<li class="nav-item">
 				    <a href="${contextPath}/board/review.do" >Review</a>
 				</li>
+				<li class="nav-item">
+				    <a href="${contextPath}/board/review.do" >Notice</a>
+				</li>
 			</ul>
 			
 		
@@ -68,7 +85,7 @@
 								data-toggle="dropdown" href="#"><b>${member.name}님</b><span
 									class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="${contextPath}/mypage/mypage.do">mypage</a></li>
+									<li><a href="${contextPath}/mypage/mypage.do">My Page</a></li>
 									<li><a href="${contextPath}/member/logout">Sign out</a></li>
 								</ul></li>
 						</c:when>

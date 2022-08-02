@@ -20,6 +20,7 @@
 </head>
 <body>
 
+
 <!-- 로그인 시에만 마이페이지 사용가능 -->
 <%
 if(session.getAttribute("isLogOn") == null || session.getAttribute("isLogOn").equals("")) {
@@ -30,33 +31,29 @@ if(session.getAttribute("isLogOn") == null || session.getAttribute("isLogOn").eq
 <!-- 메뉴바 -->
 <jsp:include page="../common/topmenu.jsp" flush="false"/>
 
+
 <!-- 사이드 메뉴 바 -->
-<nav class="col-sm-3 sidenav">
-		<h4>Area</h4>
+<nav class="col-sm-2 sidenav">
+		<h4>My Page</h4>
 		<ul class="nav nav-pills nav-stacked">
-						<li><a
-							href="${contextPath}#">예약 내역</a></li>
-						<li><a
-							href="${contextPath}/..">게시판 작성내역</a></li>
-						<li><a
-							href="${contextPath}/myInfo.do">내 정보 확인</a></li>
+			<li><a href="${contextPath}/mypage/mypage.do">예약 내역 확인</a></li>
+			<li><a href="${contextPath}/..">게시판 작성내역</a></li>
+			<li><a href="${contextPath}/mypage/myInfo">개인 정보 수정</a></li>
 		</ul>
 	</nav>
 
 <!-- 예약 내역 페이지 -->
-<h1 align="center"> 예약 내역 확인</h1>
+<h2 align="center" style= "margin-top: 130px; margin-right: 220px;" >예약 내역 확인</h2>
 <div class="container">
     <form class="form-horizontal" id="frm">
-    <table class="table table-bordered table-striped table-hover">
+    <table class ="table table-bordered table-striped table-hover">
 			<thead>
 				<tr class="info">
-					<th>번호</th>
-					<th>제  목</th>
-					<th>내  용</th>
-					<th>작성자</th>
+					<th>No.</th>
+					<th>예약 상품</th>
 					<th>예약 날짜</th>
 					<th>결제 금액</th>
-					<th>취소</th>
+					<th>취 소</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -73,6 +70,8 @@ if(session.getAttribute("isLogOn") == null || session.getAttribute("isLogOn").eq
 				</c:forEach>
 			</tbody>
 		</table>
+		
+		
     </form>
 </div>
 
