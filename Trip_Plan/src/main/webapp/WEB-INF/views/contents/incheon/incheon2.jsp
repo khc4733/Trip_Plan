@@ -33,8 +33,8 @@
 	<script>
 		var container = document.getElementById('map'); //지도를 표시할 div
 		var options = {
-			center: new kakao.maps.LatLng(37.45842263084101, 126.68393459628206), //지도 중심좌표
-			level: 5 //지도 확대레벨
+			center: new kakao.maps.LatLng(37.45650922558449, 126.67117945527185), //지도 중심좌표
+			level: 8 //지도 확대레벨
 		};
 
 		var map = new kakao.maps.Map(container, options); //지도 생성
@@ -81,7 +81,7 @@
 		});
 		
 		var marker5 = new kakao.maps.Marker({
-		    position: markerPosition4
+		    position: markerPosition5
 		});
 		
 		// 마커가 지도 위에 표시되도록 설정합니다
