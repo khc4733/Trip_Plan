@@ -58,6 +58,16 @@ public class ContentsControllerImpl implements ContentsController {
 	}
 	
 	@Override
+	@RequestMapping(value="/incheon/incheon3", method=RequestMethod.GET)
+	public ModelAndView Incheon3(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/contents/incheon/incheon3");
+		return mav;
+	}
+
+
+	@Override
 	@RequestMapping(value="/daejeon/daejeon1", method=RequestMethod.GET)
 	public ModelAndView Daejeon1(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
@@ -74,6 +84,16 @@ public class ContentsControllerImpl implements ContentsController {
 		mav.setViewName("/contents/daejeon/daejeon2");
 		return mav;
 	}
+	
+	@Override
+	@RequestMapping(value="/daejeon/daejeon3", method=RequestMethod.GET)
+	public ModelAndView Daejeon3(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/contents/daejeon/daejeon3");
+		return mav;
+	}
+
 	
 	@Override
 	@RequestMapping(value="/daegu/daegu1", method=RequestMethod.GET)
@@ -94,6 +114,16 @@ public class ContentsControllerImpl implements ContentsController {
 	}
 	
 	@Override
+	@RequestMapping(value="/daegu/daegu3", method=RequestMethod.GET)
+	public ModelAndView Daegu3(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/contents/daegu/daegu3");
+		return mav;
+	}
+
+	
+	@Override
 	@RequestMapping(value="/busan/busan1", method=RequestMethod.GET)
 	public ModelAndView Busan1(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
@@ -110,6 +140,16 @@ public class ContentsControllerImpl implements ContentsController {
 		mav.setViewName("/contents/busan/busan2");
 		return mav;
 	}
+	
+	@Override
+	@RequestMapping(value="/busan/busan3", method=RequestMethod.GET)
+	public ModelAndView Busan3(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/contents/busan/busan3");
+		return mav;
+	}
+
 	
 	@Override
 	@RequestMapping(value="/gwangju/gwangju1", method=RequestMethod.GET)
@@ -130,6 +170,16 @@ public class ContentsControllerImpl implements ContentsController {
 	}
 	
 	@Override
+	@RequestMapping(value="/gwangju/gwangju3", method=RequestMethod.GET)
+	public ModelAndView Gwangju3(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/contents/gwangju/gwangju3");
+		return mav;
+	}
+
+	
+	@Override
 	@RequestMapping(value="/jeju/jeju1", method=RequestMethod.GET)
 	public ModelAndView Jeju1(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
@@ -146,5 +196,15 @@ public class ContentsControllerImpl implements ContentsController {
 		mav.setViewName("/contents/jeju/jeju2");
 		return mav;
 	}
+	
+	@Override
+	@RequestMapping(value="/jeju/jeju3", method=RequestMethod.GET)
+	public ModelAndView Jeju3(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/contents/jeju/jeju3");
+		return mav;
+	}
+	
 
 }
