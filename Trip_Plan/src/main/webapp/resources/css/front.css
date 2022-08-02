@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* 주석활용해서 폴더 및 페이지 섹션별로 나눠서 작업해주세요~ */
 
         
   body {
@@ -105,3 +106,49 @@
      #footer_content {
          text-align: center;
      }
+
+/* area폴더 페이지 영역 시작*/
+.area_centered {
+	margin-top: 100px;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+.area_ol {
+	font-size: 16px;
+	list-style-image: url(../images/circle.png);
+}
+
+.area_ol li {
+	margin-top: 8px;
+}
+
+.area_ol a {
+	margin-top: 8px;
+	font-weight: 500;
+	color: #333;
+	font-family: NotoSansKR, NotoSansJP;
+}
+
+.area_hr-solid {
+	border: 0px;
+	border-top: 2px solid #1a3273;
+}
+
+.hashtag {
+	padding: 0px 10px 10px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.hashtag a {
+	display: inline-block;
+	font-weight: 700;
+	margin: 3px;
+	color: #333;
+	font-family: NotoSansKR, NotoSansJP;
+}
+
+.area_course_title a {
+	color: #333;
+}
+/* area폴더 페이지 영역 끝*/

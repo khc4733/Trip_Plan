@@ -10,52 +10,6 @@
 <title>seoul</title>
 <link href="${contextPath}/resources/css/front.css" type="text/css"
 	rel="stylesheet">
-<!-- resources오타 수정 sk -->
-<style>
-.centered {
-	margin-top: 100px;
-	margin-left: 400px;
-	margin-right: 400px;
-}
-
-ol {
-	font-size: 16px;
-	list-style-image: url(${contextPath}/resources/images/circle.png);
-}
-
-ol li {
-	margin-top: 8px;
-}
-
-
-.hr-solid {
-	border: 0px;
-	border-top: 2px solid #1a3273;
-}
-
-.hashtag {
-	padding: 0px 10px 10px;
-	border-bottom: 1px solid #e6e6e6;
-}
-
-.hashtag a {
-	display: inline-block;
-	font-weight: 700;
-	margin: 3px;
-	color: #333;
-	font-family: NotoSansKR, NotoSansJP;
-}
-
-ol a {
-	font-weight: 500;
-	color: #333;
-	font-family: NotoSansKR, NotoSansJP;
-}
-
-div a {
-	color: #333;
-}
-</style>
 </head>
 <body>
 	<!-- top menu -->
@@ -68,18 +22,18 @@ div a {
 	</div>
 	<!-- 본문 내용 -->
 
-	<div class="centered">
+	<div class="area_centered">
 		<h1>서울 테마코스</h1>
-		<hr class="hr-solid">
+		<hr class="area_hr-solid">
 	</div>
-	<div class="centered">
+	<div class="area_centered">
 		<!-- seoul1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 30%;">
 			<a href="${contextPath}/contents/seoul/seoul1"> <img
 				src="${contextPath}/resources/images/seoul1.jpg" width="100%"
 				height="200px">
 			</a>
-			<div>
+			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">조선의
 						왕들이 지극히 아끼던 공간</p></a>
@@ -89,7 +43,7 @@ div a {
 				</div>
 			</div>
 			<div>
-				<ol>
+				<ol class="area_ol">
 					<li><a href="${contextPath}/area/seoul">창덕궁</a></li>
 					<li><a href="${contextPath}/area/incheon">국립민속박물관</a></li>
 					<li><a href="${contextPath}/area/daejeon">국립현대미술관</a></li>
@@ -107,7 +61,7 @@ div a {
 				src="${contextPath}/resources/images/seoul2.jpg" width="100%"
 				height="200px">
 			</a>
-			<div>
+			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul2">
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서울의 랜드마크를 만나다</p>
 				</a>
@@ -117,7 +71,7 @@ div a {
 				</div>
 			</div>
 			<div>
-				<ol>
+				<ol class="area_ol">
 					<li><a href="${contextPath}/area/seoul">숭례문</a></li>
 					<li><a href="${contextPath}/area/incheon">문화역 서울284</a></li>
 					<li><a href="${contextPath}/area/daejeon">덕수궁</a></li>
@@ -135,7 +89,7 @@ div a {
 				src="${contextPath}/resources/images/seoul3.jpeg" width="100%"
 				height="200px">
 			</a>
-			<div>
+			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul3">
 					<p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서촌에서
@@ -146,7 +100,7 @@ div a {
 				</div>
 			</div>
 			<div>
-				<ol>
+				<ol class="area_ol">
 					<li><a href="${contextPath}/area/seoul">팔레 드 서울</a></li>
 					<li><a href="${contextPath}/area/incheon">옥인피자</a></li>
 					<li><a href="${contextPath}/area/daejeon">창의문</a></li>
