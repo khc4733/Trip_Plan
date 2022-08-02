@@ -132,7 +132,7 @@ div a {
 		<!-- seoul3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 30%;">
 			<a href="${contextPath}/contents/seoul/seoul3"> <img
-				src="${contextPath}/resources/images/seoul3.webp" width="100%"
+				src="${contextPath}/resources/images/seoul3.jpeg" width="100%"
 				height="200px">
 			</a>
 			<div>
