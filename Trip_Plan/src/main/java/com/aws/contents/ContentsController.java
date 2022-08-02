@@ -11,6 +11,8 @@ public interface ContentsController {
 	
 	public	ModelAndView Seoul2(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
+	public	ModelAndView Seoul3(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
 	public	ModelAndView Incheon1(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public	ModelAndView Incheon2(HttpServletRequest request, HttpServletResponse response) throws Exception;

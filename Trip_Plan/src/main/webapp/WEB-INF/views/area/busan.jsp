@@ -33,9 +33,9 @@
           </a>
         </div>
         
-        <div id="main_img--seoul2">
-          <a href="${contextPath}/contents/seoul/seoul2">
-            <img src="${contextPath}/resources/images/seoulstation.jpg" width="25%" height="200px"> 
+        <div id="main_img--busan2">
+          <a href="${contextPath}/contents/busan/busan2">
+            <img src="${contextPath}/resources/images/busan2.jpg" width="25%" height="200px"> 
           </a>
         </div>
     </div>

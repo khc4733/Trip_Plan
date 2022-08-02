@@ -30,13 +30,13 @@
 	<div class="main_container">
         <div id="main_img--incheon1">
           <a href="${contextPath}/contents/incheon/incheon1">
-            <img src="${contextPath}/resources/images/incheonpark.jpg" width="25%" height="200px"> 
+            <img src="${contextPath}/resources/images/incheon1.jpg" width="25%" height="200px"> 
           </a>
         </div>
         
         <div id="main_img--incheon2">
           <a href="${contextPath}/contents/incheon/incheon2">
-            <img src="${contextPath}/resources/images/songdo.jpg" width="25%" height="200px"> 
+            <img src="${contextPath}/resources/images/incheon2.jpg" width="25%" height="200px"> 
           </a>
         </div>
     </div>

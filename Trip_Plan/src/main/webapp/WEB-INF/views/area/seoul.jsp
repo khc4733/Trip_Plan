@@ -29,13 +29,19 @@
 	<div class="main_container">
         <div id="main_img--seoul1">
           <a href="${contextPath}/contents/seoul/seoul1">
-            <img src="${contextPath}/resources/images/palace.jpg" width="25%" height="200px"> 
+            <img src="${contextPath}/resources/images/seoul1.jpg" width="25%" height="200px"> 
           </a>
         </div>
         
         <div id="main_img--seoul2">
           <a href="${contextPath}/contents/seoul/seoul2">
-            <img src="${contextPath}/resources/images/seoulstation.jpg" width="25%" height="200px"> 
+            <img src="${contextPath}/resources/images/seoul2.jpg" width="25%" height="200px"> 
+          </a>
+        </div>
+        
+        <div id="main_img--seoul3">
+          <a href="${contextPath}/contents/seoul/seoul3">
+            <img src="${contextPath}/resources/images/seoul3.jpg" width="25%" height="200px"> 
           </a>
         </div>
     </div>

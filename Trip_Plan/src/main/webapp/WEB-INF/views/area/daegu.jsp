@@ -9,7 +9,11 @@
 <meta charset="UTF-8">
 <title>daegu</title>
 <style>
-
+        body {
+        text-align: center;
+            margin-left:200px;
+            margin-right:50px;
+        }
 </style>
 </head>
 <body>
@@ -21,8 +25,20 @@
      <div>
         <jsp:include page="../common/sidemenu.jsp"/>
     </div>
-<!-- 본문 내용 -->    
-
+<!-- 본문 내용 -->     
+<div class="main_container">
+    <div id="main_img--daegu1">
+          <a href="${contextPath}/contents/daegu/daegu1">
+            <img src="${contextPath}/resources/images/daegu1.jpg" width="25%" height="200px"> 
+          </a>
+        </div>
+        
+        <div id="main_img--daegu2">
+          <a href="${contextPath}/contents/daegu/daegu2">
+            <img src="${contextPath}/resources/images/daegu2.jpg" width="25%" height="200px"> 
+          </a>
+        </div>
+    </div>
 <!-- footer -->
      <div>
         <jsp:include page="../common/footer.jsp"/>

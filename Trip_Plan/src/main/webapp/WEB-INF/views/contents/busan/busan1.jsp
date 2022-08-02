@@ -34,7 +34,7 @@
 		var container = document.getElementById('map'); //지도를 표시할 div
 		var options = {
 			center: new kakao.maps.LatLng(35.09655894549506, 129.01858269308008), //지도 중심좌표
-			level: 5 //지도 확대레벨
+			level: 8 //지도 확대레벨
 		};
 
 		var map = new kakao.maps.Map(container, options); //지도 생성
@@ -42,7 +42,7 @@
 		    new kakao.maps.LatLng(35.10470658145553, 128.94579345731177), //낙동강하구에코센터
 		    new kakao.maps.LatLng(35.09423382053527, 129.036901974079), //영도대교
 		    new kakao.maps.LatLng(35.08138381441503, 129.04114291828915), //영도 절영산책로
-		    new kakao.maps.LatLng(35.05818933015856, 129.08552177043563), //태종대
+		    new kakao.maps.LatLng(35.05818933015856, 129.08552177043563) //태종대
 		];
 
 		// 지도에 표시할 선을 생성합니다
@@ -58,10 +58,10 @@
 		polyline.setMap(map);  
 		
 		// 마커가 표시될 위치입니다 
-		var markerPosition  = new kakao.maps.LatLng(35.10470658145553, 128.94579345731177), //낙동강하구에코센터
-		var markerPosition2  = new kakao.maps.LatLng(35.09423382053527, 129.036901974079), //영도대교
-		var markerPosition3  = new kakao.maps.LatLng(35.08138381441503, 129.04114291828915), //영도 절영산책로
-		var markerPosition4  = new kakao.maps.LatLng(35.05818933015856, 129.08552177043563), //태종대
+		var markerPosition  = new kakao.maps.LatLng(35.10470658145553, 128.94579345731177); //낙동강하구에코센터
+		var markerPosition2  = new kakao.maps.LatLng(35.09423382053527, 129.036901974079); //영도대교
+		var markerPosition3  = new kakao.maps.LatLng(35.08138381441503, 129.04114291828915); //영도 절영산책로
+		var markerPosition4  = new kakao.maps.LatLng(35.05818933015856, 129.08552177043563); //태종대
 		
 
 		// 마커를 생성합니다
