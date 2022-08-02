@@ -57,13 +57,13 @@
 		</head>
 	<body>
 	    
-	<jsp:include page="./common/topmenu.jsp" flush="false"/>
 	<div id="main_container">
 			
 		<!--배경사진-->
 		<div id="main_img--seoul">
-			<img src="${contextPath}/resources/images/background.jpg" alt="">
+			<img id="main_img--seoul" src="${contextPath}/resources/images/background.jpg" alt="">
 		</div>
+		<jsp:include page="./common/topmenu.jsp" flush="false"/>
 			
 		<hr style=" width:100%; color:#bac8d9; margin-top: 40px">
 			
