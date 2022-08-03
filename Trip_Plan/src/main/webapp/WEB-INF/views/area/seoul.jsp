@@ -31,7 +31,7 @@
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
 			<a href="${contextPath}/contents/seoul/seoul1"> <img
 				src="${contextPath}/resources/images/seoul1.jpg" width="100%"
-				height="220px">
+				height="260px">
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul1"><p align="center"
@@ -59,7 +59,7 @@
 			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
 			<a href="${contextPath}/contents/seoul/seoul2"> <img
 				src="${contextPath}/resources/images/seoul2.jpg" width="100%"
-				height="220px">
+				height="260px">
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul2">
@@ -87,7 +87,7 @@
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
 			<a href="${contextPath}/contents/seoul/seoul3"> <img
 				src="${contextPath}/resources/images/seoul3.jpeg" width="100%"
-				height="220px">
+				height="260px">
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul3">
