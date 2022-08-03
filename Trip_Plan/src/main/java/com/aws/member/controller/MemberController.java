@@ -17,13 +17,14 @@ import com.aws.member.vo.MemberVO;
 public interface MemberController {
 
 
-
-
-	
+	//-----------------------------------------------------------------------------------------------------------
+	// 회원가입 폼
+	//-----------------------------------------------------------------------------------------------------------
+	public	ModelAndView SignUp(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	//-----------------------------------------------------------------------------------------------------------
 	// 로그인 폼
 	//-----------------------------------------------------------------------------------------------------------
-	public	ModelAndView loginForm(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	public	ModelAndView SignIn(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	//-----------------------------------------------------------------------------------------------------------
 	// 로그인 처리

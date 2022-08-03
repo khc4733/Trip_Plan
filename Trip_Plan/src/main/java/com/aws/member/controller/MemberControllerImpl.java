@@ -38,11 +38,11 @@ public class MemberControllerImpl implements MemberController {
 	// 로그인 화면 띄우기
 	//-----------------------------------------------------------------------------------------------------------
 	@Override
-	@RequestMapping(value="/loginForm", method=RequestMethod.GET)
-	public ModelAndView loginForm(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	@RequestMapping(value="/signin", method=RequestMethod.GET)
+	public ModelAndView SignIn(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("/member/loginForm");
+		mav.setViewName("/member/signin");
 		return mav;
 		
 	}
@@ -51,7 +51,7 @@ public class MemberControllerImpl implements MemberController {
 	// 로그인 처리
 	//-----------------------------------------------------------------------------------------------------------
 	@Override
-	@RequestMapping(value="/login", method=RequestMethod.POST)
+	@RequestMapping(value="/signin", method=RequestMethod.POST)
 	public ModelAndView login(@ModelAttribute("member") MemberVO member, RedirectAttributes rAttr, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		
@@ -75,13 +75,13 @@ public class MemberControllerImpl implements MemberController {
 				mav.setViewName("redirect:/"); // 메인화면으로 이동
 			} else {
 				rAttr.addAttribute("result", "PasswordFailed");
-				mav.setViewName("redirect:/member/loginForm");
+				mav.setViewName("redirect:/member/signin");
 			}
 			
 		} else {	// 로그인 정보에 해당하는 자료가 존재하지 않는다면
 			// 로그인 실패 메시지를 가지고 로그인 화면으로 이동한다.
 			rAttr.addAttribute("result", "loginFailed");
-			mav.setViewName("redirect:/member/loginForm"); 
+			mav.setViewName("redirect:/member/signin"); 
 		}
 
 		return mav;
@@ -101,6 +101,16 @@ public class MemberControllerImpl implements MemberController {
 		ModelAndView mav = new ModelAndView();
 		// mav.setViewName("redirect:/member/loginForm.do");
 		mav.setViewName("redirect:/"); // 메인화면으로 이동
+		return mav;
+	}
+	
+
+	@Override
+	@RequestMapping(value="/signup", method=RequestMethod.GET)
+	public ModelAndView SignUp(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/member/signup");
 		return mav;
 	}
 

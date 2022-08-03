@@ -152,3 +152,62 @@
 	color: #333;
 }
 /* area폴더 페이지 영역 끝*/
+
+/* signin 페이지 영역 시작*/
+
+.signin_centered {
+	width: 300px;
+	height:600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#signin_form_border{
+	padding: 20px 0px 5px 0px;
+	border-width: 1px;
+	border-style: solid;
+    border-color: #c7c7c7;
+    border-radius: 10px;
+}
+.signin_centered input{
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+}
+
+.logo_box {
+	margin: auto;
+	width: 250px;
+	height: 220px;
+	border-radius: 70%;
+	overflow: hidden;
+	background: #ffffff;
+}
+
+.logo_profile {
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+}
+.account{
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+    border-color: #c7c7c7;
+    border-radius: 10px;
+}
+
+.id_pw{
+   margin-top: 5px;
+}
+.signin_btn{
+	border: none;
+	background: #1050a3;
+	color: #ffffff;
+	font-size: 20px;
+	width: 250px;
+	border-radius: 3px;
+}
+/* signin 페이지 영역 끝*/
