@@ -9,6 +9,9 @@
 <head>
 <meta charset="UTF-8">
 <title>개인 정보 확인</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Poiret+One&family=Raleway:ital@1&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet"
@@ -17,7 +20,9 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
+
 
 <style>
 .button1 {
@@ -57,15 +62,25 @@
 }
 
 .button2:hover {opacity: 1}
+
+table{
+ margin: auto;
+}
+.tb1 {
+ font-size: 15px;
+ font-family: Raleway, Arial, serif; 
+}
+
+.tb2 {
+ font-size: 15px;
+ font-family: Raleway, Arial, serif; 
+}
+
+input:hover{
+background:#F6F6F6;
+}
 </style>
 <body>  
-
-<%
-//회원 리스트 화면을 외부인이 볼 수 없도록 로그인 화면으로 보여지게 하기 
-if(session.getAttribute("isLogOn") == null || session.getAttribute("isLogOn").equals("")) {
-response.sendRedirect("/member/loginForm.do");
-} 
-%>
 
 <!-- 메뉴바 -->
 <jsp:include page="../common/topmenu.jsp" flush="false"/>
@@ -82,34 +97,103 @@ response.sendRedirect("/member/loginForm.do");
 		</ul>
 </nav> 
 
-   <div class="container">
-     <h2 align="center" style= "margin-top: 100px; margin-right: 100px;" >개인 정보 확인</h2>
-     <table class="table table-bordered table-striped" style="width:1200px; margin: auto;">
-        <tr class="info">
-           <td align="center" width="80"><b>아이디</b></td>
-           <td align="center" width="100"><b>비밀번호</b></td>
-           <td align="center" width="80"><b>이  름</b></td>
-           <td align="center" width="100"><b>이메일</b></td>
-           <td align="center" width="80"><b>전화번호</b></td>
-           <td align="center" width="200"><b>주  소</b></td>
+<div id="personInfo">
+<h2 align="center" style= "margin-top: 100px; margin-right: 200px; font-family: Raleway;" >MY &nbsp; ACCOUNT</h2></br>
+    <table class="person-tb">
+        <colgroup> <!-- 비율 고정 -->
+        <col width="160"><col width="*">
+        </colgroup>
+        <tbody>
+        <tr>
+            <th>
+                <div class="tb1">ID </div>
+            </th>
+            <td>
+                <div class="tb2">
+                <input type="text" style="border: none;" name="ID" id="ID" value="${member.id}" size="25" maxlength="30" disabled>
+                </div>
+            </td>
         </tr>
-  
-     <tr>
-        <td align="center">${member.id}</td>
-        <td align="center">${member.pwd}</td>
-        <td align="center">${member.name}</td>
-        <td align="center">${member.email}</td>
-        <td align="center">${member.tel}</td>
-        <td align="center">${member.address}</td>
-      </tr>        
-    </table>
-    
+        <tr>
+            <th>
+                <div class="tb2">NAME </div>
+            </th>
+            <td>
+                <div class="tb2">
+				<input type="text" style="border: none;" name="name" id="name" value="${member.name}" size="25" maxlength="30">
+            	</div>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <div class="tb1">PASSWORD</div>
+            </th>
+            <td>
+                <div class="tb2">
+                <input type="password" style="border: none;" name="password1" id="password1" value="${member.pwd}" size="25" maxlength="20" onkeyup="check_pwd_length(this, 'password');">
+                    * 비밀번호는 4~16자로 입력해 주세요.
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <div class="tb1">PASSWORD*</div>
+            </th>
+            <td>
+                <div class="tb2">
+                <input type="password" style="border: none;" name="password2" id="password2"  value="" size="25" maxlength="20" onkeyup="check_pwd_length(this, 'repassword');">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <div class="tb1">NICK NAME </div>
+            </th>
+            <td>
+                <div class="tb2">
+				<input type="text" style="border: none;" name="nname" id="nname" value="${member.nname}" size="25" maxlength="30" >
+				</div>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <div class="tb1">EMAIL </div>
+            </th>
+            <td>
+                <div class="tb2">
+				<input type="text" style="border: none;" name="email" id="email" value="${member.email}" size="25" maxlength="30">                  
+            	</div>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <div class="tb1">TEL </div>
+            </th>
+            <td>
+                <div class="tb2">
+				<input type="text" style="border: none;" name="tel" id="tel" value="${member.tel}" size="25" maxlength="30" >
+            	</div>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <div class="tb1">ADDRESS </div>
+            </th>
+            <td>
+                <div class="tb2">
+				<input type="text" style="border: none;" name="address" id="address" value="${member.address}" size="35" maxlength="30" >          
+                </div>
+            </td>
+        </tr>
+</table>
+    </div>
+   
     <div class="find-btn" align="center">
        <button class="button1" type="submit">수정</button>
-       <button class="button2" type="reset">다시입력</button>
+       <button class="button2" type="submit">회원탈퇴</button>
     </div>
      
-  </div>
+
    
   
 <!-- footer --> 
