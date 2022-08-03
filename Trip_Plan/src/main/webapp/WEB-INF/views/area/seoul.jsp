@@ -28,10 +28,10 @@
 	</div>
 	<div class="area_centered">
 		<!-- seoul1 시작 -->
-		<div style="border: 1px solid #d6d4d4; float: left; width: 30%;">
+		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
 			<a href="${contextPath}/contents/seoul/seoul1"> <img
 				src="${contextPath}/resources/images/seoul1.jpg" width="100%"
-				height="200px">
+				height="220px">
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul1"><p align="center"
@@ -56,16 +56,16 @@
 
 		<!-- seoul2 시작 -->
 		<div
-			style="border: 1px solid #d6d4d4; float: left; width: 30%; margin-left: 5%">
+			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
 			<a href="${contextPath}/contents/seoul/seoul2"> <img
 				src="${contextPath}/resources/images/seoul2.jpg" width="100%"
-				height="200px">
+				height="220px">
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul2">
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서울의 랜드마크를 만나다</p>
 				</a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#Feel_the_rhythm_of_korea&nbsp</a><a>#가을여행코스&nbsp</a><br>
 					<a>#데이트코스&nbsp</a> <a>#연인코스&nbsp</a><a>#1박2일</a>
 				</div>
@@ -84,10 +84,10 @@
 		<!-- seoul2 끝 -->
 
 		<!-- seoul3 시작 -->
-		<div style="border: 1px solid #d6d4d4; float: right; width: 30%;">
+		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
 			<a href="${contextPath}/contents/seoul/seoul3"> <img
 				src="${contextPath}/resources/images/seoul3.jpeg" width="100%"
-				height="200px">
+				height="220px">
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul3">
