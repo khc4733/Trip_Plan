@@ -35,20 +35,21 @@
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/jeju/jeju1"><p align="center"
-						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">조선의
-						왕들이 지극히 아끼던 공간</p></a>
+						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
+						제주 사계해안도로, 바다와 산의 하모니에 홀릭하다!</p></a>
 				<div class="hashtag">
-					<a>#교과서속여행</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a><br>
-					<a>#도심여행&nbsp</a><a>#아이와함께</a>
+					<a>#드라이브코스</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#연인과함께&nbsp</a><a>#해안도로&nbsp</a><br>
+					<a>#사진맛집</a><a>#자연속으로</a>
 				</div>
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">창덕궁</a></li>
-					<li><a href="${contextPath}/area/incheon">국립민속박물관</a></li>
-					<li><a href="${contextPath}/area/daejeon">국립현대미술관</a></li>
-					<li><a href="${contextPath}/area/daegu">종묘</a></li>
-					<li><a href="${contextPath}/area/busan">광장시장</a></li>
+					<li><a href="${contextPath}/area/seoul">산방산</a></li>
+					<li><a href="${contextPath}/area/incheon">용머리해안</a></li>
+					<li><a href="${contextPath}/area/daejeon">사계해변</a></li>
+					<li><a href="${contextPath}/area/daegu">사계 발자국화석 발견지</a></li>
+					<li><a href="${contextPath}/area/busan">섯알오름</a></li>
+					<li><a href="${contextPath}/area/busan">송악산</a></li>
 				</ol>
 			</div>
 		</div>
