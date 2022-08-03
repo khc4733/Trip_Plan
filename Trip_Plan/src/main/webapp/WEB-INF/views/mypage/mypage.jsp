@@ -16,7 +16,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>	
 </head>
 <body>
 
@@ -34,13 +34,15 @@ if(session.getAttribute("isLogOn") == null || session.getAttribute("isLogOn").eq
 
 <!-- 사이드 메뉴 바 -->
 <nav class="col-sm-2 sidenav">
-		<h4>My Page</h4>
+	<h4 align="left">My Page</h4>
 		<ul class="nav nav-pills nav-stacked">
-			<li><a href="${contextPath}/mypage/mypage.do">예약 내역 확인</a></li>
-			<li><a href="${contextPath}/..">게시판 작성내역</a></li>
-			<li><a href="${contextPath}/mypage/myInfo">개인 정보 수정</a></li>
+			<li class = "nav items" style="font-size:16px;">
+				<a href="${contextPath}/mypage/mypage.do">예약 내역 확인</a>
+				<a href="${contextPath}/..">게시판 작성내역</a>
+				<a href="${contextPath}/mypage/myInfo.do">개인 정보 확인</a>
+			</li>
 		</ul>
-	</nav>
+</nav> 
 
 <!-- 예약 내역 페이지 -->
 <h2 align="center" style= "margin-top: 130px; margin-right: 220px;" >예약 내역 확인</h2>

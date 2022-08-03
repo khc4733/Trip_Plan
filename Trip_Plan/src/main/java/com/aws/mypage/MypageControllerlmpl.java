@@ -23,4 +23,16 @@ public class MypageControllerlmpl implements MypageController {
 		
 	}
 
-}
+	//----------------------------------------------------------------------------------------------------
+	// 개인 정보 확인 페이지(8.3)
+	//----------------------------------------------------------------------------------------------------
+	@Override
+	@RequestMapping(value="/myInfo", method=RequestMethod.GET)
+	public ModelAndView MyInfo(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/mypage/myInfo");
+		return mav;
+	}
+
+}//END - public class MypageControllerlmpl implements MypageController
