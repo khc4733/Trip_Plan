@@ -33,7 +33,7 @@
 	<script>
 		var container = document.getElementById('map'); //지도를 표시할 div
 		var options = {
-			center: new kakao.maps.LatLng(37.45650922558449, 126.67117945527185), //지도 중심좌표
+			center: new kakao.maps.LatLng(37.43625828305586, 126.69094301150022), //지도 중심좌표
 			level: 8 //지도 확대레벨
 		};
 
