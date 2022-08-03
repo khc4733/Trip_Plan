@@ -8,6 +8,8 @@
 <head>
 <meta charset="UTF-8">
 <title>busan</title>
+<link href="${contextPath}/resources/css/front.css" type="text/css"
+	rel="stylesheet">
 </head>
 <body>
 <!-- top menu -->
@@ -83,25 +85,27 @@
 		<!-- busan3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
 			<a href="${contextPath}/contents/busan/busan3"> <img
-				src="${contextPath}/resources/images/busan3.jpeg" width="100%"
+				src="${contextPath}/resources/images/busan3.png" width="100%"
 				height="260px">
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/busan/busan3">
 					<p align="center"
-						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서촌에서
-						즐기는 즐거운 맛산책</p>
+						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">부산의 온천과 명물을 만나다!</p>
 				</a>
 				<div class="hashtag">
-					<a>#갤러리팔레드서울&nbsp</a><a>#도심여행&nbsp</a><a>#데이트코스&nbsp</a><br> <a>#미술관&nbsp</a><a>#북촌한옥마을</a>
+					<a>#동래온천&nbsp</a><a>#동래시장&nbsp</a><a>#산곰장어&nbsp</a><br> <a>#동래파전&nbsp</a>
+					<a>#당일코스</a><a>#맛코스</a>
 				</div>
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">팔레 드 서울</a></li>
-					<li><a href="${contextPath}/area/incheon">옥인피자</a></li>
-					<li><a href="${contextPath}/area/daejeon">창의문</a></li>
-					<li><a href="${contextPath}/area/daegu">북촌한옥마을</a></li>
+					<li><a href="${contextPath}/area/seoul">동래온천 노천족욕탕</a></li>
+					<li><a href="${contextPath}/area/incheon">원조소문난산곰장어</a></li>
+					<li><a href="${contextPath}/area/daejeon">동래시장</a></li>
+					<li><a href="${contextPath}/area/daegu">부산 복천동 고분군</a></li>
+					<li><a href="${contextPath}/area/daegu">동래할매파전</a></li>
+					<li><a href="${contextPath}/area/daegu">충렬사</a></li>
 				</ol>
 			</div>
 		</div>
