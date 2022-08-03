@@ -27,11 +27,6 @@
 	</c:when>
 </c:choose>
 <style>
-body {
-	margin-left: 50px;
-	margin-right: 50px;
-}
-
 .centered {
 	display: table;
 	margin-left: auto;
@@ -83,7 +78,10 @@ body {
 				<button type="submit" class="btn btn-success button1" >sign in</button>
 			</div>
 		</div>
-	</form>
+		<div class="centered">
+				<a href="#">Create an account</a>
+		</div>
+		</form>
 </div>
      <div>
         <jsp:include page="../common/footer.jsp"/>
