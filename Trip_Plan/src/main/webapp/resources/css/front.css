@@ -151,6 +151,19 @@
 .area_course_title a {
 	color: #333;
 }
+#a {
+  height:260px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+#a img {
+  transition: all 0.2s linear;
+}
+
+#a:hover img {
+	  height:260px;
+  transform: scale(1.4);
+}
 /* area폴더 페이지 영역 끝*/
 
 /* signin 페이지 영역 시작*/
