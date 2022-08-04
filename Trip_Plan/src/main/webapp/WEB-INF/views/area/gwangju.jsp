@@ -37,7 +37,7 @@
 				<a href="${contextPath}/contents/gwangju/gwangju1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						광주 서구 8경 중 </br>4경을 찾아 떠나는 여행</p></a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#교과서속여행</a>&nbsp&nbsp<a>#근대문화유산&nbsp</a><a>#당일코스&nbsp</a><br>
 					<a>#역사문화관광&nbsp</a><a>#전통시장</a>
 				</div>
@@ -94,7 +94,7 @@
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						녹색의 에너지 체험과</br>광주의 유적지 탐방</p>
 				</a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#이색체험&nbsp</a><a>#역사속으로&nbsp</a><a>#맛집탐방&nbsp</a><br>
 					<a>#반려견동반&nbsp</a><a>#당일코스</a><a>#아이와함께</a>
 				</div>

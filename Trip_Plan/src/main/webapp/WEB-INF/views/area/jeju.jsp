@@ -37,7 +37,7 @@
 				<a href="${contextPath}/contents/jeju/jeju1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						제주 사계해안도로, 바다와 산의 하모니에 홀릭하다!</p></a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#드라이브코스</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#연인과함께&nbsp</a><a>#해안도로&nbsp</a><br>
 					<a>#사진맛집</a><a>#자연속으로</a>
 				</div>
@@ -96,7 +96,7 @@
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						제주의 특별한 카페찾아가기</p>
 				</a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#친환경농산물&nbsp</a><a>#제주카페&nbsp</a><a>#서귀포카페&nbsp</a><br>
 					<a>#당일코스&nbsp</a><a>#힐링여행</a><a>#데이트코스</a>
 				</div>

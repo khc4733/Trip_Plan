@@ -38,10 +38,10 @@
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">조선의
-						왕들이 지극히 아끼던 공간</p></a>
-				<div class="hashtag">
-					<a>#교과서속여행</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a><br>
-					<a>#도심여행&nbsp</a><a>#아이와함께</a>
+						왕들이 지극히</br>아끼던 공간</p></a>
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
+					<a>#교과서속여행</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a>
+					<a>#당일코스&nbsp</a><a>#도심여행&nbsp</a><a>#아이와함께</a>
 				</div>
 			</div>
 			<div>
@@ -57,19 +57,20 @@
 		<!-- seoul1 끝 -->
 
 		<!-- seoul2 시작 -->
-		<div
-			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
-			<a href="${contextPath}/contents/seoul/seoul2"> <img
-				src="${contextPath}/resources/images/seoul2.jpg" width="100%"
-				height="260px">
-			</a>
+		<div style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/seoul/seoul2"> <img
+					src="${contextPath}/resources/images/seoul2.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul2">
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서울의 랜드마크를 만나다</p>
 				</a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#Feel_the_rhythm_of_korea&nbsp</a><a>#가을여행코스&nbsp</a><br>
-					<a>#데이트코스&nbsp</a> <a>#연인코스&nbsp</a><a>#1박2일</a>
+					<a>#Feel_the_rhythm_of_korea&nbsp</a><a>#1박2일</a><br>
+					<a>#데이트코스&nbsp</a><a>#가을여행코스&nbsp</a>
 				</div>
 			</div>
 			<div>
@@ -97,8 +98,9 @@
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서촌에서
 						즐기는 즐거운 맛산책</p>
 				</a>
-				<div class="hashtag">
-					<a>#갤러리팔레드서울&nbsp</a><a>#도심여행&nbsp</a><a>#데이트코스&nbsp</a><br> <a>#미술관&nbsp</a><a>#북촌한옥마을</a>
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
+					<a>#갤러리팔레드서울&nbsp</a><a>#도심여행&nbsp</a><br>
+					<a>#데이트코스&nbsp</a><a>#미술관&nbsp</a><a>#북촌한옥마을</a>
 				</div>
 			</div>
 			<div>

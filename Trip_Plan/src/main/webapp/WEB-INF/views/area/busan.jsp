@@ -36,7 +36,7 @@
 				<a href="${contextPath}/contents/busan/busan1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">영도의 바다를 만나다
 						</p></a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#바다여행</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a><br>
 					<a>#힐링여행&nbsp</a><a>#가족여행</a>
 				</div>
@@ -93,7 +93,7 @@
 					<p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">부산의 온천과 명물을 만나다!</p>
 				</a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#동래온천&nbsp</a><a>#동래시장&nbsp</a><a>#산곰장어&nbsp</a><br> <a>#동래파전&nbsp</a>
 					<a>#당일코스</a><a>#맛코스</a>
 				</div>

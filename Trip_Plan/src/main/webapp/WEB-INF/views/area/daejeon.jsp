@@ -36,7 +36,7 @@
 				<a href="${contextPath}/contents/daejeon/daejeon1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">밤의 열기 가득한 도시의 야경
 						</p></a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#복합문화공간</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a><a>#도심여행&nbsp</a><br>
 					<a>#연인과함께</a><a>#전망좋은곳</a>
 				</div>
@@ -63,7 +63,7 @@
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">도시의 자연 속에서 <br>휴식을 취하다</p>
 				</a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#드라이브코스추천&nbsp</a><a>#자연과함께&nbsp</a><br>
+					<a>#드라이브코스추천&nbsp</a><a>#자연과함께&nbsp</a><a>#이색거리&nbsp</a><br>
 					<a>#힐링여행&nbsp</a> <a>#연인코스&nbsp</a><a>#1박2일</a>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">생태환경과 과학으로<br> 꿈꾸는 
 						멋진 도시</p>
 				</a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#가족체험여행&nbsp</a><a>#교과서속여행&nbsp</a><a>#아이와함께&nbsp</a><br> <a>#숲체험관&nbsp</a><a>#유네스코세계문화유산</a>
 				</div>
 			</div>

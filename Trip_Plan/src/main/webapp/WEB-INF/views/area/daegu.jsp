@@ -37,7 +37,7 @@
 				<a href="${contextPath}/contents/daegu/daegu1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						도심에서 만나는 휴식 같은 풍경</p></a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#한국관광의별 수상</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a>
 					<a>#도심여행&nbsp</a><a>#휴식여행</a>
 				</div>
@@ -98,7 +98,7 @@
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						대구 서부시장 구석구석</br>맛집탐방</p>
 				</a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#프랜차이즈특화거리&nbsp</a><a>#이색음식거리&nbsp</a>
 					<a>#맛집여행&nbsp</a><a>#맛집골목&nbsp</a><a>#당일코스&nbsp</a><br>
 					<a>#연인과함께</a><a>#가족과함께</a>

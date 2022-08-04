@@ -37,9 +37,9 @@
 				<a href="${contextPath}/contents/incheon/incheon1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						인천 근현대의 흔적을 만나다</p></a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#나홀로코스</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a><br>
-					<a>#역사여행&nbsp</a><a>#가족여행</a>
+					<a>#역사여행&nbsp</a><a>#가족여행</a><a>#힐링여행</a>
 				</div>
 			</div>
 			<div>
@@ -65,7 +65,7 @@
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">화려하게 빛나는 인천의 낮과 밤</p>
 				</a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#가족코스&nbsp</a><a>#야경여행지&nbsp</a><br>
+					<a>#가족코스&nbsp</a><a>#야경여행지&nbsp</a><a>#뷰맛집&nbsp</a><br>
 					<a>#힐링코스&nbsp</a> <a>#연인코스&nbsp</a><a>#1박2일</a>
 				</div>
 			</div>
@@ -93,9 +93,9 @@
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						이국적인 분위기와</br>달콤한 도시 송도</p>
 				</a>
-				<div class="hashtag">
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#맛코스&nbsp</a><a>#도심여행&nbsp</a><a>#데이트코스&nbsp</a><br>
-					<a>#맛집여행&nbsp</a><a>#복합문화공간</a>
+					<a>#맛집여행&nbsp</a><a>#복합문화공간</a><a>#디저트맛집</a>
 				</div>
 			</div>
 			<div>
