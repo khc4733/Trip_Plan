@@ -89,25 +89,26 @@
 		<!-- daegu3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
 			<a href="${contextPath}/contents/daegu/daegu3"> <img
-				src="${contextPath}/resources/images/daegu3.jpeg" width="100%"
+				src="${contextPath}/resources/images/daegu3.png" width="100%"
 				height="260px">
 			</a>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/daegu/daegu3">
 					<p align="center"
-						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서촌에서
-						즐기는 즐거운 맛산책</p>
+						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
+						대구 서부시장 구석구석</br>맛집탐방</p>
 				</a>
 				<div class="hashtag">
-					<a>#갤러리팔레드서울&nbsp</a><a>#도심여행&nbsp</a><a>#데이트코스&nbsp</a><br> <a>#미술관&nbsp</a><a>#북촌한옥마을</a>
+					<a>#프랜차이즈특화거리&nbsp</a><a>#이색음식거리&nbsp</a>
+					<a>#맛집여행&nbsp</a><a>#맛집골목&nbsp</a><a>#당일코스&nbsp</a><br>
+					<a>#연인과함께</a><a>#가족과함께</a>
 				</div>
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">팔레 드 서울</a></li>
-					<li><a href="${contextPath}/area/incheon">옥인피자</a></li>
-					<li><a href="${contextPath}/area/daejeon">창의문</a></li>
-					<li><a href="${contextPath}/area/daegu">북촌한옥마을</a></li>
+					<li><a href="${contextPath}/area/seoul">선교사 스윗즈주택</a></li>
+					<li><a href="${contextPath}/area/incheon">서부 오미(味)가미(味)거리</a></li>
+					<li><a href="${contextPath}/area/daejeon">인동촌 아나고골목</a></li>
 				</ol>
 			</div>
 		</div>
