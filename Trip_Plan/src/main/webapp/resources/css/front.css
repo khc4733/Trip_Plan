@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* 주석활용해서 폴더 및 페이지 섹션별로 나눠서 작업해주세요~ */
-
         
   body {
 		margin: 0;
@@ -8,7 +7,7 @@
 	}
 		
 	.h_container {
-	   	background-image: url(${contextPath}/resources/images/background.jpg);
+	    background-image: url(../images/background.jpg);
 	   	position: relative;
 	   	height: 600px;
 	   	object-fit : cover;
