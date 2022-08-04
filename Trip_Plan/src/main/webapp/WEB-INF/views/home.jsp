@@ -37,7 +37,7 @@
 	        
 	   		 </script>
 	   		 
-	   		 <style>
+	   		 <style>  		 	
 	   		  	.carousel-control.left,
 			   	.carousel-control.right {
 					 background-image: none;			    	
@@ -57,13 +57,16 @@
 		</head>
 	<body>
 	    
+		<jsp:include page="./common/topmenu.jsp" flush="false"/>
 	<div id="main_container">
 			
 		<!--배경사진-->
-		<div id="main_img--seoul">
-			<img id="main_img--seoul" src="${contextPath}/resources/images/background.jpg" alt="">
+		<div class="h_container">
+		 	<div class="home_data">
+              <span class="home_data-title">Trip_Plan</span>
+             <h1 class="home_data-subtitle">Trip plan <br> Best <b>Beautiful <br> Places</b></h1>
+			</div>
 		</div>
-		<jsp:include page="./common/topmenu.jsp" flush="false"/>
 			
 		<hr style=" width:100%; color:#bac8d9; margin-top: 40px">
 			

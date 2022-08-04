@@ -91,9 +91,7 @@
 						</c:when>
 						<c:otherwise>
 							<a href="${contextPath}/member/signin">
-								<button type="submit" class="btn btn-link">
 									<span class="log-in"></span>Sign in
-								</button>
 							</a>
 						</c:otherwise>
 					</c:choose>

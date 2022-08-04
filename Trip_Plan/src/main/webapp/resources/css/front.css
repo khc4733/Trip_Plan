@@ -7,16 +7,28 @@
 		padding: 0;
 	}
 		
-	#main_img--seoul {
-		  max-width: 100%;
-  height: auto
-	}
-	
-	#main_img--seoul img {
-		width: inherit;
-		height: inherit;
-		object-fit: cover;
-	}
+	.h_container {
+	   	background-image: url(${contextPath}/resources/images/background.jpg);
+	   	position: relative;
+	   	height: 600px;
+	   	object-fit : cover;
+	   	align-content: center;
+	 }
+	 
+	 .home_data {
+	   	 color: #fff;
+	   	margin-left: 50px;
+	 }
+	   		 	
+	.home_data-title{
+	   	font-size: 120px;
+	   	font-weight: bold;
+	   	display : block;
+	 }
+	   		 	
+	 .home_data-subtitle{
+	   	font-size: 80px;
+	 }
 	
 	     
    	#main_bestcourse {
