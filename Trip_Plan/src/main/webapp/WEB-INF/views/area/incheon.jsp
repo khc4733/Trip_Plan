@@ -29,17 +29,19 @@
 	<div class="area_centered">
 		<!-- incheon1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
-			<a href="${contextPath}/contents/incheon/incheon1"> <img
-				src="${contextPath}/resources/images/incheon1.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/incheon/incheon1"> <img
+					src="${contextPath}/resources/images/incheon1.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/incheon/incheon1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						인천 근현대의 흔적을 만나다</p></a>
-				<div class="hashtag">
-					<a>#교과서속여행</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a><br>
-					<a>#도심여행&nbsp</a><a>#아이와함께</a>
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
+					<a>#나홀로코스</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a><br>
+					<a>#역사여행&nbsp</a><a>#가족여행</a><a>#힐링여행</a>
 				</div>
 			</div>
 			<div>
@@ -54,29 +56,29 @@
 		<!-- incheon1 끝 -->
 
 		<!-- incheon2 시작 -->
-		<div
-			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
-			<a href="${contextPath}/contents/incheon/incheon2"> <img
-				src="${contextPath}/resources/images/incheon2.jpg" width="100%"
-				height="260px">
-			</a>
+		<div style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/incheon/incheon2"> <img
+					src="${contextPath}/resources/images/incheon2.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/incheon/incheon2">
-					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서울의 랜드마크를 만나다</p>
+					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">화려하게 빛나는 인천의 낮과 밤</p>
 				</a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#Feel_the_rhythm_of_korea&nbsp</a><a>#가을여행코스&nbsp</a><br>
-					<a>#데이트코스&nbsp</a> <a>#연인코스&nbsp</a><a>#1박2일</a>
+					<a>#가족코스&nbsp</a><a>#야경여행지&nbsp</a><a>#뷰맛집&nbsp</a><br>
+					<a>#힐링코스&nbsp</a> <a>#연인코스&nbsp</a><a>#1박2일</a>
 				</div>
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">숭례문</a></li>
-					<li><a href="${contextPath}/area/incheon">문화역 서울284</a></li>
-					<li><a href="${contextPath}/area/daejeon">덕수궁</a></li>
-					<li><a href="${contextPath}/area/daegu">서울광장</a></li>
-					<li><a href="${contextPath}/area/busan">남산골 한옥마을</a></li>
-					<li><a href="${contextPath}/area/gwangju">남산 서울타워</a></li>
+					<li><a href="${contextPath}/area/seoul">개항장 거리</a></li>
+					<li><a href="${contextPath}/area/incheon">송월동 동화마을</a></li>
+					<li><a href="${contextPath}/area/daejeon">월미도</a></li>
+					<li><a href="${contextPath}/area/daegu">송도 센트럴파크</a></li>
+					<li><a href="${contextPath}/area/busan">소래포구</a></li>
 				</ol>
 			</div>
 		</div>
@@ -84,26 +86,30 @@
 
 		<!-- incheon3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
-			<a href="${contextPath}/contents/incheon/incheon3"> <img
-				src="${contextPath}/resources/images/incheon3.jpeg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/incheon/incheon3"> <img
+					src="${contextPath}/resources/images/incheon3.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul3">
 					<p align="center"
-						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">서촌에서
-						즐기는 즐거운 맛산책</p>
+						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
+						이국적인 분위기와</br>달콤한 도시 송도</p>
 				</a>
-				<div class="hashtag">
-					<a>#갤러리팔레드서울&nbsp</a><a>#도심여행&nbsp</a><a>#데이트코스&nbsp</a><br> <a>#미술관&nbsp</a><a>#북촌한옥마을</a>
+				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
+					<a>#맛코스&nbsp</a><a>#도심여행&nbsp</a><a>#데이트코스&nbsp</a><br>
+					<a>#맛집여행&nbsp</a><a>#복합문화공간</a><a>#디저트맛집</a>
 				</div>
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">팔레 드 서울</a></li>
-					<li><a href="${contextPath}/area/incheon">옥인피자</a></li>
-					<li><a href="${contextPath}/area/daejeon">창의문</a></li>
-					<li><a href="${contextPath}/area/daegu">북촌한옥마을</a></li>
+					<li><a href="${contextPath}/area/seoul">버거룸 181</a></li>
+					<li><a href="${contextPath}/area/incheon">그리다 디저트</a></li>
+					<li><a href="${contextPath}/area/daejeon">인천도시역사관</a></li>
+					<li><a href="${contextPath}/area/daegu">애플삼겹살</a></li>
+					<li><a href="${contextPath}/area/daegu">송도컨벤시아</a></li>
 				</ol>
 			</div>
 		</div>

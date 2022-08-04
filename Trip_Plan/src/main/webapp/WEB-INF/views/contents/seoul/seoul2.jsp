@@ -8,13 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>seoul2</title>
-<style>
-        body {
-        text-align: center;
-            margin-left:200px;
-            margin-right:50px;
-        }
-</style>
+<link href="${contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <!-- top menu -->
@@ -27,8 +21,8 @@
     </div>
 <!-- 본문 내용 -->
 <!-- 서울의 랜드마크를 만나다 -->
-<div class="container text-center">
-	<div id="map" style="width:100%;height:500px;"></div>
+<div class="contents_centered">
+	<div id="map">
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b2ca9aeab329e586b8575704eaf0afa"></script>
 	<script>
 		var container = document.getElementById('map'); //지도를 표시할 div
@@ -100,6 +94,7 @@
 		marker6.setMap(map);
 
 	</script>
+	</div>
 </div>	
 	<!-- footer -->
      <div>
