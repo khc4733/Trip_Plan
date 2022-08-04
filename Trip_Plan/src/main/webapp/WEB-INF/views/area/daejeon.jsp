@@ -28,17 +28,19 @@
 	<div class="area_centered">
 		<!-- daejeon1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
-			<a href="${contextPath}/contents/daejeon/daejeon1"> <img
-				src="${contextPath}/resources/images/daejeon1.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/daejeon/daejeon1"> <img
+					src="${contextPath}/resources/images/daejeon1.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/daejeon/daejeon1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">밤의 열기 가득한 도시의 야경
 						</p></a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#복합문화공간</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#당일코스&nbsp</a><a>#도심여행&nbsp</a><br>
-					<a>#연인과함께</a><a>#전망좋은곳</a>
+					<a>#복합문화공간</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a>
+					<a>#당일코스&nbsp</a><a>#도심여행&nbsp</a><a>#연인과함께</a>
 				</div>
 			</div>
 			<div>
@@ -52,18 +54,19 @@
 		<!-- daejeon1 끝 -->
 
 		<!-- daejeon2 시작 -->
-		<div
-			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
-			<a href="${contextPath}/contents/daejeon/daejeon2"> <img
-				src="${contextPath}/resources/images/daejeon2.jpg" width="100%"
-				height="260px">
-			</a>
+		<div style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/daejeon/daejeon2"> <img
+					src="${contextPath}/resources/images/daejeon2.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/daejeon/daejeon2">
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">도시의 자연 속에서 <br>휴식을 취하다</p>
 				</a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#드라이브코스추천&nbsp</a><a>#자연과함께&nbsp</a><a>#이색거리&nbsp</a><br>
+					<a>#드라이브코스추천&nbsp</a><a>#자연과함께&nbsp</a><br>
 					<a>#힐링여행&nbsp</a> <a>#연인코스&nbsp</a><a>#1박2일</a>
 				</div>
 			</div>
@@ -79,10 +82,12 @@
 
 		<!-- daejeon3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
-			<a href="${contextPath}/contents/daejeon/daejeon3"> <img
-				src="${contextPath}/resources/images/daejeon3.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/daejeon/daejeon3"> <img
+					src="${contextPath}/resources/images/daejeon3.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/daejeon/daejeon3">
 					<p align="center"
@@ -90,7 +95,8 @@
 						멋진 도시</p>
 				</a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#가족체험여행&nbsp</a><a>#교과서속여행&nbsp</a><a>#아이와함께&nbsp</a><br> <a>#숲체험관&nbsp</a><a>#유네스코세계문화유산</a>
+					<a>#가족체험여행&nbsp</a><a>#교과서속여행&nbsp</a>
+					<a>#아이와함께&nbsp</a><a>#유네스코세계문화유산</a>
 				</div>
 			</div>
 			<div>

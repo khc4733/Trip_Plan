@@ -29,10 +29,12 @@
 	<div class="area_centered">
 		<!-- incheon1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
-			<a href="${contextPath}/contents/incheon/incheon1"> <img
-				src="${contextPath}/resources/images/incheon1.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/incheon/incheon1"> <img
+					src="${contextPath}/resources/images/incheon1.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/incheon/incheon1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
@@ -54,12 +56,13 @@
 		<!-- incheon1 끝 -->
 
 		<!-- incheon2 시작 -->
-		<div
-			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
-			<a href="${contextPath}/contents/incheon/incheon2"> <img
-				src="${contextPath}/resources/images/incheon2.jpg" width="100%"
-				height="260px">
-			</a>
+		<div style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/incheon/incheon2"> <img
+					src="${contextPath}/resources/images/incheon2.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/incheon/incheon2">
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">화려하게 빛나는 인천의 낮과 밤</p>
@@ -83,10 +86,12 @@
 
 		<!-- incheon3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
-			<a href="${contextPath}/contents/incheon/incheon3"> <img
-				src="${contextPath}/resources/images/incheon3.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/incheon/incheon3"> <img
+					src="${contextPath}/resources/images/incheon3.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul3">
 					<p align="center"

@@ -29,10 +29,12 @@
 	<div class="area_centered">
 		<!-- seoul1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
-			<a href="${contextPath}/contents/daegu/daegu1"> <img
-				src="${contextPath}/resources/images/daegu1.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/daegu/daegu1"> <img
+					src="${contextPath}/resources/images/daegu1.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/daegu/daegu1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
@@ -56,12 +58,13 @@
 		<!-- daegu1 끝 -->
 
 		<!-- daegu2 시작 -->
-		<div
-			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
-			<a href="${contextPath}/contents/daegu/daegu2"> <img
-				src="${contextPath}/resources/images/daegu2.jpg" width="100%"
-				height="260px">
-			</a>
+		<div style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/daegu/daegu2"> <img
+					src="${contextPath}/resources/images/daegu2.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/daegu/daegu2">
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">대구의 핫플레이스를 둘러보는 </br>1박2일 여행 코스</p>
@@ -88,10 +91,12 @@
 
 		<!-- daegu3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
-			<a href="${contextPath}/contents/daegu/daegu3"> <img
-				src="${contextPath}/resources/images/daegu3.png" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/daegu/daegu3"> <img
+					src="${contextPath}/resources/images/daegu3.png" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/daegu/daegu3">
 					<p align="center"
@@ -101,7 +106,7 @@
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#프랜차이즈특화거리&nbsp</a><a>#이색음식거리&nbsp</a>
 					<a>#맛집여행&nbsp</a><a>#맛집골목&nbsp</a><a>#당일코스&nbsp</a><br>
-					<a>#연인과함께</a><a>#가족과함께</a>
+					<a>#연인과함께&nbsp</a><a>#가족과함께&nbsp</a>
 				</div>
 			</div>
 			<div>

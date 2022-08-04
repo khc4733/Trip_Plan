@@ -29,17 +29,19 @@
 	<div class="area_centered">
 		<!-- jeju1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
-			<a href="${contextPath}/contents/jeju/jeju1"> <img
-				src="${contextPath}/resources/images/jeju1.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/jeju/jeju1"> <img
+					src="${contextPath}/resources/images/jeju1.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/jeju/jeju1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						제주 사계해안도로, 바다와 산의 하모니에 홀릭하다!</p></a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#드라이브코스</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#연인과함께&nbsp</a><a>#해안도로&nbsp</a><br>
-					<a>#사진맛집</a><a>#자연속으로</a>
+					<a>#드라이브코스</a>&nbsp&nbsp<a>#당일치기여행&nbsp</a><a>#연인과함께&nbsp</a>
+					<a>#해안도로&nbsp</a><a>#사진맛집</a>
 				</div>
 			</div>
 			<div>
@@ -56,12 +58,13 @@
 		<!-- jeju1 끝 -->
 
 		<!-- jeju2 시작 -->
-		<div
-			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
-			<a href="${contextPath}/contents/jeju/jeju2"> <img
-				src="${contextPath}/resources/images/jeju2.jpg" width="100%"
-				height="260px">
-			</a>
+		<div style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/jeju/jeju2"> <img
+					src="${contextPath}/resources/images/jeju2.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/jeju/jeju2">
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
@@ -70,7 +73,7 @@
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
 					<a>#나들이&nbsp</a><a>#사계절&nbsp</a><a>#휴양여행&nbsp</a><br>
 					<a>#바다풍경&nbsp</a> <a>#가족과함께&nbsp</a><a>#당일코스</a><br>
-					<a>#데이트코스&nbsp</a> <a>#산책하기&nbsp</a>
+					<a>#데이트코스&nbsp</a> <a>#산책하기&nbsp</a><a>#힐링코스&nbsp</a>
 				</div>
 			</div>
 			<div>
@@ -86,10 +89,12 @@
 
 		<!-- jeju3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
-			<a href="${contextPath}/contents/jeju/jeju3"> <img
-				src="${contextPath}/resources/images/jeju3.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/jeju/jeju3"> <img
+					src="${contextPath}/resources/images/jeju3.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/jeju/jeju3">
 					<p align="center"

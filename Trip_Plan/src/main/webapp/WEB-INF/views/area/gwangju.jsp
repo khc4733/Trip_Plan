@@ -29,16 +29,18 @@
 	<div class="area_centered">
 		<!-- gwangju1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
-			<a href="${contextPath}/contents/gwangju/gwangju1"> <img
-				src="${contextPath}/resources/images/gwangju1.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/gwangju/gwangju1"> <img
+					src="${contextPath}/resources/images/gwangju1.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/gwangju/gwangju1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
 						광주 서구 8경 중 </br>4경을 찾아 떠나는 여행</p></a>
 				<div class="hashtag" style="border-top: 1px solid #e6e6e6;">
-					<a>#교과서속여행</a>&nbsp&nbsp<a>#근대문화유산&nbsp</a><a>#당일코스&nbsp</a><br>
+					<a>#교과서속여행</a>&nbsp&nbsp<a>#근대문화유산&nbsp</a><a>#당일코스&nbsp</a>
 					<a>#역사문화관광&nbsp</a><a>#전통시장</a>
 				</div>
 			</div>
@@ -54,12 +56,13 @@
 		<!-- gwangju1 끝 -->
 
 		<!-- gwangju2 시작 -->
-		<div
-			style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
-			<a href="${contextPath}/contents/gwangju/gwangju2"> <img
-				src="${contextPath}/resources/images/gwangju2.jpg" width="100%"
-				height="260px">
-			</a>
+		<div style="border: 1px solid #d6d4d4; float: left; width: 32%; margin-left: 2%">
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/gwangju/gwangju2"> <img
+					src="${contextPath}/resources/images/gwangju2.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/gwangju/gwangju2">
 					<p align="center" style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">
@@ -84,10 +87,12 @@
 
 		<!-- gwangju3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
-			<a href="${contextPath}/contents/gwangju/gwangju3"> <img
-				src="${contextPath}/resources/images/gwangju3.png" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/gwangju/gwangju3"> <img
+					src="${contextPath}/resources/images/gwangju3.png" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/gwangju/gwangju3">
 					<p align="center"

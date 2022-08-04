@@ -88,10 +88,12 @@
 
 		<!-- seoul3 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: right; width: 32%;">
-			<a href="${contextPath}/contents/seoul/seoul3"> <img
-				src="${contextPath}/resources/images/seoul3.jpeg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/seoul/seoul3"> <img
+					src="${contextPath}/resources/images/seoul3.jpeg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul3">
 					<p align="center"
