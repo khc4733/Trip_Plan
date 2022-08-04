@@ -24,6 +24,16 @@
 		WHERE	id=#{id} 
 		]]>
 	</select>
+
+	<!-- 입력한 아이디가 존재하는지 알아낸다. -->
+	<select id="idCheck" parameterType="com.aws.member.vo.MemberVO"
+		resultType="int">
+		<![CDATA[
+		SELECT	COUNT(*)
+		FROM	member
+		WHERE	id = #{id}
+		]]>
+	</select>
 	
 	<!-- 회원 정보 수정하기(8.2) -->
    <update id="updateMember" parameterType="com.aws.member.vo.MemberVO">

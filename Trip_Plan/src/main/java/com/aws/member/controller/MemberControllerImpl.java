@@ -104,7 +104,9 @@ public class MemberControllerImpl implements MemberController {
 		return mav;
 	}
 	
-
+	//-----------------------------------------------------------------------------------------------------------
+	// 회원가입 화면 접속
+	//-----------------------------------------------------------------------------------------------------------
 	@Override
 	@RequestMapping(value="/signup", method=RequestMethod.GET)
 	public ModelAndView SignUp(HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -112,6 +114,23 @@ public class MemberControllerImpl implements MemberController {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("/member/signup");
 		return mav;
+	}
+
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 중복 검사(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@ResponseBody
+	@RequestMapping(value = "/member/idCheck", method = RequestMethod.POST)
+	public int idCheck(MemberVO memberVO) throws Exception {
+		
+		System.out.println("MemberController 아이디 중복 검사(Ajax) id => " + memberVO.getId());
+		
+		int result = memberService.idCheck(memberVO);
+		
+		System.out.println("result : " + result);
+		return result;
+		
 	}
 
 

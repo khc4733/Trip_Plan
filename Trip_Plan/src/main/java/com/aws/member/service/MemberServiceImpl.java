@@ -28,7 +28,16 @@ public class MemberServiceImpl implements MemberService {
 		return memberDAO.loginByID(memberVO);
 	}
 
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 중복 검사(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public int idCheck(MemberVO memberVO) throws Exception {
 
+		System.out.println("MemberService 아이디 중복 검사(Ajax)");
+		int result = memberDAO.idCheck(memberVO);
+		return result;
+	}
 
 
 

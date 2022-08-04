@@ -37,6 +37,11 @@ public interface MemberController {
 	//-----------------------------------------------------------------------------------------------------------
 	public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 중복 검사(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	public int idCheck(MemberVO memberVO) throws Exception;
+
 	
 	
 

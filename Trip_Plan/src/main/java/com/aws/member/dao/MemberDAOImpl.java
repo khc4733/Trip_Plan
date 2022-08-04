@@ -29,7 +29,17 @@ public class MemberDAOImpl implements MemberDAO {
 		return memVO;
 	}
 
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 중복 검사(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public int idCheck(MemberVO memberVO) throws DataAccessException {
 
+		System.out.println("MemberDAOImpl idCheck() id : " + memberVO.getId());
+
+		return sqlSession.selectOne("mapper.member.idCheck", memberVO);
+		
+	}
 	
 	
 

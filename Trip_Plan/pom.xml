@@ -176,7 +176,20 @@
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-jdbc</artifactId>
 		    <version>${org.springframework-version}</version>
-		</dependency>	
+		</dependency>
+	<!-- jackson -->
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>2.9.2</version>
+	</dependency>
+	<!-- jackson-core -->
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.9.2</version>
+	</dependency>
+
 
 		        
 	</dependencies>

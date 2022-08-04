@@ -235,6 +235,51 @@
 	border-radius: 3px;
 }
 /* signin 페이지 영역 끝*/
+
+/* signin 페이지 영역 시작 */
+.signup_input-form {
+	max-width: 680px;
+	margin-top: 80px;
+	padding: 10px 10px 40px 10px;
+	background: #fff;
+	-webkit-border-radius: 10px;
+		border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border-color: #c7c7c7;
+	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
+}
+
+.signup_centered {
+	width: 400px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #c7c7c7;
+}
+
+.signup_centered h2 {
+	text-align: center;
+}
+
+.validation-form div.mb-3 {
+	padding: 10px;
+}
+.validation-form div.mb-4 {
+	padding: 10px;
+}
+.signup_email{
+     width:85px;
+     padding:6px;
+     border:1px solid #999;
+     font-family:'Nanumgothic';
+     font-size:12px;
+     }
+/* signin 페이지 영역 끝 */
+
 /*  상세 정보 페이지 영역 시작 */
 .contents_centered{
 	margin-top: 100px;

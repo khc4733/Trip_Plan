@@ -8,6 +8,8 @@
 <head>
 <meta charset="UTF-8">
 <title>회원가입 화면</title>
+<link href="${contextPath}/resources/css/front.css" type="text/css"
+	rel="stylesheet">
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
 function findAddr() {
@@ -30,68 +32,55 @@ function findAddr() {
 }
 </script>
 <script>
-    window.addEventListener('load', () => {
-      const forms = document.getElementsByClassName('validation-form');
-
-      Array.prototype.filter.call(forms, (form) => {
-        form.addEventListener('submit', function (event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  </script>
-<link href="${contextPath}/resources/css/front.css" type="text/css"
-	rel="stylesheet">
-
-<style>
-
-.input-form {
-	max-width: 680px;
-	margin-top: 80px;
-	padding: 10px 10px 40px 10px;
-	background: #fff;
-	-webkit-border-radius: 10px;
-		border-width: 1px;
-	border-style: solid;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	border-color: #c7c7c7;
-	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
+function fn_idCheck() {
+	if($("#id").val()==""){
+		alert("아이디를 입력해주세요.");
+	    return false;
+	}
+	$.ajax({
+		url:			"member/idCheck",
+		type:			"post",
+		// contentType:	"application/json",
+		dataType:		"json",
+		data:			{"id" : $("#id").val()},
+		success:		function(data) {
+			if(data == 1) {
+				$("#id").focus();
+				alert("이미 사용 중인 아이디입니다.");
+			} else if(data == 0) {
+				$("#idCheck").attr("value", "Y"); // 버튼 id="idCheck"의 속성인 value의 값을 "Y"로 변경한다.
+				alert("사용 가능한 아이디 입니다.");			
+			}
+		}
+	});
 }
+</script>
 
-.signup_centered {
-	width: 400px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	border-color: #c7c7c7;
-}
+<script>
 
-.signup_centered h2 {
-	text-align: center;
-}
-
-.validation-form div.mb-3 {
-	padding: 10px;
-}
-.validation-form div.mb-4 {
-	padding: 10px;
-}
-.email{
-     width:85px;
-     padding:6px;
-     border:1px solid #999;
-     font-family:'Nanumgothic';
-     font-size:12px;
-     }
-</style>
+	function registerCheck() {
+		if($.trim($('#idCheck').val()) == 'N'){
+			alert("아이디 중복 체크해주세요.");
+			return false;
+		}
+		if ($.trim($('#memberName').val()) == '') {
+			alert("이름을 입력해주세요.");
+			return false;
+		}
+		if ($.trim($('#memberId').val()) == '') {
+			alert("아이디를 입력해주세요.");
+			return false;
+		}
+		if ($.trim($('#memberPass').val()) == '') {
+			alert("비밀번호를 입력해주세요.");
+			return false;
+		}
+		if (confirm("회원가입을 하시겠습니까?")) {
+			alert("회원가입이 완료되었습니다. 감사합니다.");
+			$("form").submit();
+		}
+	}
+</script>
 </head>
 <body>
 	<div>
@@ -99,7 +88,7 @@ function findAddr() {
 	</div>
 	<div class="signup_centered">
 		<div class="input-form-backgroud row">
-			<div class="input-form col-md-12 mx-auto">
+			<div class="signup_input-form col-md-12 mx-auto">
 				<h2 class="mb-3">회원가입</h2>
 				<form class="validation-form" novalidate>
 					<div class="row">
@@ -108,8 +97,8 @@ function findAddr() {
 								maxlength="20" placeholder="아이디" />
 						</div>
 						<div class="col-md-3 mb-3">
-							<button type="submit" class="btn">중복 확인</button>
-						</div>						
+							<button type="button" class="btn" id="idCheck" onClick="fn_idCheck();" value="N">중복 확인</button>
+						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-9 mb-3">
@@ -127,24 +116,14 @@ function findAddr() {
 								class="form-control" id="nickname" placeholder="닉네임" value=""
 								required>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-9 mb-3">
-							<input type="text"
-								class="form-control" id="tek" placeholder="전화번호" value="" required>
-						</div>
-						<div class="col-md-3 mb-3">
-							<button type="button" id="addressSearch" class="btn" onclick="findAddr()">본인 인증</button>
-						</div>							
-					</div>					
-					
+					</div>				
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							 <input type="email"
 								class="form-control" id="email" placeholder="이메일" required>
 						</div>
 						<div  class="col-md-3 mb-3">
-							<select class="email" name="email_server" id="email_server"
+							<select class="signup_email" name="email_server" id="email_server"
 								onchange="input_email();">
 
 								<option value="">직접입력</option>
@@ -166,7 +145,18 @@ function findAddr() {
 							</select>
 						</div> 					
 					</div>
-					
+
+					<!-- <div class="row">
+						<div class="col-md-9 mb-3">
+							<input type="text" class="form-control" id="tek"
+								placeholder="인증번호 6자리 입력" value="" required>
+						</div>
+						<div class="col-md-3 mb-3">
+							<button type="button" id="addressSearch" class="btn"
+								onclick="findAddr()">본인 인증</button>
+						</div>
+					</div> -->
+
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="text" class="form-control" id="address"
@@ -176,15 +166,21 @@ function findAddr() {
 							<button type="button" id="addressSearch" class="btn" onclick="findAddr()">주소 검색</button>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-md mb-3">
+							<input type="text" class="form-control" id="address2"
+								placeholder="상세주소 입력" value="" required>
+						</div>
+					</div>
 
 					<hr class="mb-4">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" id="aggrement"
-							required> <label class="custom-control-label"
+							required value="N"> <label class="custom-control-label"
 							for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
 					</div>
 					<div class="mb-4"></div>
-					<button class="btn btn-primary btn-lg btn-block" type="submit">회원가입</button>
+					<button class="btn btn-primary btn-lg btn-block" type="submit" onclick="registerCheck()">회원가입</button>
 				</form>
 			</div>
 		</div>
