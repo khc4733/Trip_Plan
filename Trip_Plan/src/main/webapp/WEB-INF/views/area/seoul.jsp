@@ -29,10 +29,12 @@
 	<div class="area_centered">
 		<!-- seoul1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
-			<a href="${contextPath}/contents/seoul/seoul1"> <img
-				src="${contextPath}/resources/images/seoul1.jpg" width="100%"
-				height="260px">
-			</a>
+			<div id=a> <!-- 이미지 애니메이션 테스트 -->
+				<a href="${contextPath}/contents/seoul/seoul1"> <img
+					src="${contextPath}/resources/images/seoul1.jpg" width="100%"
+					height="260px">
+				</a>
+			</div>
 			<div class="area_course_title">
 				<a href="${contextPath}/contents/seoul/seoul1"><p align="center"
 						style="font-family: Tahoma; font-size: 20px; font-weight: bold; margin-top: 10px;">조선의
