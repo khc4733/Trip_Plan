@@ -10,33 +10,27 @@
 <style>
     /* 사이드바 */
     .sidenav {
-
+    text-align: center;
       position: fixed;
       width: 200px;
-      height: 100%;
-      margin-left: 10px;
-      margin-top:0px
+      height: 350px;
+    }
+    .sidenav ul li{
+          border: 1px solid #c7c7c7;
     }
 </style>
 </head>
 <body>
 	<nav class="col-sm-3 sidenav">
-		<h4>Area</h4>
+	    <h4>Area</h4>
 		<ul class="nav nav-pills nav-stacked">
-						<li><a
-							href="${contextPath}/area/seoul">SEOUL</a></li>
-						<li><a
-							href="${contextPath}/area/incheon">INCHEON</a></li>
-						<li><a
-							href="${contextPath}/area/daejeon">DAEJEON</a></li>
-						<li><a
-							href="${contextPath}/area/daegu">DAEGU</a></li>
-						<li><a
-							href="${contextPath}/area/busan">BUSAN</a></li>
-						<li><a
-							href="${contextPath}/area/gwangju">GWANGJU</a></li>
-						<li><a
-							href="${contextPath}/area/jeju">JEJU</a></li>
+			<li><a href="${contextPath}/area/seoul">SEOUL</a></li>
+			<li><a href="${contextPath}/area/incheon">INCHEON</a></li>
+			<li><a href="${contextPath}/area/daejeon">DAEJEON</a></li>
+			<li><a href="${contextPath}/area/daegu">DAEGU</a></li>
+			<li><a href="${contextPath}/area/busan">BUSAN</a></li>
+			<li><a href="${contextPath}/area/gwangju">GWANGJU</a></li>
+			<li><a href="${contextPath}/area/jeju">JEJU</a></li>
 		</ul>
 	</nav>
 </body>

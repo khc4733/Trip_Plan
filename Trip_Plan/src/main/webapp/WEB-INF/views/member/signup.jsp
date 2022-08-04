@@ -128,9 +128,18 @@ function findAddr() {
 								required>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-md-9 mb-3">
+							<input type="text"
+								class="form-control" id="tek" placeholder="전화번호" value="" required>
+						</div>
+						<div class="col-md-3 mb-3">
+							<button type="button" id="addressSearch" class="btn" onclick="findAddr()">본인 인증</button>
+						</div>							
+					</div>					
 					
 					<div class="row">
-						<div class="col-md-6 mb-3">
+						<div class="col-md-9 mb-3">
 							 <input type="email"
 								class="form-control" id="email" placeholder="이메일" required>
 						</div>
@@ -155,10 +164,7 @@ function findAddr() {
 								<option value="hotmail.com">hotmail.com</option>
 
 							</select>
-						</div> 
-						<div class="col-md-3 mb-3">
-							<button type="button" id="addressSearch" class="btn" onclick="findAddr()">본인 인증</button>
-						</div>						
+						</div> 					
 					</div>
 					
 					<div class="row">

@@ -132,7 +132,7 @@
 
 .area_hr-solid {
 	border: 0px;
-	border-top: 2px solid #1a3273;
+	border-top: 1px solid #e6e6e6;
 }
 
 .hashtag {
@@ -224,3 +224,133 @@
 	border-radius: 3px;
 }
 /* signin 페이지 영역 끝*/
+/*  상세 정보 페이지 영역 시작 */
+.contents_centered{
+	margin-top: 100px;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+.titleType1 {
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+}
+.titleType1 label{
+	font-size: 20px;
+}
+.titleType1 h2 {
+    overflow: hidden;
+    font-weight: 800;
+    color: #333;
+    font-size: 36px;
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+.titleType1 .tit h2 .tit_cos {
+    display: inline-block;
+    width: 65px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: 5px;
+    margin-right: 10px;
+    background: #ed4956;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+.titleType1 .area_address {
+    display: inline-block;
+    padding-top: 5px;
+}
+.titleType1 .area_address span {
+    float: left;
+    font-size: 16px;
+    color: #666;
+}
+.titleType1 .area_address span + span:before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: #ccc;
+    margin: 0 10px;
+    vertical-align: -2px;
+}
+.area_txtView {
+	padding: 20px;
+}
+.area_txtView .inr p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: -1px;
+}
+.schedule_info {
+	width: 100%;
+	height: 160px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 40px;
+}
+.schedule_info ul {
+    display: block;
+    list-style-type: none;
+    width: 800px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.schedule_info ul li {
+    float: left;
+    width: 40%;
+    padding: 40px 0px 0px 80px;
+    
+}
+
+.schedule_info .schedule li .img {
+    float: left;
+}
+.schedule_info .schedule li em {
+    display: block;
+    padding: 15px 0 3px 98px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "NotoSansKR";
+    color: #777;
+}
+.schedule_info .schedule li strong {
+    display: block;
+    padding: 0 0 0 98px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+}
+#map{
+	width:100%;height:500px;
+	margin: auto;
+}
+
+.line_wrap {
+    margin-top: 20px;
+}
+.line_wrap .left {
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+}
+.line_wrap .right {
+    float: left;
+    background-color: #f1f1f1;
+    width: calc(100% - 315px);
+    height: 151.64px;
+    border-radius: 3px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+}
+.line_wrap .left img {
+    width: 100%;
+    height: 100%;
+}
+/*  상세 정보 페이지 영역 시작 */

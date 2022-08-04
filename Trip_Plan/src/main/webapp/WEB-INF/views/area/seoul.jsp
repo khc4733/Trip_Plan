@@ -8,8 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>seoul</title>
-<link href="${contextPath}/resources/css/front.css" type="text/css"
-	rel="stylesheet">
+<link href="${contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<!-- top menu -->
