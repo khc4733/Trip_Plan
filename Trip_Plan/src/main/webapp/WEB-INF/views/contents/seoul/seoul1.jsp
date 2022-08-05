@@ -42,7 +42,7 @@
 					<strong>가족코스</strong></li>
 			</ul>
 		</div>
-		<div class="area_txtView"">
+		<div class="area_txtView">
 			<div class="inr_wrap" style="overflow: visible; height: auto;">
 				<div class="inr">
 					<p>우리나라를 대표하는 궁궐은 경복궁을 꼽는다. 그러나 유네스코에 등재된 것은 창덕궁이다. 창덕궁은 태종부터
@@ -57,8 +57,7 @@
 			</div>
 		</div>
 		<div id="map">
-			<script type="text/javascript"
-				src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b2ca9aeab329e586b8575704eaf0afa"></script>
+			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b2ca9aeab329e586b8575704eaf0afa"></script>
 			<script>
 				var container = document.getElementById('map'); //지도를 표시할 div
 				var options = {
@@ -130,15 +129,12 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#"
-					target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/seoul1-1.jpg"
-					alt="경복궁 사진">
+				<a href="#" target="_blank" title="새창열기"> 
+					<img src="${contextPath}/resources/images/seoul1-1.jpg">
 				</a>
 			</div>
 			<div class="right">
-				<a href="#"
-					target="_blank" title="새창열기">
+				<a href="#" target="_blank" title="새창열기">
 					<h5 class="mvp_h5">창덕궁과 후원 [유네스코 세계문화유산]</h5>
 				</a>
 				<p>창덕궁(사적)은 1405년 경복궁 다음으로 지어진 별궁이었다. 정궁인 경복궁의 동쪽 방면에 있다 해서 ''동궐''이라고도 했다. 
@@ -149,15 +145,12 @@
 		
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#"
-					target="_blank" title="새창열기"> <img
-					src="https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=31638&amp;fileTy=MEDIA&amp;fileNo=1"
-					alt="경복궁 사진">
+				<a href="#" target="_blank" title="새창열기">
+					<img src="${contextPath}/resources/images/seoul1-2.jpg">
 				</a>
 			</div>
 			<div class="right">
-				<a href="#"
-					target="_blank" title="새창열기">
+				<a href="#" target="_blank" title="새창열기">
 					<h5 class="mvp_h5">국립민속박물관&국립민속박물관 어린이박물관</h5>
 				</a>
 				<p>국립민속박물관은 우리나라 전통생활양식과 관련된 4,000여 점의 민속자료가 전시된 있는 국내 유일의 민속생활사 관련 국립·종합박물관이다.
@@ -168,15 +161,12 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#"
-					target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/seoul1.jpg"
-					alt="경복궁 사진">
+				<a href="#" target="_blank" title="새창열기">
+					<img src="${contextPath}/resources/images/seoul1-3.jpg">
 				</a>
 			</div>
 			<div class="right">
-				<a href="#"
-					target="_blank" title="새창열기">
+				<a href="#" target="_blank" title="새창열기">
 					<h5 class="mvp_h5">국립현대미술관(서울관)</h5>
 				</a>
 				<p>국립현대미술관 서울관은 동시대 현대미술을 중점적으로 다루는 미술관이다. 
@@ -187,15 +177,12 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#"
-					target="_blank" title="새창열기"> <img
-					src="https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=31638&amp;fileTy=MEDIA&amp;fileNo=1"
-					alt="경복궁 사진">
+				<a href="#" target="_blank" title="새창열기">
+					<img src="${contextPath}/resources/images/seoul1-4.jpg">
 				</a>
 			</div>
 			<div class="right">
-				<a href="#"
-					target="_blank" title="새창열기">
+				<a href="#" target="_blank" title="새창열기">
 					<h5 class="mvp_h5">종묘 [유네스코 세계문화유산]</h5>
 				</a>
 				<p>종묘는 조선왕조의 역대 왕과 왕비 그리고 사후에 추존된 왕과 왕비의 신주(神主)를 모신 사당이다. 
@@ -206,18 +193,17 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#"
-					target="_blank" title="새창열기"> <img
-					src="https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=31638&amp;fileTy=MEDIA&amp;fileNo=1"
-					alt="경복궁 사진">
+				<a href="#" target="_blank" title="새창열기">
+					<img src="${contextPath}/resources/images/seoul1-5.jpg">
 				</a>
 			</div>
 			<div class="right">
-				<a href="#"
-					target="_blank" title="새창열기">
-					<h5 class="mvp_h5">창덕궁과 후원 [유네스코 세계문화유산]</h5>
+				<a href="#" target="_blank" title="새창열기">
+					<h5 class="mvp_h5">광장시장</h5>
 				</a>
-				<p>조선 왕조의 역사와 위엄을 느낄 수 있는 한국을 대표하는 궁. 한복을 입고 경복궁에서 시간 여행을 떠나보자.
+				<p>1905년 고종 42년 을사조약 체결 후 실질적으로 주권행사는 일본이 장악했고 따라서 경제침략 정책을 기도한 바 
+				그 예로서 남대문시장 경영권 장악하였고 경제적인 돌파구로 새롭게 문을 연 것이 종로의 광장시장이다.
+				1905년 우리 나라 최초의 상설 시장 이 탄생한 순간이다.
 				</p>
 			</div>
 		</div>				
