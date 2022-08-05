@@ -395,12 +395,13 @@
     float: left;
     margin-right: 15px;
     width: 300px;
+    height: 150px;
 }
 .line_wrap .right {
     float: left;
     background-color: #f1f1f1;
     width: calc(100% - 315px);
-    height: 151.64px;
+    height: 150px;
     border-radius: 3px;
     padding: 25px 30px;
     box-sizing: border-box;

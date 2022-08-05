@@ -166,7 +166,7 @@
 			<div class="left">
 				<a href="#"
 					target="_blank" title="새창열기"> <img
-					src="https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=31638&amp;fileTy=MEDIA&amp;fileNo=1"
+					src="${contextPath}/resources/images/seoul1.jpg"
 					alt="경복궁 사진">
 				</a>
 			</div>
