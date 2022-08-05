@@ -29,7 +29,6 @@ if(session.getAttribute("isLogOn") == null || session.getAttribute("isLogOn").eq
 	<h4 align="left">My Page</h4>
 		<ul class="nav nav-pills nav-stacked">
 			<li class = "nav items" style="font-size:16px;">
-				<a href="${contextPath}/mypage/mypage.do">예약 내역 확인</a>
 				<a href="${contextPath}/..">게시판 작성내역</a>
 				<a href="${contextPath}/mypage/myInfo.do">개인 정보 확인</a>
 			</li>
@@ -37,17 +36,17 @@ if(session.getAttribute("isLogOn") == null || session.getAttribute("isLogOn").eq
 </nav> 
 
 <!-- 예약 내역 페이지 -->
-<h2 align="center" style= "margin-top: 130px; margin-right: 220px;" >예약 내역 확인</h2>
+<h2 align="center" style= "margin-top: 130px; margin-right: 220px;" >게시판 작성내역</h2>
 <div class="container">
     <form class="form-horizontal" id="frm">
     <table class ="table table-bordered table-striped table-hover">
 			<thead>
 				<tr class="info">
 					<th>No.</th>
-					<th>예약 상품</th>
-					<th>예약 날짜</th>
-					<th>결제 금액</th>
-					<th>취 소</th>
+					<th>제목</th>
+					<th>글쓴이</th>
+					<th>작성날짜</th>
+					<th>삭제</th>
 				</tr>
 			</thead>
 			<tbody>

@@ -36,13 +36,22 @@
 	</select>
 	
 	<!-- 회원 정보 수정하기(8.2) -->
-   <update id="updateMember" parameterType="com.aws.member.vo.MemberVO">
+  	<update id="updateMember" parameterType="com.aws.member.vo.MemberVO">
       <![CDATA[
       UPDATE member 
-      SET pwd = #{pwd}, name = #{name}, email = #{email}, address = #{address}, tel = #{tel}
-      WHERE id = #{id}
+      SET pwd=#{pwd, jdbcType=VARCHAR}, name=#{name, jdbcType=VARCHAR}, nname=#{nname, jdbcType=VARCHAR}, 
+      	  tel=#{tel, jdbcType=VARCHAR}, email=#{email, jdbcType=VARCHAR}, address=#{address, jdbcType=VARCHAR} 
+      WHERE id=#{id, jdbcType=VARCHAR}
       ]]>
-   </update>
+   </update> 
+   
+   <!-- 회원 탈퇴(8.4) -->
+   <delete id="deleteMember" parameterType="String">
+		<![CDATA[
+		DELETE	FROM member
+		WHERE	id=#{id, jdbcType=VARCHAR}
+		]]>
+   </delete>
 
 </mapper>
 
