@@ -20,7 +20,7 @@
         <jsp:include page="../../common/sidemenu.jsp"/>
     </div>
 <!-- 본문 내용 -->
-<!-- 서울의 랜드마크를 만나다 -->
+<!-- 서촌에서 즐기는 즐거운 맛산책 -->
 <div class="contents_centered">
 		<div class="titleType1">
 			<div class="tit">
@@ -38,7 +38,7 @@
 						src="${contextPath}/resources/images/icon_cos_schedule1.gif" alt=""></span>
 					<em>일정</em> <strong>당일치기</strong></li>
 				<li style="margin-left:50px;"><span class="img"><img
-						src="${contextPath}/resources/images/icon_cos_theme1.gif" alt=""></span> <em>테마</em>
+						src="${contextPath}/resources/images/icon_cos_theme3.gif" alt=""></span> <em>테마</em>
 					<strong>도보코스</strong></li>
 			</ul>
 		</div>
