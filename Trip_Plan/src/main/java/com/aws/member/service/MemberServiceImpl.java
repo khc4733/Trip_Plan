@@ -18,7 +18,16 @@ public class MemberServiceImpl implements MemberService {
 	@Autowired
 	private MemberDAO memberDAO;
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// 회원 가입 처리
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public int addMember(MemberVO memberVO) throws DataAccessException {
+		
+		System.out.println("MemberServiceImpl에서 받은 memberVO ==> " + memberVO);
+		return memberDAO.addMember(memberVO); 
 
+	}
 
 	//-----------------------------------------------------------------------------------------------------------
 	// 로그인 처리

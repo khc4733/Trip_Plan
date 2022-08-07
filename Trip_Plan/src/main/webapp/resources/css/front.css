@@ -264,12 +264,15 @@
 .signup_centered h2 {
 	text-align: center;
 }
-
+.validation-form div.mb {
+	padding: 5px 5px 5px 8px;
+	margin:auto;
+}
 .validation-form div.mb-3 {
-	padding: 10px;
+	padding: 10px ;
 }
 .validation-form div.mb-4 {
-	padding: 10px;
+	padding: 10px ;
 }
 .signup_email{
      width:85px;

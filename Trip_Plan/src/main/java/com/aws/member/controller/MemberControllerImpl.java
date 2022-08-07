@@ -115,6 +115,29 @@ public class MemberControllerImpl implements MemberController {
 		mav.setViewName("/member/signup");
 		return mav;
 	}
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 회원 가입 처리
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@RequestMapping(value="/addMember", method=RequestMethod.POST)
+	public ModelAndView addMember(@ModelAttribute("memberVO") MemberVO memberVO, HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
+		
+		System.out.println("MemberController에서 받은 memberVO ==> " + memberVO);
+		
+		int result = 0;
+		// 사용자가 입력한 정보를 서비스에게 넘겨주어 처리하게 한다.
+		result = memberService.addMember(memberVO);
+		
+		ModelAndView mav = new ModelAndView("redirect:/member/signin");
+
+		return mav;
+		
+	} // End - public ModelAndView addMember
 
 	//-----------------------------------------------------------------------------------------------------------
 	// 아이디 중복 검사(Ajax)

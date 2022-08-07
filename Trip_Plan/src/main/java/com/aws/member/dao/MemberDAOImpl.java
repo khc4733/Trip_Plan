@@ -18,7 +18,18 @@ public class MemberDAOImpl implements MemberDAO {
 	@Autowired
 	private SqlSession sqlSession;
 
+	//-----------------------------------------------------------------------------------------------------------
+	// 회원 가입 처리
+	// sqlSession.insert(사용할 mapper의 id, 저장할 값) 
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public int addMember(MemberVO memberVO) throws DataAccessException {
 
+		System.out.println("MemberDAOImpl에서 받은 memberVO ==> " + memberVO);
+		int result = sqlSession.insert("mapper.member.addMember", memberVO);
+		return result;
+
+	} // End - public int addMember(MemberVO memberVO)
 
 	//-----------------------------------------------------------------------------------------------------------
 	// 로그인 처리

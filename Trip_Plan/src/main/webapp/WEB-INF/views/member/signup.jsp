@@ -11,6 +11,7 @@
 <link href="${contextPath}/resources/css/front.css" type="text/css"
 	rel="stylesheet">
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 function findAddr() {
 	new daum.Postcode({
@@ -45,6 +46,7 @@ function fn_idCheck() {
 		data:			{"id" : $("#id").val()},
 		success:		function(data) {
 			if(data == 1) {
+				$("#idCheck").attr("value", "N");
 				$("#id").focus();
 				alert("이미 사용 중인 아이디입니다.");
 			} else if(data == 0) {
@@ -55,26 +57,60 @@ function fn_idCheck() {
 	});
 }
 </script>
+<script>
+//이메일주소 가져오기
+$("#user_email").blur(function(){
+	email();	
+});
 
+$("#domain").change(function(){
+	email();	
+});
+
+function email() {
+	const email = $("#user_email").val();
+	const middle = $("#middle").text();
+	const address = $("#domain").val();
+	if(email != "" && address != "") {
+		$("#totalemail").val(email+middle+address);
+	}
+};
+</script>
 <script>
 
 	function registerCheck() {
+		if ($.trim($('#id').val()) == '') {
+			alert("아이디를 입력해주세요.");
+			return false;
+		}			
 		if($.trim($('#idCheck').val()) == 'N'){
 			alert("아이디 중복 체크해주세요.");
 			return false;
 		}
-		if ($.trim($('#memberName').val()) == '') {
+		if ($.trim($('#pwd').val()) == '') {
+			alert("비밀번호를 입력해주세요.");
+			return false;
+		}		
+		if ($.trim($('#name').val()) == '') {
 			alert("이름을 입력해주세요.");
 			return false;
 		}
-		if ($.trim($('#memberId').val()) == '') {
-			alert("아이디를 입력해주세요.");
+		if ($.trim($('#nname').val()) == '') {
+			alert("닉네임을 입력해주세요.");
 			return false;
 		}
-		if ($.trim($('#memberPass').val()) == '') {
-			alert("비밀번호를 입력해주세요.");
+		if ($.trim($('#tel').val()) == '') {
+			alert("전화번호를 입력해주세요.");
 			return false;
-		}
+		}		
+		if ($.trim($('#totalemail').val()) == '') {
+			alert("이메일을 입력해주세요.");
+			return false;
+		}	
+		if ($.trim($('#address').val()) == '') {
+			alert("주소를 입력해주세요.");
+			return false;
+		}			
 		if (confirm("회원가입을 하시겠습니까?")) {
 			alert("회원가입이 완료되었습니다. 감사합니다.");
 			$("form").submit();
@@ -90,7 +126,7 @@ function fn_idCheck() {
 		<div class="input-form-backgroud row">
 			<div class="signup_input-form col-md-12 mx-auto">
 				<h2 class="mb-3">회원가입</h2>
-				<form class="validation-form" novalidate>
+				<form class="validation-form" method="post" action="${contextPath}/member/addMember">
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="text" class="form-control" id="id" name="id"
@@ -109,22 +145,35 @@ function fn_idCheck() {
 					<div class="row">
 						<div class="col-md-6 mb-3">
 							<input type="text"
-								class="form-control" id="name" placeholder="이름" value="" required>
+								class="form-control" id="name" name="name" placeholder="이름" value="" required>
 						</div>
 						<div class="col-md-6 mb-3">
 							<input type="text"
-								class="form-control" id="nickname" placeholder="닉네임" value=""
+								class="form-control" id="nname" name="nname" placeholder="닉네임" value=""
 								required>
 						</div>
-					</div>				
+					</div>		
 					<div class="row">
 						<div class="col-md-9 mb-3">
-							 <input type="email"
-								class="form-control" id="email" placeholder="이메일" required>
+							<input type="text"
+								class="form-control" id="tel" name="tel" placeholder="전화번호" value="" required>
 						</div>
+					</div>								
+					<div class="row">
+						<div class="col-md-4 mb-3">
+							 <input type="text"
+								class="form-control" id="user_email" placeholder="이메일" required>
+						</div>
+						<div class="col-md-1 mb">
+							 <h4 id="middle">@</h4>
+						</div>
+						<div class="col-md-4 mb-3">
+							 <input type="text"
+								class="form-control" name="domain" id="domain" placeholder="" required>
+						</div>												
 						<div  class="col-md-3 mb-3">
-							<select class="signup_email" name="email_server" id="email_server"
-								onchange="input_email();">
+							<select class="signup_email" name="domain_list" id="email_server"
+								onchange="this.form.domain.value=this[this.selectedIndex].value;">
 
 								<option value="">직접입력</option>
 
@@ -135,15 +184,9 @@ function fn_idCheck() {
 								<option value="hanmail.net">hanmail.net</option>
 
 								<option value="gmail.com">gmail.com</option>
-
-								<option value="yahoo.com">yahoo.com</option>
-
-								<option value="yahoo.co.kr">yahoo.co.kr</option>
-
-								<option value="hotmail.com">hotmail.com</option>
-
 							</select>
-						</div> 					
+						</div> 		
+						<input type="hidden" id="totalemail" name="email" value="">			
 					</div>
 
 					<!-- <div class="row">
@@ -159,7 +202,7 @@ function fn_idCheck() {
 
 					<div class="row">
 						<div class="col-md-9 mb-3">
-							<input type="text" class="form-control" id="address"
+							<input type="text" class="form-control" id="address" name="address"
 								placeholder="주소" required>
 						</div>
 						<div class="col-md-3 mb-3">
@@ -169,7 +212,7 @@ function fn_idCheck() {
 					<div class="row">
 						<div class="col-md mb-3">
 							<input type="text" class="form-control" id="address2"
-								placeholder="상세주소 입력" value="" required>
+								placeholder="상세주소 입력" value="">
 						</div>
 					</div>
 

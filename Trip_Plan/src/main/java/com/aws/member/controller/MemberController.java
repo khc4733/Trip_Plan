@@ -22,6 +22,11 @@ public interface MemberController {
 	//-----------------------------------------------------------------------------------------------------------
 	public	ModelAndView SignUp(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	//-----------------------------------------------------------------------------------------------------------
+	// 회원 가입 처리
+	//-----------------------------------------------------------------------------------------------------------
+	public ModelAndView addMember(@ModelAttribute("member") MemberVO memberVO,
+			HttpServletRequest request, HttpServletResponse response) throws Exception;
+	//-----------------------------------------------------------------------------------------------------------
 	// 로그인 폼
 	//-----------------------------------------------------------------------------------------------------------
 	public	ModelAndView SignIn(HttpServletRequest request, HttpServletResponse response) throws Exception;
