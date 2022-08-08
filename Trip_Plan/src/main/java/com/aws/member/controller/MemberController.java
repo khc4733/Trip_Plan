@@ -47,7 +47,10 @@ public interface MemberController {
 	//-----------------------------------------------------------------------------------------------------------
 	public int idCheck(MemberVO memberVO) throws Exception;
 
-	
+	//-----------------------------------------------------------------------------------------------------------
+	// 이메일 인증(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	public String mailCheckGET(String email) throws Exception;
 	
 
 } // End - public interface MemberController

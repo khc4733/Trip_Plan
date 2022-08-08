@@ -281,7 +281,32 @@
      font-family:'Nanumgothic';
      font-size:12px;
      }
-/* signin 페이지 영역 끝 */
+#email_div button{
+  position: absolute;
+  width: 88px;
+  height: 28px;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  margin: auto;
+  align-items: center; /* 가로 - 중앙으로 */
+  justify-content: flex-start;
+  color: #ffffff;
+  border : none;
+  background-color: #4575a8;
+  border-radius: 3px;
+}     
+.signup.btn {
+	width: 88px;
+	color: #ffffff;
+	border: none;
+	padding:6px;
+	align-items: center; /* 가로 - 중앙으로 */ 
+	justify-content : flex-start;
+	background-color: #4575a8;
+	border-radius: 3px;
+	justify-content: flex-start;}
+/* signup 페이지 영역 끝 */
 
 /*  상세 정보 페이지 영역 시작 */
 .contents_centered{
