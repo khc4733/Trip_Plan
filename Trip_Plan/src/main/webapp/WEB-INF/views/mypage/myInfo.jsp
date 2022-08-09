@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c"	uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt"	uri="http://java.sun.com/jsp/jstl/fmt"  %>
+<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt"   uri="http://java.sun.com/jsp/jstl/fmt"  %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <%  request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
@@ -16,6 +16,25 @@
 .form-group { 
  font-family: Play;
 }
+#btn-remove{
+  background-color: white;
+  color: black;
+  border: none;
+  font-family: Play;
+  font-size: 13px;
+}
+
+#btn-remove:hover {background-color: #e7e7e7;}
+
+#btn-update{
+  background-color: white;
+  color: black;
+  border: none;
+  font-family: Play;
+  font-size: 13px;
+}
+
+#btn-update:hover {background-color: #e7e7e7;}
 </style>
 </head>
 
@@ -26,20 +45,20 @@
 
 <!-- 사이드 메뉴 바 -->
 <nav class="col-sm-2 sidenav">
-	<h4 align="left">My Page</h4>
-		<ul class="nav nav-pills nav-stacked">
-			<li class = "nav items" style="font-size:16px;">
-				<a href="${contextPath}/..">게시판 작성내역</a>
-				<a href="${contextPath}/mypage/myInfo.do">개인 정보 확인</a>
-			</li>
-		</ul>
+   <h4 align="left">My Page</h4>
+      <ul class="nav nav-pills nav-stacked">
+         <li class = "nav items" style="font-size:16px;">
+            <a href="${contextPath}/..">게시판 작성내역</a>
+            <a href="${contextPath}/mypage/myInfo.do">개인 정보 확인</a>
+         </li>
+      </ul>
 </nav> 
 
 <div class="container">
-    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/member/modifyMember.do">
+    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do">
         <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
-               <h2 align="center" style= "margin-top: 100px; margin-right: 200px; font-family: Play;" >MY ACCOUNT</h2>
+               <h2 align="center" style= "margin-top: 100px; margin-right: 230px; font-family: Play;" >MY ACCOUNT</h2>
            </div>
         </div>
         <div class="form-group">
@@ -73,7 +92,7 @@
                <input type="text" class="form-control" id="email" name="email" maxlength="50" value="${member.email}"/>
             </div>
         </div>
-		<div class="form-group">
+      <div class="form-group">
             <label for="id" class="col-sm-5 control-label">TEL</label>
             <div class="col-sm-3">
                <input type="text" class="form-control" id="tel" name="tel" maxlength="50" value="${member.tel}"/>
@@ -85,24 +104,37 @@
                <input type="text" class="form-control" id="address" name="address" maxlength="50" value="${member.address}"/>
             </div>
         </div>
-        <div class="form-group">
-            <div class="col-sm-offset-5 col-sm-4">
-               <button type="submit" class="btn btn-sm btn-primary">회원 정보 수정</button> 
-               <a class="btn btn-sm btn-danger" id="btn-remove" href="${contextPath}/mypage/removeMember.do?id=${member.id}">회원탈퇴</a>   
-            </div>
-        </div>
+        <br/>      
+       <div class="btn-confirm">
+           <div class="col-sm-offset-4 col-sm-4"> 
+            <a href="${contextPath}/mypage/modifyMember.do?id=${member.id}"><button type="submit" class="btn btn-sm btn-block" id="btn-update">회원 정보 수정</button></a>
+          </div>
+       </div>
     </form>
+    <br/>
+    <br/>
+    <div class="btn-confirm">
+           <div class="col-sm-offset-4 col-sm-4"> 
+            <a href="${contextPath}/mypage/removeMember.do?id=${member.id}"><button class="btn btn-sm btn-block" id="btn-remove">회원탈퇴</button></a>
+        </div>
+    </div>
 </div>
 <script>
 //회원탈퇴
-	$(function(){
-		$('#btn-remove').click(function(){
-			if(confirm("Are you sure?")){
-				self.location.href = "redirect:/";
-			}
-		});
-	});
+$(function(){
+   $('#btn-remove').click(function(){
+      var result = confirm("회원탈퇴를 진행하시겠습니까?");
+      
+      if(result == true){
+         alert("회원탈퇴가 완료되었습니다.");
+         self.location.href = "redirect:/";
+      }else {
+         alert("회원탈퇴 진행을 취소하였습니다.");
+      }
+   });
+});
 </script>
+
 <!-- footer --> 
 <jsp:include page="../common/footer.jsp" flush="false"/>
 </body>
