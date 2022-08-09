@@ -56,6 +56,17 @@ public interface MemberController {
 	// 아이디 찾기 폼
 	//-----------------------------------------------------------------------------------------------------------
 	public	ModelAndView Id_search(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	public String Id_find(MemberVO memberVO) throws Exception;
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 비밀번호 찾기 폼
+	//-----------------------------------------------------------------------------------------------------------
+	public	ModelAndView Pw_search(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
 
 
 } // End - public interface MemberController

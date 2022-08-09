@@ -223,6 +223,33 @@ public class MemberControllerImpl implements MemberController {
 	}
 
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@ResponseBody
+	@RequestMapping(value="/member/id_find", method=RequestMethod.POST)
+	public String Id_find(MemberVO memberVO) throws Exception{
+		
+		System.out.println("MemberController 아이디 찾기 email => " + memberVO.getEmail());
+		String result = memberService.Id_find(memberVO); 
+		
+		System.out.println("result : " + result);
+		return result;
+	}
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 비밀번호 찾기 폼
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@RequestMapping(value="/pw_search", method=RequestMethod.GET)
+	public ModelAndView Pw_search(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/member/pw_search");
+		return mav;
+	}
+
 	
 	
 

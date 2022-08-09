@@ -48,6 +48,17 @@ public class MemberServiceImpl implements MemberService {
 		return result;
 	}
 
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public String Id_find(MemberVO memberVO) throws Exception {
+
+		String result = memberDAO.Id_find(memberVO);
+		return result;
+	}
+	
+
 
 
 

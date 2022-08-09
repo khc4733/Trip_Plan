@@ -26,6 +26,10 @@ public interface MemberDAO {
 	//-----------------------------------------------------------------------------------------------------------
 	public int idCheck(MemberVO memberVO) throws DataAccessException;
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	public String Id_find(MemberVO memberVO) throws DataAccessException;
 	
 
 } // End - public interface MemberDAO

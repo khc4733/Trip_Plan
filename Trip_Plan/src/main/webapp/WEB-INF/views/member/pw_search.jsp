@@ -11,13 +11,13 @@
 	rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
 <script>
-	function id_search() {
+	function pw_search() {
 		
-		var name = $("#name").val();
+		var id = $("#id").val();
 		var email = $("#email").val();
 
-		if (name == '') {
-			alert("이름을 입력해주세요.");
+		if (id == '') {
+			alert("아이디를 입력해주세요.");
 			return false;
 		}
 		if (email == '') {
@@ -25,14 +25,14 @@
 			return false;
 		}
 		$.ajax({
-			url:			"member/id_find",
+			url:			"member/pw_find",
 			type:			"post",
-			data:			{"email" : $("#email").val(), "name" : $("#name").val()},
+			data:			{"email" : $("#email").val(), "id" : $("#id").val()},
 			success:		function(data) {
 				if(data==''){
 					alert("잘못된 정보입니다. 다시 입력해 주세요.");
 				}else{
-				    alert("회원님의 아이디는 : "+data+"입니다.");
+				    alert("회원님의 비밀번호는 : "+data+"입니다.");
 				}
 			},
 			error : function(xhr, status, error) {
@@ -66,16 +66,16 @@
 					<td style="padding:15px; border-top:2px #cccccc solid; border-right:2px #cccccc solid; border-bottom:2px #cccccc solid; border-left:2px #cccccc solid;">
 						  <table width="380" border="0" cellspacing="0" cellpadding="0">
   							<tbody><tr>
-  								<td class="stitle">아이디 찾기</td>
+  								<td class="stitle">비밀번호 찾기</td>
   							</tr>
   					  </tbody></table>
   						<table width="380" border="0" cellspacing="1" class="regtable">
   							<tbody><tr>
-  								<td width="100" height="25" bgcolor="#f4f4f4" >이름</td>
+  								<td width="100" height="25" bgcolor="#f4f4f4" >아이디</td>
   								<td width="130">
-  									<input type="text" name="name" id="name" tabindex="1" required>
+  									<input type="text" name="id" id="id" tabindex="1" required>
   								</td>
-  								<td rowspan="2" align="center"><div class="bts"><button class="bts_btn" type="submit" onclick="id_search()">아이디 찾기</button></div></td>
+  								<td rowspan="2" align="center"><div class="bts"><button class="bts_btn" type="submit" onclick="pw_search()">비밀번호 찾기</button></div></td>
   							</tr>
   							<tr>
   								<td height="25" bgcolor="#f4f4f4">e-Mail</td>

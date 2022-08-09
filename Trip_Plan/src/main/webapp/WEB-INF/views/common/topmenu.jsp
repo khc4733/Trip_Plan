@@ -69,10 +69,10 @@
 					</ul>
 				</li>
 				<li class="nav-item">
-				    <a href="${contextPath}/board/review.do" >Review</a>
+				    <a href="${contextPath}/board/review" >Review</a>
 				</li>
 				<li class="nav-item">
-				    <a href="${contextPath}/board/review.do" >Notice</a>
+				    <a href="${contextPath}/board/review" >Notice</a>
 				</li>
 			</ul>
 			

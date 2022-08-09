@@ -60,6 +60,16 @@
 		]]>
    </delete>
 
+	<!-- 아이디 찾기. -->
+	<select id="id_find" parameterType="com.aws.member.vo.MemberVO"
+		resultType="String">
+		<![CDATA[
+		SELECT	*
+		FROM	member
+		WHERE	email = #{email, jdbcType=VARCHAR} and name = #{name, jdbcType=VARCHAR}
+		]]>
+	</select>
+	
 </mapper>
 
 

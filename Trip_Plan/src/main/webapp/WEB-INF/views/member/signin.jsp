@@ -28,10 +28,10 @@
 </c:choose>
   <script type="text/javascript"> 
   function findpassword(){
-	  var url="${contextPath}/member/id_search";
+	  var url="${contextPath}/member/pw_search";
 	  
-	  var popupWidth = 500;
-	  var popupHeight = 600;
+	  var popupWidth = 450;
+	  var popupHeight = 180;
 	  var popupX = Math.ceil(( window.screen.width - popupWidth )/2);
 	  var popupY = Math.ceil(( window.screen.height - popupHeight )/2); 
 
@@ -42,7 +42,7 @@
 	  var url="${contextPath}/member/id_search";
 	  
 	  var popupWidth = 450;
-	  var popupHeight = 200;
+	  var popupHeight = 180;
 	  var popupX = Math.ceil(( window.screen.width - popupWidth )/2);
 	  var popupY = Math.ceil(( window.screen.height - popupHeight )/2); 
 
