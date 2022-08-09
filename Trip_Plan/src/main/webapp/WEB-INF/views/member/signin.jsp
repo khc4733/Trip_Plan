@@ -28,7 +28,7 @@
 </c:choose>
   <script type="text/javascript"> 
   function findpassword(){
-	  var url="${contextPath}/member/signin";
+	  var url="${contextPath}/member/id_search";
 	  
 	  var popupWidth = 500;
 	  var popupHeight = 600;
@@ -39,10 +39,10 @@
 	  
   }
   function findid(){
-	  var url="${contextPath}/member/signin";
+	  var url="${contextPath}/member/id_search";
 	  
-	  var popupWidth = 500;
-	  var popupHeight = 600;
+	  var popupWidth = 450;
+	  var popupHeight = 200;
 	  var popupX = Math.ceil(( window.screen.width - popupWidth )/2);
 	  var popupY = Math.ceil(( window.screen.height - popupHeight )/2); 
 

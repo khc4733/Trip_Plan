@@ -210,8 +210,18 @@ public class MemberControllerImpl implements MemberController {
         return num;
     }
 
-	
-	
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 찾기 폼
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@RequestMapping(value="/id_search", method=RequestMethod.GET)
+	public ModelAndView Id_search(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/member/id_search");
+		return mav;
+	}
+
 	
 	
 	

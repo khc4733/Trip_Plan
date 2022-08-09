@@ -52,6 +52,11 @@ public interface MemberController {
 	//-----------------------------------------------------------------------------------------------------------
 	public String mailCheckGET(String email) throws Exception;
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// 아이디 찾기 폼
+	//-----------------------------------------------------------------------------------------------------------
+	public	ModelAndView Id_search(HttpServletRequest request, HttpServletResponse response) throws Exception;
+
 
 } // End - public interface MemberController
 
