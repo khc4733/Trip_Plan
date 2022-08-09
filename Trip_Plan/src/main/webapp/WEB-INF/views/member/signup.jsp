@@ -155,7 +155,7 @@ function numchk(){
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="text" class="form-control" id="id" name="id"
-								maxlength="20" placeholder="아이디" />
+								maxlength="20" placeholder="아이디" required/>
 						</div>
 						<div class="col-md-3 mb-3">
 							<button type="button" class="signup btn" id="idCheck" onClick="fn_idCheck();" value="N">중복 확인</button>
@@ -164,7 +164,7 @@ function numchk(){
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="password" class="form-control" id="pwd" name="pwd"
-								maxlength="20" placeholder="비밀번호" />
+								maxlength="20" placeholder="비밀번호" required/>
 						</div>
 					</div>
 					<div class="row">
