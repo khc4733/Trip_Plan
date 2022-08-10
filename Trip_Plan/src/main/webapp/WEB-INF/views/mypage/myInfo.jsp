@@ -12,6 +12,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Permanent+Marker&family=Play&family=Poiret+One&family=Raleway:ital@1&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function findAddr() {
+	new daum.Postcode({
+    	oncomplete: function(data) {
+        	// 사용자 주소를 받아올 변수를 정의한다.
+            var addr = '';
+            
+            //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+            if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우(R)
+                addr = data.roadAddress;
+            } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                addr = data.jibunAddress;
+            }
+            
+            // 부모창의 주소칸에 받아온 주소를 넣는다.
+            $("#address").val(addr);
+    	}
+ 	}).open();
+}
+</script>
 <style>
 .form-group { 
  font-family: Play;
@@ -55,7 +77,7 @@
 </nav> 
 
 <div class="container">
-    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do">
+    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do"> 
         <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
                <h2 align="center" style= "margin-top: 100px; margin-right: 230px; font-family: Play;" >MY ACCOUNT</h2>
@@ -99,12 +121,21 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label">ADDRESS</label>
-            <div class="col-sm-3">
-               <input type="text" class="form-control" id="address" name="address" maxlength="50" value="${member.address}"/>
-            </div>
-        </div>
-        <br/>      
+        	<label for="id" class="col-sm-5 control-label">ADDRESS</label>
+			<div class="col-sm-3">
+				<input type="text" class="form-control" id="address" name="address" maxlength="50" value="${member.address}"/>
+			</div>
+		<div class="form-group">
+			<button type="button" id="addressSearch" class="signup btn btn-sm" onclick="findAddr()">SEARCH</button>
+		</div>
+		<div class="form-group">
+		<label for="id" class="col-sm-5 control-label"></label>
+			<div class="col-sm-3">
+				<input type="text" class="form-control" id="address1" placeholder="상세주소 입력(선택사항)" value="">
+			</div>
+			<input type="hidden" id="address" name="address" value="">						
+		</div>
+		</div>    
        <div class="btn-confirm">
            <div class="col-sm-offset-4 col-sm-4"> 
             <a href="${contextPath}/mypage/modifyMember.do?id=${member.id}"><button type="submit" class="btn btn-sm btn-block" id="btn-update">회원 정보 수정</button></a>
