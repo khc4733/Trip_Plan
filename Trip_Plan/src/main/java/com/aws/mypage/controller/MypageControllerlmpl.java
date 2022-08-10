@@ -6,10 +6,12 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.aws.member.service.MemberService;
 import com.aws.member.vo.MemberVO;
 import com.aws.mypage.service.MypageService;
 
@@ -22,6 +24,9 @@ public class MypageControllerlmpl implements MypageController {
 	
 	@Autowired
 	private MypageService mypageService;
+	
+	@Autowired
+	private MemberService memberService;
 	
 	//----------------------------------------------------------------------------------------------------
 	// mypage
@@ -41,31 +46,34 @@ public class MypageControllerlmpl implements MypageController {
 	//----------------------------------------------------------------------------------------------------
 	@Override
 	@RequestMapping(value="/myInfo", method=RequestMethod.GET)
-	public ModelAndView MyInfo(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public ModelAndView MyInfo(@ModelAttribute("member") MemberVO member, MemberVO memberVO, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("/mypage/myInfo");
+		memberVO = memberService.login(memberVO);
+		ModelAndView mav = new ModelAndView("/mypage/modifyMember.do");
+		
+		mav.addObject("member", memberVO);
+		
 		return mav;
 	}
-
+	
 	//-----------------------------------------------------------------------------------------------------------
 	// 회원 정보 수정하기 (8.4)
 	//-----------------------------------------------------------------------------------------------------------
 	@Override
-	@RequestMapping(value="/modifyMember.do", method=RequestMethod.POST)
+	@RequestMapping(value="/modifyMember", method=RequestMethod.POST)
 	public ModelAndView modifyMember(MemberVO memberVO, HttpServletRequest request, HttpServletResponse response)
-			throws Exception {
-		
+			    throws Exception {
+			
 		request.setCharacterEncoding("UTF-8");
-	    response.setContentType("text/html;charset=UTF-8");
-	      
-	    int result = mypageService.modifyMember(memberVO);
-	      
-	    ModelAndView mav = new ModelAndView("/mypage/myInfo");
-	      
-	    return mav;
-	    
+		response.setContentType("text/html;charset=UTF-8");
+		      
+		int result = mypageService.modifyMember(memberVO);
+		      
+		ModelAndView mav = new ModelAndView("/mypage/modifyMember.do");
+		return mav;
+		    
 	}// end - public ModelAndView modifyMember
+		
 	
 	//-----------------------------------------------------------------------------------------------------------
 	// 회원 탈퇴하기 (8.4)
