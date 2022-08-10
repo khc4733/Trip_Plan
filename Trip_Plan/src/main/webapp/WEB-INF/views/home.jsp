@@ -49,7 +49,7 @@
 				 }
 					 
 				.carousel-indicators li.active {
-					 backgroud-color: white;
+					 background-color: white;
 				}
 	   		 </style>
 	   		 
@@ -64,7 +64,7 @@
 		<div class="h_container">
 		 	<div class="home_data">
               <span class="home_data-title">Trip_Plan</span>
-             <h1 class="home_data-subtitle">Trip plan <br> Best <b>Beautiful <br> Places</b></h1>
+             <h1 class="home_data-subtitle">Trip plan Beautiful Places</h1>
 			</div>
 		</div>
 			
@@ -127,7 +127,7 @@
 		<!-- 리뷰 인기글 시작 -->
 			<div id="main_review">
 				<p>BEST REVIEW</p>
-			  
+			  <a href="${contextPath}/board/review" class="btn_more"><img src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
 			    <div id="main_review--container">
 			
 			        <div id="main_review--bcp">

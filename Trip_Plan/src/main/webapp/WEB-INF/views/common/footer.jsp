@@ -7,11 +7,11 @@
 <title>footer</title>
 
 <style>
-.footer {
-position: absolute;
+#footer_container {
+position: relative;
+transform: translatY(-100%);
+width: 100%;
 bottom: 0;
-left: 0;
-right: 0;
 color: white;
 background-color: #333333;
 }
@@ -19,7 +19,7 @@ background-color: #333333;
 
 </head>
 <body>
-<hr style=" width:100%; color:#bac8d9; margin-top: 40px">
+
  <div id="footer_container" class="container text-center">
         <div id="footer_content">
             <?xml version="1.0" ?>
