@@ -7,7 +7,8 @@
 <title>footer</title>
 
 <style>
-#footer_container {
+footer {
+text-align: center;
 position: relative;
 transform: translatY(-100%);
 width: 100%;
@@ -19,8 +20,7 @@ background-color: #333333;
 
 </head>
 <body>
-
- <div id="footer_container" class="container text-center">
+<footer>
         <div id="footer_content">
             <?xml version="1.0" ?>
             Copyright ©  All Right Reserved <br/>
@@ -28,6 +28,6 @@ background-color: #333333;
             <a href="${pageContext.request.contextPath}/memberP">이용약관 </a>  |  <a href="${pageContext.request.contextPath}/memberR">개인정보이용동의서</a>
             <br>
         </div>
-    </div>
+</footer>
 </body>
 </html>

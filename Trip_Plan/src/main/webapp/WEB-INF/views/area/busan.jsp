@@ -21,6 +21,7 @@
         <jsp:include page="../common/sidemenu.jsp"/>
     </div>
 <!-- 본문 내용 -->
+  <div class="area_main">
 	<div class="area_centered">
 		<h1>부산 테마코스</h1>
 		<hr class="area_hr-solid">
@@ -116,7 +117,7 @@
 		</div>
 		<!-- busan3 끝 -->
 	</div>    
-
+   </div>
 <!-- footer -->
      <div>
         <jsp:include page="../common/footer.jsp"/>

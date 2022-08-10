@@ -34,9 +34,13 @@ function findAddr() {
 </script>
 <script>
 function fn_idCheck() {
-	 
-	if($("#id").val()==""){
-		alert("아이디를 입력하세요.");
+	
+	var idRegex =  /^.*(?=^.{4,12}$)(?=.*\d)(?=.*[a-zA-Z]).*$/; 
+	
+	var idTest=idRegex.test($("#id").val());
+	
+	if(!idTest){
+		alert("영문 대 소문자, 숫자를 포함한 4자리 이상의 아이디를 입력하세요.");
 	    return false;
 	}
 	$.ajax({
@@ -58,6 +62,30 @@ function fn_idCheck() {
 	});
 	
 }
+</script>
+<script>
+$(document).ready(function() {
+	var pwRegex =  /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+	$("#pwd").on("input",function(){
+		var passWordTest=pwRegex.test($("#pwd").val());
+		if(!passWordTest){
+			$('#pwdMsg').show();
+		}
+		else{
+			$('#pwdMsg').hide();
+		}
+	});
+});
+
+/* $(document).ready(function() {
+	var pwRegex =  /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/; //1안
+	$("#pwd").blur(function(){
+		var passWordTest=pwRegex.test($("#pwd").val());
+		if(!passWordTest){
+			alert("8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.");
+		}
+	});
+}); */
 </script>
 <script>
 	function emailchk() {
@@ -164,7 +192,8 @@ function numchk(){
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="password" class="form-control" id="pwd" name="pwd"
-								maxlength="20" placeholder="비밀번호" required/>
+								minlength="8" maxlength="16" placeholder="비밀번호" required/>
+							<span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
 						</div>
 					</div>
 					<div class="row">

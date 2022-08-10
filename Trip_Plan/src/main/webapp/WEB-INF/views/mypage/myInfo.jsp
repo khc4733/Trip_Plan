@@ -66,15 +66,7 @@ function findAddr() {
 <jsp:include page="../common/topmenu.jsp" flush="false"/>
 
 <!-- 사이드 메뉴 바 -->
-<nav class="col-sm-2 sidenav">
-   <h4 align="left">My Page</h4>
-      <ul class="nav nav-pills nav-stacked">
-         <li class = "nav items" style="font-size:16px;">
-            <a href="${contextPath}/mypage/mypage">게시판 작성내역</a>
-            <a href="${contextPath}/mypage/myInfo.do">개인 정보 확인</a>
-         </li>
-      </ul>
-</nav> 
+<jsp:include page="../mypage/myside.jsp"/>
 
 <div class="container">
     <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do"> 
