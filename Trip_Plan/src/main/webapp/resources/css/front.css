@@ -1,9 +1,43 @@
 @charset "UTF-8";
 /* 주석활용해서 폴더 및 페이지 섹션별로 나눠서 작업해주세요~ */
-        
+
+@font-face	{
+     font-family:	'Nanum';
+     src:	url('../font/NanumGothic.eot');
+     src:	url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'), 
+            url('..//font/NanumGothic.woff') format('woff'),
+            url('../font/NanumGothic.ttf')	format('truetype');
+}
+
+@font-face {
+	font-family: 'MYYeongnamnu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+	}
+	
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}   
+	  
+@font-face {
+    font-family: 'LeferiPoint-BlackObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+   
+  html {
+  		height: 100%;
+  } 
+       
   body {
 		margin: 0;
 		padding: 0;
+		height: 100%;
 	}
 		
 	.h_container {
@@ -15,18 +49,26 @@
 	 }
 	 
 	 .home_data {
-	   	 color: #fff;
-	   	margin-left: 50px;
+	   	 font-family: 'MYYeongnamnu';
+		 color: #fff;
+	 	 margin-left: 50px;
+		 margin-top: -70px;
 	 }
 	   		 	
 	.home_data-title{
-	   	font-size: 120px;
-	   	font-weight: bold;
-	   	display : block;
+	    height: 320px;
+		padding : 190px 0 0 0;
+		text-align : center;
+		font-family: 'MYYeongnamnu';
+		font-size: 140px;
+		font-weight: bold;
+		display : inline-block;
 	 }
 	   		 	
 	 .home_data-subtitle{
-	   	font-size: 80px;
+	   font-family: 'MYYeongnamnu';
+		padding : 25px 0 0 20px;
+		font-size: 25px;
 	 }
 	
 	     
@@ -39,7 +81,7 @@
      }
 
     #main_bestcourse > p,
-    #main_review > p {
+    #main_review > p{
         background-color: white;
         font-family: "jua", sans-serif;
         font-weight: bold;
@@ -66,20 +108,24 @@
     	/*border: 2px solid red;*/
     	text-align: center;
     }
-    
+     .btn_more {
+    	position: absolute;
+    	right: 400px;
+    }
 
      #main_review--bcp {
         /*border: 1px solid #495c75;*/
         margin: 30px 0;
-        width: 1050px;
+        width: 550px;
         height: 310px;
-        border-radius: 20px;
+        /*border-radius: 20px;*/
         display: inline-block;
         position: relative;
      }
      
           
      #main_review--bcp--table{
+     	min-height: 100%;
       	font-family:  Nanum;
      	position: absolute;
      	top: 50%;
@@ -102,21 +148,6 @@
        color: #647C97;
      }
       
-    @font-face	{
-         /*
-         font-family:	[사용할 폰트이름];
-          src:			[폰트 자원의 위치-local(폰트이름), url(자원의 경로)];      
-          */
-           font-family:	'Nanum';
-                 src:			url('../font/NanumGothic.eot');
-                 src:			url('../font/NanumGothic.eot?#iefix') 	format('embedded-opentype'), 
-                                url('..//font/NanumGothic.woff')			format('woff'),
-                                url('../font/NanumGothic.ttf')			format('truetype');
-}
-        
-     #footer_content {
-         text-align: center;
-     }
 
 /* area폴더 페이지 영역 시작*/
 .area_centered {
