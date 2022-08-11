@@ -19,7 +19,7 @@ public interface MypageController {
 	//----------------------------------------------------------------------------------------------------
 	// 개인 정보 확인 페이지(8.3)
 	//----------------------------------------------------------------------------------------------------
-	public ModelAndView MyInfo(@ModelAttribute("member") MemberVO member, MemberVO memberVO, HttpServletRequest request, HttpServletResponse response) throws Exception;
+	public ModelAndView MyInfo(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	//-----------------------------------------------------------------------------------------------------------
 	// 회원 정보 수정하기 (8.4)

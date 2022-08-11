@@ -25,9 +25,6 @@ public class MypageControllerlmpl implements MypageController {
 	@Autowired
 	private MypageService mypageService;
 	
-	@Autowired
-	private MemberService memberService;
-	
 	//----------------------------------------------------------------------------------------------------
 	// mypage
 	//----------------------------------------------------------------------------------------------------
@@ -46,12 +43,10 @@ public class MypageControllerlmpl implements MypageController {
 	//----------------------------------------------------------------------------------------------------
 	@Override
 	@RequestMapping(value="/myInfo", method=RequestMethod.GET)
-	public ModelAndView MyInfo(@ModelAttribute("member") MemberVO member, MemberVO memberVO, HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public ModelAndView MyInfo( HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
-		memberVO = memberService.login(memberVO);
-		ModelAndView mav = new ModelAndView("/mypage/modifyMember.do");
-		
-		mav.addObject("member", memberVO);
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/mypage/myInfo");
 		
 		return mav;
 	}
@@ -60,7 +55,7 @@ public class MypageControllerlmpl implements MypageController {
 	// 회원 정보 수정하기 (8.4)
 	//-----------------------------------------------------------------------------------------------------------
 	@Override
-	@RequestMapping(value="/modifyMember", method=RequestMethod.POST)
+	@RequestMapping(value="/modifyMember.do", method=RequestMethod.POST)
 	public ModelAndView modifyMember(MemberVO memberVO, HttpServletRequest request, HttpServletResponse response)
 			    throws Exception {
 			
@@ -69,7 +64,7 @@ public class MypageControllerlmpl implements MypageController {
 		      
 		int result = mypageService.modifyMember(memberVO);
 		      
-		ModelAndView mav = new ModelAndView("/mypage/modifyMember.do");
+		ModelAndView mav = new ModelAndView("/mypage/myInfo.do");
 		return mav;
 		    
 	}// end - public ModelAndView modifyMember
