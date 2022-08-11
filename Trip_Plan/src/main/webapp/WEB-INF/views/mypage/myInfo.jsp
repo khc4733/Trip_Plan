@@ -129,7 +129,7 @@ function findAddr() {
 		</div>    
         <div class="btn-confirm">
            <div class="col-sm-offset-4 col-sm-4"> 
-            <a href="${contextPath}/mypage/modifyMember.do?id=${member.id}"><button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원 정보 수정</button></a>
+            <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원 정보 수정</button></a>
             <a href="${contextPath}/mypage/removeMember.do?id=${member.id}"><button type="button" class="btn btn-sm btn-block" id="btn-remove"  onclick="removeMember()">회원탈퇴</button></a>
           </div>
        </div>

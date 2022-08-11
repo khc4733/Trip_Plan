@@ -64,7 +64,8 @@ public class MypageControllerlmpl implements MypageController {
 		      
 		int result = mypageService.modifyMember(memberVO);
 		      
-		ModelAndView mav = new ModelAndView("/mypage/myInfo.do");
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("redirect:/mypage/myInfo");
 		return mav;
 		    
 	}// end - public ModelAndView modifyMember
