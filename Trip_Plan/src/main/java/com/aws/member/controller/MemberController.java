@@ -67,7 +67,10 @@ public interface MemberController {
 	//-----------------------------------------------------------------------------------------------------------
 	public	ModelAndView Pw_search(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
-
+	//-----------------------------------------------------------------------------------------------------------
+	// 비밀번호 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	public String Pw_find(MemberVO memberVO) throws Exception;
 
 } // End - public interface MemberController
 

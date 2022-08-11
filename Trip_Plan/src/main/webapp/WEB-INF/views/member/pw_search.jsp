@@ -32,7 +32,7 @@
 				if(data==''){
 					alert("잘못된 정보입니다. 다시 입력해 주세요.");
 				}else{
-				    alert("회원님의 비밀번호는 : "+data+"입니다.");
+				    alert("이메일을 확인해 주세요.");
 				}
 			},
 			error : function(xhr, status, error) {

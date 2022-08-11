@@ -76,16 +76,6 @@ $(document).ready(function() {
 		}
 	});
 });
-
-/* $(document).ready(function() {
-	var pwRegex =  /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/; //1안
-	$("#pwd").blur(function(){
-		var passWordTest=pwRegex.test($("#pwd").val());
-		if(!passWordTest){
-			alert("8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.");
-		}
-	});
-}); */
 </script>
 <script>
 	function emailchk() {
@@ -119,6 +109,7 @@ function numchk(){
 	var dataCode = $("#check_num2").val();
     if(inputCode == dataCode){                            // 일치할 경우
     	$("#email_check").attr("value", "Y");
+    	$("#check_num").attr("disabled", true);
     	alert("인증되었습니다");  
     } else {                                            // 일치하지 않을 경우
         alert("인증번호를 다시 확인해주세요.");
@@ -163,10 +154,17 @@ function numchk(){
 		if ($.trim($('#address').val()) == '') {
 			alert("주소를 입력해주세요.");
 			return false;
-		}				
-		if (confirm("회원가입을 하시겠습니까?")) {
+		}
+		if ($('#aggrement').is(":checked") == false) {
+			alert("개인정보 수집 및 이용에 동의해주세요.");
+			return false;
+		}		
+		if (confirm("회원가입을 하시겠습니까?") == true) {
+			document.signupForm.submit();
 			alert("회원가입이 완료되었습니다. 감사합니다.");
-			$("form").submit();
+		}
+		else{
+			return false;
 		}
 	}
 </script>
@@ -179,11 +177,11 @@ function numchk(){
 		<div class="input-form-backgroud row">
 			<div class="signup_input-form col-md-12 mx-auto">
 				<h2 class="mb-3">회원가입</h2>
-				<form class="validation-form" method="post" action="${contextPath}/member/addMember">
+				<form class="validation-form" name="signupForm" method="post" action="${contextPath}/member/addMember" onsubmit="return false">
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="text" class="form-control" id="id" name="id"
-								maxlength="20" placeholder="아이디" required/>
+								maxlength="20" placeholder="아이디" />
 						</div>
 						<div class="col-md-3 mb-3">
 							<button type="button" class="signup btn" id="idCheck" onClick="fn_idCheck();" value="N">중복 확인</button>
@@ -192,38 +190,38 @@ function numchk(){
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="password" class="form-control" id="pwd" name="pwd"
-								minlength="8" maxlength="16" placeholder="비밀번호" required/>
+								minlength="8" maxlength="16" placeholder="비밀번호" />
 							<span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-6 mb-3">
 							<input type="text"
-								class="form-control" id="name" name="name" placeholder="이름" value="" required>
+								class="form-control" id="name" name="name" placeholder="이름" value="">
 						</div>
 						<div class="col-md-6 mb-3">
 							<input type="text"
 								class="form-control" id="nname" name="nname" placeholder="닉네임" value=""
-								required>
+								>
 						</div>
 					</div>		
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="text"
-								class="form-control" id="tel" name="tel" placeholder="전화번호" value="" required>
+								class="form-control" id="tel" name="tel" placeholder="전화번호" value="" >
 						</div>
 					</div>								
 					<div class="row">
 						<div class="col-md-4 mb-3">
 							 <input type="text"
-								class="form-control" id="user_email" placeholder="이메일" required>
+								class="form-control" id="user_email" placeholder="이메일" >
 						</div>
 						<div class="col-md-1 mb">
 							 <h4 id="middle">@</h4>
 						</div>
 						<div class="col-md-4 mb-3">
 							 <input type="text"
-								class="form-control" name="domain" id="domain" placeholder="" required>
+								class="form-control" name="domain" id="domain" placeholder="" >
 						</div>												
 						<div  class="col-md-3 mb-3">
 							<select class="signup_email" name="domain_list" id="email_server"
@@ -259,7 +257,7 @@ function numchk(){
 					<div class="row">
 						<div class="col-md-9 mb-3">
 							<input type="text" class="form-control" id="address1" name="address1"
-								placeholder="주소" required>
+								placeholder="주소" >
 						</div>
 						<div class="col-md-3 mb-3">
 							<button type="button" id="addressSearch" class="signup btn" onclick="findAddr()">주소 검색</button>
@@ -275,8 +273,7 @@ function numchk(){
 
 					<hr class="mb-4">
 					<div class="custom-control custom-checkbox">
-						<input type="checkbox" class="custom-control-input" id="aggrement"
-							required value="N"> <label class="custom-control-label"
+						<input type="checkbox" class="custom-control-input" id="aggrement"> <label class="custom-control-label"
 							for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
 					</div>
 					<div class="mb-4"></div>

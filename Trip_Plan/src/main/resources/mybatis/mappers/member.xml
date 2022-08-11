@@ -64,12 +64,21 @@
 	<select id="id_find" parameterType="com.aws.member.vo.MemberVO"
 		resultType="String">
 		<![CDATA[
-		SELECT	*
+		SELECT	id
 		FROM	member
 		WHERE	email = #{email, jdbcType=VARCHAR} and name = #{name, jdbcType=VARCHAR}
 		]]>
 	</select>
 	
+		<!-- 아이디 찾기. -->
+	<select id="pw_find" parameterType="com.aws.member.vo.MemberVO"
+		resultType="String">
+		<![CDATA[
+		SELECT	pwd
+		FROM	member
+		WHERE	email = #{email, jdbcType=VARCHAR} and id = #{id, jdbcType=VARCHAR}
+		]]>
+	</select>
 </mapper>
 
 

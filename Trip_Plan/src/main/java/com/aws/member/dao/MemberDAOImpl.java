@@ -64,8 +64,17 @@ public class MemberDAOImpl implements MemberDAO {
 		
 	}
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// 비밀번호 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public String Pw_find(MemberVO memberVO) throws DataAccessException {
 
-	
+		System.out.println("MemberDAOImpl Id_find() id : " + memberVO.getId());
+
+		return sqlSession.selectOne("mapper.member.pw_find", memberVO);
+		
+	}
 
 
 	

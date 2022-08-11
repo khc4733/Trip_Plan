@@ -160,7 +160,10 @@
 	margin-left: 300px;
 	margin-right: 300px;
 }
-
+.area_centered span{
+	font-size: 48px;
+	font-family: NotoSansKR, NotoSansJP;
+}
 .area_ol {
 	font-size: 16px;
 	list-style-image: url(../images/circle.png);
@@ -216,7 +219,7 @@
 /* signin 페이지 영역 시작*/
 
 .signin_centered {
-	width: 300px;
+	width: 340px;
     height: auto;
     min-height: 100%;
 	margin-left: auto;
@@ -224,7 +227,7 @@
 	text-align: center;
 }
 #signin_form_border{
-	padding: 20px 0px 5px 0px;
+	padding: 30px 0px 15px 0px;
 	border-width: 1px;
 	border-style: solid;
     border-color: #c7c7c7;
@@ -233,13 +236,14 @@
 .signin_centered input{
 	margin-left: auto;
 	margin-right: auto;
-	width: 250px;
+	width: 280px;
 }
 
 .logo_box {
-	margin: auto;
+	margin-left:auto;
+	margin-right:auto;
 	width: 250px;
-	height: 220px;
+	height: 250px;
 	border-radius: 70%;
 	overflow: hidden;
 	background: #ffffff;
@@ -253,7 +257,7 @@
 .account{
 	text-align: center;
 	margin-top: 20px;
-	padding: 10px;
+	padding: 15px;
 	border-width: 1px;
 	border-style: solid;
     border-color: #c7c7c7;
@@ -261,14 +265,15 @@
 }
 
 .id_pw{
-   margin-top: 5px;
+   margin-top: 10px;
 }
 .signin_btn{
 	border: none;
 	background: #1050a3;
 	color: #ffffff;
 	font-size: 20px;
-	width: 250px;
+	width: 280px;
+	height: 40px;
 	border-radius: 3px;
 }
 /* signin 페이지 영역 끝*/

@@ -64,12 +64,11 @@ public class MemberControllerImpl implements MemberController {
 			HttpServletResponse response) throws Exception {
 		
 		ModelAndView mav = new ModelAndView();
-		System.out.println("MemberController 로그인 member.getPwd() ==> " + member.getPwd());
+		System.out.println("MemberController 로그인 member.getId() ==> " + member.getId());
 		
 		// 로그인 한 정보를 가지고 데이터 베이스에 존재하는지 처리를 하고, 그 결과를 가져온다.
 		memberVO = memberService.login(member);
 		System.out.println("MemberController 로그인 ==> " + memberVO);
-		
 		
 		// 로그인 정보가 데이터베이스에 존재하는지에 따라 처리를 다르게 한다.
 		if(memberVO != null) {	// 로그인 정보에 해당하는 자료가 존재한다면
@@ -248,6 +247,44 @@ public class MemberControllerImpl implements MemberController {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("/member/pw_search");
 		return mav;
+	}
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 비밀번호 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@ResponseBody
+	@RequestMapping(value="/member/pw_find", method=RequestMethod.POST)
+	public String Pw_find(MemberVO memberVO) throws Exception{
+		
+		System.out.println("MemberController 아이디 찾기 email => " + memberVO.getEmail());
+		String result = memberService.Pw_find(memberVO); 
+		
+        String setFrom = "sjinjin6@naver.com";
+        String toMail = memberVO.getEmail();
+        String title = " 비밀번호 발급 이메일 입니다.";
+        String content = 
+                "홈페이지를 방문해주셔서 감사합니다." +
+                "<br><br>" + 
+                "회원님의 비밀 번호는 '" + result + "' 입니다." + 
+                "<br>" ;
+        
+        try {
+            
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
+            helper.setFrom(setFrom);
+            helper.setTo(toMail);
+            helper.setSubject(title);
+            helper.setText(content,true);
+            mailSender.send(message);
+            
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+		
+		System.out.println("result : " + result);
+		return result;
 	}
 
 	

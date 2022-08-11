@@ -31,6 +31,11 @@ public interface MemberDAO {
 	//-----------------------------------------------------------------------------------------------------------
 	public String Id_find(MemberVO memberVO) throws DataAccessException;
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// 비밀번호 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	public String Pw_find(MemberVO memberVO) throws DataAccessException;
+	
 
 } // End - public interface MemberDAO
 

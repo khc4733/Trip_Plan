@@ -23,7 +23,7 @@
 <!-- 본문 내용 -->
   <div class="area_main">
 	<div class="area_centered">
-		<h1>부산 테마코스</h1>
+		<span>부산 테마코스</span>
 		<hr class="area_hr-solid">
 	</div>
 	<div class="area_centered">

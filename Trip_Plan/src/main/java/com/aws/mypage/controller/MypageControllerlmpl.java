@@ -21,6 +21,8 @@ import com.aws.mypage.service.MypageService;
 @RequestMapping("/mypage")	// url에서 /mypage로 시작하는 것들을 처리하는 컨트롤러
 public class MypageControllerlmpl implements MypageController {
 
+	@Autowired
+	private MemberVO memberVO;
 	
 	@Autowired
 	private MypageService mypageService;
@@ -61,9 +63,11 @@ public class MypageControllerlmpl implements MypageController {
 			
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html;charset=UTF-8");
-		      
 		int result = mypageService.modifyMember(memberVO);
-		      
+		HttpSession session = request.getSession(true);
+		session.removeAttribute("member");
+		session.setAttribute("member", 	memberVO);
+		memberVO = (MemberVO) session.getAttribute("member");
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("redirect:/mypage/myInfo");
 		return mav;

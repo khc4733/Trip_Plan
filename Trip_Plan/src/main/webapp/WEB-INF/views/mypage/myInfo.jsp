@@ -69,7 +69,7 @@ function findAddr() {
 <jsp:include page="../mypage/myside.jsp"/>
 
 <div class="container">
-    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do"> 
+    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false"> 
         <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
                <h2 align="center" style= "margin-top: 100px; margin-right: 230px; font-family: Play;" >MY ACCOUNT</h2>
@@ -155,7 +155,6 @@ function modifyMember() {
  }else {   //취소
    alert("회원정보수정 진행을 취소하였습니다.");
     return false;
-    location.href = "redirect:/mypage/myInfo";
  }
 }
 </script>

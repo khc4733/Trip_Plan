@@ -58,6 +58,16 @@ public class MemberServiceImpl implements MemberService {
 		return result;
 	}
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// 비밀번호 찾기(Ajax)
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public String Pw_find(MemberVO memberVO) throws Exception {
+
+		String result = memberDAO.Pw_find(memberVO);
+		return result;
+	}
+	
 
 
 
