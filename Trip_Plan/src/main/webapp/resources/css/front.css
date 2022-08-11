@@ -348,9 +348,8 @@
 
 /*  상세 정보 페이지 영역 시작 */
 .contents_centered{
-	margin-top: 100px;
-	margin-left: 300px;
-	margin-right: 300px;
+    
+	margin: 100px 300px;
 }
 .titleType1 {
     text-align: center;

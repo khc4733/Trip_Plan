@@ -75,7 +75,7 @@ public class MypageControllerlmpl implements MypageController {
 	// 회원 탈퇴하기 (8.4)
 	//-----------------------------------------------------------------------------------------------------------
 	@Override
-	@RequestMapping(value="/removeMember.do", method=RequestMethod.GET)
+	@RequestMapping(value="/removeMember", method=RequestMethod.GET)
 	public ModelAndView removeMember(String id, HttpSession session, HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
 			

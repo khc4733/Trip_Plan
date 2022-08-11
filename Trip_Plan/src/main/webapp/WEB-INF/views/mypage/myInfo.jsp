@@ -129,8 +129,8 @@ function findAddr() {
 		</div>    
         <div class="btn-confirm">
            <div class="col-sm-offset-4 col-sm-4"> 
-            <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원 정보 수정</button></a>
-            <a href="${contextPath}/mypage/removeMember.do?id=${member.id}"><button type="button" class="btn btn-sm btn-block" id="btn-remove"  onclick="removeMember()">회원탈퇴</button></a>
+            <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원 정보 수정</button>
+            <button type="button" class="btn btn-sm btn-block" id="btn-remove"  onclick="removeMember()">회원탈퇴</button>
           </div>
        </div>
     </form>
@@ -140,11 +140,10 @@ function findAddr() {
 //회원탈퇴
 function removeMember() {
  if (confirm("회원 탈퇴를 진행하시겠습니까?") == true){    //회원탈퇴진행
-   document.removefrm.submit();
+	location.href = "${contextPath}/mypage/removeMember.do?id=${member.id}";
     alert("회원탈퇴 되었습니다.");
  }else {   //탈퇴취소
    alert("회원탈퇴 진행을 취소하였습니다.");
-   self.location.href = "mypage/myInfo";    
     return false;
  }
 }
