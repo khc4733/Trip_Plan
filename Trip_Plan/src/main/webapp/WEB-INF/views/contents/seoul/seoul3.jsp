@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- top menu -->
-     <div>
+    <div>
         <jsp:include page="../../common/topmenu.jsp"/>
     </div>
 <!-- side menu --> 
