@@ -72,7 +72,7 @@ function findAddr() {
     <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false"> 
         <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
-               <h2 align="center" style= "margin-top: 100px; margin-right: 230px; font-family: Play;" >MY ACCOUNT</h2>
+               <h2 align="center" style= "margin-top: 50px; margin-right: 100px; font-family: Play;" >MY ACCOUNT</h2>
            </div>
         </div>
         <div class="form-group">
@@ -85,6 +85,13 @@ function findAddr() {
             <label for="id" class="col-sm-5 control-label">PASSWORD</label>
             <div class="col-sm-3">
                <input type="password" class="form-control" id="pwd" name="pwd" maxlength="20" value="${member.pwd}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="id" class="col-sm-5 control-label">PASSWORD*</label>
+            <div class="col-sm-3">
+               <input type="password" class="form-control" id="pwd2" name="pwd2" maxlength="20" value=""/>
+            <font id="ckpwd" size="2"></font>
             </div>
         </div>
         <div class="form-group">
@@ -129,7 +136,7 @@ function findAddr() {
 		</div>    
         <div class="btn-confirm">
            <div class="col-sm-offset-4 col-sm-4"> 
-            <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원 정보 수정</button>
+            <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원정보 수정</button>
             <button type="button" class="btn btn-sm btn-block" id="btn-remove"  onclick="removeMember()">회원탈퇴</button>
           </div>
        </div>
@@ -143,20 +150,41 @@ function removeMember() {
 	location.href = "${contextPath}/mypage/removeMember.do?id=${member.id}";
     alert("회원탈퇴 되었습니다.");
  }else {   //탈퇴취소
-   alert("회원탈퇴 진행을 취소하였습니다.");
+    alert("회원탈퇴 진행을 취소하였습니다.");
+    location.reload();
     return false;
  }
 }
 //회원 정보 수정
-function modifyMember() {
+function modifyMember() {		
  if (confirm("회원정보를 수정하시겠습니까?") == true){    //회원정보수정
-   document.memModifyForm.submit();
+    document.memModifyForm.submit();
     alert("회원정보가 수정되었습니다.");
  }else {   //취소
-   alert("회원정보수정 진행을 취소하였습니다.");
+    alert("회원정보수정 진행을 취소하였습니다.");
+    location.reload();
     return false;
  }
 }
+</script>
+<script>
+$(function() {
+	$('#pwd').keyup(function(){
+		$('#ckpwd').html('');
+	});
+	
+	$('#pwd2').keyup(function(){
+		if($('#pwd').val() != $('#pwd2').val()){
+			$('#ckpwd').html('비밀번호가 일치하지 않습니다.<br>');
+			$('#ckpwd').attr('color', 'red');
+			$('#btn-update').prop("disabled", true);
+		} else {
+			$('#ckpwd').html('비밀번호가 일치합니다.<br>');
+			$('#ckpwd').attr('color', 'blue');
+			$('#btn-update').prop("disabled", false);
+		}
+	});
+});
 </script>
 <!-- footer --> 
 <jsp:include page="../common/footer.jsp" flush="false"/>

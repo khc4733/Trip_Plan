@@ -25,8 +25,8 @@
 	<nav class="col-sm-2 sidenav">
 		<h4>My Page</h4>
 			<ul class="nav nav-pills nav-stacked">
+				<li><a href="${contextPath}/mypage/myInfo.do">MY ACCOUNT</a></li>
 				<li><a href="${contextPath}/mypage/mypage.do">게시판 작성내역</a></li>
-				<li><a href="${contextPath}/mypage/myInfo.do">개인 정보 확인</a></li>
 			</ul>
 	</nav> 
 </body>
