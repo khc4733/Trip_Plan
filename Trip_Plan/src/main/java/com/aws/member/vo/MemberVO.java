@@ -12,11 +12,11 @@ import org.springframework.stereotype.Component;
 @Component("memberVO")
 public class MemberVO {
 
-	private	String	id, pwd, name, nname, tel, email, address;
+	private	String	id, pwd, name, nname, tel, email, address, address2;
 	
 	public MemberVO() {}	// 기본 생성자
 	
-	public MemberVO(String id, String pwd, String name, String nname, String tel ,String email, String address) {
+	public MemberVO(String id, String pwd, String name, String nname, String tel ,String email, String address, String address2) {
 		this.id		= id;
 		this.pwd	= pwd;
 		this.name	= name;
@@ -24,6 +24,7 @@ public class MemberVO {
 		this.email	= email;
 		this.tel = tel;
 		this.address = address;
+		this.address2 = address2;
 	}
 
 	
@@ -82,6 +83,15 @@ public class MemberVO {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
+	public String getAddress2() {
+		return address2;
+	}
+
+	public void setAddress2(String address2) {
+		this.address2 = address2;
+	}
+
 
 	
 	

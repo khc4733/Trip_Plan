@@ -63,11 +63,11 @@ public class MypageControllerlmpl implements MypageController {
 			
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html;charset=UTF-8");
-		int result = mypageService.modifyMember(memberVO);
 		HttpSession session = request.getSession(true);
 		session.removeAttribute("member");
 		session.setAttribute("member", 	memberVO);
 		memberVO = (MemberVO) session.getAttribute("member");
+		int result = mypageService.modifyMember(memberVO);
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("redirect:/mypage/myInfo");
 		return mav;

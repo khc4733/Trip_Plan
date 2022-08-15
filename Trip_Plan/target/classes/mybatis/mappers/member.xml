@@ -18,8 +18,8 @@
 	<!-- 회원 가입 처리 -->
 	<insert id="addMember" parameterType="com.aws.member.vo.MemberVO">
 		<![CDATA[
-		INSERT INTO member (id, pwd, name, nname, tel, email, address)
-		VALUES (#{id}, #{pwd}, #{name}, #{nname}, #{tel}, #{email}, #{address})
+		INSERT INTO member (id, pwd, name, nname, tel, email, address, address2)
+		VALUES (#{id}, #{pwd}, #{name}, #{nname}, #{tel}, #{email}, #{address}, #{address2, jdbcType=VARCHAR})
 		]]>
 	</insert>
 	
@@ -47,7 +47,7 @@
       <![CDATA[
       UPDATE member 
       SET pwd=#{pwd, jdbcType=VARCHAR}, name=#{name, jdbcType=VARCHAR}, nname=#{nname, jdbcType=VARCHAR}, 
-      	  tel=#{tel, jdbcType=VARCHAR}, email=#{email, jdbcType=VARCHAR}, address=#{address, jdbcType=VARCHAR} 
+      	  tel=#{tel, jdbcType=VARCHAR}, email=#{email, jdbcType=VARCHAR}, address=#{address, jdbcType=VARCHAR},  address2=#{address2, jdbcType=VARCHAR}  
       WHERE id=#{id, jdbcType=VARCHAR}
       ]]>
    </update> 

@@ -34,14 +34,19 @@ function findAddr() {
 </script>
 <script>
 function fn_idCheck() {
+	const korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
 	
 	var idRegex =  /^.*(?=^.{4,12}$)(?=.*\d)(?=.*[a-zA-Z]).*$/; 
 	
 	var idTest=idRegex.test($("#id").val());
-	
+	var korTest = korean.test($("#id").val())
 	if(!idTest){
-		alert("영문 대 소문자, 숫자를 포함한 4자리 이상의 아이디를 입력하세요.");
+		alert("영문 대 소문자, 숫자를 사용한 4자리 이상의 아이디를 입력하세요.");
 	    return false;
+	}
+	if(korTest){
+		alert("영문 대 소문자, 숫자를 사용한 4자리 이상의 아이디를 입력하세요.");
+		return false;
 	}
 	$.ajax({
 		url:			"member/idCheck",
@@ -62,22 +67,45 @@ function fn_idCheck() {
 	});
 	
 }
-</script>
-<script>
+
+var checkpw = false;
+
 $(document).ready(function() {
 	var pwRegex =  /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
-	$("#pwd").on("input",function(){
+	$("#pwd").keydown("input",function(){
 		var passWordTest=pwRegex.test($("#pwd").val());
 		if(!passWordTest){
 			$('#pwdMsg').show();
+			checkpw = false;
 		}
 		else{
 			$('#pwdMsg').hide();
+			checkpw = true;
 		}
 	});
+	$("#pwd").keyup(function(){
+		if($("#pwd").val()==""){
+			$('#pwdMsg').hide();
+			checkpw = false;
+		}
+	});
+	
+	$('#ckpwd').keyup(function(){
+		if($('#pwd').val() != $('#ckpwd').val()){
+			$('#ckpwdMsg').show();
+			$('#ckpwdMsg').html('비밀번호가 일치하지 않습니다.<br>');
+		} else {
+			$('#ckpwdMsg').html('');
+			$('#ckpwdMsg').hide();
+		}
+	});
+	$('#ckpwd').blur(function() {
+		if($('#pwd').val() == $('#ckpwd').val()){
+		  $('#ckpwd').html('');
+		}
+		});
 });
-</script>
-<script>
+
 	function emailchk() {
 		
 		var user_mail = $("#user_email").val();
@@ -102,8 +130,7 @@ $(document).ready(function() {
 	        }        
 	    });
 	}
-</script>
-<script>
+
 function numchk(){
 	var inputCode = $("#check_num").val();
 	var dataCode = $("#check_num2").val();
@@ -115,13 +142,8 @@ function numchk(){
         alert("인증번호를 다시 확인해주세요.");
     }   
 }
-</script>
-<script>
 
 	function registerCheck() {
-		var address1 = $("#address1").val();
-		var address2 = $("#address2").val();
-		$('#address').val(address1+address2);
 		
 		if ($.trim($('#id').val()) == '') {
 			alert("아이디를 입력해주세요.");
@@ -134,7 +156,15 @@ function numchk(){
 		if ($.trim($('#pwd').val()) == '') {
 			alert("비밀번호를 입력해주세요.");
 			return false;
-		}		
+		}
+		if ($.trim($('#ckpwd').val()) != $.trim($('#pwd').val())) {
+			alert("비밀번호를 확인해주세요.");
+			return false;
+		}	
+		if (!checkpw) {
+			alert("비밀번호를 확인해주세요.");
+			return false;
+		}
 		if ($.trim($('#name').val()) == '') {
 			alert("이름을 입력해주세요.");
 			return false;
@@ -191,13 +221,20 @@ function numchk(){
 						<div class="col-md-9 mb-3">
 							<input type="password" class="form-control" id="pwd" name="pwd"
 								minlength="8" maxlength="16" placeholder="비밀번호" />
-							<span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
+							<span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none; margin-left:5px;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
 						</div>
 					</div>
 					<div class="row">
+						<div class="col-md-9 mb-3">
+							<input type="password" class="form-control" id="ckpwd" name="ckpwd" 
+								minlength="8" maxlength="16" placeholder="비밀번호 확인" />
+							<span class="error_next_box" id="ckpwdMsg" style="color:red; font-size:12px; display : none; margin-left:5px;">비밀번호가 일치하지 않습니다.</span>
+						</div>
+					</div>					
+					<div class="row">
 						<div class="col-md-6 mb-3">
 							<input type="text"
-								class="form-control" id="name" name="name" placeholder="이름" value="">
+								class="form-control" id="name" name="name" placeholder="이름" value=""> 
 						</div>
 						<div class="col-md-6 mb-3">
 							<input type="text"
@@ -256,7 +293,7 @@ function numchk(){
 
 					<div class="row">
 						<div class="col-md-9 mb-3">
-							<input type="text" class="form-control" id="address1" name="address1"
+							<input type="text" class="form-control" id="address" name="address"
 								placeholder="주소" >
 						</div>
 						<div class="col-md-3 mb-3">

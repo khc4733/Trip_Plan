@@ -90,7 +90,7 @@ function findAddr() {
         <div class="form-group">
             <label for="id" class="col-sm-5 control-label">PASSWORD*</label>
             <div class="col-sm-3">
-               <input type="password" class="form-control" id="pwd2" name="pwd2" maxlength="20" value=""/>
+               <input type="password" class="form-control" id="pwd2" name="pwd2" maxlength="20" value="${member.pwd}"/>
             <font id="ckpwd" size="2"></font>
             </div>
         </div>
@@ -129,7 +129,7 @@ function findAddr() {
 		<div class="form-group">
 		<label for="id" class="col-sm-5 control-label"></label>
 			<div class="col-sm-3">
-				<input type="text" class="form-control" id="address2" placeholder="상세주소 입력(선택사항)" value="">
+				<input type="text" class="form-control" id="address2" name="address2" placeholder="상세주소 입력(선택사항)" value="${member.address2}" >
 			</div>
 			<input type="hidden" id="address" name="address" value="">						
 		</div>
@@ -184,6 +184,11 @@ $(function() {
 			$('#btn-update').prop("disabled", false);
 		}
 	});
+	$('#pwd2').blur(function() {
+		if($('#pwd').val() == $('#pwd2').val()){
+		  $('#ckpwd').html('');
+		}
+		});
 });
 </script>
 <!-- footer --> 
