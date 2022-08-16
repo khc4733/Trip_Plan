@@ -85,7 +85,7 @@
 								data-toggle="dropdown" href="#"><b>${member.nname}님</b><span
 									class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="${contextPath}/mypage/myInfo.do">My Page</a></li>
+									<li><a href="${contextPath}/mypage/summary">My Page</a></li>
 									<li><a href="${contextPath}/member/logout">Sign out</a></li>
 								</ul></li>
 						</c:when>

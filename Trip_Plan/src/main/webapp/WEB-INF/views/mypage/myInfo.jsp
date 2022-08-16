@@ -70,23 +70,25 @@ function findAddr() {
 
 <div class="container">
     <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false"> 
-        <div class="form-group">
+        <!--  <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
                <h2 align="center" style= "margin-top: 50px; margin-right: 100px; font-family: Play;" >MY ACCOUNT</h2>
            </div>
-        </div>
+        </div> -->    
         <div class="form-group">
            <label for="id" class="col-sm-5 control-label">ID</label>
             <div class="col-sm-2">
                <input type="text" class="form-control" id="id" name="id" maxlength="10" value="${member.id}" readonly/>
             </div>
         </div>
+        <br/>
         <div class="form-group">
             <label for="id" class="col-sm-5 control-label">PASSWORD</label>
             <div class="col-sm-3">
                <input type="password" class="form-control" id="pwd" name="pwd" maxlength="20" value="${member.pwd}"/>
             </div>
         </div>
+        <br/>
         <div class="form-group">
             <label for="id" class="col-sm-5 control-label">PASSWORD*</label>
             <div class="col-sm-3">
@@ -94,30 +96,35 @@ function findAddr() {
             <font id="ckpwd" size="2"></font>
             </div>
         </div>
+        <br/>
         <div class="form-group">
             <label for="id" class="col-sm-5 control-label">NAME</label>
             <div class="col-sm-3">
                <input type="text" class="form-control" id="name" name="name" maxlength="50" value="${member.name}"/>
             </div>
         </div>
+        <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label">NICK NAME</label>
+            <label for="id" class="col-sm-5 control-label">NICKNAME</label>
             <div class="col-sm-3">
                <input type="text" class="form-control" id="nname" name="nname" maxlength="50" value="${member.nname}"/>
             </div>
         </div>
+        <br/>
         <div class="form-group">
             <label for="id" class="col-sm-5 control-label">EMAIL</label>
             <div class="col-sm-3">
                <input type="text" class="form-control" id="email" name="email" maxlength="50" value="${member.email}" readonly/>
             </div>
         </div>
-      <div class="form-group">
+        <br/>
+        <div class="form-group">
             <label for="id" class="col-sm-5 control-label">TEL</label>
             <div class="col-sm-3">
                <input type="text" class="form-control" id="tel" name="tel" maxlength="50" value="${member.tel}"/>
             </div>
         </div>
+        <br/>
         <div class="form-group">
         	<label for="id" class="col-sm-5 control-label">ADDRESS</label>
 			<div class="col-sm-3">
@@ -134,6 +141,7 @@ function findAddr() {
 			<input type="hidden" id="address" name="address" value="">						
 		</div>
 		</div>    
+		<br/>
         <div class="btn-confirm">
            <div class="col-sm-offset-4 col-sm-4"> 
             <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원정보 수정</button>
