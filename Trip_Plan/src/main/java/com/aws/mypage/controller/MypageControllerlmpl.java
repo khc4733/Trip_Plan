@@ -92,4 +92,17 @@ public class MypageControllerlmpl implements MypageController {
 		
 	}// end - public ModelAndView removeMember
 
+	//-----------------------------------------------------------------------------------------------------------
+	// summary
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@RequestMapping(value="/summary", method=RequestMethod.GET)
+	public ModelAndView summary(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/mypage/summary");
+		return mav;
+	}
+	
+	
 }//END - public class MypageControllerlmpl implements MypageController

@@ -32,6 +32,10 @@ public interface MypageController {
 	//-----------------------------------------------------------------------------------------------------------
 	public ModelAndView removeMember(@RequestParam("id") String id, HttpSession session, HttpServletRequest request, 
 	            					HttpServletResponse response) throws Exception;
-		
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// summary
+	//-----------------------------------------------------------------------------------------------------------
+	public ModelAndView summary(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 } // END - public interface MypageController

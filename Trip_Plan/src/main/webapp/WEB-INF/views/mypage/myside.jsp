@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
+<!--  <style>
     /* 사이드바 */
     .sidenav {
     text-align: center;
@@ -19,15 +19,38 @@
     .sidenav ul li{
           border: 1px solid #c7c7c7;
     }
+</style>-->
+<style>
+.mypage {
+	text-align: center;
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    word-spacing: 30px;
+}
+ a {
+ 	text-decoration: none;
+}
+
 </style>
 </head>
 <body>
-	<nav class="col-sm-2 sidenav">
+	<!-- <nav class="col-sm-2 sidenav">
 		<h4>My Page</h4>
 			<ul class="nav nav-pills nav-stacked">
 				<li><a href="${contextPath}/mypage/myInfo.do">MY ACCOUNT</a></li>
 				<li><a href="${contextPath}/mypage/mypage.do">게시판 작성내역</a></li>
 			</ul>
-	</nav> 
+	</nav>  -->
+
+<table class="mypage" align="center">
+	<thead>
+		<tr>
+			<th width="200" height="28px"><a href="${contextPath}/mypage/summary">SUMMARY</a></th>
+			<th width="200" height="28px"><a href="${contextPath}/mypage/myInfo">EDIT</a></th>
+			<th width="200" height="28px"><a href="${contextPath}/..">POST</a></th>
+		</tr>
+	</thead>
+</table>
 </body>
 </html>

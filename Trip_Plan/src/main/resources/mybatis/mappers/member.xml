@@ -47,7 +47,7 @@
       <![CDATA[
       UPDATE member 
       SET pwd=#{pwd, jdbcType=VARCHAR}, name=#{name, jdbcType=VARCHAR}, nname=#{nname, jdbcType=VARCHAR}, 
-      	  tel=#{tel, jdbcType=VARCHAR}, email=#{email, jdbcType=VARCHAR}, address=#{address1, jdbcType=VARCHAR} 
+      	  tel=#{tel, jdbcType=VARCHAR}, email=#{email, jdbcType=VARCHAR}, address=#{address, jdbcType=VARCHAR} 
       WHERE id=#{id, jdbcType=VARCHAR}
       ]]>
    </update> 
