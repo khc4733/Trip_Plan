@@ -9,55 +9,12 @@
 	    <meta charset="UTF-8">
 	    <link href="${pageContext.request.contextPath}/resources/css/front.css" type="text/css" rel="stylesheet"> <!-- resources오타 수정 sk -->
 	    <title>메인 화면</title>
-	    
-	
-		 <script type="text/javascript">
-			$(document).ready(function () {
-	            if(${result == "true"}){
-	                alert("로그아웃되었습니다.");
-	            }
-	            if(${removeResult == 0}){
-	                alert("계정 탈퇴가 완료되었습니다. 그동안 이용해주셔서 감사합니다.");
-	            }
-	        });
-	        $(function () {
-	            $.fn.maphilight.defaults = {
-	                fill: true,
-	                fillColor: '000000',
-	                fillOpacity: 0.2,
-	                stroke: true,
-	                strokeColor: '495c75',
-	                strokeOpacity: 1,
-	                strokeWidth: 1.2,
-	                fade: true,
-	                alwaysOn: false
-	            }
-	            $('.map').maphilight();
-	        });
-	        
-	   		 </script>
-	   		 
-	   		 <style>  		 	
-	   		  	.carousel-control.left,
-			   	.carousel-control.right {
-					 background-image: none;			    	
-					 color: white;
-				 }
-					    
-				.carousel-indicators li{
-					 border-color: white;
-				 }
-					 
-				.carousel-indicators li.active {
-					 background-color: white;
-				}
-	   		 </style>
-	   		 
 	   		 
 		</head>
 	<body>
 	    
 		<jsp:include page="./common/topmenu.jsp" flush="false"/>
+		
 	<div id="main_container">
 			
 		<!--배경사진-->
@@ -124,19 +81,49 @@
 			       
 		<hr style=" width:100%; color:#bac8d9; margin-top: 40px">
 			       
-		<!-- 리뷰 인기글 시작 -->
-			<div id="main_review">
-				<p>BEST REVIEW</p>
-			  <a href="${contextPath}/board/review" class="btn_more"><img src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
-			    <div id="main_review--container">
-			
-			        <div id="main_review--bcp">
-			            <div id="main_review--bcp--table">
-			                <table style="width: 800px; height: 250px; border-collapse: collapse">
+		<!-- 리뷰 & 공지 시작 -->
+			<div class="front">
+			    <div id="main_notice-container">
+					<h3 class="title">NOTICE</h3>
+					<div class="btn_more">
+			 			 <a href="${contextPath}/board/notice"><img src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
+					</div>
+			 			 <div id="main_notice-table">
+			                <table style="width: 550px; height: 250px; border-collapse: collapse; text-align: center">
+			                     <thead>
+			                        <tr style=" text-align:center; color: #101c3d; font-size: 20px; background-color: white;">
+			                            <th>번호</th>			                           
+			                            <th>제목</th>
+			                        </tr>
+			                     </thead>
+			                     <tbody style="text-align: center; font-family: nanumB; font-size: 18px;">
+			                        <tr>
+			                            <td>1</td>			                            
+			                            <td><a href="#"><b>진행 중인 리뷰 이벤트</b></a></td>			                            
+			                        </tr>
+			                        <tr>
+			                            <td>2</td>
+			                            <td><a href="#"><b>Trip planner 이용방법</b></a></td>			                           
+			                        </tr>
+			                        <tr>
+			                            <td>3</td>			                            
+			                            <td><a href="#"><b>개인 정보 이용내역</b></a></td>			                            
+			                        </tr>
+			                     </tbody>
+			            </table>
+			           </div>
+			     </div>
+			     <div id="main_review-container">
+					<h3 class="title">BEST REVIEW</h3>
+						<div class="btn_more">
+			 			 <a href="${contextPath}/board/review"><img src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
+			 			 </div>
+			                <div id="main_review-table">
+			                <table style="width: 550px; height: 250px; border-collapse: collapse; text-align: center">
 			                     <thead>
 			                        <tr style=" text-align:center; color: #101c3d; font-size: 20px; background-color: white;">
 			                            <th>순위</th>
-			                            <th>코스 이름</th>
+			                            <th>이름</th>
 			                            <th>제목</th>
 			                            <th>글쓴이</th>
 			                        </tr>
@@ -145,7 +132,7 @@
 			                        <tr>
 			                            <td>1</td>
 			                            <td>서울 맛집</td>
-			                            <td><a href="#"><b>애완동물 동반 가능한 맛집 리스트</b></a></td>
+			                            <td><a href="#"><b>애완동물 동반 가능 맛집</b></a></td>
 			                            <td>bog2</td>
 			                        </tr>
 			                        <tr>
@@ -161,12 +148,11 @@
 			                            <td>bbang4</td>
 			                        </tr>
 			                     </tbody>
-			                </table>
-			             </div>
-			         </div>
-			     </div>
+			           	 </table>
+			            </div>
+			       </div>
+			    </div>
 			 </div>
-		</div>
 			            			         
    		<!--푸터-->
      	<jsp:include page="./common/footer.jsp"/>
