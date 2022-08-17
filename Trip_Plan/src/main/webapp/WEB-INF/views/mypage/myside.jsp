@@ -26,10 +26,11 @@
     padding-bottom: 20px;
 	margin-left: 300px;
 	margin-right: 300px;
-    margin-top: 45px;
+    margin-top: 100px;
     font-size: 17px;
 }
 .mypage{
+
 	margin-left: auto;
 	margin-right: auto;
     border-bottom: 1px solid #b5b3b3;

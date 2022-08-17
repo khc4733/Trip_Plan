@@ -13,7 +13,20 @@ request.setCharacterEncoding("UTF-8");
 	type="text/css" rel="stylesheet">
 <!-- resources오타 수정 sk -->
 <title>메인 화면</title>
+<script>
+function getLocation() {
+	  let lon; //경도
+	  let lat; //위도
 
+	  if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition((position) => {
+	      lon = position.coords.longitude.toFixed(2);
+	      lat = position.coords.latitude.toFixed(2);
+	      linkToApi(lon, lat)
+	    })
+	  }
+	}
+</script>
 </head>
 <body>
 
@@ -29,11 +42,10 @@ request.setCharacterEncoding("UTF-8");
 			</div>
 		</div>
 
-		<hr style="width: 100%; color: #bac8d9; margin-top: 40px">
+
 
 		<!--추천코스-->
 		<div id="main_bestcourse">
-			<p>BEST COURSE</p>
 
 			<div class="container">
 				<div id="myCarousel" class="carousel slide text-center"
@@ -49,17 +61,17 @@ request.setCharacterEncoding("UTF-8");
 						<div class="item active">
 
 							<img class="img-responsive center-block"
-								src="${contextPath}/resources/images/course1.png" width="100%"
+								src="${contextPath}/resources/images/seoul1.jpg" width="100%"
 								height="200px" />
 
 							<div class="carousel-caption">
-								<h2></h2>
+								<span style="font-size: 30px; color: #fff; font-style:border;"></span>
 							</div>
 						</div>
 
 						<div class="item ">
 							<img class="img-responsive center-block"
-								src="${contextPath}/resources/images/course2.png" width="100%"
+								src="${contextPath}/resources/images/daejeon2.jpg" width="100%"
 								height="200px" />
 
 							<div class="carousel-caption">
@@ -69,7 +81,7 @@ request.setCharacterEncoding("UTF-8");
 
 						<div class="item">
 							<img class="img-responsive center-block"
-								src="${contextPath}/resources/images/course3.png" width="100%"
+								src="${contextPath}/resources/images/incheon3.jpg" width="100%"
 								height="200px" />
 							<div class="carousel-caption">
 								<h2></h2>
@@ -91,7 +103,6 @@ request.setCharacterEncoding("UTF-8");
 			</div>
 		</div>
 
-		<hr style="width: 100%; color: #bac8d9; margin-top: 40px">
 
 		<!-- 리뷰 & 공지 시작 -->
 		<div class="front">
@@ -103,7 +114,7 @@ request.setCharacterEncoding("UTF-8");
 				</div>
 				<div id="main_notice-table">
 					<table
-						style="width: 550px; height: 250px; border-collapse: collapse; text-align: center">
+						style="width: 500px; height: 250px; border-collapse: collapse; text-align: center">
 						<thead>
 							<tr
 								style="text-align: center; color: #101c3d; font-size: 20px; background-color: white;">
@@ -137,7 +148,7 @@ request.setCharacterEncoding("UTF-8");
 				</div>
 				<div id="main_review-table">
 					<table
-						style="width: 550px; height: 250px; border-collapse: collapse; text-align: center">
+						style="width: 500px; height: 250px; border-collapse: collapse; text-align: center">
 						<thead>
 							<tr
 								style="text-align: center; color: #101c3d; font-size: 20px; background-color: white;">

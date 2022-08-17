@@ -21,36 +21,50 @@
 <!-- 탑메뉴 상단에 고정 -->	
 <style> 
 .container-fluid {
-    max-width: 2000px;
     position: fixed;
     width: 100%;
-    background-color: #FAFAFA;
-    opacity: 0.8;
-    font-size: 17px;
+    padding: 15px 200px;
+    font-size: 18px;
     top: 0;
     z-index: 1;
 } 
 </style>
+<script>
+var lastScrollTop = 0, delta = 15;
 
-<nav class="navbar navbar-default navbar-sticky-top">
-	<div class="container-fluid">
+$(window).scroll(function(){
+    var scrollTop = $(this).scrollTop() /* 스크롤바 수직 위치를 가져옵니다, 괄호 안에 값(value)이 있을 경우 스크롤바의 수직 위치를 정합니다. */
+    // Math.abs: 주어진 숫자의 절대값을 반환(return)합니다.
+    if(Math.abs(lastScrollTop - scrollTop) <= delta) // 스크롤 값을 받아서 ~
+    return; // ~ 리턴
+
+    if ((scrollTop > lastScrollTop) && (lastScrollTop>0)) {
+    	/* 화면에 나오지 않을 때, top값은 요소가 보이지 않을 정도로 사용해야함 */
+        $(".container-fluid").css("background-color","#ffffff");
+        $(".container-fluid").css("border-bottom","1px solid #e6e6e6");
+        $(".container-fluid a").css("color","#485ca3");
+    } else {
+        $(".container-fluid").css("background-color","");
+        $(".container-fluid").css("border-bottom","");
+        $(".container-fluid a").css("color","");
+    }
+    lastScrollTop = scrollTop;
+});
+</script>
+<nav>
+	<div class="container-fluid" id="main">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-         	</button>
-			<a class="navbar-brand" style="font-size:20px; font-weight: bold;" href="${contextPath}/">Trip_Planner</a>
+			<a href="${contextPath}/" class="navbar-brand" style="font-size:30px; font-weight:bolder; font-style: oblique;">Trip_Plan</a>
 		</div>
 		<!-- 실질적인 메뉴를 나열한다. -->
 		<!-- form-group이 있어야 삼선 버튼에 메뉴가 나타난다. -->
 		<!-- button에 있는 data-target에는 #을 붙여야 아이디와 연결이 된다. -->
 		<!-- <div class="form-group collapse navbar-collapse" id="myNavbar"> -->
 		
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav navbar-left">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Area<span class="caret"></span></a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Area</a>
 					<ul class="dropdown-menu">
 						<li><a
 							href="${contextPath}/area/seoul">서울</a></li>
@@ -74,10 +88,6 @@
 				<li class="nav-item">
 				    <a href="${contextPath}/board/notice" >Notice</a>
 				</li>
-			</ul>
-			
-		
-			  <ul class="nav navbar-nav navbar-right">
 				  <li>
 				     <c:choose>
 						<c:when test="${isLogOn == true && member != null}">
@@ -95,8 +105,8 @@
 							</a>
 						</c:otherwise>
 					</c:choose>
-				</li>
-			  </ul>
+				</li>				
+			</ul>
 		</div>	
 	</div>
 </nav>

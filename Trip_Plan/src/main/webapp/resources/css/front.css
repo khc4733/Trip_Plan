@@ -63,7 +63,7 @@ footer {
 .h_container {
 	background-image: url(../images/background.jpg);
 	position: relative;
-	height: 600px;
+	height: 800px;
 	object-fit: cover;
 	align-content: center;
 }
@@ -71,8 +71,9 @@ footer {
 .home_data {
 	font-family: 'MYYeongnamnu';
 	color: #fff;
+	padding: 100px;
 	margin-left: 50px;
-	margin-top: -70px;
+
 }
 
 .home_data-title {
@@ -92,7 +93,7 @@ footer {
 }
 
 #main_bestcourse {
-	margin-top: 50px;
+	margin-top: 150px;
 	margin-bottom: 40px;
 }
 
@@ -115,18 +116,18 @@ footer {
 /* 하단 테이블 */
 .front {
 	/*border: 2px solid red;*/
-	width: 70%;
+	width: 60%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	height: 400px;
 }
 
-#main_notice-container, #main_review-container {
-	width: 420px;
-	padding: 0 50px;
+#main_notice-container {
 	position: relative;
-	text-align: center;
+}
+#main_review-container{
+	position: relative;
 }
 
 #main_notice-container a, #main_review-container a {
@@ -135,8 +136,7 @@ footer {
 }
 
 #main_notice-container h3, #main_review-container h3 {
-	margin-left: 100px;
-	text-align: center;
+	text-align: left;
 }
 
 #main_notice-container tr, #main_review-container tr {
@@ -149,7 +149,7 @@ footer {
 
 #main_notice-container .title, #main_review-container .title {
 	font-weight: bold;
-	text-align: center;
+	text-align: left;
 	color: #5882FA;
 	padding-top: 15px;
 	padding-bottom: 20px;
@@ -160,7 +160,7 @@ footer {
 }
 
 #main_review-container {
-	margin-left: 100px;
+	margin-left: 120px;
 	width: 600px;
 }
 
@@ -168,7 +168,7 @@ footer {
 	width: 20px;
 	height: 20px;
 	top: 40px;
-	right: 0px;
+	right: 10px; 
 	position: absolute;
 }
 
@@ -356,6 +356,7 @@ table#notice {
 	min-height: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 100px;
 	text-align: center;
 }
 
