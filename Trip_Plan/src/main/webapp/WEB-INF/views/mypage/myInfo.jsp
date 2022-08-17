@@ -65,9 +65,12 @@ function findAddr() {
 }
 #line {
 	border: none;
-    text-align: left;
     margin-left: 240px;
     width: 350px;
+}
+.title {
+	margin-left: 240px;
+	margin-bottom: auto;
 }
 </style>
 </head>
@@ -89,21 +92,21 @@ function findAddr() {
         </div> -->    
         <div class="form-group">
         
-           <label for="id" class="col-sm-5 control-label">ID</label>
+           <label for="id" class="title">ID</label>
             <div id="line">
                <input type="text" class="form-control" id="id" name="id" maxlength="10" value="${member.id}" readonly/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-6 control-label">PASSWORD</label>
+            <label for="id" class="title">PASSWORD</label>
             <div id="line">
                <input type="password" class="form-control" id="pwd" name="pwd" maxlength="20" value="${member.pwd}"/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-6 control-label">PASSWORD*</label>
+            <label for="id" class="title">PASSWORD*</label>
             <div id="line"><span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
                <input type="password" class="form-control" id="pwd2" name="pwd2" maxlength="20" value=""/>
             
@@ -112,35 +115,35 @@ function findAddr() {
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label" style="margin-left:18px">NAME</label>
+            <label for="id" class="title">NAME</label>
             <div id="line">
                <input type="text" class="form-control" id="name" name="name" maxlength="50" value="${member.name}"/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label" style="margin-left:47px">NICKNAME</label>
+            <label for="id" class="title">NICKNAME</label>
             <div id="line">
                <input type="text" class="form-control" id="nname" name="nname" maxlength="50" value="${member.nname}"/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label" style="margin-left:20px">EMAIL</label>
+            <label for="id" class="title">EMAIL</label>
             <div id="line">
                <input type="text" class="form-control" id="email" name="email" maxlength="50" value="${member.email}" readonly/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label">TEL</label>
+            <label for="id" class="title">TEL</label>
             <div id="line">
                <input type="text" class="form-control" id="tel" name="tel" maxlength="50" value="${member.tel}"/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-        	<label for="id" class="col-sm-5 control-label" style="margin-left:41px">ADDRESS</label>
+        	<label for="id" class="title">ADDRESS</label>
 			<div id="line">
 				<input type="text" class="form-control" id="address" name="address" maxlength="50" value="${member.address}" readonly/>
 			</div>
