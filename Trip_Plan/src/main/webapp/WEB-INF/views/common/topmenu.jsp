@@ -72,7 +72,7 @@
 				    <a href="${contextPath}/board/review" >Review</a>
 				</li>
 				<li class="nav-item">
-				    <a href="${contextPath}/board/review" >Notice</a>
+				    <a href="${contextPath}/board/notice" >Notice</a>
 				</li>
 			</ul>
 			

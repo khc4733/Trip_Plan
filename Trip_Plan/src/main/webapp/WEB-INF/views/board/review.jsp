@@ -9,16 +9,16 @@
 </head>
 <body>
 <!-- top menu -->
-	<div>
+	
 		<jsp:include page="../common/topmenu.jsp" />
-	</div>
+	
 	
 <!-- 본문 내용 -->
 	
 
 <!-- footer  -->	
-	<div>
+	
 		<jsp:include page="../common/footer.jsp" />
-	</div>
+	
 </body>
 </html>

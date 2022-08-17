@@ -22,4 +22,15 @@ public class BoardControllerImpl implements BoardController {
 		return mav;
 	}
 
+	@Override
+	@RequestMapping(value="/notice", method=RequestMethod.GET)
+	public ModelAndView Notice(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/board/notice");
+		return mav;
+	}
+	
+	
+
 }
