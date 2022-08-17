@@ -9,4 +9,6 @@ public interface BoardController {
 
 	public ModelAndView Review(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
+	public ModelAndView Notice(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
 }
