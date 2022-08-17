@@ -57,6 +57,18 @@ function findAddr() {
 }
 
 #btn-update:hover {background-color: #e7e7e7;}
+
+#addressSearch{
+	background-color: #e7e7e7;
+	color: black;
+	margin-left: 520px;
+}
+#line {
+	border: none;
+    text-align: left;
+    margin-left: 240px;
+    width: 350px;
+}
 </style>
 </head>
 
@@ -69,81 +81,80 @@ function findAddr() {
 <jsp:include page="../mypage/myside.jsp"/>
 
 <div class="container">
-    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false"> 
+    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false" style="margin-right: 500px;"> 
         <!--  <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
                <h2 align="center" style= "margin-top: 50px; margin-right: 100px; font-family: Play;" >MY ACCOUNT</h2>
            </div>
         </div> -->    
         <div class="form-group">
+        
            <label for="id" class="col-sm-5 control-label">ID</label>
-            <div class="col-sm-2">
+            <div id="line">
                <input type="text" class="form-control" id="id" name="id" maxlength="10" value="${member.id}" readonly/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label">PASSWORD</label>
-            <div class="col-sm-3">
+            <label for="id" class="col-sm-6 control-label">PASSWORD</label>
+            <div id="line">
                <input type="password" class="form-control" id="pwd" name="pwd" maxlength="20" value="${member.pwd}"/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label">PASSWORD*</label>
-            <div class="col-sm-3">
+            <label for="id" class="col-sm-6 control-label">PASSWORD*</label>
+            <div id="line"><span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
                <input type="password" class="form-control" id="pwd2" name="pwd2" maxlength="20" value=""/>
+            
             <font id="ckpwd" size="2"></font>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label">NAME</label>
-            <div class="col-sm-3">
+            <label for="id" class="col-sm-5 control-label" style="margin-left:18px">NAME</label>
+            <div id="line">
                <input type="text" class="form-control" id="name" name="name" maxlength="50" value="${member.name}"/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label">NICKNAME</label>
-            <div class="col-sm-3">
+            <label for="id" class="col-sm-5 control-label" style="margin-left:47px">NICKNAME</label>
+            <div id="line">
                <input type="text" class="form-control" id="nname" name="nname" maxlength="50" value="${member.nname}"/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="col-sm-5 control-label">EMAIL</label>
-            <div class="col-sm-3">
+            <label for="id" class="col-sm-5 control-label" style="margin-left:20px">EMAIL</label>
+            <div id="line">
                <input type="text" class="form-control" id="email" name="email" maxlength="50" value="${member.email}" readonly/>
             </div>
         </div>
         <br/>
         <div class="form-group">
             <label for="id" class="col-sm-5 control-label">TEL</label>
-            <div class="col-sm-3">
+            <div id="line">
                <input type="text" class="form-control" id="tel" name="tel" maxlength="50" value="${member.tel}"/>
             </div>
         </div>
         <br/>
         <div class="form-group">
-        	<label for="id" class="col-sm-5 control-label">ADDRESS</label>
-			<div class="col-sm-3">
+        	<label for="id" class="col-sm-5 control-label" style="margin-left:41px">ADDRESS</label>
+			<div id="line">
 				<input type="text" class="form-control" id="address" name="address" maxlength="50" value="${member.address}" readonly/>
 			</div>
-		<div class="form-group">
-			<button type="button" id="addressSearch" class="signup btn btn-sm" onclick="findAddr()">SEARCH</button>
-		</div>
-		<div class="form-group">
-		<label for="id" class="col-sm-5 control-label"></label>
-			<div class="col-sm-3">
+			<div id="line">
 				<input type="text" class="form-control" id="address2" placeholder="상세주소 입력(선택사항)" value="">
 			</div>
-			<input type="hidden" id="address" name="address" value="">						
-		</div>
-		</div>    
+			<input type="hidden" id="address" name="address" value="">
+			<div class="form-group">
+				<button type="button" id="addressSearch" class="signup btn btn-sm" onclick="findAddr()">SEARCH</button>
+			</div>
+		</div> 
 		<br/>
         <div class="btn-confirm">
-           <div class="col-sm-offset-4 col-sm-4"> 
+           <div class="col-sm-offset-4 col-sm-7"> 
             <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원정보 수정</button>
             <button type="button" class="btn btn-sm btn-block" id="btn-remove"  onclick="removeMember()">회원탈퇴</button>
           </div>
@@ -190,6 +201,20 @@ $(function() {
 			$('#ckpwd').html('비밀번호가 일치합니다.<br>');
 			$('#ckpwd').attr('color', 'blue');
 			$('#btn-update').prop("disabled", false);
+		}
+	});
+});
+</script>
+<script>
+$(document).ready(function() {
+	var pwRegex =  /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+	$("#pwd2").on("input",function(){
+		var passWordTest=pwRegex.test($("#pwd2").val());
+		if(!passWordTest){
+			$('#pwdMsg').show();
+		}
+		else{
+			$('#pwdMsg').hide();
 		}
 	});
 });

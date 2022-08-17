@@ -10,11 +10,20 @@
 <meta charset="UTF-8">
 <title>summary</title>	
 <style>
- .container {
-	 margin-bottom: 500px;
-	 width: 500px;
-	 text-align: center;
- }
+#profileUpdate{
+	margin-left: 470px;
+	margin-bottom: 300px;
+	margin-top: auto;
+}
+
+.content-item {
+	margin-left: 100px;
+}
+img {
+ 	position: relative;
+    width: 100px;
+    height: 100px;
+}
 </style>
 </head>
 <body>
@@ -24,15 +33,18 @@
 <!-- 사이드 메뉴 바 -->
 <jsp:include page="../mypage/myside.jsp"/>
 	
-	<div class="container">
-   		<h4>${member.nname}님</h4>
-	</div>  
-	
-	
-	
-	
-	
-	
+<form id="profileUpdate" action="/mypage/summary" method="post" enctype="multipart/form-data">
+	<div class="container" style="margin-left:75px;">${member.nname} 님</div>
+	<br/>
+	<div class="content-item">
+		<div class="item">프로필 사진</div>
+		<div class="item-input">
+		<img src="${contextPath}/resources/images/profile.jpg" width="150"> 
+			<input class="update" type="file" name="profileImg" id="profileImg">
+		</div>
+	</div>
+</form>
+
 <!-- footer --> 
 <jsp:include page="../common/footer.jsp" flush="false"/>
 

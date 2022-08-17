@@ -23,10 +23,11 @@
 <style>
 .mypage {
 	text-align: center;
-    border-bottom: 1px solid #666;
     padding-bottom: 20px;
-    margin-bottom: 50px;
-    word-spacing: 30px;
+    margin-bottom: 30px;
+    margin-right: 370px;
+    margin-top: 45px;
+    font-size: 17px;
 }
  a {
  	text-decoration: none;
