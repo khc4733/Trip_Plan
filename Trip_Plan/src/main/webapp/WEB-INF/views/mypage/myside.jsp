@@ -21,16 +21,28 @@
     }
 </style>-->
 <style>
-.mypage {
+.mp_main {
 	text-align: center;
     padding-bottom: 20px;
-    margin-bottom: 30px;
-    margin-right: 370px;
+	margin-left: 300px;
+	margin-right: 300px;
     margin-top: 45px;
     font-size: 17px;
 }
+.mypage{
+	margin-left: auto;
+	margin-right: auto;
+    border-bottom: 1px solid #b5b3b3;
+}
+.mypage th{
+width: 200px;
+height: 28px;
+text-align: left;
+padding-bottom: 12px;
+}
  a {
  	text-decoration: none;
+ 	color: #b5b3b3;
 }
 
 </style>
@@ -43,15 +55,14 @@
 				<li><a href="${contextPath}/mypage/mypage.do">게시판 작성내역</a></li>
 			</ul>
 	</nav>  -->
-
-<table class="mypage" align="center">
-	<thead>
+<div  class="mp_main">
+<table class="mypage">
 		<tr>
-			<th width="200" height="28px"><a href="${contextPath}/mypage/summary">SUMMARY</a></th>
-			<th width="200" height="28px"><a href="${contextPath}/mypage/myInfo">EDIT</a></th>
-			<th width="200" height="28px"><a href="${contextPath}/..">POST</a></th>
+			<th><a href="${contextPath}/mypage/summary">SUMMARY</a></th>
+			<th><a href="${contextPath}/mypage/myInfo">EDIT</a></th>
+			<th><a href="${contextPath}/..">POST</a></th>
 		</tr>
-	</thead>
 </table>
+</div>
 </body>
 </html>
