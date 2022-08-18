@@ -35,9 +35,8 @@ function findAddr() {
 }
 </script>
 <style>
-.form-group { 
- font-family: Play;
-}
+.form-group {font-family: Play;}
+
 #btn-remove{
   background-color: white;
   color: red;
@@ -59,19 +58,41 @@ function findAddr() {
 #btn-update:hover {background-color: #e7e7e7;}
 
 #addressSearch{
-	background-color: #e7e7e7;
-	color: black;
-	margin-left: 520px;
+	border : 1px solid #CCC;
+   background-color: white;
+   color: #3f6eb0;
+  
 }
-#line {
-	border: none;
-    margin-left: 240px;
-    width: 350px;
+
+#addressSearch:hover {background-color: #b0c8e8;}
+
+.title {margin-bottom: auto;}
+
+.aaaa{
+	position: relative;
 }
-.title {
-	margin-left: 240px;
-	margin-bottom: auto;
+
+.aaaa button {
+	  position: absolute;
+	  width: 90px;
+	  height: 24px;
+	  top: 0;
+	  bottom: 30px;
+	  right: -120px;
+	  margin: 6px 0 0 500px;
+	  border-radius: 3px;
 }
+#line input{
+ 	-webkit-appearance: none;
+    -webkit-border-radius: 0;
+ 	padding: 2px 4px;
+    width: 600px;
+    border-bottom: 1px solid #d7dbe0;
+    height: 35px;
+}
+
+#account {margin: 50px 460px;}
+
 </style>
 </head>
 
@@ -83,15 +104,14 @@ function findAddr() {
 <!-- 사이드 메뉴 바 -->
 <jsp:include page="../mypage/myside.jsp"/>
 
-<div class="container">
-    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false" style="margin-right: 500px;"> 
+<div class="container" id="account">
+    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false" style="margin-right: 700px;"> 
         <!--  <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
                <h2 align="center" style= "margin-top: 50px; margin-right: 100px; font-family: Play;" >MY ACCOUNT</h2>
            </div>
         </div> -->    
-        <div class="form-group">
-        
+        <div class="form-group">    
            <label for="id" class="title">ID</label>
             <div id="line">
                <input type="text" class="form-control" id="id" name="id" maxlength="10" value="${member.id}" readonly/>
@@ -106,10 +126,9 @@ function findAddr() {
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="title">PASSWORD*</label>
-            <div id="line"><span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
-               <input type="password" class="form-control" id="pwd2" name="pwd2" maxlength="20" value=""/>
-            
+            <label for="id" class="title">PASSWORD* &nbsp;&nbsp;</label><span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
+            <div id="line">
+               <input type="password" class="form-control" id="pwd2" name="pwd2" maxlength="20" value=""/>          
             <font id="ckpwd" size="2"></font>
             </div>
         </div>
@@ -144,16 +163,15 @@ function findAddr() {
         <br/>
         <div class="form-group">
         	<label for="id" class="title">ADDRESS</label>
-			<div id="line">
+			<div id="line" class="aaaa">
 				<input type="text" class="form-control" id="address" name="address" maxlength="50" value="${member.address}" readonly/>
+	        	<button type="button" id="addressSearch" onclick="findAddr()" style="float:right">SEARCH</button>
+				
 			</div>
 			<div id="line">
 				<input type="text" class="form-control" id="address2" placeholder="상세주소 입력(선택사항)" value="">
 			</div>
 			<input type="hidden" id="address" name="address" value="">
-			<div class="form-group">
-				<button type="button" id="addressSearch" class="signup btn btn-sm" onclick="findAddr()">SEARCH</button>
-			</div>
 		</div> 
 		<br/>
         <div class="btn-confirm">

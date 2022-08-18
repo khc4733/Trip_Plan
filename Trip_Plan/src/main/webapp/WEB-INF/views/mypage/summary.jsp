@@ -10,21 +10,10 @@
 <meta charset="UTF-8">
 <title>summary</title>	
 <style>
-#profileUpdate{
-	margin-left: 470px;
-	margin-bottom: 300px;
-	margin-top: auto;
-}
 
-.content-item {
-	margin-left: 100px;
-}
-img {
- 	position: relative;
-    width: 100px;
-    height: 100px;
-}
 </style>
+<link href="${pageContext.request.contextPath}/resources/css/front.css"
+	type="text/css" rel="stylesheet">
 </head>
 <body>
 <!-- 메뉴바 -->
@@ -33,7 +22,8 @@ img {
 <!-- 사이드 메뉴 바 -->
 <jsp:include page="../mypage/myside.jsp"/>
 	
-<form id="profileUpdate" action="/mypage/summary" method="post" enctype="multipart/form-data">
+
+  <form id="profileUpdate" action="/mypage/summary" method="post" enctype="multipart/form-data">
 	<div class="container" style="margin-left:75px;">${member.nname} 님</div>
 	<br/>
 	<div class="content-item">
