@@ -61,35 +61,43 @@ footer {
 }
 
 .h_container {
-	background-image: url(../images/background.jpg);
-	position: relative;
-	height: 800px;
+	width: 100%;
+	height: 1000px;
+	overflow: hidden;
+	margin: 0px auto;
+	position: relative;	
+}
+
+video{
+	width: 100%;
+	height: 100vh;
 	object-fit: cover;
-	align-content: center;
+	z-index:-1;
 }
 
 .home_data {
+	position: absolute;
 	font-family: 'MYYeongnamnu';
 	color: #fff;
-	padding: 100px;
-	margin-left: 50px;
+	top: 30%; 
+	width: 100%;
+	/*z-index: 999;*/
 
 }
 
-.home_data-title {
-	height: 320px;
-	padding: 190px 0 0 0;
-	text-align: center;
+.home_data p {
+	margin-top: -50px;
+	color: #fff;
+	text-align: left;
 	font-family: 'MYYeongnamnu';
-	font-size: 140px;
+	font-size: 200px;
 	font-weight: bold;
-	display: inline-block;
 }
 
 .home_data-subtitle {
+	padding: 0 0 0 20px;
 	font-family: 'MYYeongnamnu';
-	padding: 25px 0 0 20px;
-	font-size: 25px;
+	font-size: 55px;
 }
 
 #main_bestcourse {
