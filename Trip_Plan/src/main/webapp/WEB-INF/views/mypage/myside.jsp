@@ -41,7 +41,7 @@ height: 28px;
 text-align: left;
 padding-bottom: 12px;
 }
- a {
+.mypage a {
  	text-decoration: none;
  	color: #b5b3b3;
 }
