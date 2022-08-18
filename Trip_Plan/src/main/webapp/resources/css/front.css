@@ -427,7 +427,7 @@ table#notice {
 .signup_input-form {
 	max-width: 680px;
 	margin-top: 80px;
-	padding: 10px 10px 40px 10px;
+	padding: 10px 40px 40px 40px;
 	background: #fff;
 	-webkit-border-radius: 10px;
 	border-width: 1px;
@@ -441,7 +441,8 @@ table#notice {
 }
 
 .signup_centered {
-	width: 400px;
+	width: 500px;
+	margin-top: 50px;	
 	height: auto;
 	min-height: 100%;
 	margin-left: auto;
@@ -467,7 +468,7 @@ table#notice {
 }
 
 .signup_email {
-	width: 85px;
+	width: 98px;
 	padding: 6px;
 	border: 1px solid #999;
 	font-family: 'Nanumgothic';
@@ -491,7 +492,7 @@ table#notice {
 }
 
 .signup.btn {
-	width: 88px;
+	width: 98px;
 	color: #ffffff;
 	border: none;
 	padding: 6px;
