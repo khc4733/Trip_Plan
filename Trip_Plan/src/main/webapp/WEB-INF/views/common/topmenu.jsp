@@ -28,6 +28,20 @@
     top: 0;
     z-index: 1;
 } 
+#sub_menu ul{
+		display:none;
+		position: absolute;
+		font-size:16px;
+		list-style: none;
+		opacity: 0.8;
+}
+#sub_menu:hover ul{ 
+		display:block;
+}
+#sub_menu ul li{
+    text-align: left;
+    opacity: 0.8;
+}
 </style>
 <script>
 var lastScrollTop = 0, delta = 15;
@@ -63,8 +77,8 @@ $(window).scroll(function(){
 		
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Area</a>
+				<li class="dropdown" id="sub_menu">
+					<a href="#">Area</a>
 					<ul class="dropdown-menu">
 						<li><a
 							href="${contextPath}/area/seoul">서울</a></li>
