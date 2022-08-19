@@ -26,7 +26,7 @@
     padding-bottom: 20px;
 	margin-left: 300px;
 	margin-right: 300px;
-    margin-top: 100px;
+    margin-top: 150px;
     font-size: 17px;
 }
 .mypage{
@@ -36,7 +36,7 @@
     border-bottom: 1px solid #b5b3b3;
 }
 .mypage th{
-width: 200px;
+width: 220px;
 height: 28px;
 text-align: left;
 padding-bottom: 12px;

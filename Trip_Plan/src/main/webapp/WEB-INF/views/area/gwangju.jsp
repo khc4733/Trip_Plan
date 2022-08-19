@@ -108,7 +108,6 @@
 				<ol class="area_ol">
 					<li><a href="${contextPath}/area/seoul">녹색에너지체험관</a></li>
 					<li><a href="${contextPath}/area/incheon">월계동 장고분</a></li>
-					<li><a href="${contextPath}/area/daejeon">소담(구 정통아구)</a></li>
 					<li><a href="${contextPath}/area/daegu">쌍암공원</a></li>
 					<li><a href="${contextPath}/area/daegu">환벽당</a></li>
 				</ol>

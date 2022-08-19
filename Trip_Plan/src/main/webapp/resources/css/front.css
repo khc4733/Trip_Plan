@@ -54,6 +54,34 @@ footer {
 	background-color: #333333;
 }
 
+.btn-quick-top {
+    position: fixed;
+    right: 20px;
+    z-index: 90;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    bottom: 20px;
+    border: 1px solid #CCCCCC;
+    background-color: #fff;
+    text-align: center;
+}
+
+.btn-quick-top > .ico-arrow{
+	margin: 15px 0 0 0;
+    width: 14px;
+    height: 20px;
+    background: url(../images/topbtn.png) no-repeat top center;
+    background-size: 100%;
+}
+
+.btn-quick-top i {
+    display: inline-block;
+    vertical-align: top;
+}
+
 #main_container {
 	height: auto;
 	min-height: 100%;

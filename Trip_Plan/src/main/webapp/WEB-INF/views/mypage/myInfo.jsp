@@ -68,17 +68,17 @@ function findAddr() {
 
 .title {margin-bottom: auto;}
 
-.aaaa{
+.addr{
 	position: relative;
 }
 
-.aaaa button {
+.addr button {
 	  position: absolute;
 	  width: 90px;
 	  height: 24px;
 	  top: 0;
 	  bottom: 30px;
-	  right: -120px;
+	  right: 5px;
 	  margin: 6px 0 0 500px;
 	  border-radius: 3px;
 }
@@ -91,7 +91,11 @@ function findAddr() {
     height: 35px;
 }
 
-#account {margin: 50px 460px;}
+#account {
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+}
 
 </style>
 </head>
@@ -105,7 +109,8 @@ function findAddr() {
 <jsp:include page="../mypage/myside.jsp"/>
 
 <div class="container" id="account">
-    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false" style="margin-right: 700px;"> 
+   <div>
+    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false"> 
         <!--  <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
                <h2 align="center" style= "margin-top: 50px; margin-right: 100px; font-family: Play;" >MY ACCOUNT</h2>
@@ -163,7 +168,7 @@ function findAddr() {
         <br/>
         <div class="form-group">
         	<label for="id" class="title">ADDRESS</label>
-			<div id="line" class="aaaa">
+			<div id="line" class="addr">
 				<input type="text" class="form-control" id="address" name="address" maxlength="50" value="${member.address}" readonly/>
 	        	<button type="button" id="addressSearch" onclick="findAddr()" style="float:right">SEARCH</button>
 				
@@ -175,13 +180,11 @@ function findAddr() {
 		</div> 
 		<br/>
         <div class="btn-confirm">
-           <div class="col-sm-offset-4 col-sm-7"> 
             <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원정보 수정</button>
             <button type="button" class="btn btn-sm btn-block" id="btn-remove"  onclick="removeMember()">회원탈퇴</button>
-          </div>
        </div>
     </form>
-
+  </div>
 </div>
 <script>
 //회원탈퇴
