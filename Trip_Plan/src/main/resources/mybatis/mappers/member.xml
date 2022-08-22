@@ -12,6 +12,7 @@
 		<result property="email"	column="email"/>
 		<result property="nickname"	column="nickname"/>
 		<result property="address"	column="address"/>
+		<result property="address2"	column="address2"/>
 		<result property="tel"	column="tel"/>
 	</resultMap>
 
@@ -47,7 +48,8 @@
       <![CDATA[
       UPDATE member 
       SET pwd=#{pwd, jdbcType=VARCHAR}, name=#{name, jdbcType=VARCHAR}, nname=#{nname, jdbcType=VARCHAR}, 
-      	  tel=#{tel, jdbcType=VARCHAR}, email=#{email, jdbcType=VARCHAR}, address=#{address, jdbcType=VARCHAR} 
+      	  tel=#{tel, jdbcType=VARCHAR}, email=#{email, jdbcType=VARCHAR}, address=#{address, jdbcType=VARCHAR},
+      	  address2=#{address2, jdbcType=VARCHAR}  
       WHERE id=#{id, jdbcType=VARCHAR}
       ]]>
    </update> 

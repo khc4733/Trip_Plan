@@ -22,18 +22,14 @@
 <!-- 사이드 메뉴 바 -->
 <jsp:include page="../mypage/myside.jsp"/>
 	
-
-  <form id="profileUpdate" action="/mypage/summary" method="post" enctype="multipart/form-data">
-	<div class="container" style="margin-left:75px;">${member.nname} 님</div>
-	<br/>
-	<div class="content-item">
-		<div class="item">프로필 사진</div>
-		<div class="item-input">
-		<img src="${contextPath}/resources/images/profile.jpg" width="150"> 
-			<input class="update" type="file" name="profileImg" id="profileImg">
-		</div>
-	</div>
-</form>
+<img src="${contextPath}/resources/images/profile.jpg" width="150"><br/>	  
+<div class="card">           
+    <form action="/mypage/updateImg" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="hidden" name="memberId" id="memberId" value="${member.id}">
+        <button type="submit" class="btn-sm btn-primary">사진변경</button>
+	</form>
+</div>
 
 <!-- footer --> 
 <jsp:include page="../common/footer.jsp" flush="false"/>

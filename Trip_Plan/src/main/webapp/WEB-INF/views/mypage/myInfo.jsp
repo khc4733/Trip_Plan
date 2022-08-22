@@ -126,12 +126,13 @@ width: 600px;
         <div class="form-group">
             <label for="id" class="title">PASSWORD</label>
             <div id="line">
-               <input type="password" class="form-control" id="pwd" name="pwd" maxlength="20" value="${member.pwd}"/>
+               <input type="password" class="form-control" id="pwd" name="pwd" maxlength="20" placeholder="비밀번호를 입력하세요." value=""/>
+               <span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
             </div>
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="title">PASSWORD* &nbsp;&nbsp;</label><span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
+            <label for="id" class="title">PASSWORD*</label>
             <div id="line">
                <input type="password" class="form-control" id="pwd2" name="pwd2" maxlength="20" value=""/>          
             <font id="ckpwd" size="2"></font>
@@ -174,7 +175,7 @@ width: 600px;
 				
 			</div>
 			<div id="line">
-				<input type="text" class="form-control" id="address2" placeholder="상세주소 입력(선택사항)" value="">
+				<input type="text" class="form-control" id="address2" name="address2" value="${member.address2}">
 			</div>
 			<input type="hidden" id="address" name="address" value="">
 		</div> 
@@ -199,15 +200,35 @@ function removeMember() {
  }
 }
 //회원 정보 수정
-function modifyMember() {		
- if (confirm("회원정보를 수정하시겠습니까?") == true){    //회원정보수정
-    document.memModifyForm.submit();
-    alert("회원정보가 수정되었습니다.");
- }else {   //취소
-    alert("회원정보수정 진행을 취소하였습니다.");
-    location.reload();
-    return false;
- }
+function modifyMember() {	
+	if ($.trim($('#pwd').val()) == '') {
+		alert("비밀번호를 입력해주세요.");
+		return false;
+	}		
+	if ($.trim($('#name').val()) == '') {
+		alert("이름을 입력해주세요.");
+		return false;
+	}
+	if ($.trim($('#nname').val()) == '') {
+		alert("닉네임을 입력해주세요.");
+		return false;
+	}
+	if ($.trim($('#tel').val()) == '') {
+		alert("전화번호를 입력해주세요.");
+		return false;
+	}				
+	if ($.trim($('#address').val()) == '') {
+		alert("주소를 입력해주세요.");
+		return false;
+	}	
+ 	if (confirm("회원정보를 수정하시겠습니까?") == true){    //회원정보수정 확인
+   	 	document.memModifyForm.submit();
+    	alert("회원정보가 수정되었습니다.");
+ 	} else {   //취소
+    	alert("회원정보수정 진행을 취소하였습니다.");
+    	location.reload();
+    	return false;
+	}
 }
 </script>
 <script>
@@ -232,8 +253,8 @@ $(function() {
 <script>
 $(document).ready(function() {
 	var pwRegex =  /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
-	$("#pwd2").on("input",function(){
-		var passWordTest=pwRegex.test($("#pwd2").val());
+	$("#pwd").on("input",function(){
+		var passWordTest=pwRegex.test($("#pwd").val());
 		if(!passWordTest){
 			$('#pwdMsg').show();
 		}
