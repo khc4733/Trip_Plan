@@ -14,7 +14,7 @@
 
 	<!-- 본문 내용 -->
 	<div class="notice-container">
-		<h1>NOTICE</h1>
+		<h1 class="not_title">NOTICE</h1>
 		<table id="notice"
 			style="width: 1000px; border-collapse: collapse; text-align: center;">
 			<thead>

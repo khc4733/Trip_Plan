@@ -9,30 +9,31 @@
 }
 
 @font-face {
-	font-family: 'MYYeongnamnu';
-	src:
-		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2')
-		format('woff2');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'LeferiPoint-WhiteObliqueA';
-	src:
-		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff')
-		format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'LeferiPoint-BlackObliqueA';
-	src:
-		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff')
-		format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Happiness-Sans-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-SpecialItalicA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {
@@ -45,6 +46,7 @@ body {
 	padding: 0;
 }
 
+/*footer 부분*/
 footer {
 	text-align: center;
 	position: relative;
@@ -54,33 +56,6 @@ footer {
 	background-color: #333333;
 }
 
-.btn-quick-top {
-    position: fixed;
-    right: 20px;
-    z-index: 90;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    bottom: 20px;
-    border: 1px solid #CCCCCC;
-    background-color: #fff;
-    text-align: center;
-}
-
-.btn-quick-top > .ico-arrow{
-	margin: 15px 0 0 0;
-    width: 14px;
-    height: 20px;
-    background: url(../images/topbtn.png) no-repeat top center;
-    background-size: 100%;
-}
-
-.btn-quick-top i {
-    display: inline-block;
-    vertical-align: top;
-}
 
 #main_container {
 	height: auto;
@@ -105,8 +80,6 @@ video{
 
 .home_data {
 	position: absolute;
-	font-family: 'MYYeongnamnu';
-	color: #fff;
 	top: 30%; 
 	width: 100%;
 	/*z-index: 999;*/
@@ -114,44 +87,119 @@ video{
 }
 
 .home_data p {
-	margin-top: -50px;
+	margin-top: -40px;
+	margin-left: 50px;
 	color: #fff;
 	text-align: left;
-	font-family: 'MYYeongnamnu';
-	font-size: 200px;
+	font-family: 'LeferiPoint-SpecialItalicA';
+	font-size: 150px;
 	font-weight: bold;
 }
 
 .home_data-subtitle {
+	color: #fff;
+	margin-top: 0px;
+	margin-left: 50px;
 	padding: 0 0 0 20px;
-	font-family: 'MYYeongnamnu';
+	font-family: 'LeferiPoint-SpecialItalicA';
 	font-size: 55px;
 }
 
-#main_bestcourse {
-	margin-top: 150px;
-	margin-bottom: 40px;
+/* 사진 슬라이드 부분 */
+#main_bestcourse  {
+	webkit-box-sizing: border-box;
+	position: relative;
+	background-color : #fff;
+	padding: 80px 2% 80px;
 }
 
-#main_bestcourse>p {
+#main_bestcourse h2 {
+	font-family: 'Happiness-Sans-Title';
+	text-align : center;
+}
+
+
+.banner_title{
+	font-family: 'Happiness-Sans-Title';
 	text-align: center;
-	background-color: white;
-	font-family: "jua", sans-serif;
-	font-weight: bold;
-	color: #5882FA;
-	width: 100%;
-	font-size: 30px;
-	padding: 5px 1px 5px 1px;
+    padding-bottom: 20px;
+	margin-left: 300px;
+	margin-right: 300px;
+    margin-top: 100px;
+    font-size: 17px;
 }
 
-.container {
-	/*border: 2px solid red;*/
-	margin: 70px 365px;
+.clearfix {
+	margin-left: auto;
+	margin-right: auto;
+    border-bottom: 1px solid #b5b3b3;
+	
 }
+
+.clearfix th {
+	width: 200px;
+	height: 28px;
+	text-align: left;
+	padding-bottom: 12px;
+}
+
+.clearfix a {
+	text-decoration: none;
+ 	color: black;
+}
+
+#main_bestcourse h3{
+	font-family: 'Happiness-Sans-Bold';
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 70px;
+	color : #fff;
+	padding: 30px 0 0 0;
+}
+
+.m_center a {
+	text-decoration: none;
+}
+
+#course_1{
+	background-image:url(../images/seoul1.jpg);
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	position: relative;
+	align-content : center;
+}
+
+#course_1 p, #course_2 p, #course_3 p{
+	font-family: 'Happiness-Sans-Bold';
+	text-align: center;
+	font-size: 70px;
+	color : #fff;
+}
+
+#course_2{
+	background-image:url(../images/busan1.jpg);
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	position: relative;
+	align-content : center;
+}
+
+#course_3{
+	background-image:url(../images/jeju1.jpg);
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	position: relative;
+	align-content : center;
+}
+
 
 /* 하단 테이블 */
 .front {
 	/*border: 2px solid red;*/
+	padding: 90px 0;
 	width: 60%;
 	margin: auto;
 	display: flex;
@@ -184,19 +232,20 @@ video{
 }
 
 #main_notice-container .title, #main_review-container .title {
+	font-style: oblique;
 	font-weight: bold;
 	text-align: left;
-	color: #5882FA;
+	color: #CCC;
 	padding-top: 15px;
 	padding-bottom: 20px;
 }
 
 #main_notice-container {
 	width: 600px;
+	margin-left: 120px;
 }
 
 #main_review-container {
-	margin-left: 120px;
 	width: 600px;
 }
 
@@ -229,8 +278,19 @@ video{
 .notice-container h1 {
 	font-size: 45px;
 	color: #ccc;
-	margin: 50px 0;
+	margin: 100px 0 0 0;
+	padding: 0 0 0 500px;
 	font-weight: nomal;
+	
+}
+
+.notice-container .not_title{
+	font-style: oblique;
+	font-weight: bold;
+	text-align: left;
+	color: #CCC;
+	padding-top: 15px;
+	padding-bottom: 20px;
 }
 
 .notice-container th {
