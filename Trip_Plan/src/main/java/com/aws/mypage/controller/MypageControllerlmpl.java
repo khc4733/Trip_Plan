@@ -104,21 +104,6 @@ public class MypageControllerlmpl implements MypageController {
 		return mav;
 	}
 
-	//-----------------------------------------------------------------------------------------------------------
-	// 프로필 사진 추가(8.22)
-	//-----------------------------------------------------------------------------------------------------------
-	@Override
-	@RequestMapping(value="/summary", method=RequestMethod.GET)
-	public ModelAndView updateImg(HttpServletRequest request, HttpServletResponse response, HttpSession session, String id) throws Exception {
-		
-		String memberImg = fileUtil.updateImg(request); 
-		MemberVO memberVO = (MemberVO) session.getAttribute("member");
-		
-		mypageService.updateImg(memberImg, id);
-		
-		memberVO.setMemberImg(memberImg);
-		session.setAttribute("login", memberVO);
-	}
-	
+
 	
 }//END - public class MypageControllerlmpl implements MypageController

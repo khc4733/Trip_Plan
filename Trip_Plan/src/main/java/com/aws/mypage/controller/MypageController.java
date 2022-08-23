@@ -38,10 +38,6 @@ public interface MypageController {
 	//-----------------------------------------------------------------------------------------------------------
 	public ModelAndView summary(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
-	//-----------------------------------------------------------------------------------------------------------
-	// 프로필 사진 추가(8.22)
-	//-----------------------------------------------------------------------------------------------------------
-	public ModelAndView updateImg(HttpServletRequest request, HttpServletResponse response,HttpSession session , String memberId) throws Exception;
 	
 	
 } // END - public interface MypageController
