@@ -30,7 +30,47 @@ public class BoardControllerImpl implements BoardController {
 		mav.setViewName("/board/notice");
 		return mav;
 	}
-	
-	
 
+	@Override
+	@RequestMapping(value="/subway", method=RequestMethod.GET)
+	public ModelAndView Subway(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/board/subway");
+		return mav;
+	}
+	
+	@Override
+	@RequestMapping(value="/sbwbs", method=RequestMethod.GET)
+	public ModelAndView Sbwgj(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/board/sbwbs");
+		return mav;
+	}
+
+	@Override
+	@RequestMapping(value="/sbwdg", method=RequestMethod.GET)
+	public ModelAndView Sbwbs(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/board/sbwdg");
+		return mav;
+	}
+
+	@Override
+	@RequestMapping(value="/sbwdj", method=RequestMethod.GET)
+	public ModelAndView Sbwdg(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/board/sbwdj");
+		return mav;
+	}
+
+	@Override
+	@RequestMapping(value="/sbwgj", method=RequestMethod.GET)
+	public ModelAndView Sbwdj(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/board/sbwgj");
+		return mav;
+	}
+
+	
 }

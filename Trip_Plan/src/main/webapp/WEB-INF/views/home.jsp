@@ -9,8 +9,7 @@ request.setCharacterEncoding("UTF-8");
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="${contextPath}/resources/css/front.css" type="text/css"
-	rel="stylesheet">
+<link href="${contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
 <!-- resources오타 수정 sk -->
 <title>메인 화면</title>
 <script>
@@ -152,7 +151,7 @@ function getLocation() {
 							style="text-align: center; font-family: nanumB; font-size: 18px;">
 							<tr>
 								<td>1</td>
-								<td><a href="#"><b>진행 중인 리뷰 이벤트</b></a></td>
+								<td><a href="./board/subway"><b>지역별 지하철 노선도</b></a></td>
 							</tr>
 							<tr>
 								<td>2</td>
