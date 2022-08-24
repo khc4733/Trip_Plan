@@ -10,7 +10,9 @@
 <body>
 <!-- top menu -->
 	
-		<jsp:include page="../common/topmenu.jsp" />
+     <div class="sub_menubar">
+        <jsp:include page="../common/topmenu.jsp"/>
+    </div>
 	
 	
 <!-- 본문 내용 -->

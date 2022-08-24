@@ -170,9 +170,9 @@ function numchk(){
 </script>
 </head>
 <body>
-	<div>
-		<jsp:include page="../common/topmenu.jsp" />
-	</div>
+     <div class="sub_menubar">
+        <jsp:include page="../common/topmenu.jsp"/>
+    </div>
 	<div class="signup_centered">
 		<div class="input-form-backgroud row">
 			<div class="signup_input-form col-md-12 mx-auto">

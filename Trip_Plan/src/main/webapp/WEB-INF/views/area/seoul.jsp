@@ -12,9 +12,9 @@
 </head>
 <body>
 	<!-- top menu -->
-	<div>
-		<jsp:include page="../common/topmenu.jsp" />
-	</div>
+     <div class="sub_menubar">
+        <jsp:include page="../common/topmenu.jsp"/>
+    </div>
 	<!-- side menu -->
 	<div>
 		<jsp:include page="../common/sidemenu.jsp" />

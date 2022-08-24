@@ -11,7 +11,9 @@
 	rel="stylesheet">
 </head>
 <body>
-	<jsp:include page="../common/topmenu.jsp" flush="false" />
+     <div class="sub_menubar">
+        <jsp:include page="../common/topmenu.jsp"/>
+    </div>
 
 	<jsp:include page="../board/sbwsub.jsp" />
 

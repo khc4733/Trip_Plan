@@ -52,7 +52,7 @@
   </script>
 </head>
 <body>
-     <div>
+     <div class="sub_menubar">
         <jsp:include page="../common/topmenu.jsp"/>
     </div>
 <div class="signin_centered">

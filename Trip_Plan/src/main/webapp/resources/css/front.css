@@ -45,6 +45,9 @@ body {
 	height: 100%;
 	padding: 0;
 }
+.sub_menubar #main_nav{
+ background-color: #485ca3;
+}
 
 /*footer 부분*/
 footer {
@@ -425,7 +428,7 @@ table#notice {
 }
 .sub_imgframe{
 	width: 70%;
-	margin: 50px auto;
+	margin: 30px auto;
 	
 }
 .sub_img{

@@ -21,9 +21,9 @@ if(session.getAttribute("isLogOn") == null || session.getAttribute("isLogOn").eq
 %>
 
 <!-- 메뉴바 -->
-<jsp:include page="../common/topmenu.jsp" flush="false"/>
-
-
+     <div class="sub_menubar">
+        <jsp:include page="../common/topmenu.jsp"/>
+    </div>
 <!-- 사이드 메뉴 바 -->
 <jsp:include page="../mypage/myside.jsp"/>
 

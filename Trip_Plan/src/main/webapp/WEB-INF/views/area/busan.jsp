@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- top menu -->
-     <div>
+     <div class="sub_menubar">
         <jsp:include page="../common/topmenu.jsp"/>
     </div>
 <!-- side menu -->

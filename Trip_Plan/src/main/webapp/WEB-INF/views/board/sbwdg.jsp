@@ -11,14 +11,16 @@
 	rel="stylesheet">
 </head>
 <body>
-	<jsp:include page="../common/topmenu.jsp" flush="false" />
+     <div class="sub_menubar">
+        <jsp:include page="../common/topmenu.jsp"/>
+    </div>
 
 	<jsp:include page="../board/sbwsub.jsp" />
 
 	<!-- 본문 -->
 	<div id="sub_main">
 		<div class="sub_imgframe">
-			<img class="sub_img" src="${contextPath}/resources/images/subway_se.jpg">
+			<img class="sub_img" src="${contextPath}/resources/images/subway_daegu.png">
 		</div>
 	</div>
 	<!--푸터-->
