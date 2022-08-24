@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />    
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +9,7 @@
 <title>subway sidemenu</title>
 </head>
 <body>
-<div class="notice-container">
-		<h1 class="not_title">NOTICE</h1>
-		<div class="sub_main">
+<div class="subway_tab">
 			<div id="sbw_container">
 				<h3>지역별 지하철 노선도</h3>
 			</div>
@@ -24,7 +24,6 @@
 					</tr>
 				</table>
 			</div>
-		</div>
 </div>
 </body>
 </html>

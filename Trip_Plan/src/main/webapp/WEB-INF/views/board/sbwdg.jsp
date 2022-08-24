@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />		
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,10 +16,9 @@
 	<jsp:include page="../board/sbwsub.jsp" />
 
 	<!-- 본문 -->
-	<div id="sub_daegu">
-		<h4>대구</h4>
-		<div class="sub_img">
-			<img src="">
+	<div id="sub_main">
+		<div class="sub_imgframe">
+			<img class="sub_img" src="${contextPath}/resources/images/subway_se.jpg">
 		</div>
 	</div>
 	<!--푸터-->

@@ -415,6 +415,24 @@ table#notice {
 }
 
 /* 지하철 노선도 페이지 영역*/
+.subway_tab{
+		margin-top: 100px;
+		text-align: center;
+}
+#sub_main{
+	margin-left: auto;
+	margin-right: auto;
+}
+.sub_imgframe{
+	width: 70%;
+	margin: 50px auto;
+	
+}
+.sub_img{
+	width:100%;
+	height: 100%;
+}
+
 #sbw_container{
 	text-align: left;
 	height: auto;

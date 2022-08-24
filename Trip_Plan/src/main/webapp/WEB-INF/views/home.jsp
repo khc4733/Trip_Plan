@@ -151,7 +151,7 @@ function getLocation() {
 							style="text-align: center; font-family: nanumB; font-size: 18px;">
 							<tr>
 								<td>1</td>
-								<td><a href="./board/subway"><b>지역별 지하철 노선도</b></a></td>
+								<td><a href="${contextPath}/board/subway"><b>지역별 지하철 노선도</b></a></td>
 							</tr>
 							<tr>
 								<td>2</td>
