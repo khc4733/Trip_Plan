@@ -26,7 +26,7 @@
     padding: 15px 200px;
     font-size: 18px;
     top: 0;
-    z-index: 1;
+    z-index: 9999;
 } 
 #sub_menu ul{
 		display:none;
