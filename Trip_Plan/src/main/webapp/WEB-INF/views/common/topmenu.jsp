@@ -111,7 +111,7 @@ request.setCharacterEncoding("UTF-8");
 						<li><a href="${contextPath}/area/gwangju">광주</a></li>
 						<li><a href="${contextPath}/area/jeju">제주도</a></li>
 					</ul></li>
-				<li><a class="submenu" href="${contextPath}/board/review">Review</a>
+				<li><a class="submenu" href="${contextPath}/board/boardList">Review</a>
 				</li>
 				<li><a class="submenu" href="${contextPath}/board/notice">Notice</a>
 				</li>

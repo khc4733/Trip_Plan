@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.aws.board">
+
+	<!-- 리뷰 전체 목록 추출하기 -->
+	<select id="listAll" resultType="com.aws.board.dto.boardDTO">
+		<![CDATA[
+		SELECT	seq, subject, content, writer, reg_date, readCount
+		FROM	board
+		]]>
+	</select>
+
+
+	<!-- 제일 큰 게시글 번호 추출하기 -->
+	<select id="maxSeq" resultType="java.lang.Integer">
+		<![CDATA[
+		SELECT	MAX(seq)
+		FROM	board
+		]]>
+	</select>
+	
+	<!-- 리뷰 등록하기 -->
+	<insert id="register" parameterType="com.aws.board.dto.boardDTO">
+		<![CDATA[
+		INSERT INTO board
+			   (seq, 	  subject, 	  content, 	  writer, 	 reg_date, readCount)
+		VALUES (#{seq}, #{subject}, #{content}, #{writer}, #{reg_date}, 0)
+		]]>
+	</insert>
+	
+	<!-- 리뷰 번호에 해당하는 게시글의 조회수 증가시키기 -->
+	<update id="updateReadCount" parameterType="int">
+		<![CDATA[
+			UPDATE board
+			SET readCount = readCount + 1
+			WHERE seq = #{seq}
+		]]>
+	</update>
+	
+	<!-- 리뷰 번호에 해당하는 정보 추출하기 -->
+	<select id="detail" parameterType="int" resultType="com.aws.board.dto.boardDTO">
+		<![CDATA[
+			SELECT seq, subject, content, writer, reg_date, readCount
+			FROM board
+			WHERE seq = #{seq}
+		]]>
+	</select>
+	
+	<!-- 리뷰 번호에해당하는 글 삭제하기 -->
+	<delete id="delete" parameterType="int">
+		<![CDATA[
+			DELETE FROM board
+			WHERE seq = #{seq}
+		]]>
+	</delete>
+	
+	<!-- 리뷰 수정하기 -->
+	<update id="update" parameterType="com.aws.board.dto.boardDTO">
+		<![CDATA[
+			UPDATE board
+			SET subject = #{subject}, writer = #{writer}, contetn = #{content}
+			WHERE seq = #{seq}
+		]]>
+	</update>
+</mapper>
+

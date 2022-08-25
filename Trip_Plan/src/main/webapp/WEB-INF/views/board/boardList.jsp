@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt"   uri="http://java.sun.com/jsp/jstl/fmt"  %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+<%  request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,20 +12,16 @@
 
 </head>
 <body>
+
+<div class="sub_menubar">
+    <jsp:include page="../common/topmenu.jsp"/>
+</div>
+	
 <!-- top menu -->
-<<<<<<< HEAD
-	
-     <div class="sub_menubar">
-        <jsp:include page="../common/topmenu.jsp"/>
-    </div>
-	
-	
-=======
-   
-      <jsp:include page="../common/topmenu.jsp" />
+<jsp:include page="../common/topmenu.jsp" />
    
    
->>>>>>> KYJ
+
 <!-- 본문 내용 -->
 
 <div class="container">
@@ -52,7 +52,7 @@
                   <td>${list.content}</td>
                   <td>${list.writer}</td>
                   <fmt:parseDate value="${list.reg_date}" var="currentDate" pattern="yy/MM/dd"/>
-                  <td><fmt:formatDate value="${currentDate}" pattern="yyyy년 MM월 dd일 HH시 mm분 ss초"/></td>
+                  <td><fmt:formatDate value="${currentDate}" pattern="yyyy년 MM월 dd일 HH시 mm분"/></td>
                   <td align="right">${list.readCount}</td>
                </tr>
             </c:forEach>
@@ -78,7 +78,7 @@
       
       
       <p align="center">
-         <button type="button" class="btn btn-primary" onclick="location.href='/board/boardRegisterForm'">글쓰기</button>
+         <button type="button" class="btn btn-primary" onclick="location.href='boardRegisterForm'">글쓰기</button>
       </p>
    </form>
    
@@ -102,9 +102,6 @@
    <!-- footer  -->
    <jsp:include page="../common/footer.jsp" />
 
-<!-- footer  -->   
-   
-      <jsp:include page="../common/footer.jsp" />
    
 </body>
 </html>
