@@ -20,7 +20,7 @@ import com.aws.board.service.boardService;
 
 
 @Controller("boardController")
-@RequestMapping("/board/*")	// url에서 /area로 시작하는 것들을 처리하는 컨트롤러
+@RequestMapping("/board")	// url에서 /board로 시작하는 것들을 처리하는 컨트롤러
 public class BoardControllerImpl implements BoardController {
 
 	@Inject
