@@ -132,7 +132,7 @@ function getLocation() {
 			</div>
 
 			<div id="main_notice-container">
-				<h3 class="title">NOTICE</h3>
+				<h3 class="title">GUIDE</h3>
 				<div class="btn_more">
 					<a href="./board/notice"><img
 						src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
