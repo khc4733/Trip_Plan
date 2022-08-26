@@ -18,9 +18,9 @@
 	<!-- 본문 -->
 	<div id="sub_main">
 		<div class="sub_imgframe">
-			<img class="sub_img" src="${contextPath}/resources/images/subway_se.jpg">
+			<img class="sub_img" src="${contextPath}/resources/images/subway_dj.jpg">
 		</div>
-	</div>v>
+	</div>
 	<!--푸터-->
 	<jsp:include page="../common/footer.jsp" />
 </body>

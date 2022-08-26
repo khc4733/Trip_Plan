@@ -37,13 +37,19 @@
 }
 
 html {
+	width: 100%;
 	height: 100%;
+	display: table;
 }
 
 body {
-	margin: 0; padding : 0;
-	height: 100%;
-	padding: 0;
+	width: 100%;
+	display: table-cell;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
 }
 
 /*footer 부분*/
@@ -107,14 +113,14 @@ video{
 
 .home_data {
 	position: absolute;
-	top: 30%; 
+	top: 40%; 
 	width: 100%;
 	/*z-index: 999;*/
 
 }
 
 .home_data p {
-	margin-top: -40px;
+	margin-top: -60px;
 	margin-left: 50px;
 	color: #fff;
 	text-align: left;
@@ -290,7 +296,6 @@ video{
 	top: 27px;
 	right: 10px; 
 	position: absolute;
-	z-index: 999;
 }
 
 .btn_more>a {
@@ -302,6 +307,7 @@ video{
 	width: inherit;
 	height: inherit;
 	object-fit: cover;
+	z-index: 9999;
 }
 
 #main_review-table, #main_notice-table {
@@ -337,7 +343,7 @@ video{
 .notice-container th {
 	height: 20px;
 	text-transform: capitalize;
-	font-size: 14px;
+	font-size: 20px;
 	font-family: "Nanum", serif;
 	font-weight: bold;
 	padding: 5px;
@@ -377,6 +383,7 @@ video{
 }
 
 .notice-container td {
+	font-size: 15px;
 	text-align: center;
 	padding: 6px 0;
 	border-bottom-width: 1px;
@@ -386,6 +393,12 @@ video{
 
 .notice-container td.left {
 	text-align: center;
+	font-size: 20px;
+}
+
+.notice-container td.left a {
+	color: #404040;
+	text-decoration: none;
 }
 
 table#notice {
@@ -422,15 +435,26 @@ table#notice {
 #sub_main{
 	margin-left: auto;
 	margin-right: auto;
+	height: auto;
+	min-height: auto;
 }
+
 .sub_imgframe{
-	width: 70%;
+	width: 800px;
+	height: 500px;
 	margin: 50px auto;
-	
+	padding-bottom: 600px;
+	position: relative;
+	overflow: hidden;
 }
+
 .sub_img{
+	position: absolute;
 	width:100%;
 	height: 100%;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
 }
 
 #sbw_container{
@@ -467,7 +491,7 @@ table#notice {
 	font-size: 20px;
 	width: 200px;
 	height: 28px;
-	text-align: left;
+	text-align: center;
 	padding-bottom: 12px;
 }
 
