@@ -7,8 +7,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>리뷰게시판</title>
+<meta charset="UTF-8"><title>리뷰게시판</title>
+
+
 
 </head>
 <body>
@@ -27,9 +28,17 @@
 <div class="container">
    <form class="form-horizontal" id="formList">
       <div class="form-group">
-         <div>
-            <h2 align="center">REVIEW</h2>
-         </div>
+      <div style="margin-top : 100px;"> 
+            <h2 align="left">REVIEW</h2><img src="${contextPath}/resources/images/review1.jpg" width="40%"height="300px" align="right">
+            
+            <p>REVIEW 게시판은 여행하며 느꼈던 좋았던 점이나 아쉬웠던 경험들을 올리는 공간입니다. 
+	<br>
+    글 작성 시 광고, 허위, 비방글 등에 해당하는 내용은 제한되니 유의 바랍니다.<br>
+	<b>등록하신 게시물은 관리자의 승인 후 확인이 가능합니다.</b></p>
+     </div>        
+
+
+ 
       </div>
       
       <table class="table table-bordered table-striped nanum table-hover">
@@ -59,8 +68,10 @@
          </tbody>
       </table>
       
+      
+      
       <div class="col-sm-offset-3">
-         <a style="font-size:20px;"><span class="label label-info">검색조건</span></a>
+      <div align="right"> 
       
          <select id='searchType'>
             <option>검색종류</option>
@@ -70,11 +81,9 @@
          </select>
          <input type='text' id='searchKeyword' name='keyword'     value="${pageVO.keyword}">
          <button id='searchBtn'>Search</button>
-         <button type="button" class="btn btn-warning" onclick="fn_boardSearch()">
-            <span class="glyphicon glyphicon-search"> 게시글 검색</span>
-         </button>
+     
       </div>
-   
+      </div>
       
       
       <p align="center">
