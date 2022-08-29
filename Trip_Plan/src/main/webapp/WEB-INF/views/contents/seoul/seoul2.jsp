@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>seoul1</title>
+<title>seoul2</title>
 <link href="${contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -176,35 +176,50 @@
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
 				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul1-4.jpg">
+					<img src="${contextPath}/resources/images/seoul2-4.jpg">
 				</a>
 			</div>
 			<div class="right">
 				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">종묘 [유네스코 세계문화유산]</h5>
+					<h5 class="mvp_h5">서울광장</h5>
 				</a>
-				<p>종묘는 조선왕조의 역대 왕과 왕비 그리고 사후에 추존된 왕과 왕비의 신주(神主)를 모신 사당이다. 
-				56,500평의 경내에 종묘정전을 비롯, 별묘인 영녕전과 전사청, 어숙실, 향대청, 신당 등의 건물이 있다. 
-				여기에 제사를 지내는 종묘대제(宗廟大祭)는 삼국 시대부터 있었던 국가적인 행사였다.
+				<p>서울광장은 3.1운동, 6월 민주화운동 등 한국현대사의 한 획을 긋는 역사적 사건의 무대였으며 2002년 월드컵 기간에는 시민들의 축제의 마당이었다. 
+				시청광장의 역사는 고종이 러시아공사관으로 피신했다가 월산대군 개인집(덕수궁)으로 돌아온 1897년부터 시작된다. 황제의 자리에 오른 고종은 나라의 기틀을 
+				새로이 하기 위해 덕수궁 대한문 앞을 중심으로 하는 방사선형 도로를 닦고 앞쪽에는 광장과 원구단을 설치하였다.
 				</p>
 			</div>
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
 				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul1-5.jpg">
+					<img src="${contextPath}/resources/images/seoul2-5.jpg">
 				</a>
 			</div>
 			<div class="right">
 				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">광장시장</h5>
+					<h5 class="mvp_h5">남산골 한옥마을</h5>
 				</a>
-				<p>1905년 고종 42년 을사조약 체결 후 실질적으로 주권행사는 일본이 장악했고 따라서 경제침략 정책을 기도한 바 
-				그 예로서 남대문시장 경영권 장악하였고 경제적인 돌파구로 새롭게 문을 연 것이 종로의 광장시장이다.
-				1905년 우리 나라 최초의 상설 시장 이 탄생한 순간이다.
+				<p>1998년 조성된 남산골한옥마을은 남산 북측 옛 수도방위사령부 부지 총 79,934m²(24,180평)에 한옥 5동, 전통공예관, 천우각, 전통정원, 서울남산국악당,
+				 새천년타임캡슐 광장으로 구성되어 시민과 관광객을 맞이하고 있다. 번화한 도심 한 가운데에서 한국 전통문화를 소재로 한 다양한 체험거리를 만나볼 수 있으며, 
+				 남산 자락을 따라 전통조경 양식으로 조성된 계곡과 정자, 각종 화초가 만들어내는 아름다운 풍경을 만날 수 있다. 
 				</p>
 			</div>
-		</div>				
+		</div>
+		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
+			<div class="left">
+				<a href="#" target="_blank" title="새창열기">
+					<img src="${contextPath}/resources/images/seoul2-6.jpg">
+				</a>
+			</div>
+			<div class="right">
+				<a href="#" target="_blank" title="새창열기">
+					<h5 class="mvp_h5">남산 서울타워</h5>
+				</a>
+				<p>''남산서울타워''는 효율적인 방송전파 송수신과 한국의 전통미를 살린 관광 전망시설의 기능을 겸비한 국내 최초의 종합전파탑으로 방송문화와 관광산업의 미래를 위해 건립되었다. 
+				세계 유명한 종합 탑들이 그 나라 또는 그 도시의 상징적인 존재가 된 것 처럼 ''남산서울타워'' 역시 지난 40여 년간 대한민국의 대표적인 관광지이자 서울의 상징물 역할을 해왔다.
+				</p>
+			</div>
+		</div>			
 	</div>	
 	<!-- footer -->
      <div>

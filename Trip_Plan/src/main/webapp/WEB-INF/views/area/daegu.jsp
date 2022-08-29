@@ -27,7 +27,7 @@
 		<hr class="area_hr-solid">
 	</div>
 	<div class="area_centered">
-		<!-- seoul1 시작 -->
+		<!-- daegu1 시작 -->
 		<div style="border: 1px solid #d6d4d4; float: left; width: 32%;">
 			<div id=a> <!-- 이미지 애니메이션 테스트 -->
 				<a href="${contextPath}/contents/daegu/daegu1"> <img
