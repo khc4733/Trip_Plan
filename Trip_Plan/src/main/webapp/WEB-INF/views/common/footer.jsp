@@ -6,11 +6,32 @@
 <meta charset="UTF-8">
 <title>footer</title>
 <link href="${pageContext.request.contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     function scrollup() {
         	$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
     return false;
     }
+    $(window).resize(function (){
+	  // width값을 가져오기
+	  var width_size = window.outerWidth;
+	  var height_size = window.outerHeight;
+	  
+	  // 800 이하인지 if문으로 확인
+	  if (width_size <= 1320) {
+		  $("footer").css("visibility", "hidden");
+	  }
+	  else{
+		  $("footer").css("visibility", "visible");
+	  }
+	  if (height_size <= 960) {
+		  $("footer").css("visibility", "hidden");
+	  }
+	  else{
+		  $("footer").css("visibility", "visible");
+	  }	  
+	})
 </script>
 </head>
 <body>

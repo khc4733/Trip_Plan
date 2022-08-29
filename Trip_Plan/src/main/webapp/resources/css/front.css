@@ -58,9 +58,9 @@ footer {
 	text-align: center;
 	position: relative;
 	bottom: 0;
-	width: 100%;
-	color: white;
-	background-color: #333333;
+    width:100%;
+	color: black;
+	border-top: 1px solid #CCCCCC;
 }
 .btn-quick-top {
     position: fixed;
