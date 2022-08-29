@@ -9,6 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>개인 정보 확인</title>
+<link href="${contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Permanent+Marker&family=Play&family=Poiret+One&family=Raleway:ital@1&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
@@ -34,70 +35,6 @@ function findAddr() {
  	}).open();
 }
 </script>
-<style>
-.form-group {font-family: Play;}
-
-#btn-remove{
-  background-color: white;
-  color: red;
-  border: none;
-  font-family: Play;
-  font-size: 13px;
-}
-
-#btn-remove:hover {background-color: #e7e7e7;}
-
-#btn-update{
-  background-color: white;
-  color: black;
-  border: none;
-  font-family: Play;
-  font-size: 13px;
-}
-
-#btn-update:hover {background-color: #e7e7e7;}
-
-#addressSearch{
-	border : 1px solid #CCC;
-   background-color: white;
-   color: #3f6eb0;
-  
-}
-
-#addressSearch:hover {background-color: #b0c8e8;}
-
-.title {margin-bottom: auto;}
-
-.addr{
-	position: relative;
-}
-
-.addr button {
-	  position: absolute;
-	  width: 90px;
-	  height: 24px;
-	  top: 0;
-	  bottom: 30px;
-	  right: 5px;
-	  margin: 6px 0 0 500px;
-	  border-radius: 3px;
-}
-#line input{
- 	-webkit-appearance: none;
-    -webkit-border-radius: 0;
- 	padding: 2px 4px;
-    width: 600px;
-    border-bottom: 1px solid #d7dbe0;
-    height: 35px;
-}
-
-#account {
-margin-left: auto;
-margin-right: auto;
-width: 600px;
-}
-
-</style>
 </head>
 
 <body>  
