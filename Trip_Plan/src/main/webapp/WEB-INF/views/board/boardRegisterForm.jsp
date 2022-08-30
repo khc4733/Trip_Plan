@@ -33,7 +33,7 @@
          <div class="form-group">
             <label for="subject" class="col-sm-2 control-label">작성자</label><!-- 로그인 id -->
             <div class="col-sm-8">
-               <input type="text" class="form-control" id="subject" name="subject" maxlength="100" readonly/>
+               <input type="text" class="form-control" value="${member.nname}" id="writer" name="writer" maxlength="100" readonly/>
             </div>
          </div>
          <div class="form-group">

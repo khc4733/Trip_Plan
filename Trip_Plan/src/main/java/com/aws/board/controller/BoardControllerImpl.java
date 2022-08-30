@@ -112,17 +112,18 @@ public class BoardControllerImpl implements BoardController {
 	//------------------------------------------------------------------------------------------------------
 	@ResponseBody
 	@Override
-	@RequestMapping(value="/boardRegister", method = RequestMethod.GET)
+	@RequestMapping(value="/boardRegister", method = RequestMethod.POST)
 	public String boardRegister(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		Date date = new Date(System.currentTimeMillis());
-		SimpleDateFormat format = new SimpleDateFormat("yyyMMddHHmmss");
+		SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmm");
 		
 		boardDTO boardDTO = new boardDTO();
 		boardDTO.setwriter(request.getParameter("writer"));
 		boardDTO.setSubject(request.getParameter("subject"));
 		boardDTO.setContent(request.getParameter("content"));
 		boardDTO.setReg_date(format.format(date));
+		
 		
 		if(boardService.boardRegister(boardDTO) == 1) {
 			return "Y";
