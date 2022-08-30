@@ -58,9 +58,9 @@ footer {
 	text-align: center;
 	position: relative;
 	bottom: 0;
-	width: 100%;
-	color: white;
-	background-color: #333333;
+    width:100%;
+	color: black;
+	border-top: 1px solid #CCCCCC;
 }
 .btn-quick-top {
     position: fixed;
@@ -857,7 +857,129 @@ table#notice {
 
 /*  마이 페이지 영역 시작 */
 #mypage_main {
+   height: auto;
+   min-height: 100%;
+}
+.form-group {font-family: Play;}
+
+#btn-remove{
+   background-color: white;
+   color: red;
+   border: none;
+   font-family: Play;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+#btn-remove:hover {text-decoration:underline;}
+
+#btn-update{
+   background-color: white;
+   color: black;
+   border: none;
+   font-family: Play;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+#btn-update:hover {text-decoration:underline;}
+
+#addressSearch{
+   border : 1px solid #CCC;
+    background-color: white;
+    color: #3f6eb0;
+  
+}
+
+#addressSearch:hover {background-color: #b0c8e8;}
+
+.title {margin-bottom: auto;}
+
+.addr{
+   position: relative;
+}
+
+.addr button {
+   position: absolute;
+   width: 90px;
+   height: 24px;
+   top: 0;
+   bottom: 30px;
+   right: 5px;
+   margin: 6px 0 0 500px;
+   border-radius: 3px;
+}
+#line input{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    padding: 2px 4px;
+    width: 600px;
+    border-bottom: 1px solid #d7dbe0;
+    height: 35px;
+}
+
+#account {
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+}
+/*  마이 페이지 영역 끝 */
+
+/* 리뷰 게시판 영영 시작 */
+/* boardDetail */
+.container {
+	text-align: center;
 	height: auto;
 	min-height: 100%;
 }
-/*  마이 페이지 영역 끝 */
+#title {
+	/*font-style: oblique;*/
+    font-weight: 800;
+    color: #d4d6d9;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+}
+#btn-list{
+   background-color: #FFF;
+   font-weight: bold;
+   font-size: 13px;
+}
+#btn-update{
+   margin-left:600px;
+   background-color: #FFF;
+   font-weight: bold;
+   font-size: 13px;
+}
+#btn-delete {
+   color: red;
+   background-color: #FFF;
+   font-weight: bold;
+   font-size: 13px;
+}
+#btn-delete:hover {text-decoration: underline;}
+#btn-list:hover {text-decoration: underline;}
+#btn-update:hover {text-decoration: underline;}
+/* boardDetail */
+/*boardRegisterForm*/
+.container {
+	text-align: center;
+	height: auto;
+	min-height: 100%;
+}
+#title {
+   font-weight: 800;
+   text-align: left;
+   color: #d4d6d9;
+   padding-top: 15px;
+   padding-bottom: 20px;
+   margin-top: 100px;
+}
+
+#post {
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 13px;
+}
+/*boardRegisterForm*/
+/* 리뷰 게시판 영역 끝 */
