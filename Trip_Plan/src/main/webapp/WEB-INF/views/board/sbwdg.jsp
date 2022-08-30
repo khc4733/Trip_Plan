@@ -20,7 +20,7 @@
 	<!-- 본문 -->
 	<div id="sub_main">
 		<div class="sub_imgframe">
-			<img class="sub_img" src="${contextPath}/resources/images/subway_daegu.png">
+			<img class="sub_img" src="${contextPath}/resources/images/subway_dg.jpg">
 		</div>
 	</div>
 	<!--푸터-->
