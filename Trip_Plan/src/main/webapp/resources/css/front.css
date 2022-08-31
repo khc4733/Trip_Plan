@@ -860,7 +860,10 @@ table#notice {
    height: auto;
    min-height: 100%;
 }
-.form-group {font-family: Play;}
+.form-group {
+	font-family: Play;
+	text-align: left;
+}
 
 #btn-remove{
    background-color: white;
@@ -880,20 +883,19 @@ table#notice {
    font-family: Play;
    font-size: 13px;
    font-weight: bold;
+   
 }
 
 #btn-update:hover {text-decoration:underline;}
 
 #addressSearch{
-   border : 1px solid #CCC;
+	border : 1px solid #CCC;
     background-color: white;
     color: #3f6eb0;
   
 }
 
 #addressSearch:hover {background-color: #b0c8e8;}
-
-.title {margin-bottom: auto;}
 
 .addr{
    position: relative;
@@ -916,12 +918,13 @@ table#notice {
     width: 600px;
     border-bottom: 1px solid #d7dbe0;
     height: 35px;
+	border-radius: 4px;
 }
 
 #account {
-margin-left: auto;
-margin-right: auto;
-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
 }
 /*  마이 페이지 영역 끝 */
 

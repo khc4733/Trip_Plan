@@ -63,10 +63,10 @@ function findAddr() {
         </div>
         <br/>
         <div class="form-group">
-            <label for="id" class="title">PASSWORD</label>
+            <label for="id">PASSWORD</label>
             <div id="line">
                <input type="password" class="form-control" id="pwd" name="pwd" maxlength="20" placeholder="비밀번호를 입력하세요." value=""/>
-               <span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span>
+               <span class="error_next_box" id="pwdMsg" style="color:red; font-size:12px; display : none;">8~16자 영문 소문자, 숫자, 특수문자를 사용하세요.</span>
             </div>
         </div>
         <br/>
@@ -120,8 +120,8 @@ function findAddr() {
 		</div> 
 		<br/>
         <div class="btn-confirm">
-            <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()">회원정보 수정</button>
-            <button type="button" class="btn btn-sm btn-block" id="btn-remove"  onclick="removeMember()">회원탈퇴</button>
+            <button type="submit" class="btn btn-sm btn-block" id="btn-update"  onclick="modifyMember()" style="margin-left:auto;">회원정보 수정</button>
+            <button type="button" class="btn btn-sm btn-block" id="btn-remove"  onclick="removeMember()">회원탈퇴</button><br/>
        </div>
     </form>
   </div>
