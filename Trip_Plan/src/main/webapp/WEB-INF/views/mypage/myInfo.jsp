@@ -49,7 +49,7 @@ function findAddr() {
 
 <div class="container" id="account">
    <div>
-    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false"> 
+    <form class="form-horizontal" method="post" name="memModifyForm" action="${contextPath}/mypage/modifyMember.do" onsubmit="return false" style="	text-align: left;"> 
         <!--  <div class="form-group">
            <div class="col-sm-offset-4 col-sm-5">
                <h2 align="center" style= "margin-top: 50px; margin-right: 100px; font-family: Play;" >MY ACCOUNT</h2>

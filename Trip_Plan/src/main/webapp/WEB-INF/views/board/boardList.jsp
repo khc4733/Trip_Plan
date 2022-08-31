@@ -21,9 +21,6 @@ request.setCharacterEncoding("UTF-8");
 		<jsp:include page="../common/topmenu.jsp" />
 	</div>
 
-	<!-- top menu -->
-	<jsp:include page="../common/topmenu.jsp" />
-
 
 
 	<!-- 본문 내용 -->
