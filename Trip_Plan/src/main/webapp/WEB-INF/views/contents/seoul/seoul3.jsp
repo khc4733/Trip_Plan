@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>seoul1</title>
+<title>seoul3</title>
 <link href="${contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
 </head>
 <body>

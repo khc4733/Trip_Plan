@@ -66,7 +66,6 @@ function boardRegister() {
     if (confirm("게시글을 등록하시겠습니까?") == true){ 
           document.boardRegisterForm.submit();
        alert("게시글이 등록되었습니다.");
-       location.href='boardList'
     } else {   //취소
        alert("게시글 등록을 취소하였습니다.");
        location.reload();

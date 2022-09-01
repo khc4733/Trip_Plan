@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -113,23 +114,25 @@ public class BoardControllerImpl implements BoardController {
 	@ResponseBody
 	@Override
 	@RequestMapping(value="/boardRegister", method = RequestMethod.POST)
-	public String boardRegister(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	public ModelAndView boardRegister(@ModelAttribute("boardDTO")boardDTO boardDTO, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-		Date date = new Date(System.currentTimeMillis());
-		SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmm");
-		
-		boardDTO boardDTO = new boardDTO();
-		boardDTO.setwriter(request.getParameter("writer"));
-		boardDTO.setSubject(request.getParameter("subject"));
-		boardDTO.setContent(request.getParameter("content"));
-		boardDTO.setReg_date(format.format(date));
-		
-		
-		if(boardService.boardRegister(boardDTO) == 1) {
-			return "Y";
-		} else { // 게시글 등록 실패
-			return "N";
-		}
+	      Date date = new Date(System.currentTimeMillis());
+	      SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmm");
+	      
+	      boardDTO.setReg_date(format.format(date));
+	      
+	      System.out.println("MemberController 로그인 member.getId() ==> " + boardDTO);
+	      
+	      
+
+	      int result = 0;
+	      // 사용자가 입력한 정보를 서비스에게 넘겨주어 처리하게 한다.
+	      result = boardService.boardRegister(boardDTO);
+	      
+	      ModelAndView mav = new ModelAndView("redirect:/board/boardList");
+
+	      return mav;
+
 	}
 
 	//------------------------------------------------------------------------------------------------------

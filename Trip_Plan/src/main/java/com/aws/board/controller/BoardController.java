@@ -4,7 +4,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.aws.board.dto.boardDTO;
 
 public interface BoardController {
 	
@@ -33,7 +36,7 @@ public interface BoardController {
 	//------------------------------------------------------------------------------------------------------
 	// 리뷰 등록하기
 	//------------------------------------------------------------------------------------------------------
-	public String boardRegister(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	public ModelAndView boardRegister(@ModelAttribute("boardDTO")boardDTO boardDTO, HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	//------------------------------------------------------------------------------------------------------
 	// 리뷰 상세 조회
