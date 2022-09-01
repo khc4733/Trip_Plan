@@ -33,6 +33,15 @@ public class MypageServiceImpl implements MypageService {
 		
 	}// end - public int removeMember
 
+	//-----------------------------------------------------------------------------------------------------------
+	// 프로필 사진 등록	
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public int updateProfile(MemberVO memberVO) throws DataAccessException {
+		
+		return mypageDAO.updateProfile(memberVO);
+	}
+
 	
 	    
 } // end - public class MypageServiceImpl implements MypageService

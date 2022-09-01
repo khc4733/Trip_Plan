@@ -6,14 +6,15 @@
 <mapper namespace="mapper.member">
 
 	<resultMap id="memResult" type="com.aws.member.vo.MemberVO">
-		<result property="id"		column="id"/>
-		<result property="pwd"		column="pwd"/>
-		<result property="name"		column="name"/>
-		<result property="email"	column="email"/>
-		<result property="nickname"	column="nickname"/>
-		<result property="address"	column="address"/>
-		<result property="address2"	column="address2"/>
-		<result property="tel"	column="tel"/>
+		<result property="id"			column="id"/>
+		<result property="pwd"			column="pwd"/>
+		<result property="name"			column="name"/>
+		<result property="email"		column="email"/>
+		<result property="nickname"		column="nickname"/>
+		<result property="address"		column="address"/>
+		<result property="address2"		column="address2"/>
+		<result property="tel"			column="tel"/>
+		<result property="profileImg"	column="profileImg"/>
 	</resultMap>
 
 	<!-- 회원 가입 처리 -->
@@ -81,6 +82,17 @@
 		WHERE	email = #{email, jdbcType=VARCHAR} and id = #{id, jdbcType=VARCHAR}
 		]]>
 	</select>
+	
+	<!-- 프로필 사진 등록하기 -->
+	<update id="updateProfile" parameterType="com.aws.member.vo.MemberVO">
+		<![CDATA[
+		UPDATE member
+		SET profileImg = #{profileImg, jdbcType=VARCHAR}
+		WHERE id = ${id, jdbcType=VARCHAR}
+		]]>
+	</update>
+	
+	
 </mapper>
 
 

@@ -1,14 +1,19 @@
 package com.aws.mypage.controller;
 
+import java.io.File;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.aws.member.service.MemberService;
@@ -100,10 +105,47 @@ public class MypageControllerlmpl implements MypageController {
 	public ModelAndView summary(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		ModelAndView mav = new ModelAndView();
+		
+		if(memberVO.getProfileImg() == null || memberVO.getProfileImg() == "") {
+			memberVO.setProfileImg("${contextPath}/resources/images/profile.jpg");
+		} else {
+			File file = new File(memberVO.getProfileImg());
+		}
+		
 		mav.setViewName("/mypage/summary");
 		return mav;
 	}
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 프로필 사진 등록하기
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@ResponseBody
+	@RequestMapping(value="/imgUpload.do", method = RequestMethod.POST)
+	public String result(MultipartFile multi, HttpServletRequest request, HttpServletResponse response, Model model)
+			throws Exception {
 
+		try {
+			if(!multi.isEmpty())
+			{
+				String originFilename = multi.getOriginalFilename();
+				String Path = request.getSession().getServletContext().getRealPath("/");
+				File file = new File(Path + "/resources/images/profile/", originFilename);
+				multi.transferTo(file);
+				memberVO.setId(request.getParameter("id"));
+				memberVO.setProfileImg("images/profile/" + originFilename);
+				int result = mypageService.updateProfile(memberVO);
+				if(result > 0) {
+					return "Y";
+				}
+			}
+		} catch(Exception e) {
+			System.out.println(e);
+		}
+		return "N";
+	}
+
+	
 
 	
 }//END - public class MypageControllerlmpl implements MypageController

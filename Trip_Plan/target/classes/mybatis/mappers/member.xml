@@ -81,6 +81,17 @@
 		WHERE	email = #{email, jdbcType=VARCHAR} and id = #{id, jdbcType=VARCHAR}
 		]]>
 	</select>
+	
+	<!-- 프로필 사진 등록하기 -->
+	<update id="updateProfile" parameterType="com.aws.member.vo.MemberVO">
+		<![CDATA[
+		UPDATE member
+		SET profileImg = #{profileImg, jdbcType=VARCHAR}
+		WHERE id = ${id, jdbcType=VARCHAR}
+		]]>
+	</update>
+	
+	
 </mapper>
 
 

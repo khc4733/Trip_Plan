@@ -4,10 +4,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.aws.member.vo.MemberVO;
@@ -38,6 +40,10 @@ public interface MypageController {
 	//-----------------------------------------------------------------------------------------------------------
 	public ModelAndView summary(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
-	
+	//-----------------------------------------------------------------------------------------------------------
+	// 프로필 사진 등록하기
+	//-----------------------------------------------------------------------------------------------------------
+	public String result(@RequestParam("file1") MultipartFile multi, HttpServletRequest request, 
+						HttpServletResponse response, Model model) throws Exception;
 	
 } // END - public interface MypageController

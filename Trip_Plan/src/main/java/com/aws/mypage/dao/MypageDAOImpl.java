@@ -35,4 +35,14 @@ public class MypageDAOImpl implements MypageDAO {
 		
 	}// end - public int deleteMember
 
+	//-----------------------------------------------------------------------------------------------------------
+	// 프로필 사진 등록	
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public int updateProfile(MemberVO memberVO) throws DataAccessException {
+		
+		int result = sqlSession.update("mapper.member.updateProfile", memberVO);
+	    return result;
+	}
+
 }// end - public class MypageDAOImpl implements MypageDAO
