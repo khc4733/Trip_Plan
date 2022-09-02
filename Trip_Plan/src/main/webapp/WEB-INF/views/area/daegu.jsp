@@ -46,12 +46,12 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">대구 계산동성당</a></li>
-					<li><a href="${contextPath}/area/incheon">이상화 고택</a></li>
-					<li><a href="${contextPath}/area/daejeon">대구 약령시한의약박물관</a></li>
-					<li><a href="${contextPath}/area/daegu">대구 진골목</a></li>
-					<li><a href="${contextPath}/area/busan">대구 서문시장&야시장</a></li>
-					<li><a href="${contextPath}/area/busan">김광석 다시그리기길</a></li>
+					<li>대구 계산동성당</li>
+					<li>이상화 고택</li>
+					<li>대구 약령시한의약박물관</li>
+					<li>대구 진골목</li>
+					<li>대구 서문시장&야시장</li>
+					<li>김광석 다시그리기길</li>
 				</ol>
 			</div>
 		</div>
@@ -76,14 +76,14 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">동인동 찜갈비골목</a></li>
-					<li><a href="${contextPath}/area/incheon">두낫디스터브 비슬산</a></li>
-					<li><a href="${contextPath}/area/daejeon">교향리 이팝나무 군락지</a></li>
-					<li><a href="${contextPath}/area/daegu">대구 하중도(금호꽃섬)</a></li>
-					<li><a href="${contextPath}/area/busan">안지랑 곱창골목</a></li>
-					<li><a href="${contextPath}/area/gwangju">스파크랜드</a></li>
-					<li><a href="${contextPath}/area/gwangju">대구수목원</a></li>
-					<li><a href="${contextPath}/area/gwangju">대구평화시장</a></li>
+					<li>동인동 찜갈비골목</li>
+					<li>두낫디스터브 비슬산</li>
+					<li>교향리 이팝나무 군락지</li>
+					<li>대구 하중도(금호꽃섬)</li>
+					<li>안지랑 곱창골목</li>
+					<li>스파크랜드</li>
+					<li>대구수목원</li>
+					<li>대구평화시장</li>
 				</ol>
 			</div>
 		</div>
@@ -111,9 +111,9 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">선교사 스윗즈주택</a></li>
-					<li><a href="${contextPath}/area/incheon">서부 오미(味)가미(味)거리</a></li>
-					<li><a href="${contextPath}/area/daejeon">인동촌 아나고골목</a></li>
+					<li>선교사 스윗즈주택</li>
+					<li>서부 오미(味)가미(味)거리</li>
+					<li>인동촌 아나고골목</li>
 				</ol>
 			</div>
 		</div>

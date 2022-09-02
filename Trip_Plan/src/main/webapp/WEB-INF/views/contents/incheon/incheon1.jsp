@@ -115,14 +115,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/incheon1-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon1-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">자유공원</h5>
-				</a>
+				<h5 class="mvp_h5">자유공원</h5>
 				<p>자유공원은 인천항 개항 5년 만에 만들어진 우리나라 최초의 서구식 공원이다. 지대가 높은데다 터가 넓고 숲이 울창해 산책하기 알맞다. 
 				정상엔 한미수교 백주년기념탑이 있다. 1882년 4월 우리나라와 미국 사이에 조인된 한미수호 통상조약체결을 기념하기 위해 100주년이 되는1982년에 세운 것이다. 
 				</p>
@@ -130,14 +126,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon1-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon1-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">인천 차이나타운</h5>
-				</a>
+				<h5 class="mvp_h5">인천 차이나타운</h5>
 				<p>인천 차이나타운은 1883년 인천항이 개항되고 1884년 이 지역이 청의 치외법권(治外法權) 지역으로 지정되면서 생겨났다. 
 				과거에는 중국에서 수입된 물품들을 파는 상점들이 대부분이었으나 현재는 거의가 중국 음식점이다.
 				</p>
@@ -145,14 +137,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon1-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon1-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">(구)인천일본제58은행지점</h5>
-				</a>
+				<h5 class="mvp_h5">(구)인천일본제58은행지점</h5>
 				<p>일본 오사카에 본점을 둔 일본 제 58은행이 설치한 인천지점으로 1892년에 개점하였다. 
 				1946년에 조흥은행이 인천지점으로 사용하였으나 1958년 이후 신사옥을 지어 옮겨가면서 적십자사 경기도지사로 사용하다가 현재는 인천 중구 요식업조합에서 사용하고 있다. 
 				</p>
@@ -160,14 +148,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon1-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon1-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">월미공원</h5>
-				</a>
+				<h5 class="mvp_h5">월미공원</h5>
 				<p>월미공원은 50여년간 군부대 주둔으로 시민의 출입이 제한되었으니 2001년 9월 10일 인천광역시가 국방부로 부터 인수하여 공원으로 변경하여 시민들에게 개방하게 되었다.
 				월미공원은 자연생태계가 잘 보전되어 있을뿐만 아니라 근현대사 열강들의 각축장으로 그 역사성 또한 높아 자연생태공원 및 역사공원으로 조성되어 있다. 
 				</p>

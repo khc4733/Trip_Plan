@@ -117,14 +117,10 @@
 
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/seoul3-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul3-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">팔레 드 서울</h5>
-				</a>
+				<h5 class="mvp_h5">팔레 드 서울</h5>
 				<p>갤러리 ‘팔레 드 서울(Palais de Seoul)'은 2010년 1월, 문화예술의 새로운 지대로 떠오르고 있는 경복궁 서촌(西村)의 통의동에 새롭게 개관한 전시공간이다. 
 				"서울의 궁"이라는 뜻의 '팔레 드 서울'은 약 330평이라는 규모를 자랑하며, 지하 1층부터 지상 2층까지 총 3개의 전시장과 1층의 아트숍, 
 				오프닝 행사를 할 수 있는 옥상 정원까지 마련되어 있다.
@@ -134,14 +130,10 @@
 		
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul3-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul3-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">옥인피자</h5>
-				</a>
+				<h5 class="mvp_h5">옥인피자</h5>
 				<p>대표메뉴 단호박치즈피자와 고구마피자가 달콤하고 부드러워서 유명한 맛집입니다. 운치있게 피자를 즐기고 싶을때 가면 좋습니다. 
 				모든 재료를 직접 만들어서 건강에 신경을 썼습니다. 오래된 집을 개조한 듯한 옥인피자. 내부는 깔끔하고, 아담합니다. 
 				도우가 얇아서 느끼함 전혀 없이 담백한 기분좋은 맛입니다.
@@ -150,14 +142,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul3-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul3-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">창의문</h5>
-				</a>
+				<h5 class="mvp_h5">창의문</h5>
 				<p>북소문인 창의문은 자하문이란 애칭으로 널리 불리었다. 숙정문이 항상 폐쇄된 채 제 구실을 못하였기에 이 문이 그 문의 역할까지 도맡지 않을 수 없었다. 
 				그러하기에 사람들은 창의문을 늘상 북문이라 불렀던 것이다. 도성의 북쪽 교외로 빠지거나 가까이는 세검정과 북한산으로 가자면 이 문이 관문이기에 이용도가 적지 않았다.
 				</p>
@@ -165,14 +153,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul3-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul3-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">북촌한옥마을</h5>
-				</a>
+				<h5 class="mvp_h5">북촌한옥마을</h5>
 				<p>예로부터 북촌이라 하여 양반 동네로 알려진 이곳 주택은 모두 조선 시대의 기와집으로서 상류층의 구조 형태를 간직하며 지금까지 보존되어 오고 있다. 
 				원래 이 동네에는 솟을대문이 있는 큰 집 몇 채와 30여 호의 한옥밖에 없었으나, 일제 말기와 6.25 수복 직후 지금의 상태로 늘어났다. 
 				</p>
