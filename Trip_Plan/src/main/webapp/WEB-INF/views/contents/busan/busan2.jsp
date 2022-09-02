@@ -130,14 +130,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/busan2-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan2-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">편백산림욕장</h5>
-				</a>
+				<h5 class="mvp_h5">편백산림욕장</h5>
 				<p>달천동 천마산(해발 236m)은 편백나무 5ha, 소나무 33ha, 잣나무 2ha가 조성되어 있어 주민휴식처로 각광받고 있다. 주민들이 쉴 수 있는 원두막과 피크닉테이블, 숲 해설판, 평상 등이 설치되어 있고 주변에는 천마산 등산로를 기준으로 솔 숲길(0.45km)과 성터옛길(at), 
 				0.4km 만석골 저수지 및 생태수변 전망데크, 천마산 정상 전망대 등이 마련되어 있다.
 				</p>
@@ -146,14 +142,10 @@
 		
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/busan2-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan2-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">청사포다릿돌 전망대</h5>
-				</a>
+				<h5 class="mvp_h5">청사포다릿돌 전망대</h5>
 				<p>2017년9월17일 개장. 미포에서 출발해 송정까지 이어지는 동해남부선 폐선부지의 중간 쯤에 자리한 청사포 다릿돌전망대는 해수면으로부터 20m 높이에 72.5m 길이로 
 				바다를 향해 쭉 뻗어있으며 폭은 3~11.5m다. 사업비로 43억 원이 투입됐다. 전망대 끝자락에는 반달 모양의 투명바닥을 설치해 바다 위를 걷는 아슬아슬함을 느낄 수 있다. 
 				</p>
@@ -161,14 +153,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/busan2-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan2-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">수영만 요트경기장</h5>
-				</a>
+				<h5 class="mvp_h5">수영만 요트경기장</h5>
 				<p>수영만 요트경기장은 광안리와 해운대 사이에 위치하고 있으며 1986년 국제 규모의 경기장으로 건설되어 ''86 아시안게임과 ''88 올림픽 경기대회를 개최한 곳으로서 448척의 요트를 계류할 수 있는 넓은 계류장을 갖고 있으며, 
 				요트를 타기에 적합한 자연 여건을 갖추고 있어 매년 각종 국내,외 요트경기대회가 개최되는등 해양스포츠의 메카로서 요트인들이 가장 즐겨찾는 곳이다. 
 				</p>
@@ -176,14 +164,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/busan2-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan2-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">더베이101</h5>
-				</a>
+				<h5 class="mvp_h5">더베이101</h5>
 				<p>아름다운 바다와 산 그리고 현대적인 건물들이 공존하는 세계적인 휴양지, 해운대. 문화와 예술을 위한 공간, 바다가 주는 흥분을 조금 더 느낄 수 있는 공간, 
 				누구나 머물 수 있는 재미있는 공간.더베이는 해운대에 위치한 복합문화예술공간으로, 많은 관광객이 야경명소로 찾는 곳이다.
 				</p>
@@ -191,14 +175,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/busan2-5.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan2-5.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">광안리SUP Zone</h5>
-				</a>
+				<h5 class="mvp_h5">광안리SUP Zone</h5>
 				<p>''광안리 SUP Zone'' 은 광안리해변을 해양스포츠의 메카로 만들고, 해양스포츠 이용객들을 위한 곳이다. 광안리해변은 연중 파도가 잔잔하여 SUP 타기에 적합하다. 수영구청은 광안리해변에 광안리 SUP Zone을 2020년부터 조성하여 운영하고 있으며, 광안리 SUP Zone은 광안리해변 내(광안리해양레포츠센터~광안리지웰에스테이트 맞은편 백사장) 400m 구간으로 비치 바, 비치베드, 
 				윈드배너, SUP포토존 등으로 구성되어 있다. 
 				</p>
@@ -206,14 +186,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/busan2-6.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan2-6.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">흰여울 문화마을</h5>
-				</a>
+				<h5 class="mvp_h5">흰여울 문화마을</h5>
 				<p>피난민들의 애잔한 삶이 시작된 곳이자 현재는 마을주민과 함께하는 문화마을공동체 흰여울문화마을이 자리한 곳이다. 부산의 대표적인 원도심 흰여울길은 봉래산 기슭에서 굽이쳐 내리는 물줄기가 마치 흰 눈이 내리는 모습과 비슷하다 하여 이름 지어졌다. 
 				2011년 12월, 낡은 가옥을 리모델링하면서 현재는 영도의 생활을 느낄 수 있는 독창적인 문화예술마을로 거듭났다.
 				</p>

@@ -127,14 +127,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/seoul2-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul2-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">숭례문</h5>
-				</a>
+				<h5 class="mvp_h5">숭례문</h5>
 				<p>숭례문은 조선시대 한성 도성의 정문으로 4대문 가운데 남쪽에 위치하여 남대문으로도 불린다. 
 				처음 만들어졌을 때는 양측에 성벽이 연결되어 있었지만 1908년 도로를 내기 위하여 헐어 내고 성문만 떨어져 있었으나, 
 				2006년 복원 공사를 후 지금과 같은 모습을 하게 되었다. 1962년 문화재보호법에 의하여 보물에서 국보로 지정되었다.
@@ -144,14 +140,10 @@
 		
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">문화역 서울 284</h5>
-				</a>
+				<h5 class="mvp_h5">문화역 서울 284</h5>
 				<p>구서울역사를 복원하여 2011년부터 복합문화예술공간으로 거듭난 문화역서울284는 연중 내내 다양한 전시, 공연, 문화 행사, 상설 프로그램 등이 열리는 곳이다. 
 				1900년 남대문정차장을 시작으로 경성역, 서울역을 거쳐 100여년의 역사를 이어가는 공간이다. 1925년의 경성역 모습을 복원하여 방문객에게도 즐거움을 주고 있다. 
 				</p>
@@ -159,14 +151,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul2-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul2-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">덕수궁</h5>
-				</a>
+				<h5 class="mvp_h5">덕수궁</h5>
 				<p>사적 덕수궁은 본디 왕궁이 아니었으며 성종의 형인 월산대군(1454∼1488)의 집이었으나, 
 				1592년 임진왜란 때 왕궁이 모두 불타 1593년 행궁으로 사용하기 시작하였다. 고종 황제는 1907년 순종에게 양위한 후, 왕궁을 창덕궁으로 옮긴 후에도 이곳에 거처하였는데, 
 				이때부터 고종 황제의 장수를 비는 뜻에서 덕수궁이라 부르게 되었다. 
@@ -175,14 +163,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul2-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul2-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">서울광장</h5>
-				</a>
+				<h5 class="mvp_h5">서울광장</h5>
 				<p>서울광장은 3.1운동, 6월 민주화운동 등 한국현대사의 한 획을 긋는 역사적 사건의 무대였으며 2002년 월드컵 기간에는 시민들의 축제의 마당이었다. 
 				시청광장의 역사는 고종이 러시아공사관으로 피신했다가 월산대군 개인집(덕수궁)으로 돌아온 1897년부터 시작된다. 황제의 자리에 오른 고종은 나라의 기틀을 
 				새로이 하기 위해 덕수궁 대한문 앞을 중심으로 하는 방사선형 도로를 닦고 앞쪽에는 광장과 원구단을 설치하였다.
@@ -191,14 +175,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul2-5.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul2-5.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">남산골 한옥마을</h5>
-				</a>
+				<h5 class="mvp_h5">남산골 한옥마을</h5>
 				<p>1998년 조성된 남산골한옥마을은 남산 북측 옛 수도방위사령부 부지 총 79,934m²(24,180평)에 한옥 5동, 전통공예관, 천우각, 전통정원, 서울남산국악당,
 				 새천년타임캡슐 광장으로 구성되어 시민과 관광객을 맞이하고 있다. 번화한 도심 한 가운데에서 한국 전통문화를 소재로 한 다양한 체험거리를 만나볼 수 있으며, 
 				 남산 자락을 따라 전통조경 양식으로 조성된 계곡과 정자, 각종 화초가 만들어내는 아름다운 풍경을 만날 수 있다. 
@@ -207,14 +187,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul2-6.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul2-6.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">남산 서울타워</h5>
-				</a>
+				<h5 class="mvp_h5">남산 서울타워</h5>
 				<p>''남산서울타워''는 효율적인 방송전파 송수신과 한국의 전통미를 살린 관광 전망시설의 기능을 겸비한 국내 최초의 종합전파탑으로 방송문화와 관광산업의 미래를 위해 건립되었다. 
 				세계 유명한 종합 탑들이 그 나라 또는 그 도시의 상징적인 존재가 된 것 처럼 ''남산서울타워'' 역시 지난 40여 년간 대한민국의 대표적인 관광지이자 서울의 상징물 역할을 해왔다.
 				</p>

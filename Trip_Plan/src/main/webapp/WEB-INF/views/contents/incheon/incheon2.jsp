@@ -125,14 +125,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/incheon2-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon2-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">개항장 거리</h5>
-				</a>
+				<h5 class="mvp_h5">개항장 거리</h5>
 				<p>1883년 인천 개항장 126년 세월의 흔적이 쌓인 개항기 역사와 문화의 만남의 장소이다. 
 				이곳은 옛 일본영사관인 중구청과 일본 제1은행 인천지점,일본 제58은행 인천지점 등 근대 건축을 그대로 볼 수 있는 장소이다.
 				이곳은 인천문화 관광해설사가 배치되어 해설을 들으며 도보관광을 즐길 수 있어 가족 단위나 여행단체의 큰 호응을 얻고 있다.
@@ -141,14 +137,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon2-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon2-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">송월동 동화마을</h5>
-				</a>
+				<h5 class="mvp_h5">송월동 동화마을</h5>
 				<p>1883년 인천항이 개항된 후에는 독일인들을 비롯한 외국인들이 거주하기 시작하면서 부촌을 형성하였으나, 젊은 사람들이 떠나고 마을에는 연로하신 분들만이 남아
 				 활기를 잃고 침체되었으며, 빈집들은 방치되고 있었다. 이런 주거환경을 개선하기 위해 꽃길 및 세계 명작 동화를 테마로 담벼락에 색칠을 하여 
 				 동화마을로 변화하였다.
@@ -157,14 +149,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon2-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon2-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">월미도</h5>
-				</a>
+				<h5 class="mvp_h5">월미도</h5>
 				<p> 1920년대 후반부터 1930년대까지가 월미도 유원지의 전성기였다. 당시 조선인과 일본인 남녀노소를 가릴 것 없이 월미도의 이름을 모르는 사람이 없을 정도였다. 
 				1989년 7월 문화의 거리가 조성된 후 문화예술의 장, 만남과 교환의 장 그리고 공연놀이 마당 등으로도 알려지기 시작한 월미도는 인천하면 떠올릴 만큼 유명한 곳으로 
 				자리잡았다.
@@ -173,14 +161,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon2-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon2-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">송도 센트럴파크</h5>
-				</a>
+				<h5 class="mvp_h5">송도 센트럴파크</h5>
 				<p>바다를 메워 만든 인공 섬 송도는 도회적인 이미지의 상징이 되었다. 휘황찬란한 마천루는 저마다 디자인과 도시경관 등 엄격한 심사를 거쳐 건축 허가를 얻고 
 				지어진 건물에서 기인한다. 건축물 자체가 하나의 작품처럼 보이는 이유도 그 때문이다. 송도에 대한 첫인상은 대개 미래 도시에 온 것 같다는 것으로 통한다. 
 				</p>
@@ -188,14 +172,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon2-5.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon2-5.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">소래포구</h5>
-				</a>
+				<h5 class="mvp_h5">소래포구</h5>
 				<p>소래포구는 인천 남동구에 위치해 있으며, 수도권에 가장 쉽게 바다를 느낄 수 있는 여행지 중 하나이다. 소래포구는 아픈 과거를 가지고 있고 또한 
 				그 아픈 과거가 만들어낸 관광지다. 1930년 후반 화약의 원료인 양질의 소금을 이 지역에서 수탈하기 위해 철도를 건설하면서 소래포구의 발전사가 시작되었다. 
 				</p>

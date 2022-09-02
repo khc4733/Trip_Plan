@@ -45,11 +45,11 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">창덕궁</a></li>
-					<li><a href="${contextPath}/area/incheon">국립민속박물관</a></li>
-					<li><a href="${contextPath}/area/daejeon">국립현대미술관</a></li>
-					<li><a href="${contextPath}/area/daegu">종묘</a></li>
-					<li><a href="${contextPath}/area/busan">광장시장</a></li>
+					<li>창덕궁</li>
+					<li>국립민속박물관</li>
+					<li>국립현대미술관</li>
+					<li>종묘</li>
+					<li>광장시장</li>
 				</ol>
 			</div>
 		</div>
@@ -74,12 +74,12 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">숭례문</a></li>
-					<li><a href="${contextPath}/area/incheon">문화역 서울284</a></li>
-					<li><a href="${contextPath}/area/daejeon">덕수궁</a></li>
-					<li><a href="${contextPath}/area/daegu">서울광장</a></li>
-					<li><a href="${contextPath}/area/busan">남산골 한옥마을</a></li>
-					<li><a href="${contextPath}/area/gwangju">남산 서울타워</a></li>
+					<li>숭례문</li>
+					<li>문화역 서울284</li>
+					<li>덕수궁</li>
+					<li>서울광장</li>
+					<li>남산골 한옥마을</li>
+					<li>남산 서울타워</li>
 				</ol>
 			</div>
 		</div>
@@ -106,10 +106,10 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">팔레 드 서울</a></li>
-					<li><a href="${contextPath}/area/incheon">옥인피자</a></li>
-					<li><a href="${contextPath}/area/daejeon">창의문</a></li>
-					<li><a href="${contextPath}/area/daegu">북촌한옥마을</a></li>
+					<li>팔레 드 서울</li>
+					<li>옥인피자</li>
+					<li>창의문</li>
+					<li>북촌한옥마을</li>
 				</ol>
 			</div>
 		</div>

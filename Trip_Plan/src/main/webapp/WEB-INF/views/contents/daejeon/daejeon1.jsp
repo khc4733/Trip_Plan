@@ -111,14 +111,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/daejeon1-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daejeon1-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">보문산 행복 숲 둘레길</h5>
-				</a>
+				<h5 class="mvp_h5">보문산 행복 숲 둘레길</h5>
 				<p>보문산은 대전광역시 중심부 남쪽에 솟은 산으로, 보물이 묻혀 있다 하여 ''보물산''이라 불리었다가 보문산이 되었다고 하며 
 				시민으로부터 사랑을 많이 받고 있는 대전의 대표적인 공원이다. 대전 중심부의 남쪽에 위치한 보문산(457.6m)은 1965년 공원으로 지정되었다. 
 				</p>
@@ -126,14 +122,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daejeon1-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daejeon1-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">은행동 으능정이 문화의거리</h5>
-				</a>
+				<h5 class="mvp_h5">은행동 으능정이 문화의거리</h5>
 				<p>대전의 중심에 있는 은행동 젊음 패션 거리는 젊은이들의 거리로 대전의 명동으로 불리며 패션뿐 아니라 볼거리, 먹거리, 즐길 거리가 고루갖추어져 있으며 
 				문화와 패션이 함께 숨쉬는 거리로 다양한 문화 행사를 개최하고 차 없는 거리를 조성하여 명실공히 젊은이들을 위한 거리로 발전하고 있다
 				</p>
@@ -141,14 +133,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daejeon1-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daejeon1-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">대흥동 문화예술의거리</h5>
-				</a>
+				<h5 class="mvp_h5">대흥동 문화예술의거리</h5>
 				<p>대전 중구 대흥동 일대는 대전의 원도심이다. 세련된 도시 이미지가 느껴지는 건물과 카페가 있는가 하면, 1970~80년대를 떠올리게 하는 손때 묻은 풍경이 공존한다. 
 				대흥동을 멋스럽게 꾸미는 것은 낡고 허름해 보이는 건물과 외벽에 그려진 빈티지한 그림이다. 벽을 뚫고 나오는 자동차, 골목길 계량기에 그려진 그림이 아날로그적 풍경을 연출한다.
 				</p>

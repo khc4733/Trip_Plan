@@ -117,14 +117,10 @@
 			</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/busan1-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan1-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">낙동강하구에코센터</h5>
-				</a>
+				<h5 class="mvp_h5">낙동강하구에코센터</h5>
 				<p>낙동강하구에코센터는 낙동강 하구 습지의 생태를 조사·관리·교육하는 기관으로, 강물이 바다와 어우러지는 지점이자, 세계적인 철새도래지인 숙도에 있다. 을숙도는 상단부의 을숙도생태공원, 하단부의 을숙도철새공원으로 나뉜다. 
 				낙동강 하류 철새 도래지(천연기념물)의 핵심 지역이자 낙동강 하구 생태관광의 중심축으로, 겨울 철새와 하구 습지의 생태를 관찰하기 가장 좋은 장소다.
 				</p>
@@ -133,14 +129,10 @@
 		
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/busan1-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan1-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">영도대교</h5>
-				</a>
+				<h5 class="mvp_h5">영도대교</h5>
 				<p>일제가 우리나라를 수탈하던 시기에 사람들의 수송을 위해 육지(남포동)와 섬(영도)을 잇는 부산 최초로 건설된 다리이다. 남항과 북항을 오가는 배들이 지날 수 있도록 도개교 형태를 띠고 있으며 적을 때는 2회 많을 때는 7회까지 다리를 들어올렸다. 
 				당시 다리가 하늘로 치솟는 신기한 모습을 보기위해 많은 사람들이 모였으며 점차 부산의 명물로 자리 잡았다. 
 				</p>
@@ -148,14 +140,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/busan1-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan1-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">영도 절영산책로</h5>
-				</a>
+				<h5 class="mvp_h5">영도 절영산책로</h5>
 				<p>영도의 관문인 영도대교, 부산대교를 지나 영선동 아랫로타리에서 제2송도 바닷가쪽으로 500m정도 가다보면 반도보라아파트가 나타나고 산책로 입구에 위치한 관리동 및 
 				휴게시설이 산책객을 맞이하고 있다. 이곳은 과거에는 지형이 가파르고 험난한 군사보호구역으로 접근이 어려웠으나 시민들의 해양관광 욕구를 충족시키기 위하여 공공근로사업으로
 				 조성한 산책로로서, 대마도와 송도쪽으로 드넓은 바다 풍경을 배경삼아 연장 3㎞의 해안산책로를 2시간 정도 굽이굽이 거닐 때 마다 경치가 달라지고, 파도 곁으로 내려서면 자갈소리가 합창을 하며 곳곳에는 장승과 돌탑, 출렁다리, 장미터널, 파도광장, 무지개 분수대 등 아기자기한 볼거리, 즐길거리가 있다.
@@ -163,14 +151,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/busan1-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/busan1-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">태종대</h5>
-				</a>
+				<h5 class="mvp_h5">태종대</h5>
 				<p>백악기말에 호수에서 쌓인 퇴적층이 해수면 상승으로 파도에 의해 침식되어 만들어진 파식대지, 해식애, 해안동굴 등의 암벽해안으로 유명한 부산을 대표하는 해안 경관지이다.구상혼펠스, 슬럼프구조, 암맥, 단층, 꽃다발구조 등의 다양한 지질기록과 신비스러운 천연암벽화, 
 				자갈마당 등의 경관이 어우러진 으뜸명소로 해안식물 생태코스, 태종대 전망대, 영도해양문화공간으로 이어지는 트레일 코스가 개발되어 있다. 
 				</p>
