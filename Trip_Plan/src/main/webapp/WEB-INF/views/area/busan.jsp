@@ -46,10 +46,10 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">낙동강하구 에코센터</a></li>
-					<li><a href="${contextPath}/area/incheon">영도대교</a></li>
-					<li><a href="${contextPath}/area/daejeon">영도 절영산책로</a></li>
-					<li><a href="${contextPath}/area/daegu">태종대</a></li>
+					<li>낙동강하구 에코센터</li>
+					<li>영도대교</li>
+					<li>영도 절영산책로</li>
+					<li>태종대</li>
 				</ol>
 			</div>
 		</div>
@@ -75,12 +75,12 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">편백산림욕장</a></li>
-					<li><a href="${contextPath}/area/incheon">청사포다릿돌 전망대</a></li>
-					<li><a href="${contextPath}/area/daejeon">수영만 요트경기장</a></li>
-					<li><a href="${contextPath}/area/daegu">더베이101</a></li>
-					<li><a href="${contextPath}/area/busan">광안리SUP Zone</a></li>
-					<li><a href="${contextPath}/area/gwangju">흰여울 문화마을</a></li>
+					<li>편백산림욕장</li>
+					<li>청사포다릿돌 전망대</li>
+					<li>수영만 요트경기장</li>
+					<li>더베이101</li>
+					<li>광안리SUP Zone</li>
+					<li>흰여울 문화마을</li>
 				</ol>
 			</div>
 		</div>
@@ -106,12 +106,12 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">동래온천 노천족욕탕</a></li>
-					<li><a href="${contextPath}/area/incheon">원조소문난산곰장어</a></li>
-					<li><a href="${contextPath}/area/daejeon">동래시장</a></li>
-					<li><a href="${contextPath}/area/daegu">부산 복천동 고분군</a></li>
-					<li><a href="${contextPath}/area/daegu">동래할매파전</a></li>
-					<li><a href="${contextPath}/area/daegu">충렬사</a></li>
+					<li>동래온천 노천족욕탕</li>
+					<li>원조소문난산곰장어</li>
+					<li>동래시장</li>
+					<li>부산 복천동 고분군</li>
+					<li>동래할매파전</li>
+					<li>충렬사</li>
 				</ol>
 			</div>
 		</div>
