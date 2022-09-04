@@ -129,14 +129,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/seoul1-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul1-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">창덕궁과 후원 [유네스코 세계문화유산]</h5>
-				</a>
+				<h5 class="mvp_h5">창덕궁과 후원 [유네스코 세계문화유산]</h5>
 				<p>창덕궁(사적)은 1405년 경복궁 다음으로 지어진 별궁이었다. 정궁인 경복궁의 동쪽 방면에 있다 해서 ''동궐''이라고도 했다. 
 				창덕궁은 1997년 12월 이탈리아 나폴리에서 열린 유네스코(UNESCO) 세계 유산위원회에서 수원 화성과 함께 세계문화유산으로 등록되었다.
 				</p>
@@ -145,14 +141,10 @@
 		
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul1-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul1-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">국립민속박물관&국립민속박물관 어린이박물관</h5>
-				</a>
+				<h5 class="mvp_h5">국립민속박물관&국립민속박물관 어린이박물관</h5>
 				<p>국립민속박물관은 우리나라 전통생활양식과 관련된 4,000여 점의 민속자료가 전시된 있는 국내 유일의 민속생활사 관련 국립·종합박물관이다.
 				민속문화의 연구·수집·보존과 문화교육 및 생활문화 전시로 전통문화교육의 현장이다.
 				3개의 상설전시실과 2개의 기획전시실이 있으며, 다양한 문화교육 프로그램과 행사에 참여 할 수 있다.
@@ -161,14 +153,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul1-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul1-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">국립현대미술관(서울관)</h5>
-				</a>
+				<h5 class="mvp_h5">국립현대미술관(서울관)</h5>
 				<p>국립현대미술관 서울관은 동시대 현대미술을 중점적으로 다루는 미술관이다. 
 				1986년 과천관, 1998년 개관한 덕수궁관에 이어 2013년 개관한 서울관은 조선시대 소격서, 종친부, 규장각, 사간원이 있던 자리에 위치해 있다.
 				서울관의 위치는 한국전쟁 후 서울대 의대 부속병원, 국군수도통합병원 등이 위치했던 곳으로 역사적 유래의 중심지이다.
@@ -177,14 +165,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul1-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul1-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">종묘 [유네스코 세계문화유산]</h5>
-				</a>
+				<h5 class="mvp_h5">종묘 [유네스코 세계문화유산]</h5>
 				<p>종묘는 조선왕조의 역대 왕과 왕비 그리고 사후에 추존된 왕과 왕비의 신주(神主)를 모신 사당이다. 
 				56,500평의 경내에 종묘정전을 비롯, 별묘인 영녕전과 전사청, 어숙실, 향대청, 신당 등의 건물이 있다. 
 				여기에 제사를 지내는 종묘대제(宗廟大祭)는 삼국 시대부터 있었던 국가적인 행사였다.
@@ -193,14 +177,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/seoul1-5.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/seoul1-5.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">광장시장</h5>
-				</a>
+				<h5 class="mvp_h5">광장시장</h5>
 				<p>1905년 고종 42년 을사조약 체결 후 실질적으로 주권행사는 일본이 장악했고 따라서 경제침략 정책을 기도한 바 
 				그 예로서 남대문시장 경영권 장악하였고 경제적인 돌파구로 새롭게 문을 연 것이 종로의 광장시장이다.
 				1905년 우리 나라 최초의 상설 시장 이 탄생한 순간이다.

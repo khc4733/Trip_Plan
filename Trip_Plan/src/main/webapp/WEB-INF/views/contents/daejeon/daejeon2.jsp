@@ -116,14 +116,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/daejeon2-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daejeon2-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">대청호 오백리길</h5>
-				</a>
+				<h5 class="mvp_h5">대청호 오백리길</h5>
 				<p>대청호오백리길은 대전(동구, 대덕구)과 충북(청원, 옥천, 보은)에 걸쳐 있는 약 220km의 도보길이며 대청호 주변 자연부락과 소하천, 
 				등산길, 임도, 옛길 등을 포함하고 있다. 또한 서울, 부산에서 대청호까지 거리가 약 오백리 정도가 되어 그 상징적 의미를 더하고 있다. 
 				</p>
@@ -131,14 +127,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daejeon2-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daejeon2-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">계족산 황톳길</h5>
-				</a>
+				<h5 class="mvp_h5">계족산 황톳길</h5>
 				<p>계족산 황톳길은 2006년 임도 총14.5km에 질 좋은 황토 2만여톤을 투입하여 조성한 맨발 트래킹의 명소이다. 
 				경사가 완만해 맨발로 걷기 무리 없을 뿐 아니라, 여름에는 발끝부터 황토의 시원한 기운이 올라와 무더위를 식히기 좋다. 
 				</p>
@@ -146,14 +138,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daejeon2-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daejeon2-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">천연기념물센터</h5>
-				</a>
+				<h5 class="mvp_h5">천연기념물센터</h5>
 				<p> 천연기념물센터 전시관에는 자연유산에 대한 연구 결과물인 공룡알·발자국 등의 화석, 반달가슴곰, 수달, 독수리 등의 동물 박제 표본, 
 				존도리 소나무 등의 식물 표본 등을 전시하여 전문연구자와 청소년의 학습에 도움을 주고 있으며, 체험 공간, 검색 키오스크, 영상실 등을 통하여 
 				독창적인 체험학습 기회를 제공하고 있습니다. 
@@ -162,14 +150,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daejeon2-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daejeon2-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">한밭수목원</h5>
-				</a>
+				<h5 class="mvp_h5">한밭수목원</h5>
 				<p>도심 속의 한밭수목원은 정부대전청사와 과학공원의 녹지축을 연계한 전국 최대의 도심 속 인공수목원으로 각종 식물종의 유전자 보존과 청소년들에게 
 				자연체험학습의 장, 시민들에게는 도심 속에서 푸르름을 만끽하며 휴식할 수 있는 공간 제공을 목적으로 조성했다.
 				</p>

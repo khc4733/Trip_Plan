@@ -113,14 +113,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/daegu3-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu3-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">선교사 스윗즈주택</h5>
-				</a>
+				<h5 class="mvp_h5">선교사 스윗즈주택</h5>
 				<p>본 건물은 1910년경 미국인 선교사들이 그들의 주택으로 지은 것으로 스윗즈 선교사 등이 거주하였다. 평면구성은 남쪽 우측부에 현관으로 이어지는 베란다를 두고 
 				현관홀을 통하여 거실과 응접실을 직접 연결하였으며, 거실을 중심으로 침실, 계단실, 욕실, 부엌, 식당 등을 배치하였다. 외관은 안산암의 성돌로 바른층 쌓기의 기초를 하고 
 				그 위에 붉은 벽돌을 4단 길이로 1단은 마구리로 쌓았다. 지붕은 한식기와를 이은 박공지붕이었으나 후에 함석으로 개조하였다. 
@@ -130,14 +126,10 @@
 		
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu3-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu3-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">서부 오미(味)가미(味)거리</h5>
-				</a>
+				<h5 class="mvp_h5">서부 오미(味)가미(味)거리</h5>
 				<p>오미(味)가미(味)에서 유추할 수 있 듯, ''오면서 먹고 가면서 먹는다''라는 뜻으로 다양한 국적의 음식과 더불어 독특한 메뉴들도 함께 즐길 수 있다. 
 				가게명도 상당히 독특하고 취급하고 있는 음식이나 상품 또한 지역내 그 어디에서도 찾아보기 힘들기에 기존 먹자거리에서 식상함을 느낀 이들의 발길이 이어져 빠르게 사람들의 입소문을 타고 있다. 
 				50여개의 음식점뿐만 아니라, 공방, 악세사리점, 전통 시장 점포 등이 함께 어우러져 있기에 임으로 눈으로 즐길 수 있다.
@@ -146,14 +138,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu3-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu3-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">인동촌 아나고골목</h5>
-				</a>
+				<h5 class="mvp_h5">인동촌 아나고골목</h5>
 				<p>시골읍내의 정서가 그대로 묻어나는 곳으로, 달성공원 담벼락에서 북비산네거리 쪽으로 150m에 이른다. 현재 20여개의 식당이 새벽까지 손님맞이에 여념이 없다. 
 				아나고는 회로 먹어도 좋고, 구워 먹어도 그 맛이 일품이다. 술안주로도 제격이며, 양념장에 버무려 시원한 물김치와 함께 먹기도 한다. 단백질과 아미노산이 풍부해 여름철 
 				기력회복에 좋다.

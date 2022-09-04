@@ -143,14 +143,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/daegu2-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu2-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">동인동 찜갈비골목</h5>
-				</a>
+				<h5 class="mvp_h5">동인동 찜갈비골목</h5>
 				<p>70년대부터 중구 동인동 주택가에서 찌그러진 양은 냄비에 푹 익힌 소갈비를 담아 매운 고춧 가루와 다진 마늘을 주 양념으로 비벼먹는 동인동 찜갈비는 
 				간장으로만 맛을 내는 갈비찜과는 판이하게 다른 대구에만 있는 스타일이다. 술안주로도 알맞으며 식사 후 남은 양념에 밥을 비벼 먹는 맛이 맵싸하고 화끈한 것이 특징이다. 
 				서울.경기권의 갈비찜과는 달리 혀가 얼얼할 정도로 매우면서도 달짝지근한 맛이 일품이다.
@@ -160,14 +156,10 @@
 		
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu2-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu2-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">두낫디스터브 비슬산</h5>
-				</a>
+				<h5 class="mvp_h5">두낫디스터브 비슬산</h5>
 				<p>대구 달성군에 위치한 카페 ''두낫디스터브 비슬산''은 대구에서 시작한 대형카페 전문점 두낫디스터브의 매장 중 하나이다. 
 				대표 메뉴인 두낫슈페너를 비롯한 다양한 커피 메뉴와 딸기케이크와 같은 베이커리류도 판매중이다.
 				</p>
@@ -175,14 +167,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu2-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu2-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">교항리 이팝나무 군락지</h5>
-				</a>
+				<h5 class="mvp_h5">교항리 이팝나무 군락지</h5>
 				<p>옥포읍 교향리 마을에서 약 100m쯤 떨어져 있는 평탄한 구릉지대의 세청숲 속에 수령이 약 300여년 이상 된 이팝나무 45주가 자라고 있다. 
 				이팝나무 외에 150여년이 된 상수리나무, 굴참나무, 느티나무, 말채나무등 거목들이 많이 군거하고 있어 이 숲은 학술연구상으로 풍치림으로서 보호할 가치가 있다. 
 				이팝나무는 낙엽활엽교목으로 5월초에 흰색의 꽃이 피는데 흰꽃망울로 덮흰 숲을 멀리서 바라보면 흰구름이 떠나가는 형상이다. 
@@ -191,14 +179,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu2-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu2-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">대구 하중도 (금호꽃섬)</h5>
-				</a>
+				<h5 class="mvp_h5">대구 하중도 (금호꽃섬)</h5>
 				<p>대구 북구 8경중 1경인 금호강 하중도는 팔달교와 노곡교 사이에 위치한 섬이다. 계절별로 유채꽃, 청보리, 코스모스 등을 식재하고 있으며, 
 				금호강을 따라 산책로가 조성되어 있다. 주말이면 연인, 가족단위의 관광객들로 붐비는 명소이다.
 				</p>
@@ -206,14 +190,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu2-5.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu2-5.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">안지랑 곱창골목</h5>
-				</a>
+				<h5 class="mvp_h5">안지랑 곱창골목</h5>
 				<p>대구광역시 남구의 앞산 안지랑골로 통하는 길 중간에 형성된 안지랑 시장은 화려한 명성을 뒤로 하고 최근 양념 곱창집이 들어차 새로운 활력이 되고 있다. 
 				1979년 경 안지랑 시장 쪽에 충북식당을 시작으로 1998년 IMF이후 생계유지 업소가 늘어나기 시작해 오늘에 이르렀다. 서민들이 부담없이 즐길수 있는 휴식처이자 
 				최근엔 젊은층이 주도하는 젊음의 거리로 발전하였으며, 2012년에는 문화체육관광부 주관 전국 5대 음식테마거리로 선정된 바 있다.
@@ -222,14 +202,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu2-6.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu2-6.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">스파크랜드</h5>
-				</a>
+				<h5 class="mvp_h5">스파크랜드</h5>
 				<p>대구 도심 한가운데 위치한 스파크랜드는 쇼핑몰이자 놀이테마파크로서 중구의 새로운 랜드마크로 떠오르고 있다. 패션브랜드, 식당,
 				 놀이시설 등을 갖추어 다양한 볼거리와 먹거리, 즐길거리를 제공한다. 특히, 건물 꼭대기에 있는 대관람차는 많은 이들의 시선을 사로잡는다. 
 				 대관람차에 탑승하여 대구 도시 전경을 감상할 수 있다.
@@ -238,14 +214,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu2-7.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu2-7.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">대구수목원</h5>
-				</a>
+				<h5 class="mvp_h5">대구수목원</h5>
 				<p>74,000여 평의 부지에 1986년부터 1990년까지 대구시민의 생활쓰레기 410만톤을 매립한 장소로서 이곳의 환경문제를 해결하기 위하여 1996년부터 1997년까지 
 				150만㎥의 건설잔토를 6~7m로 복토한 후 2002년 5월까지 수목원을 조성함으로 생태를 복원한 사례이다. 대구수목원은 침엽수원, 활엽수원, 화목원, 야생초화원, 
 				약용식물원, 염료원 등 21개소의 다양한 원을 구성하여 400여종 6만 그루의 나무와 1,100개 화단에 800여 종 13만 포기의 초화류를 식재하였고, 40종 300여 점의 
@@ -255,14 +227,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/daegu2-8.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/daegu2-8.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">대구 평화시장</h5>
-				</a>
+				<h5 class="mvp_h5">대구 평화시장</h5>
 				<p>평화시장은 1975년 개설된 장옥형의 소형시장이다. 30여 년 전부터 닭내장을 파는 상점들이 늘어나면서 똥집 튀김 골목을 자리 잡은 곳으로 똥집 골목으로
 				 대구의 명물 중 하나이다. 닭똥집 골목의 시장은 1972년 삼아 통닭집으로 거슬러 올라간다. 닭만 팔다 보니 닭똥집이 많이 남아서 어떻게 할까 늘 고민스러웠던
 				  사장이 어느 날 우연히 닭똥집을 튀겨서 서비스로 내어놓기 시작했는데, 의외로 손님들의 호응이 좋았던 것이다. 

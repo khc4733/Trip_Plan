@@ -122,14 +122,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> 
-					<img src="${contextPath}/resources/images/incheon3-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon3-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">버거룸 181</h5>
-				</a>
+				<h5 class="mvp_h5">버거룸 181</h5>
 				<p>이국적이며 빈티지한 외관의 버거룸181은 도톰한 빵 안에 신선한 속 재료가 풍성하게 들어 있는 수제버거 전문점이다. 
 				이색적이면서도 다양한 종류의 버거를 맛볼 수 있다.
 				</p>
@@ -137,14 +133,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon3-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon3-2.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">그리다 디저트</h5>
-				</a>
+				<h5 class="mvp_h5">그리다 디저트</h5>
 				<p>르 꼬르동 블루 제과 디플로마를 졸업한 전문 파티시에가 매일 매장에서 직접 만든 디저트를 판매하는 디저트 전문점이다. 
 				깔끔한 분위기를 자아내는 매장에서 신선하고 예쁜 디저트를 맛보면 절로 힐링이 되는 기분이다. 달달한 디저트가 있는 카페이기 때문에 데이트 장소로도 좋다.
 				</p>
@@ -152,14 +144,10 @@
 		</div>	
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon3-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon3-3.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">인천도시역사관</h5>
-				</a>
+				<h5 class="mvp_h5">인천도시역사관</h5>
 				<p>인천은 1883년 개항 후 우리나라 최초의 계획도시로 시작하여 130년이 넘는 시간이 흐르는 동안 다양한 변화와 확장을 거쳐 지금은 전국 8대 광역시 중 가장 넓은 면적에 300만 인구의 무한한 잠재력을 가진 도시로 성장해 왔다.
 				인천도시역사관은도시 인천의 역사와 변화과정을 다양한 실물자료와 모형을 통해 시민들에게 알기 쉽게 전달하고 있다.
 				</p>
@@ -167,14 +155,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon3-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon3-4.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">애플삼겹살</h5>
-				</a>
+				<h5 class="mvp_h5">애플삼겹살</h5>
 				<p>애플삼겹살은 돼지고기를 사과즙에 하루 숙성한 후 참숯에 초벌하고 마지막으로 사과나무에 훈연한다.
 				주문시 얇게 썬 사과가 나와 새초와 소스와 함께 쌈을 싸먹을수 있다. 삼겹살, 목살, 항정살, 소시지, 새우, 떡이 나오는 애플한판이 대표메뉴. 
 				사과는 향과 당도가 높은 경북 영주사과를 사용하며 착즙한 사과를 넣은 애플소주도 제공된다.
@@ -183,14 +167,10 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기">
-					<img src="${contextPath}/resources/images/incheon3-5.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/incheon3-5.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">송도컨벤시아</h5>
-				</a>
+				<h5 class="mvp_h5">송도컨벤시아</h5>
 				<p>송도 컨벤시아는 지하1층, 지상4층, 연 건축면적 54,000㎡ 규모로 450개 부스를 설치할 수 있고 회의장은 최대 2,000명을 수용할 수 있다. 
 				송도컨벤시아는 시드니 오페라 하우스를 연상케 하는 독특한 외관과 고품격 인테리어 등
 				흔히 볼 수 없는 감각적인 디자인을 자랑하며 각종 방송이나 공연, 패션쇼 등의 촬영지로 각광받고 있다.

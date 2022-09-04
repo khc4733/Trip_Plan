@@ -46,10 +46,10 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">자유공원</a></li>
-					<li><a href="${contextPath}/area/incheon">인천 차이나타운</a></li>
-					<li><a href="${contextPath}/area/daejeon">(구)인천일본제58은행지점</a></li>
-					<li><a href="${contextPath}/area/daegu">월미공원</a></li>
+					<li>자유공원</li>
+					<li>인천 차이나타운</li>
+					<li>(구)인천일본제58은행지점</li>
+					<li>월미공원</li>
 				</ol>
 			</div>
 		</div>
@@ -74,11 +74,11 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">개항장 거리</a></li>
-					<li><a href="${contextPath}/area/incheon">송월동 동화마을</a></li>
-					<li><a href="${contextPath}/area/daejeon">월미도</a></li>
-					<li><a href="${contextPath}/area/daegu">송도 센트럴파크</a></li>
-					<li><a href="${contextPath}/area/busan">소래포구</a></li>
+					<li>개항장 거리</li>
+					<li>송월동 동화마을</li>
+					<li>월미도</li>
+					<li>송도 센트럴파크</li>
+					<li>소래포구</li>
 				</ol>
 			</div>
 		</div>
@@ -105,11 +105,11 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">버거룸 181</a></li>
-					<li><a href="${contextPath}/area/incheon">그리다 디저트</a></li>
-					<li><a href="${contextPath}/area/daejeon">인천도시역사관</a></li>
-					<li><a href="${contextPath}/area/daegu">애플삼겹살</a></li>
-					<li><a href="${contextPath}/area/daegu">송도컨벤시아</a></li>
+					<li>버거룸 181</li>
+					<li>그리다 디저트</li>
+					<li>인천도시역사관</li>
+					<li>애플삼겹살</li>
+					<li>송도컨벤시아</li>
 				</ol>
 			</div>
 		</div>

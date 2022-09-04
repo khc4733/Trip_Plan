@@ -29,7 +29,7 @@ request.setCharacterEncoding("UTF-8");
 	padding: 15px 200px;
 	font-size: 18px;
 	top: 0;
-	z-index: 1;
+	z-index: 7;
 }
 
 #drop_menu ul {
@@ -88,6 +88,36 @@ request.setCharacterEncoding("UTF-8");
 		lastScrollTop = scrollTop;
 	});
 </script>
+<script>
+$(document).ready(function() {
+	
+	$("#submenu").click(
+	function(){
+		$("#submenu ul").css("background-color", "#ffffff");
+	});
+	
+	$("#main_nav ul").hover(
+		function() {	
+			$("#main_nav").css("background-color", "#ffffff");
+			$("#main_nav").css("border-bottom", "1px solid #e6e6e6");
+			$("#main_nav a").css("color", "#485ca3");
+		}, 
+		function() {	
+			$("#main_nav").css("background-color", "");
+			$("#main_nav").css("border-bottom", "");
+			$("#main_nav a").css("color", "#f7f1dc");
+		});
+	
+	$("#drop_menu").hover(
+		function() {	
+			$("#main_nav").css("height", "100px");
+		}, 
+		function() {	
+			$("#main_nav").css("height", "");
+		});
+	
+});
+</script>
 <nav>
 	<div id="main_nav">
 		<div class="navbar-header">
@@ -117,8 +147,8 @@ request.setCharacterEncoding("UTF-8");
 				</li>
 				<li><c:choose>
 						<c:when test="${isLogOn == true && member != null}">
-							<li><a class="submenu"
-								data-toggle="dropdown" id="submenu" href="#"><b>${member.nname}님</b><span
+							<li  id="submenu"><a 
+								data-toggle="dropdown" href="#"><b>${member.nname}님</b><span
 									class="caret"></span></a>
 								<ul class="dropdown-menu" style="background-color: transparent; text-align:center;">
 									<li><a href="${contextPath}/mypage/summary">My Page</a></li>

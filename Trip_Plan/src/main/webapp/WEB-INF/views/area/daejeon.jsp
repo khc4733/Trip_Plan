@@ -2,9 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
-<%
-request.setCharacterEncoding("UTF-8");
-%>
+<%request.setCharacterEncoding("UTF-8");%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,9 +47,9 @@ request.setCharacterEncoding("UTF-8");
 				</div>
 				<div>
 					<ol class="area_ol">
-						<li><a href="${contextPath}/area/seoul">보문산 행복숲 둘레길</a></li>
-						<li><a href="${contextPath}/area/incheon">은행동 으능정이 문화의거리</a></li>
-						<li><a href="${contextPath}/area/daejeon">대흥동 문화예술의거리</a></li>
+						<li>보문산 행복숲 둘레길</li>
+						<li>은행동 으능정이 문화의거리</li>
+						<li>대흥동 문화예술의거리</li>
 					</ol>
 				</div>
 			</div>
@@ -81,10 +79,10 @@ request.setCharacterEncoding("UTF-8");
 				</div>
 				<div>
 					<ol class="area_ol">
-						<li><a href="${contextPath}/area/seoul">대청호오백리길</a></li>
-						<li><a href="${contextPath}/area/incheon">계족산 황톳길</a></li>
-						<li><a href="${contextPath}/area/daejeon">천연기념물센터</a></li>
-						<li><a href="${contextPath}/area/daegu">한밭수목원</a></li>
+						<li>대청호오백리길</li>
+						<li>계족산 황톳길</li>
+						<li>천연기념물센터</li>
+						<li>한밭수목원</li>
 				</div>
 			</div>
 			<!-- daejeon2 끝 -->
@@ -111,11 +109,11 @@ request.setCharacterEncoding("UTF-8");
 				</div>
 				<div>
 					<ol class="area_ol">
-						<li><a href="${contextPath}/area/seoul">대전시립박물관</a></li>
-						<li><a href="${contextPath}/area/incheon">공주 무령왕릉&왕릉원</a></li>
-						<li><a href="${contextPath}/area/daejeon">공주 공산성</a></li>
-						<li><a href="${contextPath}/area/daegu">충청남도 산림박물관</a></li>
-						<li><a href="${contextPath}/area/daegu">유성온천지구</a></li>
+						<li>대전시립박물관</li>
+						<li>공주 무령왕릉&왕릉원</li>
+						<li>공주 공산성</li>
+						<li>충청남도 산림박물관</li>
+						<li>유성온천지구</li>
 					</ol>
 				</div>
 			</div>
