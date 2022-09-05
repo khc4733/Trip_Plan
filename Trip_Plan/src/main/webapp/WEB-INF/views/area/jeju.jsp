@@ -46,12 +46,12 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">산방산</a></li>
-					<li><a href="${contextPath}/area/incheon">용머리해안</a></li>
-					<li><a href="${contextPath}/area/daejeon">사계해변</a></li>
-					<li><a href="${contextPath}/area/daegu">사계 발자국화석 발견지</a></li>
-					<li><a href="${contextPath}/area/busan">섯알오름</a></li>
-					<li><a href="${contextPath}/area/busan">송악산</a></li>
+					<li>산방산</li>
+					<li>용머리해안</li>
+					<li>사계해변</li>
+					<li>사계 발자국화석 발견지</li>
+					<li>섯알오름</li>
+					<li>송악산</li>
 				</ol>
 			</div>
 		</div>
@@ -78,10 +78,10 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">사라봉공원</a></li>
-					<li><a href="${contextPath}/area/incheon">관덕정</a></li>
-					<li><a href="${contextPath}/area/daejeon">용두암</a></li>
-					<li><a href="${contextPath}/area/daegu">어영소공원</a></li>
+					<li>사라봉공원</li>
+					<li>관덕정</li>
+					<li>용두암</li>
+					<li>어영소공원</li>
 				</ol>
 			</div>
 		</div>
@@ -108,10 +108,10 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">와랑와랑</a></li>
-					<li><a href="${contextPath}/area/incheon">제주허브동산</a></li>
-					<li><a href="${contextPath}/area/daejeon">제주민속촌</a></li>
-					<li><a href="${contextPath}/area/daegu">돌토고리족욕카페</a></li>
+					<li>와랑와랑</li>
+					<li>제주허브동산</li>
+					<li>제주민속촌</li>
+					<li>돌토고리족욕카페</li>
 				</ol>
 			</div>
 		</div>

@@ -53,7 +53,7 @@
 	<delete id="delete" parameterType="int">
 		<![CDATA[
 			DELETE FROM board
-			WHERE seq = #{seq}
+			WHERE seq = #{seq, jdbcType=VARCHAR}
 		]]>
 	</delete>
 	
@@ -61,8 +61,8 @@
 	<update id="update" parameterType="com.aws.board.dto.boardDTO">
 		<![CDATA[
 			UPDATE board
-			SET subject = #{subject}, writer = #{writer}, contetn = #{content}
-			WHERE seq = #{seq}
+			SET subject = #{subject, jdbcType=VARCHAR}, content = #{content, jdbcType=VARCHAR}
+			WHERE seq = #{seq, jdbcType=VARCHAR}
 		]]>
 	</update>
 </mapper>

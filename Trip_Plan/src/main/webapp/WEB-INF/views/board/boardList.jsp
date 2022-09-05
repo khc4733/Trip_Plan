@@ -13,7 +13,6 @@ request.setCharacterEncoding("UTF-8");
 <title>리뷰게시판</title>
 
 
-
 </head>
 <body>
 
@@ -25,7 +24,7 @@ request.setCharacterEncoding("UTF-8");
 
 	<!-- 본문 내용 -->
 
-	<div class="container">
+	<div class="container" style="width: 1000px; margin-bottom:80px;">
 		<form class="form-horizontal" id="formList">
 			<div class="form-group">
 				<div style="margin-top: 100px;">
@@ -44,58 +43,39 @@ request.setCharacterEncoding("UTF-8");
 
 			</div>
 
-			<table class="table table-bordered table-striped nanum table-hover">
+			<table class="table table-striped nanum table-hover">
 				<thead>
-					<tr class="info">
-						<th>번호</th>
-						<th>제목</th>
-						<th>내용</th>
-						<th>작성자</th>
-						<th>날짜</th>
-						<th>조회수</th>
+					<tr>
+						<th colspan="1" style=" text-align:center;">번호</th>
+						<th colspan="5" style=" text-align:center;">제목</th>
+						<th colspan="1" style=" text-align:center;">작성자</th>
+						<th colspan="2" style=" text-align:center;">날짜</th>
+						<th colspan="1" style=" text-align:center;">조회수</th>
 					</tr>
 				</thead>
 				<tbody>
 					<c:forEach items="${boardList}" var="list">
 						<tr>
-							<td align="right">${list.seq}</td>
-							<td><a
+							<td colspan="1" >${list.seq}</td>
+							<td colspan="5"><a
 								href="${contextPath}/board/boardDetail?seq=${list.seq}">${list.subject}</a></td>
 							<!-- <td><a href="#" onclick="fn_boardDetail('${list.seq}')">${list.subject}</a></td> -->
-							<td>${list.content}</td>
-							<td>${list.writer}</td>
+							<td colspan="1">${list.writer}</td>
 							<fmt:parseDate value="${list.reg_date}" var="currentDate"
 								pattern="yyyyMMddHHmm" scope="page" />
-							<td><fmt:formatDate value="${currentDate}"
-									pattern="yyyy년 MM월 dd일 HH시 mm분" /></td>
-							<td align="right">${list.readCount}</td>
+							<td colspan="2"><fmt:formatDate value="${currentDate}"
+									pattern="yyyy.MM.dd" /></td>
+							<td align="right" colspan="1">${list.readCount}</td>
 						</tr>
 					</c:forEach>
 				</tbody>
 			</table>
 
-
-
-			<div class="col-sm-offset-3">
-				<div align="right">
-
-					<select id='searchType'>
-						<option>검색종류</option>
-						<option value="t" <c:if test="${pageVO.type} == 't'"></c:if>>제목</option>
-						<option value="c" <c:if test="${pageVO.type} == 'c'"></c:if>>내용</option>
-						<option value="w" <c:if test="${pageVO.type} == 'w'"></c:if>>글쓴이</option>
-					</select> <input type='text' id='searchKeyword' name='keyword'
-						value="${pageVO.keyword}">
-					<button id='searchBtn'>Search</button>
-
-				</div>
-			</div>
-
 			<c:choose>
 				<c:when test="${isLogOn == true && member != null}">
 					<p align="center">
-						<button type="button" class="btn btn-primary"
-							onclick="location.href='boardRegisterForm'">글쓰기</button>
+						<button type="button"
+							onclick="location.href='boardRegisterForm'" style="  left: 455px; position: relative;">글쓰기</button>
 					</p>
 				</c:when>
 			</c:choose>
@@ -110,13 +90,12 @@ request.setCharacterEncoding("UTF-8");
 				name='keyword' value="${pageVO.keyword}">
 		</form>
 
-	</div>
 
 	<!--페이지-->
 	<div id="page_control">
 		<a href="#">이전</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a>
-		<a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a>
-		<a href="#">8</a> <a href="#">9</a> <a href="#">10</a> <a href="#">다음</a>
+		<a href="#">4</a> <a href="#">5</a> <a href="#">다음</a>
+	</div>
 	</div>
 
 

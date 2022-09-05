@@ -7,6 +7,7 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -153,15 +154,19 @@ public class BoardControllerImpl implements BoardController {
 	//------------------------------------------------------------------------------------------------------
 	@Override
 	@RequestMapping(value="/boardUpdateForm", method = RequestMethod.POST)
-	public ModelAndView boardUpdateForm(HttpServletRequest request, HttpServletResponse response, Model model)
+	public ModelAndView boardUpdateForm(boardDTO boardDTO, HttpServletRequest request, HttpServletResponse response, Model model)
 			throws Exception {
+	     Date date = new Date(System.currentTimeMillis());
+	     SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmm");
+	      
+	     boardDTO.setReg_date(format.format(date));
 		
+		int result = boardService.boardUpdate(boardDTO);
+		System.out.println("MemberController 로그인 ==> " + boardDTO);
+		String seq = Integer.toString(boardDTO.getSeq());
 		ModelAndView mav = new ModelAndView();
-		boardDTO boardDTO = boardService.boardDetail(Integer.parseInt((String)request.getParameter("seq")));
-		model.addAttribute("boardDetail", boardDTO);
-		
-		
-		mav.setViewName("/board/boardUpdate");
+		mav.addObject("seq", seq);
+		mav.setViewName("redirect:/board/boardDetail");
 		return mav;
 	}
 	
@@ -169,15 +174,15 @@ public class BoardControllerImpl implements BoardController {
 	// 리뷰 삭제
 	//------------------------------------------------------------------------------------------------------
 	@Override
-	@ResponseBody
-	@RequestMapping(value="/boardDelete", method = RequestMethod.POST)
-	public String boardDelete(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
-
-		if(boardService.boardDelete(Integer.parseInt((String)request.getParameter("seq"))) == 1) {
-			return "Y";
-		} else {
-			return "N";
-		}
+	@RequestMapping(value="/boardDelete", method = RequestMethod.GET)
+	public ModelAndView boardDelete(int seq, HttpSession session, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		System.out.println("MemberController 로그인 member.getId() ==> " + seq );
+		request.setCharacterEncoding("UTF-8");
+		int result = boardService.boardDelete(seq);
+		
+		ModelAndView mav = new ModelAndView("redirect:/board/boardList");
+		return mav;
 	}
 
 	

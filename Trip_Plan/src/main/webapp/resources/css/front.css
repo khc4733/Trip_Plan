@@ -875,6 +875,15 @@ table#notice {
 
 #btn-remove:hover {text-decoration:underline;}
 
+#update{
+   background-color: white;
+   color: black;
+   border: none;
+   font-family: Play;
+   font-size: 13px;
+   font-weight: bold;	
+}
+
 #btn-update{
    background-color: white;
    color: black;

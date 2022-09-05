@@ -54,7 +54,7 @@ public class boardServiceImpl implements boardService {
 	// 리뷰 수정 화면
 	//------------------------------------------------------------------------------------------------------
 	@Override
-	public int boardUpate(boardDTO boardDTO) {
+	public int boardUpdate(boardDTO boardDTO) {
 		
 		return boardDAO.boardUpdate(boardDTO);
 	}

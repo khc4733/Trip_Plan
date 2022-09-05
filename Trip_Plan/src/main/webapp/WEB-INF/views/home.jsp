@@ -91,7 +91,7 @@ function getLocation() {
 			<div id="main_review-container">
 				<h3 class="title">BEST REVIEW</h3>
 				<div class="btn_more">
-					<a href="./board/review"><img
+					<a href="${contextPath}/board/boardList"><img
 						src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
 				</div>
 				<div id="main_review-table">

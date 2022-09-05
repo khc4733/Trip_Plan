@@ -15,9 +15,9 @@ request.setCharacterEncoding("UTF-8");
 </head>
 <body>
 	<!-- top menu -->
-     <div class="sub_menubar">
-        <jsp:include page="../../common/topmenu.jsp"/>
-    </div>
+	<div class="sub_menubar">
+		<jsp:include page="../../common/topmenu.jsp" />
+	</div>
 	<!-- side menu -->
 	<div>
 		<jsp:include page="../../common/sidemenu.jsp" />
@@ -145,14 +145,12 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju1-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju1-1.jpg">
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">산방산(제주)</h5>
-				</a>
+
+				<h5 class="mvp_h5">산방산(제주)</h5>
+
 				<p>제주도 서남부의 평야지대에 우뚝 서 있어 어디에서도 조망이 가능한 종 모양의 종상화산체다. 용암돔 남측 절벽의
 					높이 150~300m 사이에는 다양한 모양과 크기의 풍화혈과 애추가 발달되어 있고, 해발 150m쯤에 길이 약 10m,
 					너비와 높이가 약 5m인 산방굴이라고 하는 해식동굴이 바다를 향해 특색 있는 경관을 이루어 있어 영주십경의 하나이다.</p>
@@ -161,14 +159,13 @@ request.setCharacterEncoding("UTF-8");
 
 		<div class="line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju1-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju1-2.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">용머리해안</h5>
-				</a>
+
+				<h5 class="mvp_h5">용머리해안</h5>
+
 				<p>산방산 앞자락에 있는 바닷가로 산방산 휴게소에서 10여분 걸어내려가면 수려한 해안절경의 용머리 해안과 마주치게
 					된다.이 곳은 수천만년 동안 쌓이고 쌓여 이루어진 사암층 중 하나이다. 해안 절벽을 모진 파도가 때려서 만들어 놓은 해안
 					절경이다. 작은 방처럼 움푹 들어간 굴방이나 드넓은 암벽의 침식 지대가 펼쳐져 장관을 이루고 있는 곳으로 얼마 전부터
@@ -177,14 +174,13 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju1-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju1-3.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">사계해변</h5>
-				</a>
+
+				<h5 class="mvp_h5">사계해변</h5>
+
 				<p>사계해변은 산방산 바로 아래쪽에 자리한 해변으로 한적하고 조용한 것이 특징이다. 이곳에서는 형제섬, 산방산과
 					한라산, 용머리해안까지 조망이 가능하다. 깨끗한 모래와 푸른 바다가 어우러져 아름답다. 사계해변 인근 사계포구는 낚시
 					포인트로 낚시꾼들의 발길이 끊이지 않는다. 자연적으로 형성된 화산석이 둘러싸고 있는 모습의 사계해안은 제주 올레길
@@ -194,14 +190,13 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju1-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju1-4.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">사계 발자국화석 발견지</h5>
-				</a>
+
+				<h5 class="mvp_h5">사계 발자국화석 발견지</h5>
+
 				<p>천연기념물로 지정되어 있는 발자국 화석 공원으로 구석기 시대에 생성되었다고 추정되고 있다. 사람, 새, 코끼리
 					등 사람과 동물, 식물 화석 등이 새겨져 볼만하다. 지질이 독특하고 모양 또한 화성에 온 듯한 착각이 들 정도로 화려해
 					감상하기 좋다. 사계 발자국화석 발견지는 천연기념물로 목재 울타리를 둘러 보호되어 가까이서 볼 수는 없지만 안내판을 보며
@@ -210,14 +205,13 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju2-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju2-3.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">섯알오름</h5>
-				</a>
+
+				<h5 class="mvp_h5">섯알오름</h5>
+
 				<p>송오름(송악산) 북쪽에 알오름 세 개가 동서로 뻗어 있는데 그 중 서쪽 오름이 섯알오름이며 동쪽것은 동알오름,
 					가운데 것을 셋알오름이라고 한다. 송악산 북쪽에 있는 섯알오름은 작고 나지막한 3개의 말굽형 분화구가 나란히 줄지어
 					분포되어 있는 곳이다. 높이 약 21m, 둘레 704m, 총면적 29,094㎢인 섯알오름은 아담한 동산과 같은 느낌이지만
@@ -226,14 +220,13 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju2-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju2-4.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">송악산</h5>
-				</a>
+
+				<h5 class="mvp_h5">송악산</h5>
+
 				<p>산방산(395m)의 남쪽, 가파도가 손에 잡힐 듯 보이는 바닷가에 불끈 솟은 산이 산방산이다. 99개의 작은
 					봉우리가 모여 일명 99봉이라고도 한다. 남제주군 산방굴사에서 송악산 초입까지는 풍치 좋기로 소문난 해안도로이다. 그
 					길을 달려 송악산에 이른다.</p>

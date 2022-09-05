@@ -2,7 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
-<%request.setCharacterEncoding("UTF-8");%>
+<%
+request.setCharacterEncoding("UTF-8");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +15,9 @@
 </head>
 <body>
 	<!-- top menu -->
-     <div class="sub_menubar">
-        <jsp:include page="../../common/topmenu.jsp"/>
-    </div>
+	<div class="sub_menubar">
+		<jsp:include page="../../common/topmenu.jsp" />
+	</div>
 	<!-- side menu -->
 	<div>
 		<jsp:include page="../../common/sidemenu.jsp" />
@@ -122,14 +124,13 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju2-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju2-1.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">사라봉공원</h5>
-				</a>
+
+				<h5 class="mvp_h5">사라봉공원</h5>
+
 				<p>사라봉 공원은 제주시 동문로터리에서 동쪽으로 2km 거리에 있는 143m 높이의 낮은 동산이다. 이곳에서 볼
 					수 있는 사봉 낙조는 영주 12경의 하나로 성산일출과 대조가 될만하다. 쪽으로는 바다를 끼고 남쪽으로는 한라산을 바라보고
 					있는 이곳은 제주시민은 물론 관광객도 즐겨 찾는다.</p>
@@ -138,14 +139,13 @@
 
 		<div class="line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju2-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju2-2.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">관덕정(제주)</h5>
-				</a>
+
+				<h5 class="mvp_h5">관덕정(제주)</h5>
+
 				<p>제주도내에서 가장 오래된 건축물 중의 하나인 관덕정은 보물로서 조선 시대 세종 30년(1448)에 목사
 					신숙청이 사졸들을 훈련시키고 상무 정신을 함양할 목적으로 이 건물을 세웠다. 관덕정이란 이름은 [사이관덕]이란 문구에서
 					나온 것으로 활을 쏘는 것은 평화시에는 심신을 연마하고 유사시에는 나라를 지키는 까닭에 이를 보는 것은 덕행으로 태어난
@@ -154,14 +154,13 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju2-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju2-3.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">용두암</h5>
-				</a>
+
+				<h5 class="mvp_h5">용두암</h5>
+
 				<p>제주시내 북쪽 바닷가에 있는 용두암은 높이 10m가량의 바위로 오랜 세월에 걸쳐 파도와 바람에 씻겨 빚어진
 					모양이 용의 머리와 닮았다 하여 용두암이라 불린다. 이곳 주변에서는 해녀가 작업하는 모습을 볼 수 있을 뿐만 아니라,
 					이곳에서 해안 도로를 따라 10여 분 정도 걸어가면 카페 및 주점, 식당 등이 있다.</p>
@@ -169,14 +168,13 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju2-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju2-4.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">어영소공원</h5>
-				</a>
+
+				<h5 class="mvp_h5">어영소공원</h5>
+
 				<p>제주도 용두암에서 약 1km정도 떨어진 곳에 용담 해안도로를 따라 길게 만들어진 공원이다. 야간에 각종
 					조명시설로 야간공원으로 유명하다. 특히, 해 진 저녁, 맞은 편에 있는 카페, 레스토랑, 식당에서 어영소공원의 야경을
 					감상하기 좋아 많은 관광객이 찾고있다.</p>
