@@ -46,10 +46,10 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">만귀정</a></li>
-					<li><a href="${contextPath}/area/incheon">운천사마애여래좌상</a></li>
-					<li><a href="${contextPath}/area/daejeon">5.18기념공원</a></li>
-					<li><a href="${contextPath}/area/daegu">광주 양동시장</a></li>
+					<li>만귀정</li>
+					<li>운천사마애여래좌상</li>
+					<li>5.18기념공원</li>
+					<li>광주 양동시장</li>
 				</ol>
 			</div>
 		</div>
@@ -75,11 +75,11 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">광주호 호수생태원</a></li>
-					<li><a href="${contextPath}/area/incheon">광주 예술의 거리</a></li>
-					<li><a href="${contextPath}/area/daejeon">제일반점</a></li>
-					<li><a href="${contextPath}/area/daegu">금남로</a></li>
-					<li><a href="${contextPath}/area/busan">최승효가옥</a></li>
+					<li>광주호 호수생태원</li>
+					<li>광주 예술의 거리</li>
+					<li>제일반점</li>
+					<li>금남로</li>
+					<li>최승효가옥</li>
 				</ol>
 			</div>
 		</div>
@@ -106,10 +106,10 @@
 			</div>
 			<div>
 				<ol class="area_ol">
-					<li><a href="${contextPath}/area/seoul">녹색에너지체험관</a></li>
-					<li><a href="${contextPath}/area/incheon">월계동 장고분</a></li>
-					<li><a href="${contextPath}/area/daegu">쌍암공원</a></li>
-					<li><a href="${contextPath}/area/daegu">환벽당</a></li>
+					<li>녹색에너지체험관</li>
+					<li>월계동 장고분</li>
+					<li>쌍암공원</li>
+					<li>환벽당</li>
 				</ol>
 			</div>
 		</div>

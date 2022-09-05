@@ -125,14 +125,11 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
+				 <img
 					src="${contextPath}/resources/images/gwangju1-1.jpg">
-				</a>
 			</div>
-			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
+			<div class="right">	
 					<h5 class="mvp_h5">장창우가 후학을 가르치던 곳, 만귀정</h5>
-				</a>
 				<p>서구 세하동 동하마을에 있는 정자이다. 효우공(孝友公) 장창우(張昌羽)가 후학을 가르치며 만년을 보내기 위해
 					창건하였다고 한다. 그러나 원래의 건물은 세월이 지나면서 무너져 없어졌고, 후손들에 의한 1934년의 중건과 1945년의
 					중수를 거쳐 오늘에 이른다.</p>
@@ -141,14 +138,12 @@ request.setCharacterEncoding("UTF-8");
 
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
+				 <img
 					src="${contextPath}/resources/images/gwangju1-2.jpg">
-				</a>
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
+				
 					<h5 class="mvp_h5">운천사마애여래좌상</h5>
-				</a>
 				<p>원효대사가 무등산 원효사에 머무르던 어느 날 서쪽 하늘에 서기(瑞氣)가 가득함을 보고 제자 보광화상을 현지에
 					보냈더니 뜻밖에 큰 바위에서 빛이 솟아나오므로 그 곳에 불상을 새긴 것이 이 마애불이라고 전하며, 이 곳에 절을 지어
 					정토사라 불렀다 하나 고증할 기록이나 유물은 없다.</p>
@@ -156,14 +151,12 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
+				 <img
 					src="${contextPath}/resources/images/gwangju1-3.jpg">
-				</a>
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
+				
 					<h5 class="mvp_h5">5·18 기념공원</h5>
-				</a>
 				<p>5·18 기념공원은 5·18의 교훈을 올바르게 계승, 발전하기 위해 조성된 시민 휴식공간으로, 상무대 이전부지
 					일부를 시민공원부지로 무상양여 받아 공원을 조성하였다. 이곳은 넓이는 20만 4,985㎡로 전통연못과 다양한 수목들이
 					자리하고 있어 아이들의 자연학습장으로도 널리 활용되고 있기도 하다.</p>
@@ -171,14 +164,11 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
+				 <img
 					src="${contextPath}/resources/images/gwangju1-4.jpg">
-				</a>
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
 					<h5 class="mvp_h5">광주 양동시장</h5>
-				</a>
 				<p>1910년대에 광주교 아래 백사장에서 달마다 2일과 7일에 열렸던 장이 양동시장의 기원으로 알려져있다.
 					양동시장은 ‘후덕한 인심의 표상’이라고 불릴 만큼 각양각색의 물산들이 산적해 있고 먹을거리 또한 풍성해 광주 시민들에겐
 					‘손 큰 시장’으로도 알려져 있다.</p>

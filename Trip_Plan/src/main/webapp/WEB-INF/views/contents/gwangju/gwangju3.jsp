@@ -126,14 +126,14 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
+				 <img
 					src="${contextPath}/resources/images/gwangju3-1.jpg">
-				</a>
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
+				
 					<h5 class="mvp_h5">녹색에너지체험관</h5>
-				</a>
+
 				<p>녹색에너지체험관에는 여러 형태의 에너지가 있다. 화석에너지, 환경에너지, 신재생에너지 등이 무엇인지 관람하고,
 					체험하며 에너지 절약의 필요성과 실천할 수 있는 에너지 절약 방법도 생각해 본다. 아이들은 화석에너지 코너에서 환경을
 					생각하고 LED체험 코너에서는 황홀경에 빠지기도 한다.</p>
@@ -142,14 +142,14 @@ request.setCharacterEncoding("UTF-8");
 
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
+				 <img
 					src="${contextPath}/resources/images/gwangju3-2.jpg">
-				</a>
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
+				
 					<h5 class="mvp_h5">월계동 장고분</h5>
-				</a>
+	
 				<p>월계동 장고분은 영산강 상류의 낮은 구릉지대에 있는 장구촌마을에 있으며, 발달된 방부(方部)와 방패형
 					주호(周濠), 나팔형 토기 등의 유물이 출토되었다. 발달된 방부(方部)와 방패현 주호(周濠), 크게 벌어진 나팔형 토기
 					등이 특징으로 옛 무덤 발달사 연구에 중요한 유적이다.</p>
@@ -157,14 +157,14 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
+				 <img
 					src="${contextPath}/resources/images/gwangju3-3.jpg">
-				</a>
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
+				
 					<h5 class="mvp_h5">쌍암공원</h5>
-				</a>
+
 				<p>
 					* 호수와 여유, 그리고 쉼이 있는 공간, 쌍암공원 * <br>쌍암공원은 광산구 첨단지구 내 광주과학기술원 앞에
 					위치해 있다. 한가운데 위치하고 있는 호수 때문에 운치를 더하고 있어, 일명 호수공원으로도 불리기도 한다. 호수주변을
@@ -175,14 +175,14 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
+				 <img
 					src="${contextPath}/resources/images/gwangju3-4.jpg">
-				</a>
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
+				
 					<h5 class="mvp_h5">환벽당</h5>
-				</a>
+
 				<p>이곳에는 우암 송시열(尤庵宋時烈)이 쓴 제액(題額)이 걸려있고, 석천 임억령(石川林億齡)과 조자이(趙子以)의
 					시가 현판으로 걸려 있다. 환벽당에 관한 시는 정철이 지은 2수가 있는데, 송강속집과 광주목지에 실려 있다. 정철의
 					4대손 정수환(鄭守環)이 김윤제의 후손으로부터 사들여 현재 연일정씨 문중에서 관리하고 있다.</p>

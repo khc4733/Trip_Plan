@@ -2,7 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
-<%request.setCharacterEncoding("UTF-8");%>
+<%
+request.setCharacterEncoding("UTF-8");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +15,9 @@
 </head>
 <body>
 	<!-- top menu -->
-     <div class="sub_menubar">
-        <jsp:include page="../../common/topmenu.jsp"/>
-    </div>
+	<div class="sub_menubar">
+		<jsp:include page="../../common/topmenu.jsp" />
+	</div>
 	<!-- side menu -->
 	<div>
 		<jsp:include page="../../common/sidemenu.jsp" />
@@ -123,14 +125,13 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju3-1.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju3-1.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">와랑와랑</h5>
-				</a>
+
+				<h5 class="mvp_h5">와랑와랑</h5>
+
 				<p>제주의 겨울여행에서 빠지지 않는 코스인 제주 남부 지역 위미리 마을에 위치한 와랑와랑은 한겨울에 붉은 꽃을
 					피워내는 매혹적인 동백나무 군락지에서 몇 걸음 떨어지지 않은 곳에 위치하고 있다. 다양한 종류의 커피와 차, 쿠키와 주스
 					등을 판매하며, 그중에서도 단팥라떼와 찰떡구이는 와랑와랑의 겨울 별미이다.</p>
@@ -139,14 +140,13 @@
 
 		<div class="line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju3-2.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju3-2.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">제주허브동산</h5>
-				</a>
+
+				<h5 class="mvp_h5">제주허브동산</h5>
+
 				<p>현재 약 180여종의 허브와 우리산하의 야생화로 채워진 각양각색의 정원들과 작은 동산들, 그리고
 					611.6m²(2,000평)의 체험 감귤농장 등 다양한 형태의 테마공원이 조성되어 있다. 또한 허브동산을 휘어감은
 					산책로, 허브관련 제품을 구입할 수 있는 허브샵, 허브를 이용한 다양한 퓨전 음식을 맛볼 수 있는 카페, 허브에 대한
@@ -156,14 +156,13 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju3-3.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju3-3.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">제주민속촌</h5>
-				</a>
+
+				<h5 class="mvp_h5">제주민속촌</h5>
+
 				<p>제주민속촌은 2001년에 개관한 제1종 전문 박물관으로 1890년대를 전시 기준 연대로 하여 제주의 민속자료를
 					종합적으로 정리하여 전시하고 있으며, 100여채에 달하는 제주 전통가옥은 제주도민이 생활하였던 가옥과 돌, 기둥 등을
 					그대로 옮겨와 복원해 전시하고 있다.</p>
@@ -171,14 +170,13 @@
 		</div>
 		<div class=" line_wrap clearfix" name="Gyeongbokgung Palace(kr)">
 			<div class="left">
-				<a href="#" target="_blank" title="새창열기"> <img
-					src="${contextPath}/resources/images/jeju3-4.jpg">
-				</a>
+				<img src="${contextPath}/resources/images/jeju3-4.jpg">
+
 			</div>
 			<div class="right">
-				<a href="#" target="_blank" title="새창열기">
-					<h5 class="mvp_h5">돌토고리족욕카페</h5>
-				</a>
+
+				<h5 class="mvp_h5">돌토고리족욕카페</h5>
+
 				<p>표선해비치해변, 표선 포구 바로 뒤편에 위치한 디저트와 족욕을 즐길 수 있는 돌토고리카페는 검은 현무암으로
 					만든 이색적인 족욕통과 직접 만드는 젤라또, 빵이 인기 있는 따뜻한 공간이다. 특히 이색적인 빵이 인기가 좋은데, 맛도
 					맛이지만 다른 베이커리에는 없는 이 집만의 독특함이 있기 때문이다.</p>
