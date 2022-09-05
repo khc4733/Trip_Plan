@@ -2,6 +2,7 @@ package com.aws.board.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -46,10 +47,10 @@ public interface BoardController {
 	//------------------------------------------------------------------------------------------------------
 	// 리뷰 수정 
 	//------------------------------------------------------------------------------------------------------
-	public ModelAndView boardUpdateForm(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception;
+	public ModelAndView boardUpdateForm(boardDTO boardDTO, HttpServletRequest request, HttpServletResponse response, Model model) throws Exception;
 	
 	//------------------------------------------------------------------------------------------------------
 	// 리뷰 삭제
 	//------------------------------------------------------------------------------------------------------
-	public String boardDelete(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception;
+	public ModelAndView boardDelete(int seq, HttpSession session, HttpServletRequest request, HttpServletResponse response) throws Exception;
 }
