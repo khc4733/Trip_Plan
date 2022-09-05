@@ -119,6 +119,11 @@ video{
 	/*z-index: 999;*/
 
 }
+.home_hashtag a {
+	font-weight: 600;
+	color: #333;
+	font-family: NotoSansKR, NotoSansJP;
+}
 
 .home_data p {
 	margin-top: -60px;
@@ -141,9 +146,11 @@ video{
 
 /* 사진 슬라이드 부분 */
 #main_bestcourse  {
+	margin-top:50px;
+	height:700px;;
 	webkit-box-sizing: border-box;
 	position: relative;
-	background-color : #fff;
+	background: #f0f2f7;
 	padding: 80px 2% 80px;
 }
 
@@ -191,54 +198,57 @@ video{
 	padding: 35px 0 0 0;
 	position: relative;
 }
-
+.m_center  {
+	border-radius:40px; 
+}
 .m_center a {
 	text-decoration: none;
 }
 
 #course_1{
-	background-image:url(../images/seoul1.jpg);
+	background-image:url(../images/daegu2-6.jpg);
 	width: 100%;
 	height: 260px;
 	background-size: cover;
 	position: relative;
+	border-radius:40px; 	
 }
 
-#course_1::before, #course_2::before, #course_3::before {
-	content:"";
-	opacity: 0.4;
-	position: absolute;
-	top:0px;
-	left:0px;
-	right:0px;
-	bottom:0px;
-	background-color: #000;
-}
+
 
 #course_1 p, #course_2 p, #course_3 p{
 	font-family: 'Happiness-Sans-Bold';
 	position: relative;
 	text-align: center;
-	font-size: 70px;
+	font-size: 20px;
 	color : #fff;
+	line-height: 450px;
 }
 
 #course_2{
-	background-image:url(../images/busan1.jpg);
+	background-image:url(../images/daejeon2-1.jpg);
 	width: 100%;
 	height: 260px;
 	background-size: cover;
 	position: relative;
 	align-content : center;
+	border-radius:40px;
+	vertical-align : bottom;	
 }
 
 #course_3{
-	background-image:url(../images/jeju1.jpg);
+	background-image:url(../images/busan2-3.jpg);
 	width: 100%;
 	height: 260px;
 	background-size: cover;
 	position: relative;
 	align-content : center;
+	border-radius:40px;	
+}
+.bestcourse {
+	/*border: 2px solid red;*/
+	width: 60%;
+	margin: auto;
 }
 
 
@@ -492,8 +502,9 @@ table#notice {
 
 /* area폴더 페이지 영역 시작*/
 .area_main {
-	height: auto;
+	height: 800px;
 	min-height: 100%;
+	margin-bottom:50px;
 }
 
 .area_centered {

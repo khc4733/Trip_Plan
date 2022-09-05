@@ -1,74 +1,102 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt"   uri="http://java.sun.com/jsp/jstl/fmt"  %>
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-<%  request.setCharacterEncoding("UTF-8"); %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<%
+request.setCharacterEncoding("UTF-8");
+%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>summary</title>	
+<title>summary</title>
 <style>
-.profileImg {
-	width: 100px;
-	height: 100px;
-	position: absoulute;
-}	
-.opacity {
-	position: absolute;
-	top: 0;
-	background-color: #fff;
-	opacity: 0;
-	transition: 0.3s;
+.profile_box{
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 50px;
+	width: 250px;
 }
-.opacity:hover {
+#insert{
+    margin-left:170px;
+	width: 120px;
+	height: 40px; 
+	font-size: 18px;
+	text-align:center;
+	line-height:18px;  
+}
+#img:hover {
 	cursor: pointer;
 	opacity: 0.4;
 }
+
 .profile {
-	width: 50%;
-	height: 50%;
+	width: 150px;
+	height: 150px;
 	object-fit: cover;
 }
-.hide {display:none;}
+
+.hide {
+	display: none;
+}
 </style>
-<link href="${pageContext.request.contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/css/front.css"
+	type="text/css" rel="stylesheet">
+<script
+	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
-<!-- 메뉴바 -->
-<div class="sub_menubar">
-    <jsp:include page="../common/topmenu.jsp"/>
-</div>
-<!-- 사이드 메뉴 바 -->
-<jsp:include page="../mypage/myside.jsp"/>
-
-<!-- 프로필 사진 -->
-<div class="container">
-	<div class="prifileImg" data-toggle="tooltip">
-	<h5>프로필 사진</h5>
-    	<img id="img" src="${contextPath}/${member.profileImg}" class="img-circle profile"> 
-    	<div class="opacity img-circle profile"></div>
-		<div class="hide">
-			<input type="file" id="file1" name="file1">
-		</div>
+	<!-- 메뉴바 -->
+	<div class="sub_menubar">
+		<jsp:include page="../common/topmenu.jsp" />
 	</div>
-	<div class="button">
-		<button type="submit" class="btn btn-sm" onclick="ImgUpdate()">사진등록</button>
-		<button type="button" class="btn btn-sm">삭제</button> 
-	</div>  	  
-</div>
- 
-<script type="text/javascript">
-$(".opacity").click(function() {
-    $("#file1").click();
+	<!-- 사이드 메뉴 바 -->
+	<jsp:include page="../mypage/myside.jsp" />
+
+	<!-- 프로필 사진 -->
+				
+	<div class="container">	
+	   <div style=" float: left; width: 30%;">
+		<div class="profile_box" data-toggle="tooltip">
+			<c:choose>
+					<c:when test="${ member.profileImg == null}">
+					   <img id="img" src="${contextPath}/resources/images/profile_img.png" class="img-circle profile">
+					</c:when>
+					<c:otherwise>
+					   <img id="img" src="${contextPath}/${member.profileImg}"class="img-circle profile">
+					</c:otherwise>
+			</c:choose>	
+
+			<div class="hide">
+				<input type="file" id="userProfile" name="img__preview">
+			</div>
+		</div>
+		<div class="insert_btn">
+			<button type="button" class="btn btn-sm" style="display : none;">삭제</button>
+		</div>
+	  </div>
+	  <div style=" float: left; width: 60%; text-align:left; margin-top:80px; margin-left: 10%">
+	    <label style="font-size:30px;">${member.name}님</label>
+	    <button type="submit" id="insert" class="btn btn-sm" onclick="ImgUpdate()">프로필 변경</button>
+	  </div>
+	  <div style=" float: left; width: 59%; text-align:left; margin-top:10px;  margin-left: 11%">
+	    <label style="font-size:15px;">${member.email}</label>
+	  </div>
+	</div>
+
+	<script type="text/javascript">
+$("#img").click(function() {
+    $("#userProfile").click();
 });
 //이미지 미리보기
 var sel_file;
  
 $(document).ready(function() {
-    $("#file1").on("change", handleImgFileSelect);
+    $("#userProfile").on("change", handleImgFileSelect);
 });
  
 function handleImgFileSelect(e) {
@@ -79,7 +107,7 @@ function handleImgFileSelect(e) {
  
     filesArr.forEach(function(f) {
         if (!f.type.match(reg)) {
-            alert("이미지 확장자만 가능합니다.");
+            alert("이미지만 첨부할 수 있습니다.");
             return;
         }
  
@@ -93,23 +121,26 @@ function handleImgFileSelect(e) {
     });
 }
 </script>
-    
-<script>
+
+	<script>
 //파일 업로드
 function ImgUpdate(){
+	
 	var form = new FormData();
-	form.append( "file1", $("#file1")[0].files[0] );
+	form.append( "userProfile", $("#userProfile")[0].files[0] );
 	form.append( "id", $("#id").val() );
-		
+	
 	$.ajax({
-	url : "/mypage/imgUpload.do",
+	url : "imgUpload",
 	type : "POST",
+	
 	processData : false,
 	contentType : false,
 	data : form,
+	
 	success:function(data) {
 		if(data == "Y") {
-			if ($("#file1")[0].files.length > 0) {
+			if ($("#userProfile")[0].files.length > 0) {
 				this.imgUpload();
 			} else {
 				alert("프로필 사진 등록이 완료되었습니다.");
@@ -117,19 +148,21 @@ function ImgUpdate(){
 			}
 		} else {
 			alert("프로필 사진 등록에 실패하였습니다.");
+		}
+	}
 	});
 }
 </script>
 
-<script>
+	<script>
 // 사진 클릭시 이미지 업로드 창 뜨기
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
     });
 </script>
 
-<!-- footer --> 
-<jsp:include page="../common/footer.jsp" flush="false"/>
+	<!-- footer -->
+	<jsp:include page="../common/footer.jsp" flush="false" />
 
 </body>
 </html>

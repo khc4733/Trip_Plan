@@ -19,13 +19,13 @@
 	  var height_size = window.outerHeight;
 	  
 	  // 800 이하인지 if문으로 확인
-	  if (width_size <= 1320) {
+	  if (width_size <= 1400) {
 		  $("footer").css("visibility", "hidden");
 	  }
 	  else{
 		  $("footer").css("visibility", "visible");
 	  }
-	  if (height_size <= 960) {
+	  if (height_size <= 1000) {
 		  $("footer").css("visibility", "hidden");
 	  }
 	  else{

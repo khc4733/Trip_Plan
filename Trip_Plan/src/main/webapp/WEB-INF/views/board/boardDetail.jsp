@@ -82,7 +82,7 @@ request.setCharacterEncoding("UTF-8");
 						test="${isLogOn == true && member.nname==boardDetail.writer}">
                        <div class="col-md-9" align="right">
 						<button type="submit" class="btn" id="btn-update"
-							onclick="boardUpdate()" style="display : none;">수정</button>
+							onclick="boardUpdate()" style="display : none;">저장</button>
 						<button type="submit" class="btn" id="update"
 							onclick="Update()">수정</button>						
 						<button type="button" class="btn " id="btn-delete"

@@ -9,9 +9,14 @@ request.setCharacterEncoding("UTF-8");
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="${contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
+<link href="${contextPath}/resources/css/front.css" type="text/css"
+	rel="stylesheet">
 <!-- resources오타 수정 sk -->
 <title>메인 화면</title>
+<script
+	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 function getLocation() {
 	  let lon; //경도
@@ -26,6 +31,47 @@ function getLocation() {
 	  }
 	}
 
+</script>
+<script>
+$(document).ready(function(){
+	$("#a").on("click",function(event){   
+		   event.preventDefault();       
+		   $("#course_1").css("background-image", "url(${contextPath}/resources/images/daegu2-6.jpg)");
+		   $("#course_1 p").html("스파크랜드");
+		   $("#course_2").css("background-image", "url(${contextPath}/resources/images/daejeon2-1.jpg)");
+		   $("#course_2 p").html("대청호오백리길");
+		   $("#course_3").css("background-image", "url(${contextPath}/resources/images/busan2-3.jpg)");
+		   $("#course_3 p").html("수영만 요트경기장");		
+		});   	 
+	$("#b").on("click",function(event){   
+	   event.preventDefault();       
+	   $("#course_1").css("background-image", "url(${contextPath}/resources/images/daejeon1-2.jpg)");
+	   $("#course_1 p").html("은행동 으능정이 문화의거리");
+	   $("#course_2").css("background-image", "url(${contextPath}/resources/images/seoul2-5.jpg)");
+	   $("#course_2 p").html("남산골 한옥마을");
+	   $("#course_3").css("background-image", "url(${contextPath}/resources/images/incheon1-2.jpg)");
+	   $("#course_3 p").html("인천 차이나타운");		
+	});     
+	$("#c").on("click",function(event){   
+		   event.preventDefault();       
+		   $("#course_1").css("background-image", "url(${contextPath}/resources/images/seoul3-4.jpg)");
+		   $("#course_1 p").html("북촌한옥마을");
+		   $("#course_2").css("background-image", "url(${contextPath}/resources/images/incheon3-5.jpg)");
+		   $("#course_2 p").html("송도컨벤시아");
+		   $("#course_3").css("background-image", "url(${contextPath}/resources/images/gwangju2-1.jpg)");
+		   $("#course_3 p").html("광주호 호수생태원");		
+	});  
+	$("#d").on("click",function(event){   
+		   event.preventDefault();       
+		   $("#course_1").css("background-image", "url(${contextPath}/resources/images/busan1-3.jpg)");
+		   $("#course_1 p").html("영도 절영산책로");
+		   $("#course_2").css("background-image", "url(${contextPath}/resources/images/gwangju3-3.jpg)");
+		   $("#course_2 p").html("쌍암공원");
+		   $("#course_3").css("background-image", "url(${contextPath}/resources/images/jeju2-4.jpg)");
+		   $("#course_3 p").html("어영소공원");		
+	});  	
+		 
+}); 
 </script>
 </head>
 <body>
@@ -47,42 +93,41 @@ function getLocation() {
 		</div>
 
 
-
 		<!--추천코스-->
 		<div id="main_bestcourse">
-			<h2>인기 여행지 살펴보기</h2>
+			<h2>
+				"여행콕콕"<span> 추천 여행지 및 코스를 알려드려요.</span></a>
+			</h2>
 			<div class="banner_title">
-				<table class="clearfix">
-					<tr>
-						<th><a href="${contextPath}/area/seoul">서울</a></th>
-						<th><a href="${contextPath}/area/busan">부산</a></th>
-						<th><a href="${contextPath}/area/jeju">제주</a></th>
-					</tr>
-				</table>
+				<div class="home_hashtag">
+					<a id="a" href="#">#1박2일&nbsp&nbsp</a><a id="b" href="#">#당일치기여행&nbsp&nbsp</a>
+					<a id="c" href="#">#도심여행&nbsp&nbsp</a><a id="d" href="#">#가족체험여행</a>
+				</div>
 			</div>
-			<div class="m_center" style="float: left; width: 32%;">
-				<a href="${contextPath}/area/seoul">
-					<div id="course_1">
-						<h3>Seoul</h3>
-						<p>서울</p>
-					</div>
-				</a>
-			</div>
-			<div class="m_center" style="float: left; width: 32%; margin-left: 2%">
-				<a href="${contextPath}/area/busan">
-					<div id="course_2">
-						<h3>Busan</h3>
-						<p>부산</p>
-					</div>
-				</a>
-			</div>
-			<div class="m_center" style="float: left; margin-left: 2%; width: 32%;">
-				<a href="${contextPath}/area/jeju">
-					<div id="course_3">
-						<h3>Jeju</h3>
-						<p>제주</p>
-					</div>
-				</a>
+			<div class="bestcourse">
+				<div class="m_center" style="float: left; width: 32%;">
+					<a href="${contextPath}/contents/daegu/daegu2">
+						<div id="course_1">
+							<span><p>스파크랜드</p></span>
+						</div>
+					</a>
+				</div>
+				<div class="m_center"
+					style="float: left; width: 32%; margin-left: 2%">
+					<a href="${contextPath}/contents/daejeon/daejeon2">
+						<div id="course_2">
+							<span><p>대청호오백리길</p></span>
+						</div>
+					</a>
+				</div>
+				<div class="m_center"
+					style="float: left; margin-left: 2%; width: 32%;">
+					<a href="${contextPath}/contents/busan/busan2">
+						<div id="course_3">
+							<span><p>수영만 요트경기장</p></span>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 
@@ -151,7 +196,8 @@ function getLocation() {
 							style="text-align: center; font-family: nanumB; font-size: 18px;">
 							<tr>
 								<td>1</td>
-								<td><a href="${contextPath}/board/subway"><b>지역별 지하철 노선도</b></a></td>
+								<td><a href="${contextPath}/board/subway"><b>지역별
+											지하철 노선도</b></a></td>
 							</tr>
 							<tr>
 								<td>2</td>

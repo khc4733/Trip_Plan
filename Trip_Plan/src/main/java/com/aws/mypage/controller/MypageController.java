@@ -43,7 +43,7 @@ public interface MypageController {
 	//-----------------------------------------------------------------------------------------------------------
 	// 프로필 사진 등록하기
 	//-----------------------------------------------------------------------------------------------------------
-	public String result(@RequestParam("file1") MultipartFile multi, HttpServletRequest request, 
+	public String result( MultipartFile multi, HttpServletRequest request, 
 						HttpServletResponse response, Model model) throws Exception;
 	
 } // END - public interface MypageController
