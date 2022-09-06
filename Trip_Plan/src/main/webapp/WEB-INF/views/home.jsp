@@ -37,7 +37,7 @@ function getLocation() {
 		<!--배경사진-->
 		<div class="h_container">
 			<video muted autoplay loop>
-				<source src="${contextPath}/resources/images/mainv.mp4"
+				<source src="${contextPath}/resources/images/subv.mp4"
 					type="video/mp4">
 			</video>
 			<div class="home_data">
