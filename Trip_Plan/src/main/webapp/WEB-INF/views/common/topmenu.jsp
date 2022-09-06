@@ -122,7 +122,7 @@ $(document).ready(function() {
 	<div id="main_nav">
 		<div class="navbar-header">
 			<a href="${contextPath}/" class="submenu"
-				style="font-size: 30px; font-weight: bolder; font-style: oblique;">Trip_Plan</a>
+				style="font-size: 30px; font-weight: bolder; font-style: oblique; text-decoration: none;">Trip_Plan</a>
 		</div>
 		<!-- 실질적인 메뉴를 나열한다. -->
 		<!-- form-group이 있어야 삼선 버튼에 메뉴가 나타난다. -->

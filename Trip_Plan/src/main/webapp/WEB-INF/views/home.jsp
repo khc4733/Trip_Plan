@@ -96,7 +96,7 @@ $(document).ready(function(){
 		<!--추천코스-->
 		<div id="main_bestcourse">
 			<h2>
-				"여행콕콕"<span> 추천 여행지 및 코스를 알려드려요.</span></a>
+				"트랩 플랜"<span> 추천 여행지 및 코스를 알려드려요.</span></a>
 			</h2>
 			<div class="banner_title">
 				<div class="home_hashtag">
@@ -146,30 +146,30 @@ $(document).ready(function(){
 							<tr
 								style="text-align: center; color: #101c3d; font-size: 20px; background-color: white;">
 								<th>순위</th>
-								<th>이름</th>
+								<th>닉네임</th>
 								<th>제목</th>
-								<th>글쓴이</th>
+								<th>조회수</th>
 							</tr>
 						</thead>
 						<tbody
 							style="text-align: center; font-family: nanumB; font-size: 18px;">
 							<tr>
 								<td>1</td>
-								<td>서울 맛집</td>
-								<td><a href="#"><b>애완동물 동반 가능 맛집</b></a></td>
-								<td>bog2</td>
+								<td>사과</td>
+								<td><a href="#"><b>포항~여수여행 2일차</b></a></td>
+								<td>131</td>
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>제주도 포토존</td>
+								<td>홍길동</td>
 								<td><a href="#"><b>산방산 포토존</b></a></td>
-								<td>jedo</td>
+								<td>84</td>
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>대전 빵투어</td>
+								<td>여행가자</td>
 								<td><a href="#"><b>빵 구매 목록 알짜배기!</b></a></td>
-								<td>bbang4</td>
+								<td>66</td>
 							</tr>
 						</tbody>
 					</table>
