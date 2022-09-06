@@ -21,7 +21,7 @@
 	<insert id="addMember" parameterType="com.aws.member.vo.MemberVO">
 		<![CDATA[
 		INSERT INTO member (id, pwd, name, nname, tel, email, address, address2)
-		VALUES (#{id}, #{pwd}, #{name}, #{nname}, #{tel}, #{email}, #{address}, #{address2})
+		VALUES (#{id}, #{pwd}, #{name}, #{nname}, #{tel}, #{email}, #{address}, #{address2, jdbcType=VARCHAR})
 		]]>
 	</insert>
 	
