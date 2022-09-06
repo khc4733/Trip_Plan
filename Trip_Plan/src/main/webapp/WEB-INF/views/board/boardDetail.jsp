@@ -41,28 +41,28 @@ request.setCharacterEncoding("UTF-8");
 						</thead>
 						<tbody>
 							<tr>
-								<td style="width: 20%;">제목</td>
-								<td colspan="2" style="text-align: left;"><span id="subj">${boardDetail.subject}</span> 
+								<td style="width: 20%; border-right:1px solid #ccc;">제목</td>
+								<td colspan="2" style="padding-left: 20px;text-align: left;"><span id="subj">${boardDetail.subject}</span> 
 													<input type="text" class="form-control" id="subject" name="subject"
 						maxlength="20" value="${boardDetail.subject}" style="display : none;" /></td>
 								
 							</tr>
 							<tr>
-								<td>작성자</td>
-								<td colspan="2" style="text-align: left;">${boardDetail.writer}<input  id="writer" name="writer"
+								<td style="border-right:1px solid #ccc;">작성자</td>
+								<td colspan="2" style="padding-left: 20px; text-align: left;">${boardDetail.writer}<input  id="writer" name="writer"
 						value="${boardDetail.writer}" style="display : none;" /></td>
 							</tr>
 							<tr>
-								<td>작성일자</td>
-								<td colspan="2" style="text-align: left;" id="reg_date">
+								<td style="border-right:1px solid #ccc;">작성일자</td>
+								<td colspan="2" style="padding-left: 20px; text-align: left;" id="reg_date">
 								    <fmt:parseDate
 										value="${boardDetail.reg_date}" var="currentDate" pattern="yyyyMMddHHmm" scope="page" /> 
 									<fmt:formatDate
 										 value="${currentDate}" pattern="yyyy년 MM월 dd일 HH시 mm분" /></td>
 							</tr>
-							<tr>
-								<td>내용</td>
-								<td colspan="2" style="min-height: 200px; text-align: left;"> <span id="cont">${boardDetail.content}</span>
+							<tr style="height:200px;">
+								<td style="line-height: 200px; border-right:1px solid #ccc;">내용</td>
+								<td colspan="2" style="padding-left: 20px; line-height: 40px; min-height: 200px; text-align: left;"> <span id="cont">${boardDetail.content}</span>
 													<textarea rows="10" cols="160" class="form-control" id="content"
 						name="content" style="display : none;">${boardDetail.content}</textarea></td>
 							</tr>

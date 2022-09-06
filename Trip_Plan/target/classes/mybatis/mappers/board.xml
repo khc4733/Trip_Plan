@@ -5,14 +5,28 @@
 
 <mapper namespace="com.aws.board">
 
+    <!-- 게시물 총 개숫 -->
+    <select id="getTotal" resultType="int">
+    		<![CDATA[
+        select count(*) from board
+    		]]>
+    </select>
+
 	<!-- 리뷰 전체 목록 추출하기 -->
-	<select id="listAll" resultType="com.aws.board.dto.boardDTO">
+	<select id="getListWithPaging" resultType="com.aws.board.dto.boardDTO">
 		<![CDATA[
-		SELECT	seq, subject, content, writer, reg_date, readCount
-		FROM	board
+select seq, subject, content, writer, reg_date, readcount
+from(
+    select 
+    rownum rn, seq, subject, content, writer, reg_date, readcount
+    from (
+    select * from board order by seq desc 
+    )
+    where rownum <= #{pageNum} * #{amount}
+)
+where rn > (#{pageNum}-1) * #{amount}
 		]]>
 	</select>
-
 
 	<!-- 제일 큰 게시글 번호 추출하기 -->
 	<select id="maxSeq" resultType="java.lang.Integer">

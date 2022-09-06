@@ -92,6 +92,28 @@
 		]]>
 	</update>
 	
+	    <!-- 마이 리뷰 총 개숫 -->
+    <select id="myTotal" resultType="int">
+    		<![CDATA[
+        select count(*) from board where writer = #{nname}
+    		]]>
+    </select>	
+
+	<!-- 마이 리뷰 목록 추출하기 -->
+	<select id="mylist" resultType="com.aws.board.dto.boardDTO" >
+		<![CDATA[
+select seq, subject, content, writer, reg_date, readcount
+from(
+    select 
+    rownum rn, seq, subject, content, writer, reg_date, readcount
+    from (
+    select * from board where writer =#{writer} order by seq desc 
+    )
+    where rownum <= #{pageNum} * #{amount}
+)
+where rn > (#{pageNum}-1) * #{amount}
+		]]>
+	</select>
 	
 </mapper>
 

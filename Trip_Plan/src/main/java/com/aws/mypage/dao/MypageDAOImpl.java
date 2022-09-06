@@ -1,11 +1,18 @@
 package com.aws.mypage.dao;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
 
+import com.aws.board.dto.Criteria;
+import com.aws.board.dto.boardDTO;
 import com.aws.member.vo.MemberVO;
+import com.aws.mypage.dto.MyCriteria;
 
 @Repository
 public class MypageDAOImpl implements MypageDAO {
@@ -43,6 +50,25 @@ public class MypageDAOImpl implements MypageDAO {
 		
 		int result = sqlSession.update("mapper.member.updateProfile", memberVO);
 	    return result;
+	}
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 총 게시글 수
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public int myTotal(String nname) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne("mapper.member.myTotal",nname);
+	}
+	
+	//----------------------------------------------------------------------------------------------------------
+	// REVIEW 목록
+	//----------------------------------------------------------------------------------------------------------
+	@Override
+	public List<boardDTO> getListWithPaging(MyCriteria cri) {
+		// TODO Auto-generated method stub
+ 
+		return sqlSession.selectList("mapper.member.mylist",cri);
 	}
 
 }// end - public class MypageDAOImpl implements MypageDAO

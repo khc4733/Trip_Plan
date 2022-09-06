@@ -6,6 +6,7 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
+import com.aws.board.dto.Criteria;
 import com.aws.board.dto.boardDTO;
 import com.aws.board.dao.boardDAO;
 
@@ -19,10 +20,10 @@ public class boardServiceImpl implements boardService {
 	// REVIEW 목록
 	//------------------------------------------------------------------------------------------------------
 	@Override
-	public List<boardDTO> boardList() throws Exception {
+	public List<boardDTO> boardList(Criteria cri) throws Exception {
 		
 		System.out.println("boardServiceImpl.....");
-		return boardDAO.boardList();
+		return boardDAO.getListWithPaging(cri);
 	}
 	
 	//------------------------------------------------------------------------------------------------------
@@ -66,6 +67,15 @@ public class boardServiceImpl implements boardService {
 	public int boardDelete(int seq) {
 		
 		return boardDAO.boardDelete(seq);
+	}
+
+	//------------------------------------------------------------------------------------------------------
+	// 총 게시글 수
+	//------------------------------------------------------------------------------------------------------
+	@Override
+	public int getTotal() {
+		// TODO Auto-generated method stub
+		return boardDAO.getTotal();
 	}
 
 	

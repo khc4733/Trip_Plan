@@ -1,6 +1,7 @@
 package com.aws.mypage.controller;
 
 import java.io.File;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,8 +18,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.aws.board.dto.Criteria;
+import com.aws.board.dto.PageMakerDTO;
+import com.aws.board.dto.boardDTO;
+import com.aws.board.service.boardService;
 import com.aws.member.service.MemberService;
 import com.aws.member.vo.MemberVO;
+import com.aws.mypage.dto.MyCriteria;
+import com.aws.mypage.dto.myPageMakerDTO;
 import com.aws.mypage.service.MypageService;
 
 
@@ -144,6 +151,37 @@ public class MypageControllerlmpl implements MypageController {
 			System.out.println(e);
 		}
 		return "N";
+	}
+
+	//-----------------------------------------------------------------------------------------------------------
+	// MyPost
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	@RequestMapping(value="/myPost", method = RequestMethod.GET)
+	public ModelAndView myPost(MyCriteria cri,HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+		// TODO Auto-generated method stub
+		ModelAndView mav = new ModelAndView();
+		HttpSession session = request.getSession(true);
+		MemberVO memberVO = (MemberVO)session.getAttribute("member");
+		
+		System.out.println("rrrrsdad"+memberVO.getNname()); 
+		cri.setWriter(memberVO.getNname());
+		List<boardDTO> myList = mypageService.myboardList(cri);
+		
+		model.addAttribute("myList", myList);
+		
+        System.out.println("aaaarrrr"+myList);
+
+		
+        int total = mypageService.myTotal(cri.getWriter());
+        System.out.println("rrrr"+total);
+        
+        myPageMakerDTO pageMake = new myPageMakerDTO(cri, total);
+        
+        model.addAttribute("mypageMaker", pageMake);
+				
+		mav.setViewName("/mypage/mypost");
+		return mav;
 	}
 
 	

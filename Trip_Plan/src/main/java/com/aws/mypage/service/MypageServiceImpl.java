@@ -1,11 +1,16 @@
 package com.aws.mypage.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
+import com.aws.board.dto.Criteria;
+import com.aws.board.dto.boardDTO;
 import com.aws.member.vo.MemberVO;
 import com.aws.mypage.dao.MypageDAO;
+import com.aws.mypage.dto.MyCriteria;
 
 @Service
 public class MypageServiceImpl implements MypageService {
@@ -42,6 +47,23 @@ public class MypageServiceImpl implements MypageService {
 		return mypageDAO.updateProfile(memberVO);
 	}
 
+	//------------------------------------------------------------------------------------------------------
+	// REVIEW 목록
+	//------------------------------------------------------------------------------------------------------
+	@Override
+	public List<boardDTO> myboardList(MyCriteria cri) throws Exception {
+		
+		System.out.println("boardServiceImpl.....");
+		return mypageDAO.getListWithPaging(cri);
+	}
 	
-	    
+	//------------------------------------------------------------------------------------------------------
+	// 총 게시글 수
+	//------------------------------------------------------------------------------------------------------
+	@Override
+	public int myTotal(String nname) {
+		// TODO Auto-generated method stub
+		return mypageDAO.myTotal(nname);
+	
+	}  
 } // end - public class MypageServiceImpl implements MypageService

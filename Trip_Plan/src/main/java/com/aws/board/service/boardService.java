@@ -2,6 +2,7 @@ package com.aws.board.service;
 
 import java.util.List;
 
+import com.aws.board.dto.Criteria;
 import com.aws.board.dto.boardDTO;
 
 public interface boardService {
@@ -9,7 +10,7 @@ public interface boardService {
 	//------------------------------------------------------------------------------------------------------
 	// REVIEW 목록
 	//------------------------------------------------------------------------------------------------------
-	public List<boardDTO> boardList() throws Exception;
+	public List<boardDTO> boardList(Criteria cri) throws Exception;
 	
 	//------------------------------------------------------------------------------------------------------
 	// 리뷰 등록
@@ -31,5 +32,6 @@ public interface boardService {
 	//------------------------------------------------------------------------------------------------------
 	public int boardDelete(int seq);
 	
+	public int getTotal();
 	
 } // END - public interface boardService

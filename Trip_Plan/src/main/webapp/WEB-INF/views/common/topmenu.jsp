@@ -50,7 +50,7 @@ request.setCharacterEncoding("UTF-8");
 }
 
 #main_nav a {
-	color: #f7f1dc;
+	color: #ffffff;
 	background-color: transparent;
 }
 
@@ -83,7 +83,7 @@ request.setCharacterEncoding("UTF-8");
 		} else {
 			$("#main_nav").css("background-color", "");
 			$("#main_nav").css("border-bottom", "");
-			$("#main_nav a").css("color", "#f7f1dc");
+			$("#main_nav a").css("color", "#ffffff");
 		}
 		lastScrollTop = scrollTop;
 	});
