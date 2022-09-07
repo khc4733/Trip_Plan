@@ -287,6 +287,19 @@ public class MemberControllerImpl implements MemberController {
 		return result;
 	}
 
+		
+	//-----------------------------------------------------------------------------------------------------------
+	// 이용약관
+	//-----------------------------------------------------------------------------------------------------------
+	
+	@Override
+	@RequestMapping(value="/memberRule", method=RequestMethod.GET)
+	public ModelAndView memberRule(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/member/memberRule");
+		return mav;
+	}
 	
 	
 

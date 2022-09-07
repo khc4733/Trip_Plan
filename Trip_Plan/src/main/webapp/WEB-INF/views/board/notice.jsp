@@ -48,12 +48,20 @@ background-repeat : no-repeat;
 					<td class="left"><a href="${contextPath}/board/subway">지역별 지하철 노선도</a></td>
 					<td>Host Admin</td>
 				</tr>
+				<tr>
+					<td>2</td>
+					<td class="left"><a href="${contextPath}/board/jointp">Trip planner 이용방법</a></td>
+					<td>Host Admin</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td class="left"><a href="${contextPath}/member/memberRule">개인 정보 이용 내역</a></td>
+					<td>Host Admin</td>
+				</tr>
 			</tbody>
 		</table>
 
 		<div class="clear"></div>
-
-		
 
 	</div>
 
