@@ -13,8 +13,10 @@ request.setCharacterEncoding("UTF-8");
 	rel="stylesheet">
 <!-- resources오타 수정 sk -->
 <title>메인 화면</title>
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
 function getLocation() {
@@ -64,8 +66,8 @@ $(document).ready(function(){
 		   event.preventDefault();       
 		   $("#course_1").css("background-image", "url(${contextPath}/resources/images/busan1-3.jpg)");
 		   $("#course_1 p").html("영도 절영산책로");
-		   $("#course_2").css("background-image", "url(${contextPath}/resources/images/gwangju3-3.jpg)");
-		   $("#course_2 p").html("쌍암공원");
+		   $("#course_2").css("background-image", "url(${contextPath}/resources/images/gwangju3-4.jpg)");
+		   $("#course_2 p").html("환벽당");
 		   $("#course_3").css("background-image", "url(${contextPath}/resources/images/jeju2-4.jpg)");
 		   $("#course_3 p").html("어영소공원");		
 	});  	
@@ -101,30 +103,31 @@ $(document).ready(function(){
 			</h2>
 			<div class="banner_title">
 				<div class="home_hashtag">
-					<a id="ha" href="#">#1박2일</a><a id="hb" href="#">#당일치기여행</a>
-					<a id="hc" href="#">#도심여행</a><a id="hd" href="#">#가족체험여행</a>
+					<a id="ha" href="#">#1박2일</a><a id="hb" href="#">#당일치기여행</a> <a
+						id="hc" href="#">#도심여행</a><a id="hd" href="#">#가족체험여행</a>
 				</div>
 			</div>
 			<div class="bestcourse">
-				<div class="m_center" style="float: left; width: 32%;">
+				<div class="m_center"
+					style="float: left; width: 32%; overflow: hidden;">
 					<a href="${contextPath}/contents/daegu/daegu2">
-						<div id="course_1">
+						<div id="course_1" style="transition: 0.2s linear;">
 							<span><p>스파크랜드</p></span>
 						</div>
 					</a>
 				</div>
 				<div class="m_center"
-					style="float: left; width: 32%; margin-left: 2%">
+					style="float: left; width: 32%; margin-left: 2%; overflow: hidden;">
 					<a href="${contextPath}/contents/daejeon/daejeon2">
-						<div id="course_2">
+						<div id="course_2" style="transition: 0.2s linear;">
 							<span><p>대청호오백리길</p></span>
 						</div>
 					</a>
 				</div>
 				<div class="m_center"
-					style="float: left; margin-left: 2%; width: 32%;">
+					style="float: left; margin-left: 2%; width: 32%; overflow: hidden;">
 					<a href="${contextPath}/contents/busan/busan2">
-						<div id="course_3">
+						<div id="course_3" style="transition: 0.2s linear;">
 							<span><p>수영만 요트경기장</p></span>
 						</div>
 					</a>
@@ -135,60 +138,49 @@ $(document).ready(function(){
 		<!-- 리뷰 & 공지 시작 -->
 		<div class="front">
 			<div id="main_review-container">
-				<h3 class="title">BEST REVIEW</h3>
+				<h3 class="tit_atc">인기 여행리뷰 Top 5</h3>
+				<span class="date">트립플랜 인기 여행리뷰를 소개합니다.</span>
 				<div class="btn_more">
 					<a href="${contextPath}/board/boardList"><img
 						src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
 				</div>
 				<div id="main_review-table">
 					<table
-						style="width: 500px; height: 250px; border-collapse: collapse; text-align: center">
+						style="width: 500px; height: 250px; text-align: center">
 						<thead>
-							<tr
-								style="text-align: center; color: #101c3d; font-size: 20px; background-color: white;">
-								<th>순위</th>
-								<th>닉네임</th>
-								<th>제목</th>
-								<th>조회수</th>
+							<tr style="	border-bottom : 1px solid #ccc;">
+								<th style="width:50px;">순위</th>
+								<th style="width:350px;">제목</th>
+								<th style="width:50px;">작성자</th>
 							</tr>
 						</thead>
 						<tbody
 							style="text-align: center; font-family: nanumB; font-size: 18px;">
-							<tr>
-								<td>1</td>
-								<td>사과</td>
-								<td><a href="#"><b>포항~여수여행 2일차</b></a></td>
-								<td>131</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>홍길동</td>
-								<td><a href="#"><b>산방산 포토존</b></a></td>
-								<td>84</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>여행가자</td>
-								<td><a href="#"><b>빵 구매 목록 알짜배기!</b></a></td>
-								<td>66</td>
-							</tr>
+							<c:forEach items="${boardList}" var="list">
+								<tr>
+									<td>${list.rownum}</td>
+									<td><a
+										href="${contextPath}/board/boardDetail?seq=${list.seq}"><b>${list.subject}</b></a></td>
+									<td>${list.writer}</td>
+								</tr>
+							</c:forEach>
 						</tbody>
 					</table>
 				</div>
 			</div>
 
 			<div id="main_notice-container">
-				<h3 class="title">GUIDE</h3>
+				<h3 class="tit_atc">GUIDE</h3>
+				<span class="date">사용자분들의 여행을 도와드립니다.</span>
 				<div class="btn_more">
 					<a href="${contextPath}/board/notice"><img
 						src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
 				</div>
 				<div id="main_notice-table">
 					<table
-						style="width: 500px; height: 250px; border-collapse: collapse; text-align: center">
+						style="width: 500px; height: 250px; text-align: center">
 						<thead>
-							<tr
-								style="text-align: center; color: #101c3d; font-size: 20px; background-color: white;">
+							<tr style="	border-bottom : 1px solid #ccc;">
 								<th>no</th>
 								<th>제목</th>
 							</tr>
@@ -202,11 +194,13 @@ $(document).ready(function(){
 							</tr>
 							<tr>
 								<td>2</td>
-								<td><a href="${contextPath}/board/jointp"><b>Trip planner 이용방법</b></a></td>
+								<td><a href="${contextPath}/board/jointp"><b>Trip
+											planner 이용방법</b></a></td>
 							</tr>
 							<tr>
 								<td>3</td>
-								<td><a href="${contextPath}/member/memberRule"><b>개인 정보 이용내역</b></a></td>
+								<td><a href="${contextPath}/member/memberRule"><b>개인
+											정보 이용안내</b></a></td>
 							</tr>
 						</tbody>
 					</table>

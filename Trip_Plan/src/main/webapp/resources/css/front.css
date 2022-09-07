@@ -99,7 +99,7 @@ footer {
 
 .h_container {
 	width: 100%;
-	height: 1000px;
+	height: 1100px;
 	overflow: hidden;
 	margin: 0px auto;
 	position: relative;	
@@ -275,8 +275,33 @@ video{
 #main_review-container{
 	width: 600px;
 	position: relative;
+	
+}
+.tit_atc {
+    position: relative;
+    padding-left: 10px;
+    font-size: 25px;
+    color: #000;
 }
 
+.tit_atc:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 2px; 
+    width: 4px;
+    height: 22px;
+    background-color: #485ca3;
+}
+.date {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -7px;
+    font-size: 16px;
+    color: #666;
+    vertical-align: middle;
+}
 #main_notice-container a, #main_review-container a {
 	color: #404040;
 	text-decoration: none;
@@ -286,8 +311,11 @@ video{
 	text-align: left;
 }
 
-#main_notice-container tr, #main_review-container tr {
-	border-bottom: 1px solid black;
+#main_notice-container tr {
+	text-align: center; color: #000; font-size: 18px; background-color: white; border-bottom : 1px solid #ccc;
+}
+#main_review-container tr{
+	text-align: center; color: #000; font-size: 18px; background-color: white; 
 }
 
 #main_notice-container th, #main_review-container th {
@@ -309,6 +337,7 @@ video{
 	top: 27px;
 	right: 10px; 
 	position: absolute;
+	background-color: rgb(72, 92, 163);
 	z-index: 9999;
 }
 
@@ -324,10 +353,16 @@ video{
 	object-fit: cover;
 	z-index: 9999;
 }
-
+#main_notice-table{
+	
+}
 #main_review-table, #main_notice-table {
-	margin-top: 40px;
+	margin-top: 10px;
 	margin-bottom: 100px;
+	padding: 20px 0;
+    border-style: solid;
+    border-width: 4px 0;	
+    border-color: #485ca3;
 }
 
 /*notice 영역*/
@@ -569,7 +604,7 @@ table#notice {
 /* 이용방법 페이지 영역 시작*/
 .jo_container{
 	text-align: center;
-	height: auto;
+	width: auto;
 	min-height: 100%;
 	margin-top: 100px;
 }
@@ -581,9 +616,11 @@ table#notice {
 }
 
 .jo_content{
-	margin-top: 70px;
-	margin-left: 350px;
-	margin-right: 350px;
+	margin-top: 10px;
+	padding-top: 30px;
+	width:800px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 70px;
 	text-align: left;
 	font-family: 'Happiness-Sans-Regular';

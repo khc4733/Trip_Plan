@@ -5,6 +5,22 @@
 
 <mapper namespace="com.aws.board">
 
+    <!-- 베스트 리뷰 -->
+    <select id="bestreview" resultType="com.aws.board.dto.boardDTO">
+    		<![CDATA[
+select rownum ,seq, subject, content, writer, reg_date, readcount
+from(
+    select 
+    rownum rn, seq, subject, content, writer, reg_date, readcount
+    from (
+    select * from board order by readcount desc 
+    )
+    where rownum <= 5
+)
+where rn > 0
+    		]]>
+    </select>
+
     <!-- 게시물 총 개숫 -->
     <select id="getTotal" resultType="int">
     		<![CDATA[

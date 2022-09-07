@@ -12,11 +12,13 @@
 <title>이용 방법</title>
 </head>
 <body>
-	<jsp:include page="../common/topmenu.jsp" flush="false"/>
+     <div class="sub_menubar">
+        <jsp:include page="../common/topmenu.jsp"/>
+    </div>
 	<!-- 본문 -->
 	<div class="jo_container">
 		<h1>[Trip Plan 이용 방법]</h1>
-			<div class="jo_content">
+			<div class="jo_content" style="border-top: 1px solid #ccc;">
 				<div class="jo01">
 					<h2>Area</h2>
 					<img src="${contextPath}/resources/images/area01.jpg">
@@ -24,11 +26,12 @@
 					<img src="${contextPath}/resources/images/area02.jpg">
 					<p>2. 원하는 코스 사진을 클릭합니다</p>
 					<img src="${contextPath}/resources/images/area03.JPG">
-					<p>3. 코스 별로 사진을 볼 수 있습니다</p>					
+					<p><br>3. 코스 별로 사진을 볼 수 있습니다</p>					
 				</div>
 				<div class="jo02">
 					<h2>리뷰 게시판</h2>
-					<p>1. 리뷰는 작성한 본인만 수정 및 삭제가 가능합니다.</p>
+					<img src="${contextPath}/resources/images/reviewimg.png">
+					<p>	<br>1. 리뷰는 작성한 본인만 수정 및 삭제가 가능합니다.</p>
 					<p>2. 조회수 순서대로 리뷰가 보입니다</p>
 					<p>3. 제일 높은 조회 수를 기록한 리뷰는 메인페이지에 노출됩니다.</p>
 				</div>

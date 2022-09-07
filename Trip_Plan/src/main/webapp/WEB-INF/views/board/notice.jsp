@@ -55,7 +55,7 @@ background-repeat : no-repeat;
 				</tr>
 				<tr>
 					<td>3</td>
-					<td class="left"><a href="${contextPath}/member/memberRule">개인 정보 이용 내역</a></td>
+					<td class="left"><a href="${contextPath}/member/memberRule">개인 정보 이용 안내</a></td>
 					<td>Host Admin</td>
 				</tr>
 			</tbody>

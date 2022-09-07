@@ -46,7 +46,7 @@ background-repeat : no-repeat;
 			</div>
 
 	<div class="container" style="width: 1000px; margin-bottom:80px;">
-		<form class="form-horizontal" id="formList">
+	
 
 			<table class="table table-striped nanum table-hover">
 				<thead>
@@ -84,7 +84,7 @@ background-repeat : no-repeat;
 					</p>
 				</c:when>
 			</c:choose>
-		</form>
+
 
 
 	<!--페이지-->

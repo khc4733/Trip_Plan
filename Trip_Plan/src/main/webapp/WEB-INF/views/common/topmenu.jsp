@@ -105,7 +105,7 @@ $(document).ready(function() {
 		function() {	
 			$("#main_nav").css("background-color", "");
 			$("#main_nav").css("border-bottom", "");
-			$("#main_nav a").css("color", "#f7f1dc");
+			$("#main_nav a").css("color", "#ffffff");
 		});
 	
 	$("#drop_menu").hover(

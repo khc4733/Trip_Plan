@@ -3,13 +3,20 @@ package com.aws.board.dto;
 public class boardDTO {
 
 	private int seq;            // 게시글 번호
+	private int rownum;            // 게시글 번호
 	private String subject;     // 제목
 	private String content;		// 내용
 	private String writer;		// 작성자
 	private String reg_date;	// 작성일자
 	private int readCount;		// 조회수
 	
-	
+
+	public int getRownum() {
+		return rownum;
+	}
+	public void setRownum(int rownum) {
+		this.rownum = rownum;
+	}
 	public int getSeq() {
 		return seq;
 	}
@@ -50,8 +57,8 @@ public class boardDTO {
 	
 	@Override
 	public String toString() {
-		return "boardDTO [seq=" + seq + ", subject=" + subject + ", content=" + content + ", writer=" + writer
-				+ ", reg_date=" + reg_date + ", readCount=" + readCount + "]";
+		return "boardDTO [seq=" + seq + ", rownum=" + rownum + ", subject=" + subject + ", content=" + content
+				+ ", writer=" + writer + ", reg_date=" + reg_date + ", readCount=" + readCount + "]";
 	}
 	
 	
