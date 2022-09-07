@@ -30,7 +30,11 @@ background-repeat : no-repeat;
     </div>
 
 	<!-- 본문 내용 -->
-				<div id="tit"> 
+			<div id="tit"> 
+		     	<h2 align="right" style=" color: #000; padding-top:10px;	padding-right: 235px;">GUIDE</h2>
+					<p align="right"style="color: #000; padding-right: 80px;">
+						<b>GUIDE 게시판은 사이트 정보 및 여행 관련 정보를 제공해드립니다.</b>
+					<p>		     	
 			</div>
 	<div class="notice-container">
 		<table id="notice"

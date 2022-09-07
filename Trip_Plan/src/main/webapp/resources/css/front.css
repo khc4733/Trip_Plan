@@ -332,26 +332,25 @@ video{
 }
 
 .btn_more {
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	top: 27px;
 	right: 10px; 
 	position: absolute;
 	background-color: rgb(72, 92, 163);
-	z-index: 9999;
+
 }
 
 .btn_more>a {
 	width: inherit;
 	height: inherit;
-	z-index: 9999;
 }
 
 .btn_more>a img {
 	width: inherit;
 	height: inherit;
 	object-fit: cover;
-	z-index: 9999;
+	z-index: 10;
 }
 
 #main_review-table, #main_notice-table {
