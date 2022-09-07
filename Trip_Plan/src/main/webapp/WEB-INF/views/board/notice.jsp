@@ -8,6 +8,20 @@
 <meta charset="UTF-8">
 <link href="${contextPath}/resources/css/front.css" type="text/css" rel="stylesheet">
 <title>공지게시판</title>
+<style>
+#tit{
+background-image: url("${contextPath}/resources/images/guide1.jpg");
+background-repeat : no-repeat;
+    width:970px;
+    margin-left:auto;
+    margin-right:auto;
+	height:300px;
+    background-size : 970px;
+    background-position: center;
+	margin-top: 100px; margin-bottom:50px;
+	padding-top: 200px;
+}
+</style>
 </head>
 <body>
 	<!-- top menu -->
@@ -16,8 +30,9 @@
     </div>
 
 	<!-- 본문 내용 -->
+				<div id="tit"> 
+			</div>
 	<div class="notice-container">
-		<h1 class="not_title">GUIDE</h1>
 		<table id="notice"
 			style="width: 1000px; border-collapse: collapse; text-align: center;">
 			<thead>
@@ -38,11 +53,8 @@
 
 		<div class="clear"></div>
 
-		<!--페이지-->
-		<div id="page_control">
-			<a href="#">이전</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a>
-			<a href="#">4</a> <a href="#">5</a>  <a href="#">다음</a>
-		</div>
+		
+
 	</div>
 
 	<!-- footer  -->

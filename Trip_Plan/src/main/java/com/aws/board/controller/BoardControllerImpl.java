@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.aws.board.dto.Criteria;
+import com.aws.board.dto.PageMakerDTO;
 import com.aws.board.dto.boardDTO;
 import com.aws.board.service.boardService;
 
@@ -83,13 +85,19 @@ public class BoardControllerImpl implements BoardController {
 	@Override
 	@RequestMapping(value="/boardList", method = RequestMethod.GET)
 	// public void boardList(Locale locale, Model model) throws Exception {
-	public ModelAndView boardList(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+	public ModelAndView boardList(Criteria cri ,HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
 
 		ModelAndView mav = new ModelAndView();
-		System.out.println("********** BoardController.....");
-		List<boardDTO> boardList = boardService.boardList();
+
+		List<boardDTO> boardList = boardService.boardList(cri);
 		model.addAttribute("boardList", boardList);
-		System.out.println("********** BoardController boardList ==> " + boardList);
+
+		
+        int total = boardService.getTotal();
+        
+        PageMakerDTO pageMake = new PageMakerDTO(cri, total);
+        
+        model.addAttribute("pageMaker", pageMake);
 				
 		mav.setViewName("/board/boardList");
 		return mav;

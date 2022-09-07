@@ -50,7 +50,7 @@ request.setCharacterEncoding("UTF-8");
 }
 
 #main_nav a {
-	color: #f7f1dc;
+	color: #ffffff;
 	background-color: transparent;
 }
 
@@ -83,7 +83,7 @@ request.setCharacterEncoding("UTF-8");
 		} else {
 			$("#main_nav").css("background-color", "");
 			$("#main_nav").css("border-bottom", "");
-			$("#main_nav a").css("color", "#f7f1dc");
+			$("#main_nav a").css("color", "#ffffff");
 		}
 		lastScrollTop = scrollTop;
 	});
@@ -122,7 +122,7 @@ $(document).ready(function() {
 	<div id="main_nav">
 		<div class="navbar-header">
 			<a href="${contextPath}/" class="submenu"
-				style="font-size: 30px; font-weight: bolder; font-style: oblique;">Trip_Plan</a>
+				style="font-size: 30px; font-weight: bolder; font-style: oblique; text-decoration: none;">Trip_Plan</a>
 		</div>
 		<!-- 실질적인 메뉴를 나열한다. -->
 		<!-- form-group이 있어야 삼선 버튼에 메뉴가 나타난다. -->

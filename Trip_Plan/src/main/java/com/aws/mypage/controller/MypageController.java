@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.aws.member.vo.MemberVO;
+import com.aws.mypage.dto.MyCriteria;
 
 public interface MypageController {
 
@@ -40,4 +41,8 @@ public interface MypageController {
 	
 	
 	
+	//-----------------------------------------------------------------------------------------------------------
+	// myPost
+	//-----------------------------------------------------------------------------------------------------------
+	public ModelAndView myPost( MyCriteria cri,HttpServletRequest request, HttpServletResponse response, Model model) throws Exception;
 } // END - public interface MypageController

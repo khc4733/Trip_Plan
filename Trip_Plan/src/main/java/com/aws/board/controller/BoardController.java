@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.aws.board.dto.Criteria;
 import com.aws.board.dto.boardDTO;
 
 public interface BoardController {
@@ -26,7 +27,7 @@ public interface BoardController {
 	//----------------------------------------------------------------------------------------------------------
 	// 리뷰 목록
 	//----------------------------------------------------------------------------------------------------------
-	public ModelAndView boardList(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception;
+	public ModelAndView boardList(Criteria cri,HttpServletRequest request, HttpServletResponse response, Model model) throws Exception;
 	
 	//----------------------------------------------------------------------------------------------------------
 	// 리뷰 쓰기 화면

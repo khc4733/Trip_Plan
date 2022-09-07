@@ -61,7 +61,7 @@ padding-bottom: 12px;
 		<tr>
 			<th><a href="${contextPath}/mypage/summary">SUMMARY</a></th>
 			<th><a href="${contextPath}/mypage/myInfo">EDIT</a></th>
-			<th><a href="${contextPath}/..">POST</a></th>
+			<th><a href="${contextPath}/mypage/myPost">POST</a></th>
 		</tr>
 </table>
 </div>
