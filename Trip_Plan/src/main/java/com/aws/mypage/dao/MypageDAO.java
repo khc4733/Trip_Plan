@@ -35,5 +35,10 @@ public interface MypageDAO {
 	// REVIEW 목록
 	//----------------------------------------------------------------------------------------------------------
 	public List<boardDTO> getListWithPaging(MyCriteria cri);
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 갱신
+	//-----------------------------------------------------------------------------------------------------------
+	public MemberVO update(MemberVO memberVO) throws DataAccessException;
 		
 }// end - public interface MypageDAO

@@ -70,4 +70,13 @@ public class MypageDAOImpl implements MypageDAO {
 		return sqlSession.selectList("mapper.member.mylist",cri);
 	}
 
+	//-----------------------------------------------------------------------------------------------------------
+	// 갱신
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public MemberVO update(MemberVO memberVO) throws DataAccessException {
+		MemberVO memVO = sqlSession.selectOne("mapper.member.loginByID", memberVO);
+		return memVO;
+	}
+
 }// end - public class MypageDAOImpl implements MypageDAO

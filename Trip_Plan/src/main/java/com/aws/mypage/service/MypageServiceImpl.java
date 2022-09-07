@@ -66,4 +66,12 @@ public class MypageServiceImpl implements MypageService {
 		return mypageDAO.myTotal(nname);
 	
 	}  
+	
+	//-----------------------------------------------------------------------------------------------------------
+	// 갱신
+	//-----------------------------------------------------------------------------------------------------------
+	@Override
+	public MemberVO update(MemberVO memberVO) throws DataAccessException {
+		return mypageDAO.update(memberVO);
+	}
 } // end - public class MypageServiceImpl implements MypageService

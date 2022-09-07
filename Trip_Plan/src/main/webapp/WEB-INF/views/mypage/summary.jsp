@@ -134,7 +134,6 @@ function ImgUpdate(){
     formData.append( "id", $("#id").val() );
 	
 	if($("#userProfile")[0].files.length > 0) {
-		alert("있음"+formData); 
 	$.ajax({
 	url : "imgUpload",
 	type : "POST",	

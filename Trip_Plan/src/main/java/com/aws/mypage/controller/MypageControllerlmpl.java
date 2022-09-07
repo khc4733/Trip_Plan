@@ -132,8 +132,6 @@ public class MypageControllerlmpl implements MypageController {
 	@RequestMapping(value="/imgUpload", method = RequestMethod.POST)
 	public String result(@RequestParam("userProfile") MultipartFile multi, HttpServletRequest request, HttpServletResponse response, Model model)
 			throws Exception {
-		
-		System.out.println("rrrrsdad"+multi); 
 
 		try {
 			if(!multi.isEmpty())
@@ -141,11 +139,17 @@ public class MypageControllerlmpl implements MypageController {
 				String originFilename = multi.getOriginalFilename(); 
 				String Path = request.getSession().getServletContext().getRealPath("/").concat("resources");
 				File file = new File(Path + "/images", originFilename);
-				System.out.println("이미지 경로"+file);
+
 				multi.transferTo(file);
 				memberVO.setId(request.getParameter("id"));
 				memberVO.setProfileImg("images/" + originFilename);
 				int result = mypageService.updateProfile(memberVO); 
+				memberVO = mypageService.update(memberVO);
+				HttpSession session = request.getSession(true);
+				session.removeAttribute("member");
+				session.setAttribute("member", 	memberVO);
+				memberVO = (MemberVO) session.getAttribute("member");				
+
 				if(result > 0) {
 					return "Y";
 				}
