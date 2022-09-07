@@ -33,16 +33,21 @@
 					<td class="left"><a href="${contextPath}/board/subway">지역별 지하철 노선도</a></td>
 					<td>Host Admin</td>
 				</tr>
+				<tr>
+					<td>2</td>
+					<td class="left"><a href="${contextPath}/board/jointp">Trip planner 이용방법</a></td>
+					<td>Host Admin</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td class="left"><a href="${contextPath}/member/memberRule">개인 정보 이용 내역</a></td>
+					<td>Host Admin</td>
+				</tr>
 			</tbody>
 		</table>
 
 		<div class="clear"></div>
-
-		<!--페이지-->
-		<div id="page_control">
-			<a href="#">이전</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a>
-			<a href="#">4</a> <a href="#">5</a>  <a href="#">다음</a>
-		</div>
+		
 	</div>
 
 	<!-- footer  -->

@@ -14,6 +14,8 @@ public interface BoardController {
 	
 	public ModelAndView Notice(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
+	public ModelAndView jointp(HttpServletRequest request, HttpServletResponse response) throws Exception;
+	
 	public ModelAndView Subway(HttpServletRequest request, HttpServletResponse response) throws Exception;
 	
 	public ModelAndView Sbwbs(HttpServletRequest request, HttpServletResponse response) throws Exception;

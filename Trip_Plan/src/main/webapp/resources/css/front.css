@@ -107,7 +107,7 @@ footer {
 
 video{
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	object-fit: cover;
 	z-index:-1;
 }
@@ -118,11 +118,6 @@ video{
 	width: 100%;
 	/*z-index: 999;*/
 
-}
-.home_hashtag a {
-	font-weight: 600;
-	color: #333;
-	font-family: NotoSansKR, NotoSansJP;
 }
 
 .home_data p {
@@ -146,7 +141,6 @@ video{
 
 /* 사진 슬라이드 부분 */
 #main_bestcourse  {
-	margin-top:50px;
 	height:700px;;
 	webkit-box-sizing: border-box;
 	position: relative;
@@ -167,7 +161,15 @@ video{
 	margin-left: 300px;
 	margin-right: 300px;
     margin-top: 100px;
+    margin-bottom: 50px;
     font-size: 20px;
+}
+
+.home_hashtag a {
+	font-weight: 600;
+	color: #333;
+	font-family: 'Happiness-Sans-Bold';
+	padding: 0 45px 0 0;
 }
 
 .clearfix {
@@ -307,12 +309,13 @@ video{
 	top: 27px;
 	right: 10px; 
 	position: absolute;
-	z-index: 999;
+	z-index: 9999;
 }
 
 .btn_more>a {
 	width: inherit;
 	height: inherit;
+	z-index: 9999;
 }
 
 .btn_more>a img {
@@ -438,6 +441,70 @@ table#notice {
 	color: #f90;
 }
 
+/*memberRule 영역*/
+#memberR_container{
+	text-align: center;
+	height: auto;
+	min-height: 100%;
+	margin-top: 100px;
+}
+
+#memberR_container h1{
+	font-weight: bold;
+	font-family: 'Happiness-Sans-Title';
+	padding : 30px 0;
+}
+
+.mr_content{
+	margin-top: 70px;
+	margin-left: 350px;
+	margin-right: 350px;
+	margin-bottom: 70px;
+	text-align: left;
+	font-family: 'Happiness-Sans-Regular';
+}
+
+.mr_content h2 {
+	font-family: 'Happiness-Sans-Bold';
+	margin-bottom: 20px;
+}
+
+.mrc02 table {
+	border: 1px solid #e4e4e4;
+	box-sizing: border-box;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.mrc02 table th{
+	color:#333;
+	text-align: center;
+	background: #f9fafc;
+	border-bottom: 1px solid #e4e4e4;
+	border-left: 1px solid #e4e4e4;
+	height: 66px;
+}
+
+.mrc02 table td {
+	color:#333;
+	border-bottom: 1px solid #e4e4e4;
+	border-left: 1px solid #e4e4e4;
+	box-sizing: border-box;
+	padding: 10px;
+	ling-height: 21px;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.mt10{	
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mr_content .ffd{
+	margin-top: 50px;
+}
+
 /* 지하철 노선도 페이지 영역*/
 .subway_tab{
 		margin-top: 100px;
@@ -498,6 +565,49 @@ table#notice {
 .board-box-title a {
 	text-decoration: none;
  	color: black;
+}
+/* subway 영역 끝 */
+
+/* 이용방법 페이지 영역 시작*/
+.jo_container{
+	text-align: center;
+	height: auto;
+	min-height: 100%;
+	margin-top: 100px;
+}
+
+.jo_container h1{
+	font-weight: bold;
+	font-family: 'Happiness-Sans-Title';
+	padding : 30px 0;
+}
+
+.jo_content{
+	margin-top: 70px;
+	margin-left: 350px;
+	margin-right: 350px;
+	margin-bottom: 70px;
+	text-align: left;
+	font-family: 'Happiness-Sans-Regular';
+}
+
+.jo_content h2 {
+	font-family: 'Happiness-Sans-Bold';
+	margin-bottom: 20px;
+}
+
+.jo_content img {
+	width: 800px;
+	height: 500px;
+	object-fit: cover;
+}
+
+.jo_content p {
+	font-size: 20px;
+}
+
+.jo02{
+	margin-top: 100px;
 }
 
 /* area폴더 페이지 영역 시작*/

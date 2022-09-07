@@ -42,7 +42,7 @@
         <div id="footer_content">
             Copyright ©  All Right Reserved <br/>
 
-            <a href="${pageContext.request.contextPath}/memberP">이용약관 </a>  |  <a href="${pageContext.request.contextPath}/memberR">개인정보이용동의서</a>
+            <a href="${contextPath}/board/jointp">이용방법 </a>  |  <a href="${contextPath}/member/memberRule">개인정보이용내역</a>
             <br>
         </div>
 </footer>

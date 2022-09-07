@@ -72,6 +72,10 @@ public interface MemberController {
 	//-----------------------------------------------------------------------------------------------------------
 	public String Pw_find(MemberVO memberVO) throws Exception;
 
+	//-----------------------------------------------------------------------------------------------------------
+	// 이용약관
+	//-----------------------------------------------------------------------------------------------------------
+	public	ModelAndView memberRule(HttpServletRequest request, HttpServletResponse response) throws Exception;
 } // End - public interface MemberController
 
 

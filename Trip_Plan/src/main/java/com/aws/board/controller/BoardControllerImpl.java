@@ -38,6 +38,14 @@ public class BoardControllerImpl implements BoardController {
 	}
 
 	@Override
+	@RequestMapping(value="/jointp", method=RequestMethod.GET)
+	public ModelAndView jointp(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/board/jointp");
+		return mav;
+	}
+
+	@Override
 	@RequestMapping(value="/subway", method=RequestMethod.GET)
 	public ModelAndView Subway(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		

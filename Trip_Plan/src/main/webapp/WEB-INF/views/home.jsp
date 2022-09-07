@@ -13,10 +13,9 @@ request.setCharacterEncoding("UTF-8");
 	rel="stylesheet">
 <!-- resources오타 수정 sk -->
 <title>메인 화면</title>
-<script
-	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script>
 function getLocation() {
 	  let lon; //경도
@@ -34,7 +33,7 @@ function getLocation() {
 </script>
 <script>
 $(document).ready(function(){
-	$("#a").on("click",function(event){   
+	$("#ha").on("click",function(event){   
 		   event.preventDefault();       
 		   $("#course_1").css("background-image", "url(${contextPath}/resources/images/daegu2-6.jpg)");
 		   $("#course_1 p").html("스파크랜드");
@@ -43,7 +42,7 @@ $(document).ready(function(){
 		   $("#course_3").css("background-image", "url(${contextPath}/resources/images/busan2-3.jpg)");
 		   $("#course_3 p").html("수영만 요트경기장");		
 		});   	 
-	$("#b").on("click",function(event){   
+	$("#hb").on("click",function(event){   
 	   event.preventDefault();       
 	   $("#course_1").css("background-image", "url(${contextPath}/resources/images/daejeon1-2.jpg)");
 	   $("#course_1 p").html("은행동 으능정이 문화의거리");
@@ -52,7 +51,7 @@ $(document).ready(function(){
 	   $("#course_3").css("background-image", "url(${contextPath}/resources/images/incheon1-2.jpg)");
 	   $("#course_3 p").html("인천 차이나타운");		
 	});     
-	$("#c").on("click",function(event){   
+	$("#hc").on("click",function(event){   
 		   event.preventDefault();       
 		   $("#course_1").css("background-image", "url(${contextPath}/resources/images/seoul3-4.jpg)");
 		   $("#course_1 p").html("북촌한옥마을");
@@ -61,7 +60,7 @@ $(document).ready(function(){
 		   $("#course_3").css("background-image", "url(${contextPath}/resources/images/gwangju2-1.jpg)");
 		   $("#course_3 p").html("광주호 호수생태원");		
 	});  
-	$("#d").on("click",function(event){   
+	$("#hd").on("click",function(event){   
 		   event.preventDefault();       
 		   $("#course_1").css("background-image", "url(${contextPath}/resources/images/busan1-3.jpg)");
 		   $("#course_1 p").html("영도 절영산책로");
@@ -96,12 +95,12 @@ $(document).ready(function(){
 		<!--추천코스-->
 		<div id="main_bestcourse">
 			<h2>
-				"여행콕콕"<span> 추천 여행지 및 코스를 알려드려요.</span></a>
+				"트립 플랜"<span> 추천 여행지 및 코스를 알려드려요.</span></a>
 			</h2>
 			<div class="banner_title">
 				<div class="home_hashtag">
-					<a id="a" href="#">#1박2일&nbsp&nbsp</a><a id="b" href="#">#당일치기여행&nbsp&nbsp</a>
-					<a id="c" href="#">#도심여행&nbsp&nbsp</a><a id="d" href="#">#가족체험여행</a>
+					<a id="ha" href="#">#1박2일</a><a id="hb" href="#">#당일치기여행</a>
+					<a id="hc" href="#">#도심여행</a><a id="hd" href="#">#가족체험여행</a>
 				</div>
 			</div>
 			<div class="bestcourse">
@@ -179,7 +178,7 @@ $(document).ready(function(){
 			<div id="main_notice-container">
 				<h3 class="title">GUIDE</h3>
 				<div class="btn_more">
-					<a href="./board/notice"><img
+					<a href="${contextPath}/board/notice"><img
 						src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
 				</div>
 				<div id="main_notice-table">
@@ -201,11 +200,11 @@ $(document).ready(function(){
 							</tr>
 							<tr>
 								<td>2</td>
-								<td><a href="#"><b>Trip planner 이용방법</b></a></td>
+								<td><a href="${contextPath}/board/jointp"><b>Trip planner 이용방법</b></a></td>
 							</tr>
 							<tr>
 								<td>3</td>
-								<td><a href="#"><b>개인 정보 이용내역</b></a></td>
+								<td><a href="${contextPath}/member/memberRule"><b>개인 정보 이용내역</b></a></td>
 							</tr>
 						</tbody>
 					</table>
