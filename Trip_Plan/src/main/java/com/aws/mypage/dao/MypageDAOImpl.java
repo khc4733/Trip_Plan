@@ -47,7 +47,6 @@ public class MypageDAOImpl implements MypageDAO {
 	//-----------------------------------------------------------------------------------------------------------
 	@Override
 	public int updateProfile(MemberVO memberVO) throws DataAccessException {
-		
 		int result = sqlSession.update("mapper.member.updateProfile", memberVO);
 	    return result;
 	}

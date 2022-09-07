@@ -62,18 +62,21 @@ request.setCharacterEncoding("UTF-8");
 	<div class="container">	
 	   <div style=" float: left; width: 30%;">
 		<div class="profile_box" data-toggle="tooltip">
+		   <form id="ajaxform" enctype = "multipart/form-data">
 			<c:choose>
 					<c:when test="${ member.profileImg == null}">
 					   <img id="img" src="${contextPath}/resources/images/profile_img.png" class="img-circle profile">
 					</c:when>
 					<c:otherwise>
-					   <img id="img" src="${contextPath}/${member.profileImg}"class="img-circle profile">
+					   <img id="img" src="${contextPath}/resources/${member.profileImg}"class="img-circle profile">
 					</c:otherwise>
 			</c:choose>	
 
 			<div class="hide">
-				<input type="file" id="userProfile" name="img__preview">
+				<input type="file" multiple id="userProfile" name="img__preview">
+				<input type="text"  id="id" value="${member.id}">
 			</div>
+		  </form>
 		</div>
 		<div class="insert_btn">
 			<button type="button" class="btn btn-sm" style="display : none;">삭제</button>
@@ -125,32 +128,34 @@ function handleImgFileSelect(e) {
 	<script>
 //파일 업로드
 function ImgUpdate(){
+
+    var formData = new FormData();
+    formData.append( "userProfile", $("#userProfile")[0].files[0] );
+    formData.append( "id", $("#id").val() );
 	
-	var form = new FormData();
-	form.append( "userProfile", $("#userProfile")[0].files[0] );
-	form.append( "id", $("#id").val() );
-	
+	if($("#userProfile")[0].files.length > 0) {
+		alert("있음"+formData); 
 	$.ajax({
 	url : "imgUpload",
-	type : "POST",
-	
+	type : "POST",	
 	processData : false,
 	contentType : false,
-	data : form,
+	data : formData,
 	
 	success:function(data) {
 		if(data == "Y") {
-			if ($("#userProfile")[0].files.length > 0) {
-				this.imgUpload();
-			} else {
 				alert("프로필 사진 등록이 완료되었습니다.");
 				location.reload();
-			}
-		} else {
+		}
+		else {
 			alert("프로필 사진 등록에 실패하였습니다.");
 		}
 	}
 	});
+	}
+	else{
+		alert("프로필 사진을 등록해주세요."); 
+	}
 }
 </script>
 

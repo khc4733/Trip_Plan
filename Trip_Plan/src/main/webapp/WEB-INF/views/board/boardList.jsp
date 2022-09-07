@@ -53,7 +53,7 @@ background-repeat : no-repeat;
 					<tr>
 						<th colspan="1" style=" width:60px; text-align:center;">번호</th>
 						<th colspan="5" style=" width:300px; text-align:center;">제목</th>
-						<th colspan="1" style=" width:60px; text-align:center;">작성자</th>
+						<th colspan="1" style=" width:80px; text-align:center;">작성자</th>
 						<th colspan="2" style=" width:120px; text-align:center;">날짜</th>
 						<th colspan="1" style=" width:60px; text-align:center;">조회수</th>
 					</tr>

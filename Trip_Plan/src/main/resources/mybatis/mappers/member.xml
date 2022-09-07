@@ -87,8 +87,8 @@
 	<update id="updateProfile" parameterType="com.aws.member.vo.MemberVO">
 		<![CDATA[
 		UPDATE member
-		SET profileImg = #{profileImg, jdbcType=VARCHAR}
-		WHERE id = ${id, jdbcType=VARCHAR}
+		SET profileImg = #{profileImg}
+		WHERE id = #{id}
 		]]>
 	</update>
 	

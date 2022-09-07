@@ -111,7 +111,7 @@ $(document).ready(function(){
 				<div class="m_center"
 					style="float: left; width: 32%; overflow: hidden;">
 					<a href="${contextPath}/contents/daegu/daegu2">
-						<div id="course_1" style="transition: 0.2s linear;">
+						<div id="course_1">
 							<span><p>스파크랜드</p></span>
 						</div>
 					</a>
@@ -119,7 +119,7 @@ $(document).ready(function(){
 				<div class="m_center"
 					style="float: left; width: 32%; margin-left: 2%; overflow: hidden;">
 					<a href="${contextPath}/contents/daejeon/daejeon2">
-						<div id="course_2" style="transition: 0.2s linear;">
+						<div id="course_2">
 							<span><p>대청호오백리길</p></span>
 						</div>
 					</a>
@@ -127,7 +127,7 @@ $(document).ready(function(){
 				<div class="m_center"
 					style="float: left; margin-left: 2%; width: 32%; overflow: hidden;">
 					<a href="${contextPath}/contents/busan/busan2">
-						<div id="course_3" style="transition: 0.2s linear;">
+						<div id="course_3">
 							<span><p>수영만 요트경기장</p></span>
 						</div>
 					</a>
@@ -154,10 +154,9 @@ $(document).ready(function(){
 								<th style="width:50px;">작성자</th>
 							</tr>
 						</thead>
-						<tbody
-							style="text-align: center; font-family: nanumB; font-size: 18px;">
+						<tbody>
 							<c:forEach items="${boardList}" var="list">
-								<tr>
+								<tr style="text-align: center; font-family: nanumB; font-size: 16px;">
 									<td>${list.rownum}</td>
 									<td><a
 										href="${contextPath}/board/boardDetail?seq=${list.seq}"><b>${list.subject}</b></a></td>
@@ -185,19 +184,18 @@ $(document).ready(function(){
 								<th>제목</th>
 							</tr>
 						</thead>
-						<tbody
-							style="text-align: center; font-family: nanumB; font-size: 18px;">
-							<tr>
+						<tbody>
+							<tr style="text-align: center; font-family: nanumB; font-size: 18px;">
 								<td>1</td>
 								<td><a href="${contextPath}/board/subway"><b>지역별
 											지하철 노선도</b></a></td>
 							</tr>
-							<tr>
+							<tr style="text-align: center; font-family: nanumB; font-size: 18px;">
 								<td>2</td>
 								<td><a href="${contextPath}/board/jointp"><b>Trip
 											planner 이용방법</b></a></td>
 							</tr>
-							<tr>
+							<tr style="text-align: center; font-family: nanumB; font-size: 18px;">
 								<td>3</td>
 								<td><a href="${contextPath}/member/memberRule"><b>개인
 											정보 이용안내</b></a></td>

@@ -130,19 +130,22 @@ public class MypageControllerlmpl implements MypageController {
 	@Override
 	@ResponseBody
 	@RequestMapping(value="/imgUpload", method = RequestMethod.POST)
-	public String result( MultipartFile multi, HttpServletRequest request, HttpServletResponse response, Model model)
+	public String result(@RequestParam("userProfile") MultipartFile multi, HttpServletRequest request, HttpServletResponse response, Model model)
 			throws Exception {
+		
+		System.out.println("rrrrsdad"+multi); 
 
 		try {
 			if(!multi.isEmpty())
 			{
-				String originFilename = multi.getOriginalFilename();
-				String Path = request.getSession().getServletContext().getRealPath("/");
-				File file = new File(Path + "/resources/images/profile/", originFilename);
+				String originFilename = multi.getOriginalFilename(); 
+				String Path = request.getSession().getServletContext().getRealPath("/").concat("resources");
+				File file = new File(Path + "/images", originFilename);
+				System.out.println("이미지 경로"+file);
 				multi.transferTo(file);
 				memberVO.setId(request.getParameter("id"));
-				memberVO.setProfileImg("images/profile/" + originFilename);
-				int result = mypageService.updateProfile(memberVO);
+				memberVO.setProfileImg("images/" + originFilename);
+				int result = mypageService.updateProfile(memberVO); 
 				if(result > 0) {
 					return "Y";
 				}
@@ -151,6 +154,7 @@ public class MypageControllerlmpl implements MypageController {
 			System.out.println(e);
 		}
 		return "N";
+		
 	}
 
 	//-----------------------------------------------------------------------------------------------------------

@@ -353,9 +353,7 @@ video{
 	object-fit: cover;
 	z-index: 9999;
 }
-#main_notice-table{
-	
-}
+
 #main_review-table, #main_notice-table {
 	margin-top: 10px;
 	margin-bottom: 100px;
