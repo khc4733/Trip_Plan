@@ -336,12 +336,12 @@ video{
 }
 
 .btn_more {
-	width: 25px;
-	height: 23px;
-	top: 23px;
+	width: 35px;
+	height: 35px;
+	top: 27px;
 	right: 10px; 
 	position: absolute;
-
+	background-color: rgb(72, 92, 163);
 }
 
 .btn_more>a {

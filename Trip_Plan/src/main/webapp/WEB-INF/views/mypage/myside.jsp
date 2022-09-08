@@ -59,7 +59,7 @@ padding-bottom: 12px;
 <div  class="mp_main">
 <table class="mypage">
 		<tr>
-			<th><a href="${contextPath}/mypage/summary">SUMMARY</a></th>
+			<th><a href="${contextPath}/mypage/summary?id=${member.id}">SUMMARY</a></th>
 			<th><a href="${contextPath}/mypage/myInfo">EDIT</a></th>
 			<th><a href="${contextPath}/mypage/myPost">POST</a></th>
 		</tr>

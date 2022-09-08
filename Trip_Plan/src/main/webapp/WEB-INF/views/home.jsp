@@ -151,7 +151,7 @@ $(document).ready(function(){
 							<tr style="	border-bottom : 1px solid #ccc;">
 								<th style="width:50px;">순위</th>
 								<th style="width:350px;">제목</th>
-								<th style="width:50px;">작성자</th>
+								<th style="width:60px;">작성자</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -173,7 +173,7 @@ $(document).ready(function(){
 				<span class="date">사용자분들의 여행을 도와드립니다.</span>
 				<div class="btn_more">
 					<a href="${contextPath}/board/notice"><img
-						src="${contextPath}/resources/images/btn_more.png" alt="더보기"></a>
+						src="${contextPath}/resources/images/btn_more2.png" alt="더보기"></a>
 				</div>
 				<div id="main_notice-table">
 					<table

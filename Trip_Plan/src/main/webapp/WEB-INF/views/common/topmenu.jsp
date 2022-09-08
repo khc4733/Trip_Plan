@@ -151,7 +151,7 @@ $(document).ready(function() {
 								data-toggle="dropdown" href="#"><b>${member.nname}님</b><span
 									class="caret"></span></a>
 								<ul class="dropdown-menu" style="background-color: transparent; text-align:center;">
-									<li><a href="${contextPath}/mypage/summary">My Page</a></li>
+									<li><a href="${contextPath}/mypage/summary?id=${member.id}">My Page</a></li>
 									<li><a href="${contextPath}/member/logout">Sign out</a></li>
 								</ul></li>
 						</c:when>

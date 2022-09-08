@@ -113,13 +113,14 @@ public class MypageControllerlmpl implements MypageController {
 	public ModelAndView summary(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		ModelAndView mav = new ModelAndView();
-		
-		if(memberVO.getProfileImg() == null || memberVO.getProfileImg() == "") {
-			memberVO.setProfileImg("${contextPath}/resources/images/profile.jpg");
-		} else {
-			File file = new File(memberVO.getProfileImg());
-		}
-		
+		memberVO.setId(request.getParameter("id"));
+		memberVO = mypageService.update(memberVO);
+
+		HttpSession session = request.getSession(true);
+		session.removeAttribute("member");
+		session.setAttribute("member", 	memberVO);
+		memberVO = (MemberVO) session.getAttribute("member");
+
 		mav.setViewName("/mypage/summary");
 		return mav;
 	}
