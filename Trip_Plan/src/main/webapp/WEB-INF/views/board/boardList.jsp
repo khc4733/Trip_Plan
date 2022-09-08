@@ -16,16 +16,17 @@ request.setCharacterEncoding("UTF-8");
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 #tit{
-background-image: url("${contextPath}/resources/images/review2.jpg");
-background-repeat : no-repeat;
+	background-image: url("${contextPath}/resources/images/review2.jpg");
+	background-repeat : no-repeat;
     width:970px;
     margin-left:auto;
     margin-right:auto;
 	height:300px;
-    background-size : 970px;
-    background-position: center;
-	margin-top: 100px; margin-bottom:50px;
-	padding-top: 200px;
+	background-size: cover;
+	background-position: center center;
+	margin-top: 100px;
+	margin-bottom:50px;
+	padding-top: 120px;
 }
 </style>
 </head>
@@ -39,8 +40,8 @@ background-repeat : no-repeat;
 
 	<!-- 본문 내용 -->
 			<div id="tit"> 
-					<h2 align="right" style=" color: #fff; 	padding-right: 245px;">REVIEW</h2>
-					<p align="right"style="color: #fff; padding-right: 30px;">
+					<h2 align="right" style=" color: #fff; 	padding-right: 350px; font-family: 'Happiness-Sans-Title'; font-size: 50px; margin-top: 10px;">REVIEW</h2>
+					<p align="right"style="color: #fff; padding-right: 40px;  font-family: 'Happiness-Sans-Bold';">
 						<b>REVIEW 게시판은 여행하며 느꼈던 좋았던 점이나 아쉬웠던 경험들을 올리는 공간입니다.</b>
 					<p>
 			</div>

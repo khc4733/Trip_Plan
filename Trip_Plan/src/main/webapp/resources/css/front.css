@@ -266,6 +266,7 @@ video{
 }
 
 #main_notice-container {
+	font-family: 'Happiness-Sans-Regular';
 	position: relative;
 	width: 600px;
 	margin-left: 120px;
@@ -275,9 +276,10 @@ video{
 #main_review-container{
 	width: 600px;
 	position: relative;
-	
+	font-family: 'Happiness-Sans-Regular';
 }
 .tit_atc {
+	font-family: 'Happiness-Sans-Title';
     position: relative;
     padding-left: 10px;
     font-size: 25px;
@@ -295,6 +297,7 @@ video{
     background-color: #485ca3;
 }
 .date {
+	font-family: 'Happiness-Sans-Regular';
     display: inline-block;
     margin-left: 10px;
     margin-top: -7px;
@@ -303,6 +306,7 @@ video{
     vertical-align: middle;
 }
 #main_notice-container a, #main_review-container a {
+	font-family: 'Happiness-Sans-Regular';
 	color: #404040;
 	text-decoration: none;
 }
@@ -312,7 +316,7 @@ video{
 }
 
 #main_notice-container tr {
-	text-align: center; color: #000; font-size: 18px; background-color: white; border-bottom : 1px solid #ccc;
+	text-align: center; color: #000; font-size: 18px; background-color: white; 
 }
 #main_review-container tr{
 	text-align: center; color: #000; font-size: 18px; background-color: white; 
@@ -332,12 +336,11 @@ video{
 }
 
 .btn_more {
-	width: 35px;
-	height: 35px;
-	top: 27px;
+	width: 25px;
+	height: 23px;
+	top: 23px;
 	right: 10px; 
 	position: absolute;
-	background-color: rgb(72, 92, 163);
 
 }
 
@@ -430,6 +433,7 @@ video{
 }
 
 .notice-container td {
+	font-family: "Nanum", serif;
 	font-size: 15px;
 	text-align: center;
 	padding: 6px 0;

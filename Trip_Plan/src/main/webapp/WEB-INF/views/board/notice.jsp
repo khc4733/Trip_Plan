@@ -10,16 +10,16 @@
 <title>공지게시판</title>
 <style>
 #tit{
-background-image: url("${contextPath}/resources/images/guide1.jpg");
-background-repeat : no-repeat;
+	background-image: url("${contextPath}/resources/images/guide4.png");
+	background-repeat : no-repeat;
     width:970px;
     margin-left:auto;
     margin-right:auto;
 	height:300px;
-    background-size : 970px;
-    background-position: center;
-	margin-top: 100px; margin-bottom:50px;
-	padding-top: 200px;
+    object-fit: cover;
+	margin-top: 100px;
+	margin-bottom: 0;
+	padding-top: 70px;
 }
 </style>
 </head>
@@ -31,9 +31,9 @@ background-repeat : no-repeat;
 
 	<!-- 본문 내용 -->
 			<div id="tit"> 
-		     	<h2 align="right" style=" color: #000; padding-top:10px;	padding-right: 235px;">GUIDE</h2>
-					<p align="right"style="color: #000; padding-right: 80px;">
-						<b>GUIDE 게시판은 사이트 정보 및 여행 관련 정보를 제공해드립니다.</b>
+		     	<h2 align="right" style=" color: #000; padding-top:10px; padding-right: 470px;  font-family: 'Happiness-Sans-Title'; font-size: 50px; margin-top: 10px;">GUIDE</h2>
+					<p align="right"style="color: #000; padding-right: 250px;">
+						<b style="font-family: 'Happiness-Sans-Bold';">GUIDE 게시판은 사이트 정보 및 여행 관련 정보를 제공해드립니다.</b>
 					<p>		     	
 			</div>
 	<div class="notice-container">

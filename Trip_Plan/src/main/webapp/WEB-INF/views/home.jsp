@@ -185,12 +185,12 @@ $(document).ready(function(){
 							</tr>
 						</thead>
 						<tbody>
-							<tr style="text-align: center; font-family: nanumB; font-size: 18px;">
+							<tr style="text-align: center; font-family: nanumB; font-size: 18px; border-bottom : 1px solid #ccc;">
 								<td>1</td>
 								<td><a href="${contextPath}/board/subway"><b>지역별
 											지하철 노선도</b></a></td>
 							</tr>
-							<tr style="text-align: center; font-family: nanumB; font-size: 18px;">
+							<tr style="text-align: center; font-family: nanumB; font-size: 18px; border-bottom : 1px solid #ccc;">
 								<td>2</td>
 								<td><a href="${contextPath}/board/jointp"><b>Trip
 											planner 이용방법</b></a></td>
